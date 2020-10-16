@@ -109,7 +109,14 @@ EnemySuffixes = {{"Of Monkiness","",{0,1,0,0}},
 {"The Adaptive","Copies the attacking player's stat changes.",{0,0,0,0}}
 }
 
-Repository = "https://github.com/Reginald-Halifrax/CustomFourSouls/raw/master/Hexsouls/"
+local Repository = "https://github.com/Reginald-Halifrax/CustomFourSouls/raw/master/Hexsouls/"
+
+for i = 1,6 do
+  Seed = 0
+  Seed = Seed+string.byte(string.sub(self.getGUID(),i,i))
+end
+math.randomseed(Seed)
+--math.randomseed(10)
 
 EnemyChoice = math.random(1,#Enemies)
 
@@ -125,7 +132,7 @@ ATK = EnemyObj[4]
 
 Soul = EnemyObj[7]
 
-Img = EnemyObj[8] -- TO DO
+Img = EnemyObj[8]
 
 -- Prefixes
 PrefixChoice = math.random(1,#EnemyPrefixes)
