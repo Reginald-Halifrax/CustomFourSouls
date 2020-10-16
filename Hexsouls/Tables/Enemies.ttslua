@@ -1,38 +1,38 @@
-Enemies = {{"Grunt",2,2,1,"A simple creature that whacks things with its fists.","+1 Healing Ware",0,"GenericEnemy"},
-{"Snowman",4,2,1,"A horrible ghoul using a festive guise.","+1 Attack Ware",0,"GenericEnemy"},
-{"Monkey",1,4,1,"This wily primate loves to trick unsuspecting explorers!","+4β",0,"GenericEnemy"},
-{"Hog",3,3,2,"Those cute, chubby jowls hide its razor sharp tusks.","+1 Attack Ware & +3β",0,"GenericEnemy"},
-{"Solar 'Naut",2,3,2,"An advanced cosmonaut who has harnessed the power of solar rays.","+5β",0,"GenericEnemy"},
-{"Solar Knot",4,3,2,"A garlic knot empored by the solar rays of the stars.","+1 Relic",0,"GenericEnemy"},
-{"Hollow",4,3,1,"For each soul the attacking player holds, this gains +1 attack.","+1 Relic",0,"GenericEnemy"},
-{"Common Imp",2,2,1,"If this damages a player, draw a Ware card and use it on the attacking player.","+1 Ware of your choosing",0,"GenericEnemy"},
-{"Treasure Imp",6,4,0,"This will leave after five moves.","+3 Relics",0,"GenericEnemy"},
-{"Grave Stomper",3,2,1,"When this is defeated, you may force a player to discard one Ware of their choosing.","+1 Utility Ware",0,"GenericEnemy"},
-{"The Tomb",4,4,1,"When this is defeated, kill an enemy (non boss) or player of your choosing.","+1 Relic",1,"GenericEnemy"},
-{"Hexed Soul",0,0,0,"Roll a die: 1-3; The soul is destroyed, 4-6; collect this soul.","",0,"GenericEnemy"},
-{"Foul Trick",0,0,0,"Roll a die: 1-2; +1β, 3-4; take 2 damage, 5-6; +2 attack Wares. (If the Moon Jester is in play, you may discard this and deal 2 damage to it. Note that this will start combat).","",0,"GenericEnemy"},
-{"Moon Jester",6,3,2,"No Wares may be played during this fight.","+1 Relic",2,"GenericEnemy"},
-{"Voodoo Dog",2,3,1,"If this takes damage, the attacking player must roll 3+ to avoid taking damage.","+2 Utility Wares",0,"GenericEnemy"},
-{"Something Horrid This Way Comes",1,6,1,"When this is defeated, if the next monster drawn is a boss, claim one additional Relic.","+1 Relic",0,"GenericEnemy"},
-{"The Walls Move",4,3,1,"When this is defeated, add a monster slot.","+8β",1,"GenericEnemy"},
-{"Mimic",3,3,1,"If this damages the attacking player, they must add one Ware of their choosing to this monster's reward.","+2 Wares of your choosing",0,"GenericEnemy"},
-{"Plague Treasure",0,0,0,"Roll a die: 1-3; Take 2 damage, 4-6; +1 Relic","",0,"GenericEnemy"},
-{"Imp's Stash",0,0,0,"If no Imps are in play, claim 3 Wares of your choosing. Otherwise, any Imp in play will have an additional 3 Wares of the same type added to their reward.","",0,"GenericEnemy"},
-{"Imp Thief",2,3,1,"If this defeats a player, you must discard an additional Ware card.","+2 Healing Wares",0,"GenericEnemy"},
-{"Imp Queen",5,3,1,"If any Imps are in play, they gain +1 to RR and +1 to ATK","+2 Relics",1,"GenericEnemy"},
-{"Bomb Bones",1,2,1,"When this is defeated, roll a die: 1-2; take 1 damage, 3-4; Inflict 1 damage on a player of your choosing, 5-6; Inflict 1 damage to an enemy of your choosing.","+4β",0,"GenericEnemy"},
-{"George",0,0,0,"When this is drawn, it will leave after all players have had a turn. 4β: +2 Wares of your choosing, 10β: +2 Relics, 20β: +1 Soul.","",0,"GenericEnemy"},
-{"Spectre",1,0,1,"This can only be damaged by an odd number roll. Even numbers miss.","+3β",0,"GenericEnemy"},
-{"Ghoul",1,0,1,"This can only be damaged by an even number roll. Odd numbers miss.","+4β",0,"GenericEnemy"},
-{"Smile!",3,2,2,"When this is defeated, you may pick another player's Ware at random to clone for yourself.","",1,"GenericEnemy"},
-{"Booby trap",0,0,0,"Roll a die: 1; Take 1 damage, 2-6; rather pleasant experience.","",0,"GenericEnemy"},
-{"~{HEX}~",6,6,6,"If this is defeated, the attacking player wins regardless of soul count.","",6,"GenericEnemy"},
-{"Imp Guard",3,3,1,"If the 'Imp Queen' is in play you must attack this card first.","+2 Healing Wares",0,"GenericEnemy"},
-{"Imp Swarm",4,2,2,"If this is defeated in less than 3 moves, double the reward.","+3 Wares of your choosing",0,"GenericEnemy"},
-{"Hurtling bone",0,0,0,"Roll a die: 1; OUCH, who threw that? (take 1 damage), 2-6; conveniently duck for the shiny object you found on the ground (+1β)","",0,"GenericEnemy"},
-{"Bone Golem",7,2,2,"A large construct made of bone. ","+10β",1,"GenericEnemy"},
-{"Watchful",3,3,1,"No Wares may be played during this fight.","+5β",0,"GenericEnemy"},
-{"Goliath Scarab",8,2,1,"This hulking insect has lost its ability to become jewelry. Takes no damage on a roll of 6.","+1 Relic",1,"GenericEnemy"}
+Enemies = {{"Grunt",2,2,1,"A simple creature that whacks things with its fists.","+1 Healing Ware",0,""},
+{"Snowman",4,2,1,"A horrible ghoul using a festive guise.","+1 Attack Ware",0,""},
+{"Monkey",1,4,1,"This wily primate loves to trick unsuspecting explorers!","+4β",0,""},
+{"Hog",3,3,2,"Those cute, chubby jowls hide its razor sharp tusks.","+1 Attack Ware & +3β",0,""},
+{"Solar 'Naut",2,3,2,"An advanced cosmonaut who has harnessed the power of solar rays.","+5β",0,""},
+{"Solar Knot",4,3,2,"A garlic knot empored by the solar rays of the stars.","+1 Relic",0,""},
+{"Hollow",4,3,1,"For each soul the attacking player holds, this gains +1 attack.","+1 Relic",0,"TheHallow"},
+{"Common Imp",2,2,1,"If this damages a player, draw a Ware card and use it on the attacking player.","+1 Ware of your choosing",0,"CommonImp"},
+{"Treasure Imp",6,4,0,"This will leave after five moves.","+3 Relics",0,""},
+{"Grave Stomper",3,2,1,"When this is defeated, you may force a player to discard one Ware of their choosing.","+1 Utility Ware",0,""},
+{"The Tomb",4,4,1,"When this is defeated, kill an enemy (non boss) or player of your choosing.","+1 Relic",1,""},
+{"Hexed Soul",0,0,0,"Roll a die: 1-3; The soul is destroyed, 4-6; collect this soul.","",0,""},
+{"Foul Trick",0,0,0,"Roll a die: 1-2; +1β, 3-4; take 2 damage, 5-6; +2 attack Wares. (If the Moon Jester is in play, you may discard this and deal 2 damage to it. Note that this will start combat).","",0,""},
+{"Moon Jester",6,3,2,"No Wares may be played during this fight.","+1 Relic",2,""},
+{"Voodoo Dog",2,3,1,"If this takes damage, the attacking player must roll 3+ to avoid taking damage.","+2 Utility Wares",0,""},
+{"Something Horrid This Way Comes",1,6,1,"When this is defeated, if the next monster drawn is a boss, claim one additional Relic.","+1 Relic",0,""},
+{"The Walls Move",4,3,1,"When this is defeated, add a monster slot.","+8β",1,""},
+{"Mimic",3,3,1,"If this damages the attacking player, they must add one Ware of their choosing to this monster's reward.","+2 Wares of your choosing",0,"Chest"},
+{"Plague Treasure",0,0,0,"Roll a die: 1-3; Take 2 damage, 4-6; +1 Relic","",0,"PlagueChest"},
+{"Imp's Stash",0,0,0,"If no Imps are in play, claim 3 Wares of your choosing. Otherwise, any Imp in play will have an additional 3 Wares of the same type added to their reward.","",0,"Chest"},
+{"Imp Thief",2,3,1,"If this defeats a player, you must discard an additional Ware card.","+2 Healing Wares",0,""},
+{"Imp Queen",5,3,1,"If any Imps are in play, they gain +1 to RR and +1 to ATK","+2 Relics",1,""},
+{"Bomb Bones",1,2,1,"When this is defeated, roll a die: 1-2; take 1 damage, 3-4; Inflict 1 damage on a player of your choosing, 5-6; Inflict 1 damage to an enemy of your choosing.","+4β",0,""},
+{"George",0,0,0,"When this is drawn, it will leave after all players have had a turn. 4β: +2 Wares of your choosing, 10β: +2 Relics, 20β: +1 Soul.","",0,""},
+{"Spectre",1,0,1,"This can only be damaged by an odd number roll. Even numbers miss.","+3β",0,""},
+{"Ghoul",1,0,1,"This can only be damaged by an even number roll. Odd numbers miss.","+4β",0,""},
+{"Smile!",3,2,2,"When this is defeated, you may pick another player's Ware at random to clone for yourself.","",1,""},
+{"Booby trap",0,0,0,"Roll a die: 1; Take 1 damage, 2-6; rather pleasant experience.","",0,""},
+{"~{HEX}~",6,6,6,"If this is defeated, the attacking player wins regardless of soul count.","",6,""},
+{"Imp Guard",3,3,1,"If the 'Imp Queen' is in play you must attack this card first.","+2 Healing Wares",0,""},
+{"Imp Swarm",4,2,2,"If this is defeated in less than 3 moves, double the reward.","+3 Wares of your choosing",0,""},
+{"Hurtling bone",0,0,0,"Roll a die: 1; OUCH, who threw that? (take 1 damage), 2-6; conveniently duck for the shiny object you found on the ground (+1β)","",0,""},
+{"Bone Golem",7,2,2,"A large construct made of bone. ","+10β",1,""},
+{"Watchful",3,3,1,"No Wares may be played during this fight.","+5β",0,"TheWatchful"},
+{"Goliath Scarab",8,2,1,"This hulking insect has lost its ability to become jewelry. Takes no damage on a roll of 6.","+1 Relic",1,""}
 }
 
 EnemyPrefixes = {{"Agreeable","Copies ability of the attacking player.",{0,0,1,0}},
@@ -109,6 +109,8 @@ EnemySuffixes = {{"Of Monkiness","",{0,1,0,0}},
 {"The Adaptive","Copies the attacking player's stat changes.",{0,0,0,0}}
 }
 
+Repository = "https://github.com/Reginald-Halifrax/CustomFourSouls/raw/master/Hexsouls/"
+
 EnemyChoice = math.random(1,#Enemies)
 
 EnemyObj = Enemies[EnemyChoice]
@@ -123,7 +125,7 @@ ATK = EnemyObj[4]
 
 Soul = EnemyObj[7]
 
---Img = EnemyObj[8] -- TO DO
+Img = EnemyObj[8] -- TO DO
 
 -- Prefixes
 PrefixChoice = math.random(1,#EnemyPrefixes)
