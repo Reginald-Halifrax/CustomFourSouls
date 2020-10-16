@@ -1,0 +1,26 @@
+Relics = {{"Mirror","@","",{"","Roll: 1-3: Nothing, Roll 4-6: reflect a relic/Ware played against you to attacker.","Inverted"," Roll: 1-3: reflect a relic/Ware played against you to attacker. Roll 4-6: Nothing."}},
+{"Chemistry Set","@","",{"","Roll: 1 +1 Hp, 2 +1 Atk, 3 Nothing, 4 +1 Roll (next roll), 5 -1 Roll (next roll), 6 -1 Hp "}},
+{"Bombs?","$","",{""," Pay 3β to attack 1 to an active enemy.\n'You want it? It's yours my friend.'"}},
+{"Shovel","@","",{"","Unmodifiable Roll: 1 Break the shovel (discard), 2 gain 1β, 3/4 nothing, 5 Ware 1, 6 Gain a relic and discard","Golden","Unmodifiable Roll: 1 Break the shovel (discard), 2 gain 3β, 3/4 nothing, 5 Ware 1, 6 Gain a relic and discard","Cursed","Unmodifiable Roll: 1 Break the shovel (discard), 2 gain 2β, 3/4 Fight off top monster deck and discard, 5 Ware 1, 6 Gain a relic and discard"}},
+{"Nanomachines","*","",{"","You gain +1 HP & ATK for the next 3 turns. Discard this on the 4th.","Military","You gain +1 HP & +2 ATK for the next 3 turns. Discard this on the 4th.","Medical","You gain +2 HP for the next 3 turns. Discard this on the 4th.","Experimental","You gain +2 HP & ATK for the next 2 turns. Discard this on the 3rd.","Hyper","You gain +1 HP, ATK, and dice rolls for the next 5 turns. Discard this on the 6th."}},
+{"Bronze Medal","*","",{"","If you die on a dice roll of 1, you may negate death and end your turn.","Shiny","If you die on a dice roll of 1-2, you may negate death and end your turn.","Polished","If you die on a dice roll of 1-3, you may negate death and end your turn."}},
+{"Urmgurn's Little Book of Treehopper Nymphs","@","",{"","During a turn, if there is a dice roll of 3, you may force the next roll to be a 3.","Pristine","During a turn, if there is a dice roll of 4, you may force the next roll to be a 4.","Sealed","During a turn, if there is a dice roll of 5, you may force the next roll to be a 5.","Signed","During a turn, if there is a dice roll of 6, you may force the next roll to be a 6.","Torn","During a turn, if there is a dice roll of 1, you may force the next roll to be a 1."}},
+{"Miniature Dyson Sphere","#","",{"","Put a counter on this. At 3 counters, recharge all other Relics and you may play an additional Ware."}},
+{"Handcannon","*","",{"","Attack rolls hits all active enemies, provided it meets their RR. ","Auto","Odd numbered attack rolls hit all active enemies.","Sawed-Off","Even numbered attack roll hit all active enemies.","Super","Attack rolls of 6 have +1 DMG and hit all active enemies.","Overclocked","Attack rolls of 6 have +1 DMG and hit all active enemies, but deal 1 DMG to yourself."}},
+{"Get Well Soon Card","*","",{"","When you die, discard this and receive another Relic."}},
+{"Kapala","#","",{"","When you kill an enemy, put a counter on this.\nAt 3 counters, remove them all and permanently gain 1 HP.","Crimson","When you kill an enemy, put a counter on this.\nAt 3 counters, remove them all and permanently gain 1 ATK."}},
+{"Djinni's Kiss","*","",{"","Gain +1 HP and ATK when any Jinx is on the board."}}
+}
+
+RelicChoice = math.random(1,#Relics)
+RelicObj = Relics[RelicChoice]
+
+PrefixData = RelicObj[4]
+
+PrefixChoice = math.random(1,#PrefixData/2)
+
+Prefix = PrefixData[1+((PrefixChoice-1)*2)]
+PrefixDesc = PrefixData[PrefixChoice*2]
+
+if (Prefix != "") then Prefix = Prefix.."\n" end
+RelicName = Prefix..RelicObj[1]

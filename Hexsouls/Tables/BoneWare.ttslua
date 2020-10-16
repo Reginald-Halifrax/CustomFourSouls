@@ -1,0 +1,40 @@
+BoneWare = {{"A Femur!","Gain 1β.","BoneWare"},
+{"A Humerus!","Gain 1β.","BoneWare"},
+{"Tibia and Fibula!","Gain 2β.","BoneWare"},
+{"Radius and Ulna!","Gain 2β.","BoneWare"},
+{"Carpals!","Gain 5β.","BoneWare"},
+{"Metacarpals!","Gain 5β.","BoneWare"},
+{"Phalanges!","Gain 5β.","BoneWare"},
+{"A Hyoid!","Gain 1β.","BoneWare"},
+{"A Rib Cage!","Gain 10β.","BoneWare"},
+{"Cervical Spine!","Gain 7β.","BoneWare"},
+{"A Skull!","Gain 9β.","BoneWare"},
+{"Clavicles!","Gain 2β.","BoneWare"},
+{"Scapulas!","Gain 2β.","BoneWare"},
+{"Thoracic Spine!","Gain 12β.","BoneWare"},
+{"Lumbar Spine!","Gain 5β.","BoneWare"},
+{"A Sacrum!","Gain 5β.","BoneWare"},
+{"A Coccyx!","Gain 4β.","BoneWare"},
+{"A Pelvis!","Gain 3β.","BoneWare"},
+{"A Patella!","Gain 2β.","BoneWare"},
+{"Tarsals!","Gain 5β.","BoneWare"},
+{"Metatarsals!","Gain 5β.","BoneWare"},
+{"Bone Marrow!","Double your β.","BoneWare"},
+{"Charge Pack","Charge any item.","BoneWare"},
+{"Charge Pack","Charge any item.","BoneWare"},
+{"Sticky Gloves","Steal 5β from a player.","BoneWare"},
+{"Lockpick","Steal an item from any player.","BoneWare"},
+{"Skeleton Key","Get an item from the shop for free.","BoneWare"},
+{"Mystery Box","Roll:\n1-2: 2β\n3-4: 1 Ware of your choosing.\n5-6: 2 Wares of your choosing.","BoneWare"},
+{"Metal Detector","Gain a Relic.","BoneWare"},
+{"Rusty Gear","When another player rolls a 3 you may add or remove 1 to it.\n(not applicable to combat rolls)","Bauble"},
+{"Old Pocket","When any player rolls a 1, gain 1β.","Bauble"},
+{"Data Miner","On your turn you may steal 1β from another player","Bauble"}
+}
+
+WareChoice = math.random(1,#BoneWare)
+WareObj = BoneWare[WareChoice]
+
+WareTitle = WareObj[1]
+WareDesc = WareObj[2]
+WareImg = WareObj[3]

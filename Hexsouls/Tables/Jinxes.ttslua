@@ -1,0 +1,18 @@
+Jinxes = {{"Did I Roll Yet?","The first roll on your turn is forgotten and must be rolled again."},
+{"Boneitis","Lose 3β if you roll a 6."},
+{"Butterfingers","Lose 1 ware if you roll a 3."},
+{"Energy Crisis","You may only recharge one Relic per turn."},
+{"Inaccuracy","Odd numbered attack rolls miss the targeted enemy and hit adjacent enemies."},
+{"Donation","The player with the most β must give half, rounded up, the the player with the least β."},
+{"Glaucoma","All Wares and Relics acquired when this Jinx is active are face-down until it disperses."},
+{"Mass Atrophy","All players and enemies have 1 ATK, no exeptions."},
+{"Midas' Crutch"," Only Bone Wares can be obtained and played."},
+{"Glass Bones and Paper Skin","Relics can't be purchased and all players have -1 HP."}
+}
+
+JinxChoice = math.random(1,#Jinxes)
+JinxObj = Jinxes[JinxChoice]
+
+JinxTitle = JinxObj[1]
+JinxDesc = JinxObj[2]
+JinxImg = JinxObj[3]

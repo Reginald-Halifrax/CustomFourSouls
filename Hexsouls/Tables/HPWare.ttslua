@@ -1,0 +1,19 @@
+HPWare = {{"Ointment"," +1HP for this turn.","HPWare"},
+{"Charge Pack","Charge any item.","HPWare"},
+{"Charge Pack","Charge any item.","HPWare"},
+{"Petrifying Spray","Missed attack rolls don't hurt you for 2 rolls.","HPWare"},
+{"Emergency Medical Kit","Heal to full health.","HPWare"},
+{"Rations","During battle heal 1 for 2 rolls.","HPWare"},
+{"Debugger","Remove a jinx from the board.","HPWare"},
+{"Glitch!","Adds a Jinx to the board.","HPWare"},
+{"Firewall!","End your turn.","HPWare"},
+{"Pacemaker","If you were to die, roll:\n1-5 Nothing.\n6: Prevent death and end your turn.","Bauble"},
+{"Rock Bottom","Take no damage on missed attack rolls of 1.\n'Nice ass'","Bauble"}
+}
+
+WareChoice = math.random(1,#HPWare)
+WareObj = HPWare[WareChoice]
+
+WareTitle = WareObj[1]
+WareDesc = WareObj[2]
+WareImg = WareObj[3]

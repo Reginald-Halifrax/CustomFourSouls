@@ -1,0 +1,24 @@
+ATKWare = {{"Spike the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Glog the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Geez the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Saurn the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Kipper the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Fluther the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Sark the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Rodney the Finger Monster","Deal 3 DMG to any player or monster.","AtkWare"},
+{"Mooj the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Quaz the Finger Monster","Deal 1 DMG to any player or monster.","AtkWare"},
+{"Gingerbread Man's Blessing"," +1 to ATK and Dice rolls for this turn.\n'Hokay!'","AtkWare"},
+{"Charge Pack","Charge any item.","AtkWare"},
+{"Charge Pack","Charge any item.","AtkWare"},
+{"Run As Administrator"," +1 to ATK, Dice Rolls, and HP.","AtkWare"},
+{"Plastic Building Brick","If another player rolls a 1: you may deal 1 damage to them.","Bauble"},
+{"Fragmented Sword","On attack rolls less than 6, +1 ATK.","Bauble"}
+}
+
+WareChoice = math.random(1,#ATKWare)
+WareObj = ATKWare[WareChoice]
+
+WareTitle = WareObj[1]
+WareDesc = WareObj[2]
+WareImg = WareObj[3]

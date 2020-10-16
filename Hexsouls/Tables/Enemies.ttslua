@@ -1,0 +1,144 @@
+Enemies = {{"Grunt",2,2,1,"A simple creature that whacks things with its fists.","+1 Healing Ware",0,"GenericEnemy"},
+{"Snowman",4,2,1,"A horrible ghoul using a festive guise.","+1 Attack Ware",0,"GenericEnemy"},
+{"Monkey",1,4,1,"This wily primate loves to trick unsuspecting explorers!","+4β",0,"GenericEnemy"},
+{"Hog",3,3,2,"Those cute, chubby jowls hide its razor sharp tusks.","+1 Attack Ware & +3β",0,"GenericEnemy"},
+{"Solar 'Naut",2,3,2,"An advanced cosmonaut who has harnessed the power of solar rays.","+5β",0,"GenericEnemy"},
+{"Solar Knot",4,3,2,"A garlic knot empored by the solar rays of the stars.","+1 Relic",0,"GenericEnemy"},
+{"Hollow",4,3,1,"For each soul the attacking player holds, this gains +1 attack.","+1 Relic",0,"GenericEnemy"},
+{"Common Imp",2,2,1,"If this damages a player, draw a Ware card and use it on the attacking player.","+1 Ware of your choosing",0,"GenericEnemy"},
+{"Treasure Imp",6,4,0,"This will leave after five moves.","+3 Relics",0,"GenericEnemy"},
+{"Grave Stomper",3,2,1,"When this is defeated, you may force a player to discard one Ware of their choosing.","+1 Utility Ware",0,"GenericEnemy"},
+{"The Tomb",4,4,1,"When this is defeated, kill an enemy (non boss) or player of your choosing.","+1 Relic",1,"GenericEnemy"},
+{"Hexed Soul",0,0,0,"Roll a die: 1-3; The soul is destroyed, 4-6; collect this soul.","",0,"GenericEnemy"},
+{"Foul Trick",0,0,0,"Roll a die: 1-2; +1β, 3-4; take 2 damage, 5-6; +2 attack Wares. (If the Moon Jester is in play, you may discard this and deal 2 damage to it. Note that this will start combat).","",0,"GenericEnemy"},
+{"Moon Jester",6,3,2,"No Wares may be played during this fight.","+1 Relic",2,"GenericEnemy"},
+{"Voodoo Dog",2,3,1,"If this takes damage, the attacking player must roll 3+ to avoid taking damage.","+2 Utility Wares",0,"GenericEnemy"},
+{"Something Horrid This Way Comes",1,6,1,"When this is defeated, if the next monster drawn is a boss, claim one additional Relic.","+1 Relic",0,"GenericEnemy"},
+{"The Walls Move",4,3,1,"When this is defeated, add a monster slot.","+8β",1,"GenericEnemy"},
+{"Mimic",3,3,1,"If this damages the attacking player, they must add one Ware of their choosing to this monster's reward.","+2 Wares of your choosing",0,"GenericEnemy"},
+{"Plague Treasure",0,0,0,"Roll a die: 1-3; Take 2 damage, 4-6; +1 Relic","",0,"GenericEnemy"},
+{"Imp's Stash",0,0,0,"If no Imps are in play, claim 3 Wares of your choosing. Otherwise, any Imp in play will have an additional 3 Wares of the same type added to their reward.","",0,"GenericEnemy"},
+{"Imp Thief",2,3,1,"If this defeats a player, you must discard an additional Ware card.","+2 Healing Wares",0,"GenericEnemy"},
+{"Imp Queen",5,3,1,"If any Imps are in play, they gain +1 to RR and +1 to ATK","+2 Relics",1,"GenericEnemy"},
+{"Bomb Bones",1,2,1,"When this is defeated, roll a die: 1-2; take 1 damage, 3-4; Inflict 1 damage on a player of your choosing, 5-6; Inflict 1 damage to an enemy of your choosing.","+4β",0,"GenericEnemy"},
+{"George",0,0,0,"When this is drawn, it will leave after all players have had a turn. 4β: +2 Wares of your choosing, 10β: +2 Relics, 20β: +1 Soul.","",0,"GenericEnemy"},
+{"Spectre",1,0,1,"This can only be damaged by an odd number roll. Even numbers miss.","+3β",0,"GenericEnemy"},
+{"Ghoul",1,0,1,"This can only be damaged by an even number roll. Odd numbers miss.","+4β",0,"GenericEnemy"},
+{"Smile!",3,2,2,"When this is defeated, you may pick another player's Ware at random to clone for yourself.","",1,"GenericEnemy"},
+{"Booby trap",0,0,0,"Roll a die: 1; Take 1 damage, 2-6; rather pleasant experience.","",0,"GenericEnemy"},
+{"~{HEX}~",6,6,6,"If this is defeated, the attacking player wins regardless of soul count.","",6,"GenericEnemy"},
+{"Imp Guard",3,3,1,"If the 'Imp Queen' is in play you must attack this card first.","+2 Healing Wares",0,"GenericEnemy"},
+{"Imp Swarm",4,2,2,"If this is defeated in less than 3 moves, double the reward.","+3 Wares of your choosing",0,"GenericEnemy"},
+{"Hurtling bone",0,0,0,"Roll a die: 1; OUCH, who threw that? (take 1 damage), 2-6; conveniently duck for the shiny object you found on the ground (+1β)","",0,"GenericEnemy"},
+{"Bone Golem",7,2,2,"A large construct made of bone. ","+10β",1,"GenericEnemy"},
+{"Watchful",3,3,1,"No Wares may be played during this fight.","+5β",0,"GenericEnemy"},
+{"Goliath Scarab",8,2,1,"This hulking insect has lost its ability to become jewelry. Takes no damage on a roll of 6.","+1 Relic",1,"GenericEnemy"}
+}
+
+EnemyPrefixes = {{"Agreeable","Copies ability of the attacking player.",{0,0,1,0}},
+{"Jinxed","Puts a jinx on the board, which disappears when the enemy is defeated",{0,0,0,0}},
+{"Monkied","",{0,1,0,0}},
+{"Hexed","",{6,0,0,0}},
+{"Impatient","If this is not defeated after 4 turns: Discard this.",{2,0,0,1}},
+{"Thick Skulled","",{1,-1,0,0}},
+{"Surprised","",{0,-1,0,0}},
+{"Bleeding","",{1,0,0,0}},
+{"Rabid","",{-1,0,1,0}},
+{"Scared","Discard this after 5 player actions.",{0,0,0,0}},
+{"Armed","",{0,0,1,0}},
+{"Burning","",{-1,-1,1,0}},
+{"Slow","",{0,-1,0,0}},
+{"Furious","",{0,-2,2,0}},
+{"Courageous","",{2,1,0,0}},
+{"Tortured","",{-2,-1,1,0}},
+{"Hasty","If the player is damaged, roll 3+ to avoid a second attack.",{0,0,0,0}},
+{"Wealthy","The reward (excluding souls) is doubled.",{0,0,0,0}},
+{"Poor","No rewards (excluding souls) may be taken after defeating this enemy.",{0,0,0,0}},
+{"Righteous","",{0,0,3,1}},
+{"Big","",{2,0,0,0}},
+{"Spicy","",{0,1,0,0}},
+{"Athletic","",{1,1,0,0}},
+{"Cloned","All stats are halved (rounded up).",{0,0,0,-999}},
+{"Screaming","",{0,-1,1,0}},
+{"Deaf","",{0,-1,0,0}},
+{"Blind","",{0,-2,0,0}},
+{"Bitten","",{-1,0,0,0}},
+{"Mutated","Roll the dice to determine the prefix effect.\n1: + 1 to all stats, 2: + 2 to HP, 3: + 2 to RR,\n4: - 1 to RR, 5: - 1 to HP, 6: - 1 to all stats",{0,0,0,0}},
+{"Unwavering","Is immune to Ware and Relic effects.",{0,0,0,0}},
+{"Unyielding","Can only be killed by ware and relic effects.",{0,0,0,0}},
+{"Achilles'","",{0,99,0,0}},
+{"Disastrous","If this kills a player, all other players die, too.",{0,-1,1,1}},
+{"Charging","Can only be attacked at the start of a turn.",{0,1,0,0}},
+{"Ignorant","Ignores the attacking player's stat changes.",{0,0,0,0}}
+}
+
+EnemySuffixes = {{"Of Monkiness","",{0,1,0,0}},
+{"In Sorrow","",{0,-1,0,0}},
+{"Of Trickery","Dice rolls are inverted when fighting this",{0,0,0,0}},
+{"Of Illusion","All dice rolls are inverted when this is on the board",{0,0,0,0}},
+{"Mk. 2","",{1,0,1,0}},
+{"Mk. 3","",{2,1,1,1}},
+{"The Generous","Rewards (except souls) are given to ALL players.",{0,0,0,0}},
+{"The Jacked","Permanently raises the win requirement to 8 souls.",{0,0,0,0}},
+{"Of Bone Development","Drops an extra 5β.",{0,0,0,0}},
+{"The Engorged","HP and rewards (excluding Souls) will double if this isn't attacked within 1 turn of it being revealed.",{0,0,0,0}},
+{"Of Giant Steps","",{1,-1,1,0}},
+{"The Conjoined","",{3,-1,1,1}},
+{"With an Extra Leg","",{0,2,0,0}},
+{"Of Explosions","Drops an extra ware of each type.",{-3,1,5,0}},
+{"Of Instability","",{-2,2,2,1}},
+{"With Long Arms","Damages all players.",{0,1,0,0}},
+{"That Found a Big Stick","",{0,1,1,0}},
+{"The Cowardly","",{-1,3,-1,0}},
+{"Mastermind","",{1,2,1,0}},
+{"Overlord","",{2,2,1,1}},
+{"Of the Colosseum","When this dies, you must fight another active enemy.",{0,0,0,0}},
+{"With RGB Support","Drops an extra Relic.",{3,1,0,0}},
+{"The Morbid","Drops an extra HP Ware.",{2,0,0,0}},
+{"Of Rebirth","When this is revealed, discard and replace other active enemies.",{0,0,0,0}},
+{"The Vampiric","Heals 1 HP from missed attack rolls.\nDrops an extra Ware of your choosing.",{0,0,0,0}},
+{"The Handholder","This can only be targeted by the player with the least amount of β.\nDrops an extra 5β.",{0,0,0,0}},
+{"The Succubus","When defeated, you may steal a soul another player owns.",{0,0,0,-99}},
+{"The Soulless","When defeated, you may destroy a soul another player owns.",{0,0,0,-99}},
+{"The Defiler","When this is defeated, you may force a player to discard a Relic.",{0,0,0,0}},
+{"The Glistening","Drops an extra 10β.",{4,1,0,0}},
+{"The Quick","",{0,3,0,0}},
+{"Of Min-Maxing","",{-6,0,6,0}},
+{"That Fell From The Roof","",{-1,0,0,0}},
+{"That Ate Way Too Much","",{4,-1,0,0}},
+{"The Adaptive","Copies the attacking player's stat changes.",{0,0,0,0}}
+}
+
+EnemyChoice = math.random(1,#Enemies)
+
+EnemyObj = Enemies[EnemyChoice]
+
+Name = EnemyObj[1]
+Desc = EnemyObj[5]
+Reward = EnemyObj[6]
+
+HP = EnemyObj[2]
+RR = EnemyObj[3]
+ATK = EnemyObj[4]
+
+Soul = EnemyObj[7]
+
+--Img = EnemyObj[8] -- TO DO
+
+-- Prefixes
+PrefixChoice = math.random(1,#EnemyPrefixes)
+
+PrefixObj = EnemyPrefixes[PrefixChoice]
+
+Prefix = PrefixObj[1].." "
+PrefixRules = PrefixObj[2]
+PrefixMods = PrefixObj[3]
+
+-- Suffixes
+SuffixChoice = math.random(1,#EnemySuffixes)
+
+SuffixObj = EnemySuffixes[SuffixChoice]
+
+Suffix = " "..SuffixObj[1]
+SuffixRules = SuffixObj[2]
+SuffixMods = SuffixObj[3]

@@ -1,0 +1,15 @@
+function wrap(str, limit)
+  limit = limit or 72
+  local here = 1
+  local lineCount = 0
+
+  -- the "".. is there because :gsub returns multiple values
+  return ""..str:gsub("(%s+)()(%S+)()",
+  function(sp, st, word, fi)
+        if fi-here > limit then
+          lineCount = math.floor(#str/limit)
+          here = st
+          return "\n"..word
+        end
+  end), lineCount
+end
