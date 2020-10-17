@@ -4,7 +4,7 @@ Enemies = {{"Grunt",2,2,1,"A simple creature that whacks things with its fists."
 {"Hog",3,3,2,"Those cute, chubby jowls hide its razor sharp tusks.","+1 Attack Ware & +3β",0,""},
 {"Solar 'Naut",2,3,2,"An advanced cosmonaut who has harnessed the power of solar rays.","+5β",0,""},
 {"Solar Knot",4,3,2,"A garlic knot empored by the solar rays of the stars.","+1 Relic",0,""},
-{"Hollow",4,3,1,"For each soul the attacking player holds, this gains +1 attack.","+1 Relic",0,"TheHallow"},
+{"Hollow",4,3,1,"For each soul the attacking player holds, this gains +1 attack.","+1 Relic",0,"TheHollow"},
 {"Common Imp",2,2,1,"If this damages a player, draw a Ware card and use it on the attacking player.","+1 Ware of your choosing",0,"CommonImp"},
 {"Treasure Imp",6,4,0,"This will leave after five moves.","+3 Relics",0,""},
 {"Grave Stomper",3,2,1,"When this is defeated, you may force a player to discard one Ware of their choosing.","+1 Utility Ware",0,""},
@@ -109,16 +109,17 @@ EnemySuffixes = {{"Of Monkiness","",{0,1,0,0}},
 {"The Adaptive","Copies the attacking player's stat changes.",{0,0,0,0}}
 }
 
-local Repository = "https://github.com/Reginald-Halifrax/CustomFourSouls/raw/master/Hexsouls/"
+Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
 
+Seed = 1
 for i = 1,6 do
-  Seed = 0
-  Seed = Seed+string.byte(string.sub(self.getGUID(),i,i))
+  Seed = Seed+((string.byte(string.sub(self.getGUID(),i,i)))^4)
 end
 math.randomseed(Seed)
---math.randomseed(10)
 
-EnemyChoice = math.random(1,#Enemies)
+eCount = #Enemies
+
+EnemyChoice = 1+(math.random(1,2^15) % eCount)
 
 EnemyObj = Enemies[EnemyChoice]
 
@@ -135,7 +136,8 @@ Soul = EnemyObj[7]
 Img = EnemyObj[8]
 
 -- Prefixes
-PrefixChoice = math.random(1,#EnemyPrefixes)
+PrefC = #EnemyPrefixes
+PrefixChoice = 1+(math.random(1,12^15) % PrefC)
 
 PrefixObj = EnemyPrefixes[PrefixChoice]
 

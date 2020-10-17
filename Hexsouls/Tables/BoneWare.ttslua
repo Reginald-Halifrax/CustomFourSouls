@@ -32,7 +32,18 @@ BoneWare = {{"A Femur!","Gain 1β.","BoneWare"},
 {"Data Miner","On your turn you may steal 1β from another player","Bauble"}
 }
 
-WareChoice = math.random(1,#BoneWare)
+Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
+
+Seed = 1
+for i = 1,6 do
+  Seed = Seed+((string.byte(string.sub(self.getGUID(),i,i)))^4)
+end
+math.randomseed(Seed)
+
+WareCount = #BoneWare
+
+WareChoice = 1+(math.random(1,2^15) % WareCount)
+
 WareObj = BoneWare[WareChoice]
 
 WareTitle = WareObj[1]
