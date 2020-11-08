@@ -1,13 +1,19 @@
-Jinxes = {{"Did I Roll Yet?","The first roll on your turn is forgotten and must be rolled again."},
-{"Boneitis","Lose 3β if you roll a 6."},
-{"Butterfingers","Lose 1 ware if you roll a 3."},
-{"Energy Crisis","You may only recharge one Relic per turn."},
-{"Inaccuracy","Odd numbered attack rolls miss the targeted enemy and hit adjacent enemies."},
-{"Donation","The player with the most β must give half, rounded up, the the player with the least β."},
-{"Glaucoma","All Wares and Relics acquired when this Jinx is active are face-down until it disperses."},
-{"Mass Atrophy","All players and enemies have 1 ATK, no exeptions."},
-{"Midas' Crutch"," Only Bone Wares can be obtained and played."},
-{"Glass Bones and Paper Skin","Relics can't be purchased and all players have -1 HP."}
+Jinxes = {{"Did I Roll Yet?","The first roll on your turn is forgotten and must be rolled again.",""},
+{"Boneitis","Lose 3β if you roll a 6.",""},
+{"Butterfingers","Lose 1 Ware if you roll a 3.",""},
+{"Energy Crisis","You may only recharge one Relic per turn.",""},
+{"Inaccuracy","Successful attack rolls miss the targeted enemy and hit adjacent enemies.",""},
+{"Donation","The player with the most β must give half, rounded up, to the player with the least β.",""},
+{"Glaucoma","All Wares and Relics acquired when this Jinx is active cannot be played or activated until it disperses.",""},
+{"Mass Atrophy","All players and enemies have 1 ATK, no exeptions.",""},
+{"Midas' Crutch"," All gained bones are halved, rounded down. Instances of gaining 1β are forfeit. ",""},
+{"Glass Bones and Paper Skin","Relics can't be purchased and all players have -1 HP.",""},
+{"Ruinous Relics","You must flip all but one Relic in your possession. These Relics can't be used until the Jinx is removed.",""},
+{"Bloodbath","All enemy slots are filled and you must fight on your turn.",""},
+{"Free Parking","All enemy rewards (except souls) are pooled together until this Jinx is removed. Upon removal, the rewards are divided evenly amongst the players.",""},
+{"Number of the Beast","All rolls of 6 must be rerolled. If 6 is rolled 3 times in a row: all enemies  are killed and their rewards are given to the active player, discard this on that event.",""},
+{"Jinxes Make Us Jump for Joy","Places two more Jinxes on the board. Removing this one will remove them both.",""},
+{"Event Horizon","All players lose their souls. This is immediately discarded.",""}
 }
 
 Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
@@ -16,7 +22,7 @@ Seed = 1
 for i = 1,6 do
   Seed = Seed+((string.byte(string.sub(self.getGUID(),i,i)))^4)
 end
-math.randomseed(Seed)
+math.randomseed(Seed+math.floor((os.clock()),0))
 
 JinxCount = #Jinxes
 
@@ -26,4 +32,4 @@ JinxObj = Jinxes[JinxChoice]
 
 JinxTitle = JinxObj[1]
 JinxDesc = JinxObj[2]
-JinxImg = JinxObj[3]
+Img = JinxObj[3]

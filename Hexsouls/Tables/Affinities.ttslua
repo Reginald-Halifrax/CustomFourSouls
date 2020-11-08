@@ -1,13 +1,18 @@
 Affinities = {{"Die Bag","@","",{"","You may re-roll any dice roll."}},
-{"Lobster Claw","@","",{"","Increase HP or ATK by +1 for this turn.","Boiled","Increase ATK or dice rolls by +1 for this turn. \n'Delicious!'","Grilled","Increase HP or ATK by +2  for this turn.\n'Savory!'","Smoked","Increase HP or dice rolls by +1 for this turn.\n'Smokey!'","Sharp","Increase ATK by +2 but decrease HP by -1 for this turn.\n'Unappetizing!'"}},
-{"Dracula's Regimen","@","",{"","After a successful attack on an enemy, heal or gain 1 HP.\n'SCRAPE and LICK!'"}},
+{"Lobster Claw","@","",{"","Increase HP or ATK by +1 for this turn.","Boiled","Increase ATK or dice rolls by +1 for this turn.  'Delicious!'","Grilled","Increase HP or ATK by +2  for this turn. 'Savory!'","Smoked","Increase HP or dice rolls by +1 for this turn. 'Smokey!'","Sharp","Increase ATK by +2 but decrease HP by -1 for this turn. 'Unappetizing!'"}},
+{"Dracula's Regimen","@","",{"","After a successful attack on an enemy, heal or gain 1 HP. 'SCRAPE and LICK!'"}},
 {"Fight or Flight Instinct","*","",{"","When a boss is on the board, roll at the beginning of your turn. 1-3: +1 ATK, 4-6: +1 to all dice rolls."}},
 {"HexEdit","@","",{"","Discard any one active enemy or shop item.","Dubious","Discard all active enemies or shop items."}},
-{"Clairvoyance","@","",{"","When pulling from the top from any deck, you may pull an additional card from that deck.\nChoose one of the two and discard the other.","Superior","When pulling from the top of any deck, you may pull two additional cards from that deck.\nChoose one of them and discard the rest.","Voodoo","When another player gains a relic, you may start a vote to discard and replace it."}},
-{"Bone Charm","$","",{"","Cost: 3β\nWith an unmodified roll:\n1-3: Gain 2β.\n4-6: Gain 6β.","Gilded","Cost: 5β.\nWith an unmodified roll:\n1-5: Nothing.\n6: Gain a Relic.","Bastardized","Cost: 2β.\nWith an unmodified roll:\n1-3: Lose half your β.\n4-6: Double your β."}},
-{"Patience","@","",{"","Passively: You have -1 HP.\nYou may play this in reaction to a death and prevent it, ends the active players turn."}},
+{"Clairvoyance","@","",{"","When pulling from the top from any deck, you may pull an additional card from that deck. Choose one of the two and discard the other.","Superior","When pulling from the top of any deck, you may pull two additional cards from that deck. Choose one of them and discard the rest.","Voodoo","When another player gains a relic, you may start a vote to discard and replace it."}},
+{"Bone Charm","$","",{"","Cost: 3β With an unmodified roll: 1-3: Gain 2β. 4-6: Gain 6β.","Gilded","Cost: 5β. With an unmodified roll: 1-5: Nothing. 6: Gain a Relic.","Bastardized","Cost: 2β. With an unmodified roll: 1-3: Lose half your β. 4-6: Double your β."}},
+{"Patience","@","",{"","Passively: You have -1 HP. You may play this in reaction to a death and prevent it, ends the active players turn."}},
 {"Transfusion","*","",{"","You may be requested/may request to give/take HP to another player, if both parties agree.","Field","At the initiation of any fight, you may take 1 HP from any enemy on the board and give it to another."}},
-{"Soul Bound Artifact","@","",{"","Draw 3 Relics from the Relic deck (without duplicates) and pick one. The Relic you choose will become your Affinity."}}
+{"Soul Bound Artifact","@","",{"","Draw 3 Relics from the Relic deck (without duplicates) and pick one. The Relic you choose will become your Affinity."}},
+{"Hyena Skull","*","",{"","When any player rolls a 2, gain 3β. Each time another player dies, gain 1 HP Ware.","Bloodied","When any player rolls a 2, gain 2β. Each time another player dies, gain 1 ATK Ware.","Toothless","When any player rolls a 2, gain 2β. Each time another player dies, gain 1 β Ware.","Laughing","When any player rolls a 2, gain 3β. Each time another player dies, gain 1 Ware of your choosing."}},
+{"Piggy Fries","@","",{"","Heal 1 HP on any player or enemy."}},
+{"Weighted Die","@","",{"","Add or subtract 1 to any dice roll.","Malevolent","Add 1, or subtract 2 to any dice roll.","Benevolent","Add 2, or subtract 1 to any dice roll.","Balanced","Add or subtract 2 to any dice roll."}},
+{"Buffer Overflow","*","",{"","Upon death: after paying penalties, gain +1 Relic."}},
+{"Trick Die","@","",{"","In response to a roll, you may force a player to roll again for a higher number, lower numbers must be rerolled again.","Cursed","In response to a roll, you may force a player to roll again for a lower number, higher numbers must be rerolled again.","Spare","In response to a roll, you may roll again and add the result rounded down to your current roll."}}
 }
 
 Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
@@ -16,7 +21,7 @@ Seed = 1
 for i = 1,6 do
   Seed = Seed+((string.byte(string.sub(self.getGUID(),i,i)))^4)
 end
-math.randomseed(Seed)
+math.randomseed(Seed+math.floor((os.clock()),0))
 
 AffinityCount = #Affinities
 
