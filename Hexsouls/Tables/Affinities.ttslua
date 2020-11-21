@@ -30,6 +30,7 @@ AffinityChoice = 1+(math.random(1,2^15) % AffinityCount)
 AffinityObj = Affinities[AffinityChoice]
 
 Img = AffinityObj[3]
+UseC = AffinityObj[2]
 
 PrefixData = AffinityObj[4]
 
