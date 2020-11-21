@@ -93,6 +93,8 @@ RelicChoice = 1+(math.random(1,2^15) % RelicCount)
 
 RelicObj = Relics[RelicChoice]
 
+UseC = RelicObj[2]
+
 Img = RelicObj[3]
 
 PrefixData = RelicObj[4]
