@@ -1,4 +1,4 @@
-Enemies = {{"Grunt",2,2,1,"A simple creature that whacks things with its fists.","+1 Ware",0,""},
+Enemies = {{"Grunt",2,2,1,"A simple creature that whacks things with its fists.","+1 Ware",0,"Grunt"},
 {"Snowman",4,2,1,"A horrible ghoul using a festive guise.","+1 Ware",0,""},
 {"Monkey",1,4,1,"This wily primate loves to trick unsuspecting explorers!","+4β",0,""},
 {"Hog",3,3,2,"Those cute, chubby jowls hide its razor sharp tusks.","+1 Ware & +3β",0,""},
@@ -80,7 +80,10 @@ Enemies = {{"Grunt",2,2,1,"A simple creature that whacks things with its fists."
 {"Haunted Piano",4,4,1,"Gains +1 ATK and RR at 2 HP.","+1 Relic",1,""},
 {"Warehouse",0,0,0,"When this is revealed, all players gain 1 Ware of their choosing.","",0,""},
 {"Monk-Eye",3,5,1,"Trained in the ancient monkey way, he has abstained from just being an observer!'","+1 Relic",0,""},
-{"Marble Goddess",3,3,1,"All jinxes are discarded in its presence.","+X β",0,""}
+{"Marble Goddess",3,3,1,"All jinxes are discarded in its presence.","+X β",0,""},
+{"Divine Intervention",0,0,0,"Players vote to remove a jinx, if there are no jinxes then this removes the next jinx put on the board.","",0,""},
+{"Osmosis Homunculus",6,3,5,"When revealed this 'absorbs' all enemies on the board. This cannot be discarded and no other enemies may be drawn or fought. When this is defeated max enemy count is reduced to 2.","The drops of the absorbed enemies including souls.",0,""},
+{"House Repainting",0,0,0,"When revealed, reduce the max enemy count down by 1. 'Do the walls seem thicker to you?'","",0,""}
 }
 
 EnemyPrefixes = {{"Agreeable","Copies ability of the attacking player.",{0,0,1,0}},
@@ -106,7 +109,7 @@ EnemyPrefixes = {{"Agreeable","Copies ability of the attacking player.",{0,0,1,0
 {"Big","",{2,0,0,0}},
 {"Spicy","",{0,1,0,0}},
 {"Athletic","",{1,1,0,0}},
-{"Cloned","All stats are halved (rounded up).",{0,0,0,-999}},
+{"Cloned","All stats are halved (rounded up).",{0,0,0,-99}},
 {"Screaming","",{0,-1,1,0}},
 {"Deaf","",{0,-1,0,0}},
 {"Blind","",{0,-2,0,0}},
@@ -120,7 +123,8 @@ EnemyPrefixes = {{"Agreeable","Copies ability of the attacking player.",{0,0,1,0
 {"Ignorant","Ignores the attacking player's stat changes.",{0,0,0,0}},
 {"Aroused","If this is attacked, the attacking player takes 1 damage.",{0,0,0,0}},
 {"Drunken","",{0,-1,1,0}},
-{"Infant","",{-1,-2,0,-99}}
+{"Infant","",{-1,-2,0,-99}},
+{"Unlucky","Takes the oldest jinx currently on the board and discards it when this is defeated.",{0,-3,-1,-99}}
 }
 
 EnemySuffixes = {{"Of Monkiness","",{0,1,0,0}},
@@ -130,7 +134,7 @@ EnemySuffixes = {{"Of Monkiness","",{0,1,0,0}},
 {"Mk. 2","",{1,0,1,0}},
 {"Mk. 3","",{2,1,1,1}},
 {"The Generous","Rewards (except souls) are given to ALL players.",{0,0,0,0}},
-{"The Jacked","Permanently raises the win requirement to 8 souls.",{0,0,0,0}},
+{"The Peaceful","After a successful attack roll, you have -1 to to the next attack roll.",{0,0,0,0}},
 {"Of Bone Development","Drops an extra 5β.",{0,0,0,0}},
 {"The Engorged","HP and rewards (excluding Souls) will double if this isn't attacked within 1 turn of it being revealed.",{0,0,0,0}},
 {"Of Giant Steps","",{1,-1,1,0}},
@@ -157,7 +161,8 @@ EnemySuffixes = {{"Of Monkiness","",{0,1,0,0}},
 {"Of Min-Maxing","",{-6,0,6,0}},
 {"That Fell From The Roof","",{-1,0,0,0}},
 {"That Ate Way Too Much","",{4,-1,0,0}},
-{"The Adaptive","Copies the attacking player's stat changes.",{0,0,0,0}}
+{"The Adaptive","Copies the attacking player's stat changes.",{0,0,0,0}},
+{"The Timebomb","If this is not killed after a full turn cycle after its revealed, all players die.",{0,0,0,0}}
 }
 
 Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"

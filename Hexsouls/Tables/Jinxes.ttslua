@@ -4,7 +4,7 @@ Jinxes = {{"Did I Roll Yet?","The first roll on your turn is forgotten and must 
 {"Energy Crisis","You may only recharge one Relic per turn.",""},
 {"Inaccuracy","Successful attack rolls miss the targeted enemy and hit adjacent enemies.",""},
 {"Donation","The player with the most β must give half, rounded up, to the player with the least β.",""},
-{"Glaucoma","All Wares and Relics acquired when this Jinx is active cannot be played or activated until it disperses.",""},
+{"Dementia","All players must discard a Relic. If you have no Relics, lose 1 Ware. This is immediately discarded.",""},
 {"Mass Atrophy","All players and enemies have 1 ATK, no exeptions.",""},
 {"Midas' Crutch"," All gained bones are halved, rounded down. Instances of gaining 1β are forfeit. ",""},
 {"Glass Bones and Paper Skin","Relics can't be purchased and all players have -1 HP.",""},
@@ -13,7 +13,9 @@ Jinxes = {{"Did I Roll Yet?","The first roll on your turn is forgotten and must 
 {"Free Parking","All enemy rewards (except souls) are pooled together until this Jinx is removed. Upon removal, the rewards are divided evenly amongst the players.",""},
 {"Number of the Beast","All rolls of 6 must be rerolled. If 6 is rolled 3 times in a row: all enemies  are killed and their rewards are given to the active player, discard this on that event.",""},
 {"Jinxes Make Us Jump for Joy","Places two more Jinxes on the board. Removing this one will remove them both.",""},
-{"Event Horizon","All players lose their souls. This is immediately discarded.",""}
+{"Event Horizon","All players lose their souls. This is immediately discarded.",""},
+{"I see the stop sign, but I have to find an octagon!","Permanently raises the win requirement to 8 souls. Even after discarding this.",""},
+{"Peripatetic","Stage changes on every players turn",""}
 }
 
 Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
