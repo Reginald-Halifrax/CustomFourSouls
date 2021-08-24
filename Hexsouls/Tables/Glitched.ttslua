@@ -1,0 +1,88 @@
+Trigger = {"When you <PM>: <E>.",
+"When another player <PM>: <E>.", "When an enemy gets <EM>: <E>.",
+"When a jinx enters play: <E>.", "When you kill an enemy: <E>.",
+"When another player kills an enemy: <E>.", "when the stage changes: <E>.",
+"When a boss enters play: <E>.", "When a boss gets <EM>: <E>."}
+
+Player_Mutator = {"gets hurt",
+"heals", "get a Ware",
+"get a β", "get a Relic",
+"self-imposedly takes damage", "get hurt by an item",
+"hits 0 health", "activates a relic"}
+
+Enemy_Mutator = {"hurt",
+"healed", "hurt by an item",
+"dies", "gets discarded",
+"kills a player"}
+
+Effector = {"heal <X2>",
+"take <X2> damage", "the currently attacked enemy (where applicable) gets healed",
+"a random player takes <X2> damage", "the player to your <DIR> takes <X> damage",
+"All players take <X2> damage", "roll a die, if the value is <X6>: Gain <X2> Relic(s). Only applicable once per stage",
+"roll a die, if the value is <X6>: Gain <X2> Ware(s). Only applicable once per stage"}
+
+TrigCount = #Trigger
+
+TrigChoice = 1+(math.random(1,2^15) % TrigCount)
+
+TrueDesc = Trigger[TrigChoice]
+
+P_MutCnt = #Player_Mutator
+P_M_Choice = 1+(math.random(1,2^15) % P_MutCnt)
+
+TrueDesc = string.gsub(TrueDesc, "<PM>", Player_Mutator[P_M_Choice])
+
+E_MutCnt = #Enemy_Mutator
+
+E_M_Choice = 1+(math.random(1,2^15) % E_MutCnt)
+
+TrueDesc = string.gsub(TrueDesc, "<EM>", Enemy_Mutator[E_M_Choice])
+
+Effect_Cnt = #Effector
+Effect_Choice = 1+(math.random(1,2^15) % Effect_Cnt)
+TrueDesc = string.gsub(TrueDesc, "<E>", Effector[Effect_Choice])
+
+for i = 1,6 do
+  TrueDesc = string.gsub(TrueDesc, "<X"..i..">", math.random(1,i))
+end
+
+if math.random(0,1) == 1 then
+  Direction = "left"
+else
+  Direction = "right"
+end
+
+TrueDesc = string.gsub(TrueDesc, "<DIR>", Direction)
+
+Glitchdesc = ""
+for i = 1,math.random(12) do
+  startnum = 0
+  endnum = 0
+  while (endnum - startnum) < 5 or (endnum - startnum) > 15 do
+      startnum = math.random(1,#PrefixDesc)
+      endnum = math.random(startnum,#PrefixDesc)
+  end
+
+  Glitchdesc = Glitchdesc..string.sub(PrefixDesc, startnum, endnum)
+
+  Seed = Seed+1
+  makeRelic()
+end
+
+GlitchName = ""
+for i = 1,math.random(12) do
+  startnum = 0
+  endnum = 0
+  while (endnum - startnum) < 3 or (endnum - startnum) > 7 do
+      startnum = math.random(1,#RelicName)
+      endnum = math.random(startnum,#RelicName)
+  end
+
+  GlitchName = GlitchName..string.sub(RelicName, startnum, endnum)
+
+  Seed = Seed+1
+  makeRelic()
+end
+
+PrefixDesc = TrueDesc..'\n\n"'..Glitchdesc..'"'
+RelicName = GlitchName

@@ -1,4 +1,5 @@
-Jinxes = {{"Did I Roll Yet?","The first roll on your turn is forgotten and must be rolled again.",""},
+Jinxes = {
+{"Did I Roll Yet?","The first roll on your turn is forgotten and must be rolled again.",""},
 {"Boneitis","Lose 3β if you roll a 6.",""},
 {"Butterfingers","Lose 1 Ware if you roll a 3.",""},
 {"Energy Crisis","You may only recharge one Relic per turn.",""},

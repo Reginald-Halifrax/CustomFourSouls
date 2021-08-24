@@ -1,0 +1,21 @@
+Stages = {
+{"Empty Room","The room is empty, no stage modifications will be applied.","EmptyRoom"},
+{"Deep Dark","Vision is difficult in such darkness, enemies have -1 to their RR. But, players also get -1 to all their combat rolls.",""},
+{"Holy Keep","Jinxes are ineffective while in this stage.",""},
+{"Ancient Arena","Players and enemies gain +1 ATK while in this stage.",""},
+{"Clover Fields","You may reroll any one dice roll per turn while in this stage.",""},
+{"Enemy Portal-Gateway","Adds a new active enemy slot, remove that slot when this is swapped for another stage.",""},
+{"Arcade","Enemies drop an additional 2β on their death.",""},
+{"Royal Tomb","At the start of your turn, gain a free relic. 'it's not grave robbing, its re-utilizing.'",""},
+{"Nudist Beach","Passive relics are ineffective in this stage.",""},
+{"Casino","You may only purchase relics off the top of the relic deck, but for an additional 10β you may purchase an additional relic.",""},
+{"Davy Jones' Locker","If you die in this stage, you lose a soul.",""},
+{"Glass Galleon","Souls dropped by enemies are x2 value. However, taking damage of any kind kills the player instantly.",""},
+{"Clearance Sale","Gain an additional ware at the start of your turn in this stage.",""},
+{"Abandoned Missile Silo","On an attack roll of 6, the attacking player and enemy both die and no rewards are gained. 'Be veeerryyyy careful...'",""},
+{"Bouncy Castle","Rolls of 1 must be re-rolled.",""},
+{"Mirror Room","Rolls of 6 must be re-rolled.",""},
+{"Jail Cell","If a player rolls the same number twice in a row, their turn ends.",""},
+{"The Pit","You must fight on your turn.",""},
+{"Holy Cleansing Pool","All active jinxes are must be discarded. If an event were to add a jinx to the board, it is ignored. 'Hey, where are all the sexy mermaids?'",""}
+}

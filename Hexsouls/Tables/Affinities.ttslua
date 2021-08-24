@@ -1,5 +1,6 @@
-Affinities = {{"Die Bag","@","",{"","You may re-roll any dice roll."}},
-{"Lobster Claw","@","",{"","Increase HP or ATK by +1 for this turn.","Boiled","Increase ATK or dice rolls by +1 for this turn.  'Delicious!'","Grilled","Increase HP or ATK by +2  for this turn. 'Savory!'","Smoked","Increase HP or dice rolls by +1 for this turn. 'Smokey!'","Sharp","Increase ATK by +2 but decrease HP by -1 for this turn. 'Unappetizing!'"}},
+Affinities = {
+{"Die Bag","@","",{"","You may re-roll any dice roll."}},
+{"Lobster Claw","@","",{"","Increase HP or ATK by +1 for this turn.","Boiled","Increase ATK or dice rolls by +1 for this turn.  'Delicious!'","Grilled","Increase HP or ATK by +2  for this turn. 'Savory!'","Smoked","Increase HP or dice rolls by +1 for this turn. 'Smokey!'","Sharp"}},
 {"Dracula's Regimen","@","",{"","After a successful attack on an enemy, heal or gain 1 HP. 'SCRAPE and LICK!'"}},
 {"Fight or Flight Instinct","*","",{"","When a boss is on the board, roll at the beginning of your turn. 1-3: +1 ATK, 4-6: +1 to all dice rolls."}},
 {"HexEdit","@","",{"","Discard any single active enemy, shop item, or jinx.","Dubious","Discard all active enemies, shop items, or jinxes.","Specialized","You may morph any one of your relics or jinx into a new one."}},

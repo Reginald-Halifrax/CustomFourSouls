@@ -1,4 +1,5 @@
-Stages = {{"Empty Room","The room is empty, no stage modifcations will be applied.","EmptyRoom"},
+Stages = {
+{"Empty Room","The room is empty, no stage modifications will be applied.","EmptyRoom"},
 {"Deep Dark","Vision is difficult in such darkness, enemies have -1 to their RR. But, players also get -1 to all their combat rolls.",""},
 {"Holy Keep","Jinxes are ineffective while in this stage.",""},
 {"Ancient Arena","Players and enemies gain +1 ATK while in this stage.",""},

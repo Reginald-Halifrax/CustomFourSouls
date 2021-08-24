@@ -1,0 +1,23 @@
+Trigger = {"When you <PM>: <E>.", 
+"When another player <PM>: <E>.", "When an enemy gets <EM>: <E>.", 
+"When a jinx enters play: <E>.", "When you kill an enemy: <E>.", 
+"When another player kills an enemy: <E>.", "when the stage changes: <E>.", 
+"When a boss enters play: <E>.", "When a boss gets <EM>: <E>."}
+
+Player_Mutator = {"gets hurt", 
+"heals", "get a Ware", 
+"get a β", "get a Relic", 
+"self-imposedly takes damage", "get hurt by an item", 
+"hits 0 health", "activates a relic"}
+
+Enemy_Mutator = {"hurt", 
+"healed", "hurt by an item", 
+"dies", "gets discarded", 
+"kills a player"}
+
+Effector = {"heal <X2>", 
+"take <X2> damage", "the currently attacked enemy (where applicable) gets healed", 
+"a random player takes <X2> damage", "the player to your <DIR> takes <X> damage", 
+"All players take <X2> damage", "roll a die, if the value is <X6>: Gain <X2> Relic(s). Only applicable once per stage", 
+"roll a die, if the value is <X6>: Gain <X2> Ware(s). Only applicable once per stage"}
+

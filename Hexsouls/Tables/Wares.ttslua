@@ -1,4 +1,5 @@
-Wares = {{"Ointment"," +1HP for this turn.","HPWareGeneric"},
+Wares = {
+{"Ointment"," +1HP for this turn.","HPWareGeneric"},
 {"Charge Pack","Charge any item.","HPWareGeneric"},
 {"Charge Pack","Charge any item.","HPWareGeneric"},
 {"Petrifying Spray","Missed attack rolls don't hurt you for 2 rolls.","HPWareGeneric"},
@@ -102,7 +103,8 @@ Wares = {{"Ointment"," +1HP for this turn.","HPWareGeneric"},
 {"Scalpers Kit","Multiply your wares by how many wares you own.","BoneWareGeneric"},
 {"Communism","Collect β from all players and share them evenly across all players. 'Loose' change goes to who played this.","BoneWareGeneric"},
 {"A Soul!","Gain a Soul! (Counts as a Ware play)","BoneWareGeneric"},
-{"Food Stamp","If you have no β at the end of your turn, gain 10β.","Bauble"}}
+{"Food Stamp","If you have no β at the end of your turn, gain 10β.","Bauble"}
+}
 
 Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
 
