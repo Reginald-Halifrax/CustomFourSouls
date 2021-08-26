@@ -217,6 +217,7 @@ enemy_process()
 
 stage_modifier("jinxes.txt", "Jinxes = {", ["O", "P", "Q"])
 stage_modifier("stages.txt", "Stages = {", ["R", "S", "T"])
+stage_modifier("bonus_souls.txt", "Souls = {", ["U", "V", "W"])
 
 enemy_modifier_process("enemy_prefixes.txt", "EnemyPrefixes = {", ["I", "J", "K"])
 enemy_modifier_process("enemy_suffixes.txt", "EnemySuffixes = {", ["L", "M", "N"])

@@ -17,5 +17,7 @@ Stages = {
 {"Mirror Room","Rolls of 6 must be re-rolled.",""},
 {"Jail Cell","If a player rolls the same number twice in a row, their turn ends.",""},
 {"The Pit","You must fight on your turn.",""},
-{"Holy Cleansing Pool","All active jinxes are must be discarded. If an event were to add a jinx to the board, it is ignored. 'Hey, where are all the sexy mermaids?'",""}
+{"Holy Cleansing Pool","All active jinxes are must be discarded. If an event were to add a jinx to the board, it is ignored. 'Hey, where are all the sexy mermaids?'",""},
+{"Vampire Den","All enemies and players heal 1 HP upon a successful attack.",""},
+{"King's Arena","Enemies drop no rewards. Bosses drop +1 Relic.",""}
 }

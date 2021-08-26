@@ -80,5 +80,10 @@ Relics = {
 {"Two-piece","*","",{"Black Lace","All enemies have -1 RR. 'Must it be so revealing?'","Swim suit","You gain +1 to your non-combat rolls. 'Doesn't leave much to the imagination.'","Red Velvet","Gain +1β when defeating a normal enemy and +5β when defeating a boss type. 'Does this make me look fat?'","String","Gain +4β for every active enemy on the board when you don't fight on your turn, at the max of 12β per turn. 'This is just too much, or too little to be more accurate.'"}},
 {"Battering Ram","@","",{"","You may force a stage change."}},
 {"Roulette","$","",{"Weighted","When gained put 3 counters on this. You may decide the result of any dice roll. Once out of counters discard this.","Russian","Put a counter on this at the start of your turn at the max of 3. On use spends all counters: Pick a player to roll X times (X being counters spent). If they roll a 1 they die and you gain their penalties."}},
-{"Gerrymander","@","",{"","You may initiate a vote to break a single rule for one turn. Souls may not be gained this way. Discarded when used."}}
+{"Gerrymander","@","",{"","You may initiate a vote to break a single rule for one turn. Souls may not be gained this way. Discarded when used."}},
+{"Arachnid Suit","*","",{"","Throw an 8-sided die for your attack rolls. 'How do I shot web?'"}},
+{"Hollow's Feast","@","",{"","Discard one soul from every player including yourself. Discard this.","Gluttonous","Discard two souls from every player including yourself. Discard this."}},
+{"Misinput","@","",{"","Gain a glitch card and give it to any player of your choosing."}},
+{"Royal Treat","@","",{"","Gain one more hp permanently and heal to full. Discard this. (If the Imp Queen is in play you may give this item to it. Doing so will double it's hp and shuffle it back into the deck.)"}},
+{"Splimby's Blessing","@","",{"","Gain four guns. Discard this."}}
 }

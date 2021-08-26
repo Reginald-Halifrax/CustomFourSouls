@@ -79,10 +79,12 @@ Enemies = {
 {"Wasteland Robot",4,4,1,"Gains +1 ATK each time it takes damage."," +1 Relic",0,""},
 {"Sentient Beartrap",3,2,1,"All players have -1 to attack rolls while this is active."," +8 β",0,""},
 {"Haunted Piano",4,4,1,"Gains +1 ATK and RR at 2 HP."," +1 Relic",1,""},
-{"Warehouse",0,0,0,"When this is revealed, all players gain 1 Ware of their choosing.","",0,""},
+{"Warehouse",0,0,0,"When this is revealed, all players gain 1 Ware.","",0,""},
 {"Monk-Eye",3,5,1,"Trained in the ancient monkey way, he has abstained from just being an observer!'"," +1 Relic",0,""},
 {"Marble Goddess",3,3,1,"All jinxes are discarded in its presence."," +X β",0,""},
 {"Divine Intervention",0,0,0,"Players vote to remove a jinx, if there are no jinxes then this removes the next jinx put on the board.","",0,""},
 {"Osmosis Homunculus",6,3,5,"When revealed this 'absorbs' all enemies on the board. This cannot be discarded and no other enemies may be drawn or fought. When this is defeated max enemy count is reduced to 2.","The drops of the absorbed enemies including souls.",0,""},
-{"House Repainting",0,0,0,"When revealed, reduce the max enemy count down by 1. 'Do the walls seem thicker to you?'","",0,""}
+{"House Repainting",0,0,0,"When revealed, reduce the max enemy count down by 1. 'Do the walls seem thicker to you?'","",0,""},
+{"Cow",10,2,3,"Heals 2 health after every 2 turns. 'The Beggeter of Bovines'"," +1 Relic",2,""},
+{"Meet the Medic",0,0,0,"All players with Souls lose 1 Soul. Players with 0 Souls gain 1 Soul.","",0,""}
 }

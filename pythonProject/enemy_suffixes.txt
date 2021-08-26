@@ -34,5 +34,6 @@ EnemySuffixes = {
 {"That Fell From The Roof","",{-1,0,0,0}},
 {"That Ate Way Too Much","",{4,-1,0,0}},
 {"The Adaptive","Copies the attacking player's stat changes.",{0,0,0,0}},
-{"The Timebomb","If this is not killed after a full turn cycle after its revealed, all players die.",{0,0,0,0}}
+{"The Timebomb","If this is not killed after a full turn cycle after its revealed, all players die.",{0,0,0,0}},
+{"#NaN","When this dies, the active player gains a Glitch card.",{-5,-1,-1,-99}}
 }

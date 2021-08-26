@@ -86,3 +86,4 @@ end
 
 PrefixDesc = TrueDesc..'\n\n"'..Glitchdesc..'"'
 RelicName = GlitchName
+Img = "RelicGlitched"
