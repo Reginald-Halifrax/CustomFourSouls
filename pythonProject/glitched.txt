@@ -5,17 +5,19 @@ Trigger = {"When you <PM>: <E>.",
 "When a boss enters play: <E>.", "When a boss gets <EM>: <E>.", 
 "When a player gains a soul: <E>."}
 
-Player_Mutator = {"gets hurt", 
-"heals", "get a Ware", 
+Player_Mutator = {"get(s) hurt", 
+"heal(s)", "gain(s) a Ware", 
 "get a β", "get a Relic", 
-"self-imposedly takes damage", "get hurt by an item", 
-"hits 0 health", "activates a relic", 
-"take more than <X3> damage"}
+"self-imposedly takes damage", "get(s) hurt by an item", 
+"hit(s) 0 health", "activate(s) a relic", 
+"take more than <X3> damage", "roll(s) an <X6>", 
+"roll(s) more than <X6>", "roll(s) less than <X6>"}
 
 Enemy_Mutator = {"gets hurt", 
 "gets healed", "hurt by an item", 
 "dies", "gets discarded", 
-"kills a player", "is revealed"}
+"kills a player", "is revealed", 
+"takes more than <X3> damage on the same attack roll"}
 
 Effector = {"heal <X2>", 
 "take <X2> damage", "the currently attacked enemy (where applicable) gets healed <X2>", 

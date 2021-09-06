@@ -1,7 +1,7 @@
 Affinities = {
 {"Die Bag","@","",{"","You may re-roll any dice roll."}},
-{"Lobster Claw","@","",{"","Increase HP or ATK by +1 for this turn.","Boiled","Increase ATK or dice rolls by +1 for this turn.  'Delicious!'","Grilled","Increase HP or ATK by +2  for this turn. 'Savory!'","Smoked","Increase HP or dice rolls by +1 for this turn. 'Smokey!'","Sharp"}},
-{"Dracula's Regimen","@","",{"","After a successful attack on an enemy, heal or gain 1 HP. 'SCRAPE and LICK!'"}},
+{"Lobster Claw","@","",{"","Increase HP or ATK by +1 for this turn.","Boiled","Increase ATK or dice rolls by +1 for this turn.  \"Delicious!\"","Grilled","Increase HP or ATK by +2  for this turn. \"Savory!\"","Smoked","Increase HP or dice rolls by +1 for this turn. \"Smokey!\"","Sharp"}},
+{"Dracula's Regimen","@","",{"","After a successful attack on an enemy, heal or gain 1 HP. \"SCRAPE and LICK!\""}},
 {"Fight or Flight Instinct","*","",{"","When a boss is on the board, roll at the beginning of your turn. 1-3: +1 ATK, 4-6: +1 to all dice rolls."}},
 {"HexEdit","@","",{"","Discard any single active enemy, shop item, or jinx.","Dubious","Discard all active enemies, shop items, or jinxes.","Specialized","You may morph any one of your relics or jinx into a new one."}},
 {"Clairvoyance","@","",{"","When pulling from the top from any deck, you may pull an additional card from that deck. Choose one of the two and discard the other.","Superior","When pulling from the top of any deck, you may pull two additional cards from that deck. Choose one of them and discard the rest.","Voodoo","When another player gains a relic, you may start a vote to discard and replace it."}},
@@ -13,8 +13,13 @@ Affinities = {
 {"Piggy Fries","@","",{"","Heal 1 HP on any player or enemy."}},
 {"Weighted Die","@","",{"","Add or subtract 1 to any dice roll.","Malevolent","Add 1, or subtract 2 to any dice roll.","Benevolent","Add 2, or subtract 1 to any dice roll.","Balanced","Add or subtract 2 to any dice roll."}},
 {"Buffer Overflow","*","",{"","Upon death: after paying penalties, gain +1 Relic."}},
-{"Trick Die","@","",{"","In response to a roll, you may force a player to roll again for a higher number, lower numbers must be rerolled again.","Cursed","In response to a roll, you may force a player to roll again for a lower number, higher numbers must be rerolled again.","Spare","In response to a roll, you may roll again and add the result rounded down to your current roll."}},
-{"Battering Ram","@","",{"","Force a stage change.","Explosive","You may force up to two stage changes."}}
+{"Trick Die","@","Tristan3d/TrickDie",{"","In response to a roll, you may force a player to roll again for a higher number, lower numbers must be rerolled again.","Cursed","In response to a roll, you may force a player to roll again for a lower number, higher numbers must be rerolled again.","Spare","In response to a roll, you may roll again and add the result rounded down to your current roll."}},
+{"Breach Charge","@","",{"","Force a stage change.","Shaped","You may force up to two stage changes."}},
+{"Shell","@","",{"Turtle","For the next 3 attack rolls, you are immune to damage, but have -1 to dice rolls. \"Slow and steady wins the race.\"","Gastropod"," +1 ATK and -1 to dice rolls for 3 attack rolls. \"Slow, but armed with deadly venom.\"","Scallop","For the next 3 attack rolls, you are immune to damage. After that, take double damage until the end of your turn \"Why must I be so delicious?!\"","Nautilus","You are immune to damage and have +1 for your next attack roll. \"Defensive and fast, but not much else.\"","Chocolate"}},
+{"Business Suit","@","",{"","Spend 8β to gain +1 HP or ATK until the end of your turn.","Snazzy","Spend 7β to gain +1 HP or ATK until the end of your turn.","Ripped","Spend 9β to gain +1 HP or ATK until the end of your turn.","Battle","Spend 10β to gain +2 HP or ATK until the end of your turn.","Casual"}},
+{"Kleptomania","@","",{"","Steal 1β from another player. If they don't notice, you may steal another 2β from them. If they notice, return their β."}},
+{"The Mason Jar","@","",{"","Pick an active enemy. They are placed into your hand and you may fight them on your turn whenever you want. Using the jar on another enemy will replace your held one and discard them. If you die to your held enemy, discard them."}},
+{"Sided Hexagon","*","",{"Five","Draw a Glitch card, this is now your passive Affinity.","Seven","Draw 3 Glitch cards and pick from one of them to be your passive Affinity."}}
 }
 
 Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"

@@ -19,6 +19,14 @@ Jinxes = {
 {"Peripatetic","Stage changes on every players turn",""},
 {"Thieves, Inc.","All rewards (exept Souls) that are gained from killed enemies are instead stolen from other players.",""},
 {"Jelly of the Month Club","All players discard their Bonus Souls, and cannot acquire them for the rest of the game. This is immediately discarded.",""},
-{"Black Market","Take 1 damage whenever you purchase a Relic.",""},
-{"Ugh, so Cliche","Lose a Soul whenever you die. 'If you die in the game, you die for real!'",""}
+{"Black Market Deals","Take 1 damage whenever you purchase a Relic.",""},
+{"Ugh, so Cliche","Lose a Soul whenever you die. \"If you die in the game, you die for real!\"",""},
+{"I've fallen, and I can't get up!","You have -1 to dice rolls when at 1 HP.",""},
+{"Artificial Difficulty","All bosses have +2 HP and +1 ATK.",""},
+{"hex souls speedrun any%","At the beginning of your turn, set a 3 minute timer. End your turn when you run out of time.",""},
+{"Improper Funding","You can't gain Wares at the beginning of your turn. \"We can't afford handouts.\"",""},
+{"Improper Funding II","You can't gain extra health, and can only heal at the end of your turn. \"Is anybody here a doctor?\"",""},
+{"Zombie Apocalypse","After killing an enemy and gaining its rewards, you must fight it again. Undead enemies have +2 HP and -1 to roll requirement, and drop no extra rewards.",""},
+{"Time and Space","This Jinx does nothing. It exists solely to waste time pulling it out, and waste space on the board.",""},
+{"Viral Outbreak","After 3 cycles around the board, add a new Jinx. The added Jinx then mutates into a different Jinx every 3 cycles around the board. Can't be removed at the end of cycles.",""}
 }

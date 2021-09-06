@@ -3,6 +3,10 @@ from openpyxl import load_workbook
 workbook = load_workbook(filename="Hex Souls.xlsx")
 
 
+def formatQuotes(string):
+    return string.replace("\"", "\\\"")
+
+
 def enemy_process():
     sheet = workbook["Enemies"]
     columns = ["A", "B", "C", "D", "E", "F", "G", "H"]
@@ -26,6 +30,7 @@ def enemy_process():
             if sheet["A" + str(row + 1)].value is None:
                 eof = 1
             if k in "AEFH":
+                data = formatQuotes(data)
                 data = '"' + data + '"'
             else:
                 data = str(int(cell.value))
@@ -42,13 +47,14 @@ def enemy_process():
     enemies_file.close()
 
 
-def enemy_modifier_process(filename, json, columns):
+def enemy_modifier_process(json, columns):
     sheet = workbook["Enemies"]
     row = 2
 
     eof = 0
 
-    mod_file = open(filename, "w", encoding="utf-8")
+    mod_file = open("enemies.txt", "a", encoding="utf-8")
+    mod_file.write("\n\n")
     mod_file.write(json)
 
     while not eof:
@@ -96,6 +102,7 @@ def stage_modifier(filename, json, columns):
                 data = ""
             else:
                 data = cell.value
+            data = formatQuotes(data)
             data = '"' + data + '"'
             mod_file.write(data)
             if k in columns[0] + columns[1]:
@@ -128,7 +135,8 @@ def usable_process(filename, json, sheet):
             if cell.value is None:
                 data = '""'
             else:
-                data = '"' + cell.value + '"'
+                data = formatQuotes(cell.value)
+                data = '"' + data + '"'
             if sheet["A" + str(row + 1)].value is None:
                 eof = 1
             if k not in "ABCDE" and data == '""':
@@ -165,7 +173,16 @@ def ware_process():
             ware_file.write("{")
             for k in columns:
                 cell = sheet[k + str(row)]
-                data = '"' + cell.value + '"'
+                data = cell.value
+                if data is None:
+                    if k == "C":
+                        data = "HPWareGeneric"
+                    elif k == "F":
+                        data = "ATKWareGeneric"
+                    elif k == "I":
+                        data = "BoneWareGeneric"
+                data = formatQuotes(data)
+                data = '"' + data + '"'
                 ware_file.write(data)
                 if k not in "CFI":
                     ware_file.write(",")
@@ -198,7 +215,8 @@ def glitched_process():
 
         while not eof:
             cell = sheet[columns + str(row)]
-            data = '"' + cell.value + '"'
+            data = formatQuotes(cell.value)
+            data = '"' + data + '"'
             glitch_file.write(data)
             if sheet[columns + str(row + 1)].value is None:
                 eof = 1
@@ -219,8 +237,8 @@ stage_modifier("jinxes.txt", "Jinxes = {", ["O", "P", "Q"])
 stage_modifier("stages.txt", "Stages = {", ["R", "S", "T"])
 stage_modifier("bonus_souls.txt", "Souls = {", ["U", "V", "W"])
 
-enemy_modifier_process("enemy_prefixes.txt", "EnemyPrefixes = {", ["I", "J", "K"])
-enemy_modifier_process("enemy_suffixes.txt", "EnemySuffixes = {", ["L", "M", "N"])
+enemy_modifier_process("EnemyPrefixes = {", ["I", "J", "K"])
+enemy_modifier_process("EnemySuffixes = {", ["L", "M", "N"])
 
 usable_process("relics.txt", "Relics = {", workbook["Relics"])
 usable_process("affinities.txt", "Affinities = {", workbook["Affinities"])

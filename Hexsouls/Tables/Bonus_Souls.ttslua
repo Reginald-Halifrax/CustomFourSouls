@@ -13,9 +13,9 @@ Souls = {
 {"BFFs Soul","Save someone's life 5 times. ",""},
 {"Gunslinger's Soul","Eliminate a boss on your first attack.",""},
 {"Regicide Soul","Eliminate two Imp gaurds and the Queen.",""},
-{"Fool's Soul","Eliminate the Moon Jester with the 'Foul Trick'.",""},
-{"Sharpshooter's Soul","Miss 6 times in a row on your turn. 'And then I missed.'",""},
-{"Hex Soul","Kill an enemy with 6 HP, or an enemy with the 'hexed' prefix.",""},
+{"Fool's Soul","Eliminate the Moon Jester with the \"Foul Trick\".",""},
+{"Sharpshooter's Soul","Miss 6 times in a row on your turn. \"And then I missed.\"",""},
+{"Hex Soul","Kill an enemy with 6 HP, or an enemy with the \"hexed\" prefix.",""},
 {"Soulless Soul","Destroy a soul owned by another player.",""},
 {"Forgiver's Soul","Discard a boss before another player is about to eliminate it.",""},
 {"Vestigial Soul","Survive two attacks that would have killed you on the same turn.",""},
@@ -27,9 +27,8 @@ Souls = {
 {"Tank's Soul","Take 10 or more damage on your turn without dying.",""},
 {"Board Game Blowout","Roll 3 natural 1's on your turn.",""},
 {"Graverobber's Soul","Get 2 Souls on your turn.",""},
-{"Husband's Soul","Give your royal treat to the Imp Queen.",""},
 {"Cow Soul","Flee from combat three times.",""},
-{"Fat","Eat two royal treats.",""}
+{"Sloth's Soul","Do absolutely nothing for 3 turns consecutively. Dying resets this. \"Imma Luigi! Number One!\"",""}
 }
 
 Repository = "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
