@@ -251,6 +251,39 @@ def processWares(sheet, data):
     data["Wares"] = Wares
     return data
 
+# Store 4 tables in one dictionary called Trigger, PlayerMutator, EnemyMutator, and Effector.
+def processGlitched(sheet, data):
+    Trigger = []
+    PlayerMutator = []
+    EnemyMutator = []
+    Effector = []
+    row = 2
+    while True:
+        triggerValue = sheet["A" + str(row)].value
+        if triggerValue is not None:
+            Trigger.append(triggerValue)
+        PlayerMutatorValue = sheet["B" + str(row)].value
+        if PlayerMutatorValue is not None:
+            PlayerMutator.append(PlayerMutatorValue)
+        EnemyMutatorValue = sheet["C" + str(row)].value
+        if EnemyMutatorValue is not None:
+            EnemyMutator.append(EnemyMutatorValue)
+        EffectorValue = sheet["D" + str(row)].value
+        if EffectorValue is not None:
+            Effector.append(EffectorValue)
+        
+        if triggerValue is None and PlayerMutatorValue is None and EnemyMutatorValue is None and EffectorValue is None:
+            break
+        row += 1
+    Glitched = {
+        "Trigger": Trigger,
+        "PlayerMutator": PlayerMutator,
+        "EnemyMutator": EnemyMutator,
+        "Effector": Effector
+    }
+    data["Glitched"] = Glitched
+    return data
+
 def main():
     data = {}
 
@@ -272,11 +305,12 @@ def main():
     data = processRelics(wb["Relics"], data)
     data = processAffinities(wb["Affinities"], data)
     data = processWares(wb["Wares"], data)
+    data = processGlitched(wb["Glitched"], data)
     wb.close()
 
     finalJson = json.dumps(data, indent=4)
 
-    print(finalJson)
+    # print(finalJson)
 
     with open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/HexSouls.json", "w") as outfile:
         outfile.write(finalJson)
