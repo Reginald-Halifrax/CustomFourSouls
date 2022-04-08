@@ -243,7 +243,7 @@ def processWares(sheet, data):
     while True:
         wareName = sheet["A" + str(row)].value
         if wareName is not None:
-            HPWare[wareName] = {
+            HPWare[str(row-1)] = {
                 "name": wareName,
                 "desc": sheet["B" + str(row)].value,
                 "img": testImg(sheet["C" + str(row)].value)
@@ -255,7 +255,7 @@ def processWares(sheet, data):
     while True:
         wareName = sheet["D" + str(row)].value
         if wareName is not None:
-            ATKWare[wareName] = {
+            ATKWare[str(row-1)] = {
                 "name": wareName,
                 "desc": sheet["E" + str(row)].value,
                 "img": testImg(sheet["F" + str(row)].value)
@@ -267,7 +267,7 @@ def processWares(sheet, data):
     while True:
         wareName = sheet["G" + str(row)].value
         if wareName is not None:
-            BoneWare[wareName] = {
+            BoneWare[str(row-1)] = {
                 "name": wareName,
                 "desc": sheet["H" + str(row)].value,
                 "img": testImg(sheet["I" + str(row)].value)
