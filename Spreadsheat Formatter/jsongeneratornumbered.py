@@ -6,6 +6,7 @@ from openpyxl import load_workbook
 def testImg(string):
     if string == "":
         return None
+    return string
 
 def testReward(input):
     if input is None:
