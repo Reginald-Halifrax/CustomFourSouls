@@ -1980,7 +1980,7 @@
                     "name": "",
                     "desc": "Roll: 1-3: Nothing, Roll 4-6: reflect a relic/Ware played against you to attacker."
                 },
-                "3": {
+                "2": {
                     "name": "Inverted",
                     "desc": " Roll: 1-3: reflect a relic/Ware played against you to attacker. Roll 4-6: Nothing."
                 },
@@ -2020,11 +2020,11 @@
                     "name": "",
                     "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 1\u03b2, 3-4: nothing, 5: +1 Ware, 6: Gain a relic and discard"
                 },
-                "3": {
+                "2": {
                     "name": "Golden",
                     "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 3\u03b2, 3-4: Nothing, 5: +1 Ware, 6: Gain a relic and discard"
                 },
-                "5": {
+                "3": {
                     "name": "Cursed",
                     "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 2\u03b2, 3-4: Fight off top monster deck and discard, 5: +1 Ware, 6: Gain a relic and discard"
                 },
@@ -2040,19 +2040,19 @@
                     "name": "",
                     "desc": "You gain +1 HP & ATK for the next 3 turns. Discard this on the 4th."
                 },
-                "3": {
+                "2": {
                     "name": "Military",
                     "desc": "You gain +1 HP & +2 ATK for the next 3 turns. Discard this on the 4th."
                 },
-                "5": {
+                "3": {
                     "name": "Medical",
                     "desc": "You gain +2 HP for the next 3 turns. Discard this on the 4th."
                 },
-                "7": {
+                "4": {
                     "name": "Experimental",
                     "desc": "You gain +2 HP & ATK for the next 2 turns. Discard this on the 3rd."
                 },
-                "9": {
+                "5": {
                     "name": "Hyper",
                     "desc": "You gain +1 HP, ATK, and dice rolls for the next 5 turns. Discard this on the 6th."
                 },
@@ -2068,19 +2068,19 @@
                     "name": "Bronze",
                     "desc": "If you die on a dice roll of 1, you may negate death and end your turn."
                 },
-                "3": {
+                "2": {
                     "name": "Shiny",
                     "desc": "If you die on a dice roll of 1-2, you may negate death and end your turn."
                 },
-                "5": {
+                "3": {
                     "name": "Polished",
                     "desc": "If you die on a dice roll of 1-3, you may negate death and end your turn."
                 },
-                "7": {
+                "4": {
                     "name": "Gold",
                     "desc": "You take no damage on an attack roll of 1."
                 },
-                "9": {
+                "5": {
                     "name": "Platinum",
                     "desc": "You take no damage on attack rolls 1-2."
                 },
@@ -2096,19 +2096,19 @@
                     "name": "",
                     "desc": "During a turn, if there is a dice roll of 3, you may force the next roll to be a 3."
                 },
-                "3": {
+                "2": {
                     "name": "Pristine",
                     "desc": "During a turn, if there is a dice roll of 4, you may force the next roll to be a 4."
                 },
-                "5": {
+                "3": {
                     "name": "Sealed",
                     "desc": "During a turn, if there is a dice roll of 5, you may force the next roll to be a 5."
                 },
-                "7": {
+                "4": {
                     "name": "Signed",
                     "desc": "During a turn, if there is a dice roll of 6, you may force the next roll to be a 6."
                 },
-                "9": {
+                "5": {
                     "name": "Torn",
                     "desc": "During a turn, if there is a dice roll of 1, you may force the next roll to be a 1."
                 },
@@ -2136,19 +2136,19 @@
                     "name": "",
                     "desc": "Attack rolls hit all active enemies, provided it meets their RR. "
                 },
-                "3": {
+                "2": {
                     "name": "Auto",
                     "desc": "Odd numbered attack rolls hit all active enemies."
                 },
-                "5": {
+                "3": {
                     "name": "Sawed-Off",
                     "desc": "Even numbered attack roll hit all active enemies."
                 },
-                "7": {
+                "4": {
                     "name": "Super",
                     "desc": "Attack rolls of 6 have +1 DMG and hit all active enemies."
                 },
-                "9": {
+                "5": {
                     "name": "Overclocked",
                     "desc": "Attack rolls of 6 have +1 DMG and hit all active enemies, but deal 1 DMG to yourself."
                 },
@@ -2164,15 +2164,15 @@
                     "name": "",
                     "desc": "When you die, discard this and receive another Relic."
                 },
-                "3": {
+                "2": {
                     "name": "Sparkly",
                     "desc": "When you die, discard this and receive two Relics."
                 },
-                "5": {
+                "3": {
                     "name": "Pop-up",
                     "desc": "When you die, discard this and receive another Relic and +2 Wares."
                 },
-                "7": {
+                "4": {
                     "name": "Holographic",
                     "desc": "When you die, discard this and receive two Relics and +2 Wares."
                 },
@@ -2188,11 +2188,11 @@
                     "name": "",
                     "desc": "When you kill an enemy, put a counter on this. At 3 counters, remove them all and permanently gain 1 HP."
                 },
-                "3": {
+                "2": {
                     "name": "Crimson",
                     "desc": "When you kill an enemy, put a counter on this. At 3 counters, remove them all and permanently gain 1 ATK."
                 },
-                "5": {
+                "3": {
                     "name": "Kali's Favorite",
                     "desc": "When you kill an enemy, put a counter on this. At 4 counters, remove them all and permanently gain 1 HP & ATK."
                 },
@@ -2208,15 +2208,15 @@
                     "name": "",
                     "desc": "Gain +1 HP and ATK when any Jinx is on the board."
                 },
-                "3": {
+                "2": {
                     "name": "Sloppy",
                     "desc": "Gain +2 HP when any Jinx is on the board,"
                 },
-                "5": {
+                "3": {
                     "name": "French",
                     "desc": "Gain +2 ATK when any Jinx is on the board."
                 },
-                "7": {
+                "4": {
                     "name": "5-Minute",
                     "desc": "Gain +2 HP and ATK when any jinx is on the board."
                 },
@@ -2256,7 +2256,7 @@
                     "name": "",
                     "desc": "Prevent 1 damage or +1 to next Roll"
                 },
-                "3": {
+                "2": {
                     "name": "Minty Fresh",
                     "desc": "Prevent 2 damage or +1 ATK"
                 },
@@ -2308,11 +2308,11 @@
                     "name": "",
                     "desc": "Recharge another Relic."
                 },
-                "3": {
+                "2": {
                     "name": "Charged",
                     "desc": "Recharge two other Relics."
                 },
-                "5": {
+                "3": {
                     "name": "Nuclear",
                     "desc": "Recharge another Relic. You may also play another Ware."
                 },
@@ -2328,7 +2328,7 @@
                     "name": "",
                     "desc": " +1 HP."
                 },
-                "3": {
+                "2": {
                     "name": "I wonder what's for",
                     "desc": " +2 HP."
                 },
@@ -2404,11 +2404,11 @@
                     "name": "",
                     "desc": "Steal a random Ware from another player."
                 },
-                "3": {
+                "2": {
                     "name": "Steel",
                     "desc": "Steal 2 random Wares from another player."
                 },
-                "5": {
+                "3": {
                     "name": "Carbon",
                     "desc": "Steal a random Ware from every player."
                 },
@@ -2448,7 +2448,7 @@
                     "name": "",
                     "desc": " +1 to all of your attack rolls."
                 },
-                "3": {
+                "2": {
                     "name": "Bull Penis",
                     "desc": " +1 ATK. +1 to all of your attack rolls. \"You flip the fuck out over the fact that this is apparently a BULL PENIS CANE.\""
                 },
@@ -2464,11 +2464,11 @@
                     "name": "",
                     "desc": "Other players can't activate Relics during your turn."
                 },
-                "3": {
+                "2": {
                     "name": "Treacle",
                     "desc": "Other players can't activate relics or play Wares during your turn."
                 },
-                "5": {
+                "3": {
                     "name": "Frijole",
                     "desc": " +1 HP. Other players can't activate Relics or play Wares during your turn. \"Yeah, you're practically indestructable now.\""
                 },
@@ -2520,11 +2520,11 @@
                     "name": "",
                     "desc": "Whenever another player dies, you choose which Relic they discard."
                 },
-                "3": {
+                "2": {
                     "name": "Left",
                     "desc": "Whenever another player dies, you gain any Wares or \u03b2 they lose."
                 },
-                "5": {
+                "3": {
                     "name": "Eggplanted",
                     "desc": "Whenever another player dies, you choose which Relic they discard. You also gain any Wares or \u03b2 they lose."
                 },
@@ -2588,7 +2588,7 @@
                     "name": "",
                     "desc": "When any player rolls a 5, gain +1 Ware."
                 },
-                "3": {
+                "2": {
                     "name": "Deca",
                     "desc": "When any player rolls a 5, gain +2 Wares."
                 },
@@ -2616,15 +2616,15 @@
                     "name": "",
                     "desc": "Gain +1 Ware whenever an enemy is killed."
                 },
-                "3": {
+                "2": {
                     "name": "Mini",
                     "desc": "Gain 3\u03b2 whenever an enemy is killed."
                 },
-                "5": {
+                "3": {
                     "name": "Tall",
                     "desc": "Gain +2 Wares whenever a boss is killed."
                 },
-                "7": {
+                "4": {
                     "name": "Mega",
                     "desc": "Gain 3\u03b2 whenever an enemy is killed. Gain +2 Wares whenever a boss is killed."
                 },
@@ -2700,15 +2700,15 @@
                     "name": "",
                     "desc": "Gain +1 HP upon entering combat with an enemy with 4 HP or more."
                 },
-                "3": {
+                "2": {
                     "name": "Bachelor's",
                     "desc": "Gain +2 HP upon entering combat with an enemy with 4 HP or more."
                 },
-                "5": {
+                "3": {
                     "name": "Master's",
                     "desc": "Gain +3 HP upon entering combat with an enemy with 4 HP or more."
                 },
-                "7": {
+                "4": {
                     "name": "Forged",
                     "desc": "Gain +1 HP upon entering combat with an enemy with 3 HP or more."
                 },
@@ -2784,11 +2784,11 @@
                     "name": "Tax-",
                     "desc": "After killing an enemy and gaining the rewards, roll. 1-3: Gain double the rewards. 4-6: Gain nothing."
                 },
-                "3": {
+                "2": {
                     "name": "Hex-",
                     "desc": "After killing an enemy and gaining the rewards, roll. 1-4: Gain double the rewards. 5-6: Gain nothing."
                 },
-                "5": {
+                "3": {
                     "name": "Tex-",
                     "desc": "After killing an enemy and gaining the rewards, roll. 1-5: Gain double the rewards. 6: Gain nothing. \"YEEEEHAAWWWW!\""
                 },
@@ -2804,19 +2804,19 @@
                     "name": "Red",
                     "desc": "If an enemy has killed another player, you may now kill the enemy in 3 successful attack rolls, when its your turn."
                 },
-                "3": {
+                "2": {
                     "name": "Green",
                     "desc": "Kill any non-boss enemy and gain half its rewards rounded down."
                 },
-                "5": {
+                "3": {
                     "name": "Yellow",
                     "desc": "Steal 3\u03b2 from another player. \"Reeks of Garlic\""
                 },
-                "7": {
+                "4": {
                     "name": "Purple",
                     "desc": "Force a player to fight an enemy of your choosing."
                 },
-                "9": {
+                "5": {
                     "name": "Subservient",
                     "desc": "When entering combat, control another enemy for one attack roll. Gain the victims ATK. If the attack roll misses, the enemy takes damage instead of you."
                 },
@@ -2832,11 +2832,11 @@
                     "name": "",
                     "desc": " +2 HP, but -1 to all attack rolls."
                 },
-                "3": {
+                "2": {
                     "name": "Pure",
                     "desc": " +2 HP"
                 },
-                "5": {
+                "3": {
                     "name": "Caustic",
                     "desc": " +1 HP & ATK, but -1 to all attack rolls."
                 },
@@ -2876,7 +2876,7 @@
                     "name": "Tiny",
                     "desc": "This becomes a copy of any non-Affinity Relic in play until the end of the turn."
                 },
-                "3": {
+                "2": {
                     "name": "Big",
                     "desc": "This becomes a permanent copy of any non-Affinity Relic in play."
                 },
@@ -2916,15 +2916,15 @@
                     "name": "Disfigured",
                     "desc": "Whenever you roll a 4, you may turn it into a 5."
                 },
-                "3": {
+                "2": {
                     "name": "Defaced",
                     "desc": "Whenever you roll a 2, you may turn it into a 3."
                 },
-                "5": {
+                "3": {
                     "name": "Deformed",
                     "desc": "Whenever you roll a 3, you may turn it into a 4."
                 },
-                "7": {
+                "4": {
                     "name": "Developed",
                     "desc": "Whenever you roll a 5, you may turn it into a 6."
                 },
@@ -2940,15 +2940,15 @@
                     "name": "Ankle",
                     "desc": "When any player rolls a 1, gain +1 Ware."
                 },
-                "3": {
+                "2": {
                     "name": "Tube",
                     "desc": "When any player rolls a 1, deal 1 damage to an active enemy."
                 },
-                "5": {
+                "3": {
                     "name": "Knee-high",
                     "desc": "When any player rolls a 1, gain 3\u03b2."
                 },
-                "7": {
+                "4": {
                     "name": "Thigh-high",
                     "desc": "When any player rolls a 1, you may reroll a Relic."
                 },
@@ -2964,11 +2964,11 @@
                     "name": "",
                     "desc": "Deal 2 damage to an active enemy, but take 1 damage."
                 },
-                "3": {
+                "2": {
                     "name": "Hyper",
                     "desc": "Deal 3 damage to an active enemy, but take 1 damage."
                 },
-                "5": {
+                "3": {
                     "name": "Ultra",
                     "desc": "Deal 4 damage to an active enemy, but take 2 damage."
                 },
@@ -2984,11 +2984,11 @@
                     "name": "",
                     "desc": " +1 ATK. On a roll of 6, deal 1 damage to another active enemy."
                 },
-                "3": {
+                "2": {
                     "name": "Sharpened",
                     "desc": " +1 ATK. On a roll of 6, deal 2 damage to another enemy."
                 },
-                "5": {
+                "3": {
                     "name": "Double-edged",
                     "desc": " +1 ATK. On a roll of 6, deal 1 damage to all other active enemies."
                 },
@@ -3040,11 +3040,11 @@
                     "name": "",
                     "desc": "At the start of your turn, deal 1 damage to any player or active enemy."
                 },
-                "3": {
+                "2": {
                     "name": "Silver",
                     "desc": "At the start of your turn, deal 1 damage to any two active enemies or players."
                 },
-                "5": {
+                "3": {
                     "name": "Golden",
                     "desc": "At the start of your turn, deal 1 damage to any three active enemies or players. "
                 },
@@ -3072,15 +3072,15 @@
                     "name": "Rusty",
                     "desc": "End your turn. Ignores external card rules."
                 },
-                "3": {
+                "2": {
                     "name": "Crusty",
                     "desc": "Gain 2\u03b2. You may end your turn, ending ignores external card rules."
                 },
-                "5": {
+                "3": {
                     "name": "Trusty",
                     "desc": "You gain 1 Relic and end your turn. You may only play this at the start of your turn. if you \"Must\" fight on your turn, you can not play this."
                 },
-                "7": {
+                "4": {
                     "name": "Busty",
                     "desc": "Gain +1 Ware. You may end your turn. if you \"Must\" fight on your turn, you can not play this. \"Firmly grasp it\""
                 },
@@ -3120,11 +3120,11 @@
                     "name": "Piezoelectric",
                     "desc": "When you take damage: you may recharge an item."
                 },
-                "3": {
+                "2": {
                     "name": "Endothermic",
                     "desc": "When you take damage: the attacker gets -1 RR till the end of the turn."
                 },
-                "5": {
+                "3": {
                     "name": "Exothermic",
                     "desc": "When you take damage: deal 1 non-fatal damage to your attacker."
                 },
@@ -3152,11 +3152,11 @@
                     "name": "",
                     "desc": "If you were to roll, you may roll 4 die instead and pick one of the results as your own."
                 },
-                "3": {
+                "2": {
                     "name": "Diamond",
                     "desc": "When rolling for multiple reward giving cards, you may roll again for a second reward from that card. The same reward can not be gained twice."
                 },
-                "5": {
+                "3": {
                     "name": "Cloudy",
                     "desc": "When another player rolls for an effect, you may force them to reroll it."
                 },
@@ -3172,11 +3172,11 @@
                     "name": "",
                     "desc": "During combat, ignore the effects of all enemies for the first 2 attack rolls."
                 },
-                "3": {
+                "2": {
                     "name": "Padded",
                     "desc": "During combat, ignore the effects of all enemies for the first 3 attack rolls."
                 },
-                "5": {
+                "3": {
                     "name": "Deafening",
                     "desc": "During combat, ignore the effects of all enemies for the first 4 attack rolls."
                 },
@@ -3204,11 +3204,11 @@
                     "name": "Poly-",
                     "desc": " +1 to Dice Rolls"
                 },
-                "3": {
+                "2": {
                     "name": "Oligo-",
                     "desc": "Subtract 1 to any Dice Roll"
                 },
-                "5": {
+                "3": {
                     "name": "Ptero-",
                     "desc": "Subtract 2 to any Dice Roll."
                 },
@@ -3224,15 +3224,15 @@
                     "name": "Black Lace",
                     "desc": "All enemies have -1 RR. \"Must it be so revealing?\""
                 },
-                "3": {
+                "2": {
                     "name": "Swim suit",
                     "desc": "You gain +1 to your non-combat rolls. \"Doesn't leave much to the imagination.\""
                 },
-                "5": {
+                "3": {
                     "name": "Red Velvet",
                     "desc": "Gain +1\u03b2 when defeating a normal enemy and +5\u03b2 when defeating a boss type. \"Does this make me look fat?\""
                 },
-                "7": {
+                "4": {
                     "name": "String",
                     "desc": "Gain +4\u03b2 for every active enemy on the board when you don't fight on your turn, at the max of 12\u03b2 per turn. \"This is just too much, or too little to be more accurate.\""
                 },
@@ -3260,7 +3260,7 @@
                     "name": "Weighted",
                     "desc": "When gained put 3 counters on this. You may decide the result of any dice roll. Once out of counters discard this."
                 },
-                "3": {
+                "2": {
                     "name": "Russian",
                     "desc": "Put a counter on this at the start of your turn at the max of 3. On use spends all counters: Pick a player to roll X times (X being counters spent). If they roll a 1 they die and you gain their penalties."
                 },
@@ -3288,7 +3288,7 @@
                     "name": "",
                     "desc": "Throw an 8-sided die for your attack rolls. \"How do I shot web?\""
                 },
-                "3": {
+                "2": {
                     "name": "Dark",
                     "desc": "Throw an 8-sided die for your attack rolls. Rolls 7-8 deal +1 damage. \"How do I shot web?\""
                 },
@@ -3304,7 +3304,7 @@
                     "name": "",
                     "desc": "Discard one soul from every player including yourself. Discard this."
                 },
-                "3": {
+                "2": {
                     "name": "Gluttonous",
                     "desc": "Discard two souls from every player including yourself. Discard this."
                 },
@@ -3332,11 +3332,11 @@
                     "name": "",
                     "desc": "First use saves and pauses a Ware effect. Using this again allows you to resolve it at your discretion."
                 },
-                "3": {
+                "2": {
                     "name": "Pristine",
                     "desc": "First use saves the most recent \"action\" and pauses it. Using this again allows it to resolve at your discretion."
                 },
-                "5": {
+                "3": {
                     "name": "Faulty",
                     "desc": "Change the target of any item to another player at random."
                 },
@@ -3376,11 +3376,11 @@
                     "name": "",
                     "desc": "Discard a ware and add a counter to this. Remove 4 counters to gain a Relic."
                 },
-                "3": {
+                "2": {
                     "name": "Expert's",
                     "desc": "Discard a ware and add a counter to this. Remove 3 counters to gain a Relic."
                 },
-                "5": {
+                "3": {
                     "name": "Magic",
                     "desc": "Discard a ware and add a counter to this. Remove 4 counters to change your Affinity."
                 },
@@ -3411,19 +3411,19 @@
                     "name": "",
                     "desc": "Increase HP or ATK by +1 for this turn."
                 },
-                "3": {
+                "2": {
                     "name": "Boiled",
                     "desc": "Increase ATK or dice rolls by +1 for this turn.  \"Delicious!\""
                 },
-                "5": {
+                "3": {
                     "name": "Grilled",
                     "desc": "Increase HP or ATK by +2  for this turn. \"Savory!\""
                 },
-                "7": {
+                "4": {
                     "name": "Smoked",
                     "desc": "Increase HP or dice rolls by +1 for this turn. \"Smokey!\""
                 },
-                "9": {
+                "5": {
                     "name": "Sharp",
                     "desc": "Increase ATK by +2 but decrease HP by -1 for this turn. \"Unappetizing!\""
                 },
@@ -3463,11 +3463,11 @@
                     "name": "",
                     "desc": "Discard any single active enemy, shop item, or jinx."
                 },
-                "3": {
+                "2": {
                     "name": "Dubious",
                     "desc": "Discard all active enemies, shop items, or jinxes."
                 },
-                "5": {
+                "3": {
                     "name": "Specialized",
                     "desc": "You may morph any one of your relics or jinx into a new one."
                 },
@@ -3483,11 +3483,11 @@
                     "name": "",
                     "desc": "When pulling from the top from any deck, you may pull an additional card from that deck. Choose one of the two and discard the other."
                 },
-                "3": {
+                "2": {
                     "name": "Superior",
                     "desc": "When pulling from the top of any deck, you may pull two additional cards from that deck. Choose one of them and discard the rest."
                 },
-                "5": {
+                "3": {
                     "name": "Voodoo",
                     "desc": "When another player gains a relic, you may start a vote to discard and replace it."
                 },
@@ -3503,11 +3503,11 @@
                     "name": "",
                     "desc": "Cost: 3\u03b2 With an unmodified roll: 1-2: Gain 2\u03b2. 3-6: Gain 6\u03b2."
                 },
-                "3": {
+                "2": {
                     "name": "Gilded",
                     "desc": "Cost: 5\u03b2. With an unmodified roll: 1-4: Nothing. 5-6: Gain a Relic."
                 },
-                "5": {
+                "3": {
                     "name": "Bastardized",
                     "desc": "Cost: 2\u03b2. With an unmodified roll: 1-3: Lose half your \u03b2. 4-6: Double your \u03b2."
                 },
@@ -3535,7 +3535,7 @@
                     "name": "",
                     "desc": "You may be requested/may request to give/take HP to another player, if both parties agree."
                 },
-                "3": {
+                "2": {
                     "name": "Field",
                     "desc": "At the initiation of any fight, you may take 1 HP from any enemy on the board and give it to another."
                 },
@@ -3563,11 +3563,11 @@
                     "name": "",
                     "desc": "When any player rolls a 2, gain 3\u03b2. Each time another player dies, gain a Ware."
                 },
-                "3": {
+                "2": {
                     "name": "Bloodied",
                     "desc": "When any player rolls a 2, gain 2\u03b2. Each time another player dies, deal 1 damage to an active enemy."
                 },
-                "5": {
+                "3": {
                     "name": "Golden",
                     "desc": "When any player rolls a 2, gain 3\u03b2. Each time another player dies, gain 3\u03b2."
                 },
@@ -3595,15 +3595,15 @@
                     "name": "",
                     "desc": "Add or subtract 1 to any dice roll."
                 },
-                "3": {
+                "2": {
                     "name": "Malevolent",
                     "desc": "Add 1, or subtract 2 to any dice roll."
                 },
-                "5": {
+                "3": {
                     "name": "Benevolent",
                     "desc": "Add 2, or subtract 1 to any dice roll."
                 },
-                "7": {
+                "4": {
                     "name": "Balanced",
                     "desc": "Add or subtract 2 to any dice roll."
                 },
@@ -3631,11 +3631,11 @@
                     "name": "",
                     "desc": "In response to a roll, you may force a player to roll again for a higher number, lower numbers must be rerolled again."
                 },
-                "3": {
+                "2": {
                     "name": "Cursed",
                     "desc": "In response to a roll, you may force a player to roll again for a lower number, higher numbers must be rerolled again."
                 },
-                "5": {
+                "3": {
                     "name": "Spare",
                     "desc": "In response to a roll, you may roll again and add the result rounded down to your current roll."
                 },
@@ -3651,7 +3651,7 @@
                     "name": "",
                     "desc": "Force a stage change. Stage effects are twice as effective for you, where applicable."
                 },
-                "3": {
+                "2": {
                     "name": "Shaped",
                     "desc": "You may force up to two stage changes. Stage effects are twice as effective for you, where applicable."
                 },
@@ -3667,19 +3667,19 @@
                     "name": "Turtle",
                     "desc": "For the next 3 attack rolls, you are immune to damage, but have -1 to dice rolls. \"Slow and steady wins the race.\""
                 },
-                "3": {
+                "2": {
                     "name": "Gastropod",
                     "desc": " +1 ATK and -1 to dice rolls for 3 attack rolls. \"Slow, but armed with deadly venom.\""
                 },
-                "5": {
+                "3": {
                     "name": "Scallop",
                     "desc": "For the next 3 attack rolls, you are immune to damage. After that, take double damage until the end of your turn \"Why must I be so delicious?!\""
                 },
-                "7": {
+                "4": {
                     "name": "Nautilus",
                     "desc": "You are immune to damage and have +1 for your next attack roll. \"Defensive and fast, but not much else.\""
                 },
-                "9": {
+                "5": {
                     "name": "Chocolate",
                     "desc": "For the next 3 attack rolls, gain +2 HP for every damage you take. Lose your extra health at the end of your turn. \"Yeah, I eat whatever falls off me. So what?\""
                 },
@@ -3695,19 +3695,19 @@
                     "name": "",
                     "desc": "Spend 8\u03b2 to gain +1 HP or ATK until the end of your turn."
                 },
-                "3": {
+                "2": {
                     "name": "Snazzy",
                     "desc": "Spend 7\u03b2 to gain +1 HP or ATK until the end of your turn."
                 },
-                "5": {
+                "3": {
                     "name": "Ripped",
                     "desc": "Spend 9\u03b2 to gain +1 HP or ATK until the end of your turn."
                 },
-                "7": {
+                "4": {
                     "name": "Battle",
                     "desc": "Spend 10\u03b2 to gain +2 HP or ATK until the end of your turn."
                 },
-                "9": {
+                "5": {
                     "name": "Casual",
                     "desc": "Spend 8\u03b2 to gain +1 HP or +1 to dice rolls until the end of your turn."
                 },
@@ -3747,7 +3747,7 @@
                     "name": "Five",
                     "desc": "Draw a Glitch card, this is now your passive Affinity."
                 },
-                "3": {
+                "2": {
                     "name": "Seven",
                     "desc": "Draw 3 Glitch cards and pick from one of them to be your passive Affinity."
                 },

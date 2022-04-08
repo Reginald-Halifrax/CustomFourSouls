@@ -158,12 +158,13 @@ def processRelics(sheet, data):
             columns = ["D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
             prefixes = {}
             columnStep = 0
+            trueCount = 1
             while True:
                 prefixName = sheet[columns[columnStep] + str(row)].value
                 if prefixName is not None or columnStep == 0:
                     if prefixName is None:
                         prefixName = ""
-                    prefixes[columnStep+1] = {
+                    prefixes[trueCount] = {
                         "name": prefixName,
                         "desc": sheet[columns[columnStep + 1] + str(row)].value
                         }
@@ -172,6 +173,7 @@ def processRelics(sheet, data):
                 else:
                     break
                 columnStep += 2
+                trueCount += 1
             prefixes["_size"] = len(prefixes)
 
             Relics[row-1] = {
@@ -199,12 +201,13 @@ def processAffinities(sheet, data):
             columns = ["D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
             prefixes = {}
             columnStep = 0
+            trueCount = 1
             while True:
                 prefixName = sheet[columns[columnStep] + str(row)].value
                 if prefixName is not None or columnStep == 0:
                     if prefixName is None:
                         prefixName = ""
-                    prefixes[columnStep+1] = {
+                    prefixes[trueCount] = {
                         "name": prefixName,
                         "desc": sheet[columns[columnStep + 1] + str(row)].value
                         }
@@ -213,6 +216,7 @@ def processAffinities(sheet, data):
                 else:
                     break
                 columnStep += 2
+                trueCount += 1
             prefixes["_size"] = len(prefixes)
 
             Affinities[row-1] = {
