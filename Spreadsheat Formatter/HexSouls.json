@@ -800,7 +800,8 @@
             "reward": null,
             "souls": 0,
             "img": null
-        }
+        },
+        "_size": 89
     },
     "Prefixes": {
         "Agreeable": {
@@ -1075,7 +1076,8 @@
             "rr": -3,
             "atk": -1,
             "souls": -99
-        }
+        },
+        "_size": 39
     },
     "Suffixes": {
         "Of Monkiness": {
@@ -1336,7 +1338,8 @@
             "rr": -1,
             "atk": -1,
             "souls": -99
-        }
+        },
+        "_size": 37
     },
     "Jinxes": {
         "Did I Roll Yet?": {
@@ -1458,7 +1461,8 @@
         "Viral Outbreak": {
             "desc": "After 3 cycles around the board, add a new Jinx. The added Jinx then mutates into a different Jinx every 3 cycles around the board. Can't be removed at the end of cycles.",
             "img": null
-        }
+        },
+        "_size": 30
     },
     "Stages": {
         "Empty Room": {
@@ -1580,7 +1584,8 @@
         "The Backrooms": {
             "desc": "This Stage will not change at the next cycle, and can only be forced to change.",
             "img": null
-        }
+        },
+        "_size": 30
     },
     "Souls": {
         "Champion's Soul": {
@@ -1706,7 +1711,8 @@
         "Tactician's Soul": {
             "desc": "Kill an enemy before entering combat and kill another enemy after entering combat on the same turn.",
             "img": null
-        }
+        },
+        "_size": 31
     },
     "Relics": {
         "Mirror": {
@@ -2418,7 +2424,8 @@
                 "Expert's": "Discard a ware and add a counter to this. Remove 3 counters to gain a Relic.",
                 "Magic": "Discard a ware and add a counter to this. Remove 4 counters to change your Affinity."
             }
-        }
+        },
+        "_size": 89
     },
     "Affinities": {
         "Die Bag": {
@@ -2595,7 +2602,8 @@
                 "Five": "Draw a Glitch card, this is now your passive Affinity.",
                 "Seven": "Draw 3 Glitch cards and pick from one of them to be your passive Affinity."
             }
-        }
+        },
+        "_size": 21
     },
     "Wares": {
         "HpWares": {
@@ -2738,7 +2746,8 @@
             "System Restore": {
                 "desc": "Remove all Glitch cards in play",
                 "img": null
-            }
+            },
+            "_size": 35
         },
         "AtkWares": {
             "Spike the Finger Monster": {
@@ -2864,7 +2873,8 @@
             "Bloodied Battery": {
                 "desc": "You may recharge a Relic after killing an enemy.",
                 "img": null
-            }
+            },
+            "_size": 31
         },
         "BoneWares": {
             "A Femur!": {
@@ -3034,7 +3044,8 @@
             "Senior Discount": {
                 "desc": "Any action that costs more than 1\u03b2 now has -1\u03b2 to its price.",
                 "img": null
-            }
+            },
+            "_size": 42
         }
     },
     "Glitched": {

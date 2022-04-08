@@ -45,6 +45,7 @@ def processEnemies(sheet, data):
         else:
             break
         row += 1
+    Enemies["_size"] = len(Enemies)
     data["Enemies"] = Enemies
     return data
 
@@ -65,6 +66,7 @@ def processPrefixes(sheet, data):
         else:
             break
         row += 1
+    Prefixes["_size"] = len(Prefixes)
     data["Prefixes"] = Prefixes
     return data
 
@@ -85,6 +87,7 @@ def processSuffixes(sheet, data):
         else:
             break
         row += 1
+    Suffixes["_size"] = len(Suffixes)
     data["Suffixes"] = Suffixes
     return data
 
@@ -101,6 +104,7 @@ def processJinxes(sheet, data):
         else:
             break
         row += 1
+    Jinxes["_size"] = len(Jinxes)
     data["Jinxes"] = Jinxes
     return data
 
@@ -117,6 +121,7 @@ def processStages(sheet, data):
         else:
             break
         row += 1
+    Stages["_size"] = len(Stages)
     data["Stages"] = Stages
     return data
 
@@ -133,6 +138,7 @@ def processSouls(sheet, data):
         else:
             break
         row += 1
+    Souls["_size"] = len(Souls)
     data["Souls"] = Souls
     return data
 
@@ -166,6 +172,7 @@ def processRelics(sheet, data):
         else:
             break
         row += 1
+    Relics["_size"] = len(Relics)
     data["Relics"] = Relics
     return data
 
@@ -201,6 +208,7 @@ def processAffinities(sheet, data):
         else:
             break
         row += 1
+    Affinities["_size"] = len(Affinities)
     data["Affinities"] = Affinities
     return data
 
@@ -243,6 +251,9 @@ def processWares(sheet, data):
         else:
             break
         row += 1
+    HPWare["_size"] = len(HPWare)
+    ATKWare["_size"] = len(ATKWare)
+    BoneWare["_size"] = len(BoneWare)
     Wares = {
         "HpWares": HPWare,
         "AtkWares": ATKWare,
