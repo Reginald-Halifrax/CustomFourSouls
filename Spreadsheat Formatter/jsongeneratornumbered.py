@@ -19,6 +19,8 @@ def testMod(input):
     return input.strip()
 
 def processMultiValue(input):
+    if input is None:
+        return None
     rvalues = input.split(",")
     values = {
         "hp": int(rvalues[0]),
@@ -28,27 +30,40 @@ def processMultiValue(input):
     }
     return values
 
-def processEnemies(sheet, data):
+def processEnemies(sheet, data, type, columnstart):
     row = 2
     Enemies = {}
     while True:
-        enemyName = sheet["A" + str(row)].value
+        enemyName = sheet[chr(columnstart) + str(row)].value
         if enemyName is not None:
             Enemies[row-1] = {
                 "name": enemyName,
-                "desc": sheet["E" + str(row)].value,
-                "hp": int(sheet["B" + str(row)].value),
-                "rr": int(sheet["C" + str(row)].value),
-                "atk": int(sheet["D" + str(row)].value),
-                "reward": testReward(sheet["F" + str(row)].value),
-                "souls": int(sheet["G" + str(row)].value),
-                "img": testImg(sheet["H" + str(row)].value)
+                "desc": sheet[chr(columnstart+4) + str(row)].value
             }
+            hp = sheet[chr(columnstart+1) + str(row)].value
+            rr = sheet[chr(columnstart+2) + str(row)].value
+            atk = sheet[chr(columnstart+3) + str(row)].value
+            souls = sheet[chr(columnstart+6) + str(row)].value
+            reward = testReward(sheet[chr(columnstart+5) + str(row)].value)
+            img = testImg(sheet[chr(columnstart+7) + str(row)].value)
+            if reward is not None:
+                Enemies[row-1]["reward"] = reward
+            if hp is not None and hp != 0:
+                Enemies[row-1]["hp"] = int(hp)
+            if rr is not None and rr != 0:
+                Enemies[row-1]["rr"] = int(rr)
+            if atk is not None and atk != 0:
+                Enemies[row-1]["atk"] = int(atk)
+            if souls is not None and souls != 0:
+                Enemies[row-1]["souls"] = int(souls)
+            if img is not None:
+                Enemies[row-1]["img"] = img
         else:
             break
         row += 1
     Enemies["_size"] = len(Enemies)
-    data["Enemies"] = Enemies
+    data[type] = Enemies
+    print("Successfully processed " + type)
     return data
 
 def processPrefixes(sheet, data):
@@ -60,17 +75,23 @@ def processPrefixes(sheet, data):
             values = processMultiValue(sheet["K" + str(row)].value)
             Prefixes[row-1] = {
                 "name": prefixName,
-                "mod": testMod(sheet["J" + str(row)].value),
-                "hp": values["hp"],
-                "rr": values["rr"],
-                "atk": values["atk"],
-                "souls": values["souls"]
+                "mod": testMod(sheet["J" + str(row)].value)
             }
+            if values is not None:
+                if values["hp"] != 0:
+                    Prefixes[row-1]["hp"] = values["hp"]
+                if values["rr"] != 0:
+                    Prefixes[row-1]["rr"] = values["rr"]
+                if values["atk"] != 0:
+                    Prefixes[row-1]["atk"] = values["atk"]
+                if values["souls"] != 0:
+                    Prefixes[row-1]["souls"] = values["souls"]
         else:
             break
         row += 1
     Prefixes["_size"] = len(Prefixes)
     data["Prefixes"] = Prefixes
+    print("Successfully processed Prefixes")
     return data
 
 def processSuffixes(sheet, data):
@@ -82,17 +103,23 @@ def processSuffixes(sheet, data):
             values = processMultiValue(sheet["N" + str(row)].value)
             Suffixes[row-1] = {
                 "name": suffixName,
-                "mod": testMod(sheet["M" + str(row)].value),
-                "hp": values["hp"],
-                "rr": values["rr"],
-                "atk": values["atk"],
-                "souls": values["souls"]
+                "mod": testMod(sheet["M" + str(row)].value)
             }
+            if values is not None:
+                if values["hp"] != 0:
+                    Suffixes[row-1]["hp"] = values["hp"]
+                if values["rr"] != 0:
+                    Suffixes[row-1]["rr"] = values["rr"]
+                if values["atk"] != 0:
+                    Suffixes[row-1]["atk"] = values["atk"]
+                if values["souls"] != 0:
+                    Suffixes[row-1]["souls"] = values["souls"]
         else:
             break
         row += 1
     Suffixes["_size"] = len(Suffixes)
     data["Suffixes"] = Suffixes
+    print("Successfully processed Suffixes")
     return data
 
 def processJinxes(sheet, data):
@@ -111,6 +138,7 @@ def processJinxes(sheet, data):
         row += 1
     Jinxes["_size"] = len(Jinxes)
     data["Jinxes"] = Jinxes
+    print("Successfully processed Jinxes")
     return data
 
 def processStages(sheet, data):
@@ -129,6 +157,7 @@ def processStages(sheet, data):
         row += 1
     Stages["_size"] = len(Stages)
     data["Stages"] = Stages
+    print("Successfully processed Stages")
     return data
 
 def processSouls(sheet, data):
@@ -147,81 +176,37 @@ def processSouls(sheet, data):
         row += 1
     Souls["_size"] = len(Souls)
     data["Souls"] = Souls
-    return data
-
-def processRelics(sheet, data):
-    row = 2
-    Relics = {}
-    while True:
-        relicName = sheet["A" + str(row)].value
-        if relicName is not None:
-            # create a tuple of columns containing the letters D through M
-            columns = ["D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
-            prefixes = {}
-            columnStep = 0
-            trueCount = 1
-            while True:
-                prefixName = sheet[columns[columnStep] + str(row)].value
-                if prefixName is not None or columnStep == 0:
-                    if prefixName is None:
-                        prefixName = ""
-                    prefixes[trueCount] = {
-                        "name": prefixName,
-                        "desc": sheet[columns[columnStep + 1] + str(row)].value
-                        }
-                    if columns[columnStep] == "L":
-                        break
-                else:
-                    break
-                columnStep += 2
-                trueCount += 1
-            prefixes["_size"] = len(prefixes)
-
-            Relics[row-1] = {
-                "name": relicName,
-                "type": sheet["B" + str(row)].value,
-                "img": testImg(sheet["C" + str(row)].value),
-                "prefixes": prefixes
-            }
-        else:
-            break
-        row += 1
-    Relics["_size"] = len(Relics)
-    data["Relics"] = Relics
+    print("Successfully processed Souls")
     return data
 
 # Affinities are the same as relics, but with a different name
 
-def processAffinities(sheet, data):
+def processItems(sheet, data, type):
     row = 2
-    Affinities = {}
+    Items = {}
     while True:
-        affinityName = sheet["A" + str(row)].value
-        if affinityName is not None:
-            # create a tuple of columns containing the letters D through M
-            columns = ["D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
+        itemName = sheet["A" + str(row)].value
+        if itemName is not None:
             prefixes = {}
-            columnStep = 0
+            columnStep = 68
             trueCount = 1
             while True:
-                prefixName = sheet[columns[columnStep] + str(row)].value
-                if prefixName is not None or columnStep == 0:
+                prefixName = sheet[chr(columnStep) + str(row)].value
+                if prefixName is not None or columnStep == 68:
                     if prefixName is None:
                         prefixName = ""
                     prefixes[trueCount] = {
                         "name": prefixName,
-                        "desc": sheet[columns[columnStep + 1] + str(row)].value
+                        "desc": sheet[chr(columnStep+1) + str(row)].value
                         }
-                    if columns[columnStep] == "L":
-                        break
                 else:
                     break
                 columnStep += 2
                 trueCount += 1
             prefixes["_size"] = len(prefixes)
 
-            Affinities[row-1] = {
-                "name": affinityName,
+            Items[row-1] = {
+                "name": itemName,
                 "type": sheet["B" + str(row)].value,
                 "img": testImg(sheet["C" + str(row)].value),
                 "prefixes": prefixes
@@ -229,8 +214,9 @@ def processAffinities(sheet, data):
         else:
             break
         row += 1
-    Affinities["_size"] = len(Affinities)
-    data["Affinities"] = Affinities
+    Items["_size"] = len(Items)
+    data[type] = Items
+    print("Successfully processed "+type)
     return data
 
 # Wares are set up in three categories, HPWare, ATKWare, and BoneWare. They are to be stored in one large table called "Wares".
@@ -284,6 +270,7 @@ def processWares(sheet, data):
         "BoneWares": BoneWare
     }
     data["Wares"] = Wares
+    print("Successfully processed Wares")
     return data
 
 # Store 4 tables in one dictionary called Trigger, PlayerMutator, EnemyMutator, and Effector.
@@ -321,7 +308,6 @@ def processGlitched(sheet, data):
 
 def main():
     data = {}
-
     Hexsouls = get("https://docs.google.com/spreadsheets/d/1FkBVhP4NlVBvbxMKVMCMk1cs39O_Y-z4KKQyoP6cwBQ/export?format=xlsx&id=1FkBVhP4NlVBvbxMKVMCMk1cs39O_Y-z4KKQyoP6cwBQ")
 
     HexSheets = open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx", "wb")
@@ -331,16 +317,31 @@ def main():
     # load the workbook using the Hexsouls.content
     wb = load_workbook(filename="C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx", read_only=True)
 
-    data = processEnemies(wb["Enemies"], data)
+    data = processEnemies(wb["Enemies"], data, "Enemies", 65)
     data = processPrefixes(wb["Enemies"], data)
     data = processSuffixes(wb["Enemies"], data)
     data = processJinxes(wb["Enemies"], data)
     data = processStages(wb["Enemies"], data)
     data = processSouls(wb["Enemies"], data)
-    data = processRelics(wb["Relics"], data)
-    data = processAffinities(wb["Affinities"], data)
+    data = processItems(wb["Relics"], data, "Relics")
+    data = processItems(wb["Affinities"], data, "Affinities")
     data = processWares(wb["Wares"], data)
     data = processGlitched(wb["Glitched"], data)
+
+    data["DLC"] = {}
+    dlcEnem = {}
+    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Demon", 65)
+    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Lunar", 73)
+    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Angelic", 81)
+
+    data["DLC"]["Enemies"] = dlcEnem
+
+    dlcRelics = {}
+    dlcRelics = processItems(wb["Relics_DLC1"], dlcRelics, "Demonic")
+    dlcRelics = processItems(wb["Relics_DLC2"], dlcRelics, "Lunar")
+    dlcRelics = processItems(wb["Relics_DLC3"], dlcRelics, "Angelic")
+
+    data["DLC"]["Relics"] = dlcRelics
     wb.close()
 
     finalJson = json.dumps(data, indent=4)
@@ -354,3 +355,5 @@ def main():
     os.remove("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx")
 
 main()
+
+#print(chr(68))
