@@ -2,665 +2,601 @@
     "Enemies": {
         "1": {
             "name": "Grunt",
-            "desc": "A simple creature that whacks things with its fists.",
             "reward": "+1 Ware",
             "hp": 2,
             "rr": 2,
             "atk": 1,
-            "img": "Grunt"
+            "img": "Grunt",
+            "desc": "A simple creature that whacks things with its fists."
         },
         "2": {
             "name": "Snowman",
-            "desc": "A horrible ghoul using a festive guise.",
             "reward": "+1 Ware",
             "hp": 4,
             "rr": 2,
-            "atk": 1
+            "atk": 1,
+            "desc": "A horrible ghoul using a festive guise."
         },
         "3": {
             "name": "Monkey",
-            "desc": "This wily primate loves to trick unsuspecting explorers!",
             "reward": "+4\u03b2",
             "hp": 1,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "This wily primate loves to trick unsuspecting explorers!"
         },
         "4": {
             "name": "Hog",
-            "desc": "Those cute, chubby jowls hide its razor sharp tusks.",
             "reward": "+1 Ware & +3\u03b2",
             "hp": 3,
             "rr": 3,
-            "atk": 2
+            "atk": 2,
+            "desc": "Those cute, chubby jowls hide its razor sharp tusks."
         },
         "5": {
             "name": "Solar 'Naut",
-            "desc": "An advanced cosmonaut who has harnessed the power of solar rays.",
             "reward": "+5\u03b2",
             "hp": 2,
             "rr": 3,
-            "atk": 2
+            "atk": 2,
+            "desc": "An advanced cosmonaut who has harnessed the power of solar rays."
         },
         "6": {
             "name": "Solar Knot",
-            "desc": "A garlic knot empored by the solar rays of the stars.",
             "reward": "+1 Relic",
             "hp": 4,
             "rr": 3,
-            "atk": 2
+            "atk": 2,
+            "desc": "A garlic knot empored by the solar rays of the stars."
         },
         "7": {
             "name": "Hollow",
-            "desc": "For each soul the attacking player holds, this gains +1 attack.",
             "reward": "+1 Relic",
             "hp": 4,
             "rr": 3,
             "atk": 1,
-            "img": "TheHollow"
+            "img": "TheHollow",
+            "desc": "For each soul the attacking player holds, this gains +1 attack."
         },
         "8": {
-            "name": "Common Imp",
-            "desc": "If this damages a player, draw a Ware card and use it on the attacking player.",
-            "reward": "+1 Ware",
-            "hp": 2,
-            "rr": 2,
-            "atk": 1,
-            "img": "CommonImp"
-        },
-        "9": {
-            "name": "Treasure Imp",
-            "desc": "This will leave after five attack rolls.",
-            "reward": "+3 Relics",
-            "hp": 6,
-            "rr": 4
-        },
-        "10": {
             "name": "Grave Stomper",
-            "desc": "When this is defeated, you may force a player to discard one Ware of their choosing.",
             "reward": "+1 Ware",
             "hp": 3,
             "rr": 2,
-            "atk": 1
+            "atk": 1,
+            "desc": "When this is defeated, you may force a player to discard one Ware of their choosing."
         },
-        "11": {
+        "9": {
             "name": "The Tomb",
-            "desc": "When this is defeated, kill an enemy (non boss) or player of your choosing.",
             "reward": "+1 Relic",
             "hp": 4,
             "rr": 4,
             "atk": 1,
-            "souls": 1
+            "souls": 1,
+            "desc": "When this is defeated, kill an enemy (non boss) or player of your choosing."
         },
-        "12": {
+        "10": {
             "name": "Hexed Soul",
             "desc": "Roll a die: 1-3; The soul is destroyed, 4-6; collect this soul."
         },
-        "13": {
+        "11": {
             "name": "Foul Trick",
             "desc": "Roll a die: 1-2; +1\u03b2, 3-4; take 2 damage, 5-6; Gain 2 wares. (If the Moon Jester is in play, you may discard this and deal 2 damage to it. Note that this will start combat)."
         },
-        "14": {
-            "name": "---LUNAR--- Moon Jester",
-            "desc": "No Wares may be played during this fight.",
-            "reward": "+1 Relic",
-            "hp": 6,
-            "rr": 3,
-            "atk": 2,
-            "souls": 2
-        },
-        "15": {
+        "12": {
             "name": "Voodoo Dog",
-            "desc": "If this takes damage, the attacking player must roll 3+ to avoid taking damage.",
             "reward": "+2 Wares",
             "hp": 2,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "If this takes damage, the attacking player must roll 3+ to avoid taking damage."
         },
-        "16": {
+        "13": {
             "name": "Something Horrid This Way Comes",
-            "desc": "When this is defeated, if the next monster drawn is a boss, claim one additional Relic.",
             "reward": "+1 Relic",
             "hp": 1,
             "rr": 6,
-            "atk": 1
+            "atk": 1,
+            "desc": "When this is defeated, if the next monster drawn is a boss, claim one additional Relic."
         },
-        "17": {
+        "14": {
             "name": "The Walls Move",
-            "desc": "When this is defeated, add a monster slot.",
             "reward": "+8\u03b2",
             "hp": 4,
             "rr": 3,
             "atk": 1,
-            "souls": 1
+            "souls": 1,
+            "desc": "When this is defeated, add a monster slot."
         },
-        "18": {
+        "15": {
             "name": "Mimic",
-            "desc": "If this damages the attacking player, they must add one Ware of their choosing to this monster's reward.",
             "reward": "+2 Wares",
             "hp": 3,
             "rr": 3,
             "atk": 1,
-            "img": "Chest"
+            "img": "Chest",
+            "desc": "If this damages the attacking player, they must add one Ware of their choosing to this monster's reward."
         },
-        "19": {
+        "16": {
             "name": "Plague Treasure",
-            "desc": "Roll a die: 1-3; Take 2 damage, 4-6; +1 Relic",
-            "img": "PlagueChest"
+            "img": "PlagueChest",
+            "desc": "Roll a die: 1-3; Take 2 damage, 4-6; +1 Relic"
         },
-        "20": {
-            "name": "Imp's Stash",
-            "desc": "If no Imps are in play, claim 3 Wares of your choosing. Otherwise, any Imp in play will have an additional 3 Wares of the same type added to their reward.",
-            "img": "Chest"
-        },
-        "21": {
-            "name": "Imp Thief",
-            "desc": "If this defeats a player, you must discard an additional Ware card.",
-            "reward": "+2 Wares",
-            "hp": 2,
-            "rr": 3,
-            "atk": 1
-        },
-        "22": {
-            "name": "Imp Queen",
-            "desc": "If any Imps are in play, they gain +1 to RR and +1 to ATK",
-            "reward": "+2 Relics",
-            "hp": 5,
-            "rr": 3,
-            "atk": 1,
-            "souls": 1
-        },
-        "23": {
+        "17": {
             "name": "Bomb Bones",
-            "desc": "When this is defeated, roll a die: 1-2; take 1 damage, 3-4; Inflict 1 damage on a player of your choosing, 5-6; Inflict 1 damage to an enemy of your choosing.",
             "reward": "+4\u03b2",
             "hp": 1,
             "rr": 2,
-            "atk": 1
+            "atk": 1,
+            "desc": "When this is defeated, roll a die: 1-2; take 1 damage, 3-4; Inflict 1 damage on a player of your choosing, 5-6; Inflict 1 damage to an enemy of your choosing."
         },
-        "24": {
+        "18": {
             "name": "George",
             "desc": "When this is drawn, it will leave after all players have had a turn. 4\u03b2: +2 Wares, 10\u03b2: +2 Relics, 20\u03b2: +1 Soul."
         },
-        "25": {
+        "19": {
             "name": "Spectre",
-            "desc": "This can only be damaged by an odd number roll. Even numbers miss.",
             "reward": "+3\u03b2",
             "hp": 1,
-            "atk": 1
+            "atk": 1,
+            "desc": "This can only be damaged by an odd number roll. Even numbers miss."
         },
-        "26": {
+        "20": {
             "name": "Ghoul",
-            "desc": "This can only be damaged by an even number roll. Odd numbers miss.",
             "reward": "+4\u03b2",
             "hp": 1,
-            "atk": 1
+            "atk": 1,
+            "desc": "This can only be damaged by an even number roll. Odd numbers miss."
         },
-        "27": {
+        "21": {
             "name": "Smile!",
-            "desc": "When this is defeated, you may pick another player's Ware at random to clone for yourself.",
             "hp": 3,
             "rr": 2,
             "atk": 2,
-            "souls": 1
+            "souls": 1,
+            "desc": "When this is defeated, you may pick another player's Ware at random to clone for yourself."
         },
-        "28": {
+        "22": {
             "name": "Booby trap",
             "desc": "Roll a die: 1; Take 1 damage, 2-6; rather pleasant experience."
         },
-        "29": {
+        "23": {
             "name": "~{HEX}~",
-            "desc": null,
             "hp": 6,
             "rr": 6,
             "atk": 6,
             "souls": 6
         },
-        "30": {
-            "name": "Imp Guard",
-            "desc": "If the \"Imp Queen\" is in play you must attack this card first.",
-            "reward": "+2 Wares",
-            "hp": 3,
-            "rr": 3,
-            "atk": 1
-        },
-        "31": {
-            "name": "Imp Swarm",
-            "desc": "If this is defeated in less than 3 moves, double the reward.",
-            "reward": "+3 Wares",
-            "hp": 4,
-            "rr": 2,
-            "atk": 2
-        },
-        "32": {
+        "24": {
             "name": "Hurtling bone",
             "desc": "Roll a die: 1; OUCH, who threw that? (take 1 damage), 2-6; conveniently duck for the shiny object you found on the ground (+1\u03b2)"
         },
-        "33": {
+        "25": {
             "name": "Bone Golem",
-            "desc": "A large construct made of bone. ",
             "reward": "+10\u03b2",
             "hp": 7,
             "rr": 2,
             "atk": 2,
-            "souls": 1
+            "souls": 1,
+            "desc": "A large construct made of bone. "
         },
-        "34": {
+        "26": {
             "name": "Watchful",
-            "desc": "No Wares may be played during this fight.",
             "reward": "+5\u03b2",
             "hp": 3,
             "rr": 3,
             "atk": 1,
-            "img": "TheWatchful"
+            "img": "TheWatchful",
+            "desc": "No Wares may be played during this fight."
         },
-        "35": {
+        "27": {
             "name": "Goliath Scarab",
-            "desc": "This hulking insect has lost its ability to become jewelry. Takes no damage on a roll of 6.",
             "reward": "+1 Relic",
             "hp": 8,
             "rr": 2,
             "atk": 1,
-            "souls": 1
+            "souls": 1,
+            "desc": "This hulking insect has lost its ability to become jewelry. Takes no damage on a roll of 6."
         },
-        "36": {
+        "28": {
             "name": "Ethereal Network Cord Snake ",
-            "desc": "This strange creature came to life one day in an abandoned server room and has been on the loose ever since. Watch out for its sharp prongs!",
             "reward": "+1 Relic",
             "hp": 6,
             "rr": 3,
             "atk": 2,
-            "souls": 1
+            "souls": 1,
+            "desc": "This strange creature came to life one day in an abandoned server room and has been on the loose ever since. Watch out for its sharp prongs!"
         },
-        "37": {
+        "29": {
             "name": "Dumpster Dive",
-            "desc": "When Revealed: All players may play an additional Ware in response to this.",
-            "reward": "+2 Wares to the player who revealed this."
+            "reward": "+2 Wares to the player who revealed this.",
+            "desc": "When Revealed: All players may play an additional Ware in response to this."
         },
-        "38": {
+        "30": {
             "name": "Pit of a Thousand Trials.",
             "desc": "Discard all active enemies and draw new ones until a boss slots into all of them. You may attack as many times as you want till the end of your turn."
         },
-        "39": {
+        "31": {
             "name": "Texan Engineer",
-            "desc": "Items that increase ATK is ineffective when fighting this. When defeated the active player may recharge all of their items. \"Hey look buddy...\"",
             "reward": "+1 Relic",
             "hp": 4,
             "rr": 3,
-            "atk": 2
+            "atk": 2,
+            "desc": "Items that increase ATK is ineffective when fighting this. When defeated the active player may recharge all of their items. \"Hey look buddy...\""
         },
-        "40": {
+        "32": {
             "name": "Scottish Swordsman",
-            "desc": "If this kills a player, they lose 1 soul.",
             "reward": "+2 Relics",
             "hp": 4,
             "rr": 4,
-            "atk": 2
+            "atk": 2,
+            "desc": "If this kills a player, they lose 1 soul."
         },
-        "41": {
+        "33": {
             "name": "The Strongman",
-            "desc": "If this is not in combat: you may vote to discard this.",
             "reward": "+1 Relic",
             "hp": 8,
             "rr": 5,
             "atk": 3,
-            "souls": 2
+            "souls": 2,
+            "desc": "If this is not in combat: you may vote to discard this."
         },
-        "42": {
+        "34": {
             "name": "Ogre",
-            "desc": "\"You feel layers of fear set upon you.\"",
             "reward": "+4 \u03b2",
             "hp": 3,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"You feel layers of fear set upon you.\""
         },
-        "43": {
+        "35": {
             "name": "Mucus Monster",
-            "desc": "Does not take damage on rolls of 3. \"A gelatinous monster made of snot.\"",
             "reward": "+X \u03b2",
             "hp": 2,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "Does not take damage on rolls of 3. \"A gelatinous monster made of snot.\""
         },
-        "44": {
+        "36": {
             "name": "Back door",
             "desc": "Add a new enemy slot to the board."
         },
-        "45": {
+        "37": {
             "name": "Spider",
-            "desc": "\"Don't let that spider bite ya, spider bite hurt.\"",
             "reward": "+2 \u03b2",
             "hp": 1,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"Don't let that spider bite ya, spider bite hurt.\""
         },
-        "46": {
+        "38": {
             "name": "Funny clown",
-            "desc": "\"Why does he keep dancing and saying his name?\"",
             "reward": "+1 Ware",
             "hp": 2,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"Why does he keep dancing and saying his name?\""
         },
-        "47": {
+        "39": {
             "name": "Rolly polly",
-            "desc": "When this is active you may only attack this. Only deals damage on rolls less than 2.",
             "reward": "+1 Ware",
             "hp": 3,
             "rr": 6,
-            "atk": 1
+            "atk": 1,
+            "desc": "When this is active you may only attack this. Only deals damage on rolls less than 2."
         },
-        "48": {
+        "40": {
             "name": "Plot Armour",
-            "desc": "While active all active enemies gain +1 RR. This can not be attacked, but is discarded if an enemy is defeated.",
             "reward": "+1 Ware",
             "hp": 2,
-            "rr": 6
+            "rr": 6,
+            "desc": "While active all active enemies gain +1 RR. This can not be attacked, but is discarded if an enemy is defeated."
         },
-        "49": {
+        "41": {
             "name": "Thieving Robot",
-            "desc": "If a player activated a relic while this is active they must discard a Ware.",
             "reward": "+4 \u03b2",
             "hp": 5,
             "rr": 2,
-            "atk": 1
+            "atk": 1,
+            "desc": "If a player activated a relic while this is active they must discard a Ware."
         },
-        "50": {
+        "42": {
             "name": "Schizophrenic Shopkeep",
             "desc": "When revealed, roll: 4-6: add a new slot to the shop. 1-3: Die."
         },
-        "51": {
+        "43": {
             "name": "Seductive Robot",
-            "desc": "On attack rolls of 6 combat ends. Damage dealt to this is reduced to 1.",
             "reward": "+1 HP for your next 2 turns",
             "hp": 5,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "On attack rolls of 6 combat ends. Damage dealt to this is reduced to 1."
         },
-        "52": {
+        "44": {
             "name": "Virus",
-            "desc": "When defeated, roll: 1-3: Add a Jinx to the board. 4-6: Nothing.",
             "reward": "+1 Ware",
             "hp": 3,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "When defeated, roll: 1-3: Add a Jinx to the board. 4-6: Nothing."
         },
-        "53": {
+        "45": {
             "name": "Warden",
-            "desc": "When defeated, you may add a new active enemy slot to the board.",
             "reward": "+1 Ware",
             "hp": 4,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "When defeated, you may add a new active enemy slot to the board."
         },
-        "54": {
+        "46": {
             "name": "Land Shark",
-            "desc": "\"Rows of gnashing teeth!\"",
             "reward": "+2 Ware",
             "hp": 4,
             "rr": 3,
-            "atk": 2
+            "atk": 2,
+            "desc": "\"Rows of gnashing teeth!\""
         },
-        "55": {
+        "47": {
             "name": "Tunneling Terror",
-            "desc": "The ground is shaking!\"",
             "reward": "+1 Relic",
             "hp": 1,
             "rr": 5,
-            "atk": 2
+            "atk": 2,
+            "desc": "The ground is shaking!\""
         },
-        "56": {
+        "48": {
             "name": "Buzzing Puppet",
-            "desc": "\"The fear grows as the vibrations grow near.\"",
             "reward": "+3 \u03b2",
             "hp": 3,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"The fear grows as the vibrations grow near.\""
         },
-        "57": {
+        "49": {
             "name": "Sentient Gingerbread Man",
-            "desc": "\"Do you know, the Muffin Man?\"",
             "reward": "+1 Ware",
             "hp": 2,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"Do you know, the Muffin Man?\""
         },
-        "58": {
+        "50": {
             "name": "Tub Bug",
-            "desc": "You may pet this and gain 1 \u03b2 once per turn",
             "reward": "+2 Wares",
             "hp": 1,
-            "rr": 2
+            "rr": 2,
+            "desc": "You may pet this and gain 1 \u03b2 once per turn"
         },
-        "59": {
+        "51": {
             "name": "Gilded Tub Bug",
-            "desc": "You may pet this and gain 2 \u03b2 once per turn",
             "reward": "+1 Relic",
             "hp": 2,
-            "rr": 2
+            "rr": 2,
+            "desc": "You may pet this and gain 2 \u03b2 once per turn"
         },
-        "60": {
+        "52": {
             "name": "Vampire",
-            "desc": "Does not take damage on rolls of 6. When dealing damage, this heals +1 HP.",
             "reward": "Steal 1 Ware from another player (They must reveal their hand to you).",
             "hp": 3,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "Does not take damage on rolls of 6. When dealing damage, this heals +1 HP."
         },
-        "61": {
+        "53": {
             "name": "Sentient Dryer",
-            "desc": "\"Hope your clothes are machine dryer safe\"",
             "reward": "+1 Ware",
             "hp": 4,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"Hope your clothes are machine dryer safe\""
         },
-        "62": {
+        "54": {
             "name": "Eyes that Judge",
-            "desc": "While active, you can not purchase any items from the shop.",
             "reward": "+X \u03b2",
             "hp": 4,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "While active, you can not purchase any items from the shop."
         },
-        "63": {
+        "55": {
             "name": "Automagical Golem",
-            "desc": "The eyes are like spotlights that look down on me\"",
             "reward": "+1 Relic",
             "hp": 6,
             "rr": 4,
             "atk": 1,
-            "souls": 1
+            "souls": 1,
+            "desc": "The eyes are like spotlights that look down on me\""
         },
-        "64": {
+        "56": {
             "name": "Schlump",
-            "desc": "If not in combat, once per turn you may roll: 1-5: Nothing. 6: Gain +1 Ware.",
             "reward": "+10 \u03b2",
             "hp": 8,
             "rr": 4,
             "atk": 2,
-            "souls": 2
+            "souls": 2,
+            "desc": "If not in combat, once per turn you may roll: 1-5: Nothing. 6: Gain +1 Ware."
         },
-        "65": {
+        "57": {
             "name": "Offensive Origami",
-            "desc": "\"Folded up slurs, hate speech, and propaganda.\"",
             "reward": "+3 \u03b2",
             "hp": 2,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"Folded up slurs, hate speech, and propaganda.\""
         },
-        "66": {
+        "58": {
             "name": "Lawyer",
             "desc": "Lose half your \u03b2 Rounded up."
         },
-        "67": {
+        "59": {
             "name": "Buff Shroom",
-            "desc": "\"A spore to stomp you to the floor.\"",
             "reward": "+1 Ware",
             "hp": 4,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"A spore to stomp you to the floor.\""
         },
-        "68": {
+        "60": {
             "name": "Rock",
-            "desc": "\"It's not just a boulder! its a Rock!\"",
             "reward": "+7 \u03b2",
             "hp": 8,
-            "rr": 2
+            "rr": 2,
+            "desc": "\"It's not just a boulder! its a Rock!\""
         },
-        "69": {
+        "61": {
             "name": "Large Ladybot",
-            "desc": "\"Comes with a variety of attatchments.\"",
             "reward": "+2 Wares",
             "hp": 6,
             "rr": 4,
             "atk": 1,
-            "souls": 1
+            "souls": 1,
+            "desc": "\"Comes with a variety of attatchments.\""
         },
-        "70": {
+        "62": {
             "name": "Big Green Rat",
-            "desc": "Gains +1 ATK at 1 HP.",
             "reward": "+6 \u03b2",
             "hp": 4,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "Gains +1 ATK at 1 HP."
         },
-        "71": {
+        "63": {
             "name": "Ballguy",
-            "desc": "When this dies, roll: 1-2: Nothing. 3-4: Attacking player takes 1 damage. 5-6: All players take 1 damage.",
             "reward": "+1 Ware",
             "hp": 2,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "When this dies, roll: 1-2: Nothing. 3-4: Attacking player takes 1 damage. 5-6: All players take 1 damage."
         },
-        "72": {
+        "64": {
             "name": "Melting Experiment",
-            "desc": "On death, this deals 1 damage to all players and active enemies.",
             "reward": "+7 \u03b2",
             "hp": 1,
             "rr": 5,
-            "atk": 2
+            "atk": 2,
+            "desc": "On death, this deals 1 damage to all players and active enemies."
         },
-        "73": {
+        "65": {
             "name": "Living Factory",
-            "desc": "When this dies, expand the active monster slots by 2. You must fight again this turn.",
             "reward": "+2 Wares",
             "hp": 4,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "When this dies, expand the active monster slots by 2. You must fight again this turn."
         },
-        "74": {
+        "66": {
             "name": "Assassin",
-            "desc": "When revealed, gains +1 ATK & RR until the end of the turn.",
             "reward": "+2 Wares",
             "hp": 2,
             "rr": 4,
-            "atk": 1
+            "atk": 1,
+            "desc": "When revealed, gains +1 ATK & RR until the end of the turn."
         },
-        "75": {
+        "67": {
             "name": "Laser Crystal",
-            "desc": "On a roll of 6, cancel the attack and fight another active enemy.",
             "reward": "+X Wares",
             "hp": 3,
             "rr": 3,
-            "atk": 99
+            "atk": 99,
+            "desc": "On a roll of 6, cancel the attack and fight another active enemy."
         },
-        "76": {
+        "68": {
             "name": "Cockatrice",
-            "desc": "If you roll a 3 while fighting this, die.",
             "reward": "+1 Relic",
             "hp": 5,
             "rr": 3,
             "atk": 1,
-            "souls": 1
+            "souls": 1,
+            "desc": "If you roll a 3 while fighting this, die."
         },
-        "77": {
+        "69": {
             "name": "Roid Raccoon",
-            "desc": "His addiction began when he found a trash can full of needles.",
             "reward": "+1 ATK for your next 3 turns",
             "hp": 10,
             "rr": 2,
-            "atk": 1
+            "atk": 1,
+            "desc": "His addiction began when he found a trash can full of needles."
         },
-        "78": {
+        "70": {
             "name": "Wasteland Robot",
-            "desc": "Gains +1 ATK each time it takes damage.",
-            "reward": "+1 Relic",
-            "hp": 4,
-            "rr": 4,
-            "atk": 1
-        },
-        "79": {
-            "name": "Sentient Beartrap",
-            "desc": "All players have -1 to attack rolls while this is active.",
-            "reward": "+8 \u03b2",
-            "hp": 3,
-            "rr": 2,
-            "atk": 1
-        },
-        "80": {
-            "name": "Haunted Piano",
-            "desc": "Gains +1 ATK and RR at 2 HP.",
             "reward": "+1 Relic",
             "hp": 4,
             "rr": 4,
             "atk": 1,
-            "souls": 1
+            "desc": "Gains +1 ATK each time it takes damage."
         },
-        "81": {
+        "71": {
+            "name": "Sentient Beartrap",
+            "reward": "+8 \u03b2",
+            "hp": 3,
+            "rr": 2,
+            "atk": 1,
+            "desc": "All players have -1 to attack rolls while this is active."
+        },
+        "72": {
+            "name": "Haunted Piano",
+            "reward": "+1 Relic",
+            "hp": 4,
+            "rr": 4,
+            "atk": 1,
+            "souls": 1,
+            "desc": "Gains +1 ATK and RR at 2 HP."
+        },
+        "73": {
             "name": "Warehouse",
             "desc": "When this is revealed, all players gain 1 Ware."
         },
-        "82": {
+        "74": {
             "name": "Monk-Eye",
-            "desc": "\"Trained in the ancient monkey way, he has abstained from just being an observer!\"",
             "reward": "+1 Relic",
             "hp": 3,
             "rr": 5,
-            "atk": 1
+            "atk": 1,
+            "desc": "\"Trained in the ancient monkey way, he has abstained from just being an observer!\""
         },
-        "83": {
+        "75": {
             "name": "Marble Goddess",
-            "desc": "All jinxes are discarded in its presence.",
             "reward": "+X \u03b2",
             "hp": 3,
             "rr": 3,
-            "atk": 1
+            "atk": 1,
+            "desc": "All jinxes are discarded in its presence."
         },
-        "84": {
+        "76": {
             "name": "Divine Intervention",
             "desc": "Players vote to remove a jinx, if there are no jinxes then this removes the next jinx put on the board."
         },
-        "85": {
+        "77": {
             "name": "Osmosis Homunculus",
-            "desc": "When revealed this \"absorbs\" all enemies on the board. This cannot be discarded and no other enemies may be drawn or fought. When this is defeated max enemy count is reduced to 2.",
             "reward": "The drops of the absorbed enemies including souls.",
             "hp": 6,
             "rr": 3,
-            "atk": 5
+            "atk": 5,
+            "desc": "When revealed this \"absorbs\" all enemies on the board. This cannot be discarded and no other enemies may be drawn or fought. When this is defeated max enemy count is reduced to 2."
         },
-        "86": {
+        "78": {
             "name": "House Repainting",
             "desc": "When revealed, reduce the max enemy count down by 1. \"Do the walls seem thicker to you?\""
         },
-        "87": {
+        "79": {
             "name": "Cow",
-            "desc": "Heals 2 health after every 2 turns. \"The Beggeter of Bovines\"",
             "reward": "+1 Relic",
             "hp": 10,
             "rr": 2,
             "atk": 3,
-            "souls": 2
+            "souls": 2,
+            "desc": "Heals 2 health after every 2 turns. \"The Beggeter of Bovines\""
         },
-        "88": {
+        "80": {
             "name": "Meet the Medic",
             "desc": "All players with Souls lose 1 Soul. Players with 0 Souls gain 1 Soul."
         },
-        "89": {
+        "81": {
             "name": "CONGA!",
-            "desc": "All players roll. The highest roll gains a relic. Lowest roll gains 3 wares. Intermediate rolls gain +5\u03b2.",
-            "img": "Democonga"
+            "img": "Democonga",
+            "desc": "All players roll. The highest roll gains a relic. Lowest roll gains 3 wares. Intermediate rolls gain +5\u03b2."
         },
-        "_size": 89
+        "_size": 81
     },
     "Prefixes": {
         "1": {
@@ -674,12 +610,10 @@
         },
         "3": {
             "name": "Monkied",
-            "mod": null,
             "rr": 1
         },
         "4": {
             "name": "Hexed",
-            "mod": null,
             "hp": 6
         },
         "5": {
@@ -690,23 +624,19 @@
         },
         "6": {
             "name": "Thick Skulled",
-            "mod": null,
             "hp": 1,
             "rr": -1
         },
         "7": {
             "name": "Surprised",
-            "mod": null,
             "rr": -1
         },
         "8": {
             "name": "Bleeding",
-            "mod": null,
             "hp": 1
         },
         "9": {
             "name": "Rabid",
-            "mod": null,
             "hp": -1,
             "atk": 1
         },
@@ -716,36 +646,30 @@
         },
         "11": {
             "name": "Armed",
-            "mod": null,
             "atk": 1
         },
         "12": {
             "name": "Burning",
-            "mod": null,
             "hp": -1,
             "rr": -1,
             "atk": 1
         },
         "13": {
             "name": "Slow",
-            "mod": null,
             "rr": -1
         },
         "14": {
             "name": "Furious",
-            "mod": null,
             "rr": -2,
             "atk": 2
         },
         "15": {
             "name": "Courageous",
-            "mod": null,
             "hp": 2,
             "rr": 1
         },
         "16": {
             "name": "Tortured",
-            "mod": null,
             "hp": -2,
             "rr": -1,
             "atk": 1
@@ -764,23 +688,19 @@
         },
         "20": {
             "name": "Righteous",
-            "mod": null,
             "atk": 3,
             "souls": 1
         },
         "21": {
             "name": "Big",
-            "mod": null,
             "hp": 2
         },
         "22": {
             "name": "Spicy",
-            "mod": null,
             "rr": 1
         },
         "23": {
             "name": "Athletic",
-            "mod": null,
             "hp": 1,
             "rr": 1
         },
@@ -791,23 +711,19 @@
         },
         "25": {
             "name": "Screaming",
-            "mod": null,
             "rr": -1,
             "atk": 1
         },
         "26": {
             "name": "Deaf",
-            "mod": null,
             "rr": -1
         },
         "27": {
             "name": "Blind",
-            "mod": null,
             "rr": -2
         },
         "28": {
             "name": "Bitten",
-            "mod": null,
             "hp": -1
         },
         "29": {
@@ -824,7 +740,6 @@
         },
         "32": {
             "name": "Achilles'",
-            "mod": null,
             "rr": 99
         },
         "33": {
@@ -849,13 +764,11 @@
         },
         "37": {
             "name": "Drunken",
-            "mod": null,
             "rr": -1,
             "atk": 1
         },
         "38": {
             "name": "Infant",
-            "mod": null,
             "hp": -1,
             "rr": -2,
             "souls": -99
@@ -872,12 +785,10 @@
     "Suffixes": {
         "1": {
             "name": "Of Monkiness",
-            "mod": null,
             "rr": 1
         },
         "2": {
             "name": "In Sorrow",
-            "mod": null,
             "rr": -1
         },
         "3": {
@@ -890,13 +801,11 @@
         },
         "5": {
             "name": "Mk. 2",
-            "mod": null,
             "hp": 1,
             "atk": 1
         },
         "6": {
             "name": "Mk. 3",
-            "mod": null,
             "hp": 2,
             "rr": 1,
             "atk": 1,
@@ -920,14 +829,12 @@
         },
         "11": {
             "name": "Of Giant Steps",
-            "mod": null,
             "hp": 1,
             "rr": -1,
             "atk": 1
         },
         "12": {
             "name": "The Conjoined",
-            "mod": null,
             "hp": 3,
             "rr": -1,
             "atk": 1,
@@ -935,7 +842,6 @@
         },
         "13": {
             "name": "With an Extra Leg",
-            "mod": null,
             "rr": 2
         },
         "14": {
@@ -947,7 +853,6 @@
         },
         "15": {
             "name": "Of Instability",
-            "mod": null,
             "hp": -2,
             "rr": 2,
             "atk": 2,
@@ -960,27 +865,23 @@
         },
         "17": {
             "name": "That Found a Big Stick",
-            "mod": null,
             "rr": 1,
             "atk": 1
         },
         "18": {
             "name": "The Cowardly",
-            "mod": null,
             "hp": -1,
             "rr": 3,
             "atk": -1
         },
         "19": {
             "name": "Mastermind",
-            "mod": null,
             "hp": 1,
             "rr": 2,
             "atk": 1
         },
         "20": {
             "name": "Overlord",
-            "mod": null,
             "hp": 2,
             "rr": 2,
             "atk": 1,
@@ -1035,23 +936,19 @@
         },
         "31": {
             "name": "The Quick",
-            "mod": null,
             "rr": 3
         },
         "32": {
             "name": "Of Min-Maxing",
-            "mod": null,
             "hp": -6,
             "atk": 6
         },
         "33": {
             "name": "That Fell From The Roof",
-            "mod": null,
             "hp": -1
         },
         "34": {
             "name": "That Ate Way Too Much",
-            "mod": null,
             "hp": 4,
             "rr": -1
         },
@@ -1076,153 +973,123 @@
     "Jinxes": {
         "1": {
             "name": "Did I Roll Yet?",
-            "desc": "The first roll on your turn is forgotten and must be rolled again.",
-            "img": null
+            "desc": "The first roll on your turn is forgotten and must be rolled again."
         },
         "2": {
             "name": "Boneitis",
-            "desc": "Lose 3\u03b2 if you roll a 6.",
-            "img": null
+            "desc": "Lose 3\u03b2 if you roll a 6."
         },
         "3": {
             "name": "Butterfingers",
-            "desc": "Lose 1 Ware if you roll a 3.",
-            "img": null
+            "desc": "Lose 1 Ware if you roll a 3."
         },
         "4": {
             "name": "Energy Crisis",
-            "desc": "You may only recharge one Relic per turn.",
-            "img": null
+            "desc": "You may only recharge one Relic per turn."
         },
         "5": {
             "name": "Inaccuracy",
-            "desc": "Successful attack rolls miss the targeted enemy and hit adjacent enemies.",
-            "img": null
+            "desc": "Successful attack rolls miss the targeted enemy and hit adjacent enemies."
         },
         "6": {
             "name": "Communism",
-            "desc": "The player with the most \u03b2 must give half, rounded up, to the player with the least \u03b2.",
-            "img": null
+            "desc": "The player with the most \u03b2 must give half, rounded up, to the player with the least \u03b2."
         },
         "7": {
             "name": "Dementia",
-            "desc": "All players must discard a Relic. If you have no Relics, lose 1 Ware. This is immediately discarded.",
-            "img": null
+            "desc": "All players must discard a Relic. If you have no Relics, lose 1 Ware. This is immediately discarded."
         },
         "8": {
             "name": "Mass Atrophy",
-            "desc": "All players and enemies have 1 ATK, no exeptions.",
-            "img": null
+            "desc": "All players and enemies have 1 ATK, no exeptions."
         },
         "9": {
             "name": "Midas' Crutch",
-            "desc": " All gained bones are halved, rounded down. Instances of gaining 1\u03b2 are forfeit. ",
-            "img": null
+            "desc": " All gained bones are halved, rounded down. Instances of gaining 1\u03b2 are forfeit. "
         },
         "10": {
             "name": "Glass Bones and Paper Skin",
-            "desc": "Relics can't be purchased and all players have -1 HP.",
-            "img": null
+            "desc": "Relics can't be purchased and all players have -1 HP."
         },
         "11": {
             "name": "Ruinous Relics",
-            "desc": "You must flip all but one Relic in your possession. These Relics can't be used until the Jinx is removed.",
-            "img": null
+            "desc": "You must flip all but one Relic in your possession. These Relics can't be used until the Jinx is removed."
         },
         "12": {
             "name": "Bloodbath",
-            "desc": "All enemy slots are filled and you must fight on your turn.",
-            "img": null
+            "desc": "All enemy slots are filled and you must fight on your turn."
         },
         "13": {
             "name": "Free Parking",
-            "desc": "All enemy rewards (except souls) are pooled together until this Jinx is removed. Upon removal, the rewards are divided evenly amongst the players.",
-            "img": null
+            "desc": "All enemy rewards (except souls) are pooled together until this Jinx is removed. Upon removal, the rewards are divided evenly amongst the players."
         },
         "14": {
             "name": "Number of the Beast",
-            "desc": "All rolls of 6 must be rerolled. If 6 is rolled 3 times in a row: all enemies  are killed and their rewards are given to the active player, discard this on that event.",
-            "img": null
+            "desc": "All rolls of 6 must be rerolled. If 6 is rolled 3 times in a row: all enemies  are killed and their rewards are given to the active player, discard this on that event."
         },
         "15": {
             "name": "Jinxes Make Us Jump for Joy",
-            "desc": "Places two more Jinxes on the board. Removing this one will remove them both.",
-            "img": null
+            "desc": "Places two more Jinxes on the board. Removing this one will remove them both."
         },
         "16": {
             "name": "Event Horizon",
-            "desc": "All players lose their souls. This is immediately discarded.",
-            "img": null
+            "desc": "All players lose their souls. This is immediately discarded."
         },
         "17": {
             "name": "I see the stop sign, but I have to find an octagon!",
-            "desc": "Permanently raises the win requirement to 8 souls. Even after discarding this.",
-            "img": null
+            "desc": "Permanently raises the win requirement to 8 souls. Even after discarding this."
         },
         "18": {
             "name": "Peripatetic",
-            "desc": "Stage changes on every players turn",
-            "img": null
+            "desc": "Stage changes on every players turn"
         },
         "19": {
             "name": "Thieves, Inc.",
-            "desc": "All rewards (exept Souls) that are gained from killed enemies are instead stolen from other players.",
-            "img": null
+            "desc": "All rewards (exept Souls) that are gained from killed enemies are instead stolen from other players."
         },
         "20": {
             "name": "Jelly of the Month Club",
-            "desc": "All players discard their Bonus Souls, and cannot acquire them for the rest of the game. This is immediately discarded.",
-            "img": null
+            "desc": "All players discard their Bonus Souls, and cannot acquire them for the rest of the game. This is immediately discarded."
         },
         "21": {
             "name": "Black Market Deals",
-            "desc": "Take 1 damage whenever you purchase a Relic.",
-            "img": null
+            "desc": "Take 1 damage whenever you purchase a Relic."
         },
         "22": {
             "name": "Ugh, so Cliche",
-            "desc": "Lose a Soul whenever you die. \"If you die in the game, you die for real!\"",
-            "img": null
+            "desc": "Lose a Soul whenever you die. \"If you die in the game, you die for real!\""
         },
         "23": {
             "name": "I've fallen, and I can't get up!",
-            "desc": "You have -1 to dice rolls when at 1 HP.",
-            "img": null
+            "desc": "You have -1 to dice rolls when at 1 HP."
         },
         "24": {
             "name": "Artificial Difficulty",
-            "desc": "All bosses have +2 HP and +1 ATK.",
-            "img": null
+            "desc": "All bosses have +2 HP and +1 ATK."
         },
         "25": {
             "name": "hex souls speedrun any%",
-            "desc": "At the beginning of your turn, set a 3 minute timer. End your turn when you run out of time.",
-            "img": null
+            "desc": "At the beginning of your turn, set a 3 minute timer. End your turn when you run out of time."
         },
         "26": {
             "name": "Improper Funding",
-            "desc": "You can't gain Wares at the beginning of your turn. \"We can't afford handouts.\"",
-            "img": null
+            "desc": "You can't gain Wares at the beginning of your turn. \"We can't afford handouts.\""
         },
         "27": {
             "name": "Improper Funding II",
-            "desc": "You can't gain extra health, and can only heal at the end of your turn. \"Is anybody here a doctor?\"",
-            "img": null
+            "desc": "You can't gain extra health, and can only heal at the end of your turn. \"Is anybody here a doctor?\""
         },
         "28": {
             "name": "Zombie Apocalypse",
-            "desc": "After killing an enemy and gaining its rewards, you must fight it again. Undead enemies have +2 HP and -1 to roll requirement, and drop no extra rewards. Can't be removed at the end of cycles.",
-            "img": null
+            "desc": "After killing an enemy and gaining its rewards, you must fight it again. Undead enemies have +2 HP and -1 to roll requirement, and drop no extra rewards. Can't be removed at the end of cycles."
         },
         "29": {
             "name": "Time and Space",
-            "desc": "This Jinx does nothing. It exists solely to waste time pulling it out, and waste space on the board.",
-            "img": null
+            "desc": "This Jinx does nothing. It exists solely to waste time pulling it out, and waste space on the board."
         },
         "30": {
             "name": "Viral Outbreak",
-            "desc": "After 3 cycles around the board, add a new Jinx. The added Jinx then mutates into a different Jinx every 3 cycles around the board. Can't be removed at the end of cycles.",
-            "img": null
+            "desc": "After 3 cycles around the board, add a new Jinx. The added Jinx then mutates into a different Jinx every 3 cycles around the board. Can't be removed at the end of cycles."
         },
         "_size": 30
     },
@@ -1234,391 +1101,314 @@
         },
         "2": {
             "name": "Deep Dark",
-            "desc": "Vision is difficult in such darkness, enemies have -1 to their RR. But, players also get -1 to all their combat rolls.",
-            "img": null
+            "desc": "Vision is difficult in such darkness, enemies have -1 to their RR. But, players also get -1 to all their combat rolls."
         },
         "3": {
             "name": "Holy Keep",
-            "desc": "Jinxes are ineffective while in this stage.",
-            "img": null
+            "desc": "Jinxes are ineffective while in this stage."
         },
         "4": {
             "name": "Ancient Arena",
-            "desc": "Players and enemies gain +1 ATK while in this stage.",
-            "img": null
+            "desc": "Players and enemies gain +1 ATK while in this stage."
         },
         "5": {
             "name": "Clover Fields",
-            "desc": "You may reroll any one dice roll per turn while in this stage.",
-            "img": null
+            "desc": "You may reroll any one dice roll per turn while in this stage."
         },
         "6": {
             "name": "Enemy Portal-Gateway",
-            "desc": "Adds a new active enemy slot, remove that slot when this is swapped for another stage.",
-            "img": null
+            "desc": "Adds a new active enemy slot, remove that slot when this is swapped for another stage."
         },
         "7": {
             "name": "Arcade",
-            "desc": "Enemies drop an additional 2\u03b2 on their death.",
-            "img": null
+            "desc": "Enemies drop an additional 2\u03b2 on their death."
         },
         "8": {
             "name": "Royal Tomb",
-            "desc": "At the start of your turn, gain a free relic. \"it's not grave robbing, its re-utilizing.\"",
-            "img": null
+            "desc": "At the start of your turn, gain a free relic. \"it's not grave robbing, its re-utilizing.\""
         },
         "9": {
             "name": "Nudist Beach",
-            "desc": "Passive relics are ineffective in this stage.",
-            "img": null
+            "desc": "Passive relics are ineffective in this stage."
         },
         "10": {
             "name": "Casino",
-            "desc": "You may only purchase relics off the top of the relic deck, but for an additional 10\u03b2 you may purchase an additional relic.",
-            "img": null
+            "desc": "You may only purchase relics off the top of the relic deck, but for an additional 10\u03b2 you may purchase an additional relic."
         },
         "11": {
             "name": "Davy Jones' Locker",
-            "desc": "If you die in this stage, you lose a soul.",
-            "img": null
+            "desc": "If you die in this stage, you lose a soul."
         },
         "12": {
             "name": "Glass Galleon",
-            "desc": "Souls dropped by enemies are x2 value. However, taking damage of any kind kills the player instantly.",
-            "img": null
+            "desc": "Souls dropped by enemies are x2 value. However, taking damage of any kind kills the player instantly."
         },
         "13": {
             "name": "Clearance Sale",
-            "desc": "Gain an additional ware at the start of your turn in this stage.",
-            "img": null
+            "desc": "Gain an additional ware at the start of your turn in this stage."
         },
         "14": {
             "name": "Abandoned Missile Silo",
-            "desc": "On an attack roll of 6, the attacking player and enemy both die and no rewards are gained. \"Be veeerryyyy careful...\"",
-            "img": null
+            "desc": "On an attack roll of 6, the attacking player and enemy both die and no rewards are gained. \"Be veeerryyyy careful...\""
         },
         "15": {
             "name": "Bouncy Castle",
-            "desc": "Rolls of 1 must be re-rolled.",
-            "img": null
+            "desc": "Rolls of 1 must be re-rolled."
         },
         "16": {
             "name": "Mirror Room",
-            "desc": "Rolls of 6 must be re-rolled.",
-            "img": null
+            "desc": "Rolls of 6 must be re-rolled."
         },
         "17": {
             "name": "Jail Cell",
-            "desc": "If a player rolls the same number twice in a row, their turn ends.",
-            "img": null
+            "desc": "If a player rolls the same number twice in a row, their turn ends."
         },
         "18": {
             "name": "The Pit",
-            "desc": "You must fight on your turn.",
-            "img": null
+            "desc": "You must fight on your turn."
         },
         "19": {
             "name": "Holy Cleansing Pool",
-            "desc": "All active jinxes are must be discarded. If an event were to add a jinx to the board, it is ignored. \"Hey, where are all the sexy mermaids?\"",
-            "img": null
+            "desc": "All active jinxes are must be discarded. If an event were to add a jinx to the board, it is ignored. \"Hey, where are all the sexy mermaids?\""
         },
         "20": {
             "name": "Vampire Den",
-            "desc": "All enemies and players heal 1 HP upon a successful attack.",
-            "img": null
+            "desc": "All enemies and players heal 1 HP upon a successful attack."
         },
         "21": {
             "name": "King's Arena",
-            "desc": "Enemies drop no rewards. Bosses drop +1 Relic.",
-            "img": null
+            "desc": "Enemies drop no rewards. Bosses drop +1 Relic."
         },
         "22": {
             "name": "Wild West",
-            "desc": "Armed with your trusty six-shooter, you have six attack rolls. If yer enemy ain't dead, time to hit the saddle, partner! (Cancel your attack)",
-            "img": null
+            "desc": "Armed with your trusty six-shooter, you have six attack rolls. If yer enemy ain't dead, time to hit the saddle, partner! (Cancel your attack)"
         },
         "23": {
             "name": "Anonymous Image Board",
-            "desc": "You can't affect other players with Wares, Relics, or enemy effects. \"WHO ARE YOU PEOPLE!?\"",
-            "img": null
+            "desc": "You can't affect other players with Wares, Relics, or enemy effects. \"WHO ARE YOU PEOPLE!?\""
         },
         "24": {
             "name": "The Dice Duke's Chambers",
-            "desc": "For any dice roll, roll 2 dice, then pick the roll in your favor.",
-            "img": null
+            "desc": "For any dice roll, roll 2 dice, then pick the roll in your favor."
         },
         "25": {
             "name": "Brothel",
-            "desc": "During your turn, you may spend 10\u03b2 once to gain +1 HP permanently. \"You can bone if you got the Bones.\"",
-            "img": null
+            "desc": "During your turn, you may spend 10\u03b2 once to gain +1 HP permanently. \"You can bone if you got the Bones.\""
         },
         "26": {
             "name": "Carousel of Aggress",
-            "desc": "All active enemies are discarded and replaced at the end of each players\" turn.",
-            "img": null
+            "desc": "All active enemies are discarded and replaced at the end of each players\" turn."
         },
         "27": {
             "name": "The Carnival",
-            "desc": "At the start of your turn, roll: 1: Gain a Relic. 2: Gain a Ware. 3: +1 HP until the end of your turn. 4-6: -1 HP. \"Sorry you broke your arm on the Scrambler, have a funnel cake.\"",
-            "img": null
+            "desc": "At the start of your turn, roll: 1: Gain a Relic. 2: Gain a Ware. 3: +1 HP until the end of your turn. 4-6: -1 HP. \"Sorry you broke your arm on the Scrambler, have a funnel cake.\""
         },
         "28": {
             "name": "The Bank",
-            "desc": "You may insert any amount of \u03b2 into the bank for safe keeping. If the Stage changes to The Bank on a different turn, you may withdraw double the \u03b2 you deposited.",
-            "img": null
+            "desc": "You may insert any amount of \u03b2 into the bank for safe keeping. If the Stage changes to The Bank on a different turn, you may withdraw double the \u03b2 you deposited."
         },
         "29": {
             "name": "Kosmic Kitchen",
-            "desc": "You may discard any amout of Wares to heal an equal amount HP. You may do this once on your turn. \"We can cook anything here, as long as you give us the equivalent matter.\"",
-            "img": null
+            "desc": "You may discard any amout of Wares to heal an equal amount HP. You may do this once on your turn. \"We can cook anything here, as long as you give us the equivalent matter.\""
         },
         "30": {
             "name": "The Backrooms",
-            "desc": "This Stage will not change at the next cycle, and can only be forced to change.",
-            "img": null
+            "desc": "This Stage will not change at the next cycle, and can only be forced to change."
         },
         "31": {
             "name": "Conga Crypt",
-            "desc": "Reshuffle all active bonus souls.",
-            "img": null
+            "desc": "Reshuffle all active bonus souls."
         },
         "32": {
             "name": "%MapName%",
-            "desc": "All players draw a glitch card. If a player already owns a glitch card, exchange one of their choosing. \"Now what's causing the issue?\"",
-            "img": null
+            "desc": "All players draw a glitch card. If a player already owns a glitch card, exchange one of their choosing. \"Now what's causing the issue?\""
         },
         "33": {
             "name": "Gemini Inn",
-            "desc": "When a boss is defeated, earn their rewards and end combat. Reset the boss instead of discarding it (Once per boss). ",
-            "img": null
+            "desc": "When a boss is defeated, earn their rewards and end combat. Reset the boss instead of discarding it (Once per boss). "
         },
         "34": {
             "name": "Imp Nest",
-            "desc": "Imps passively gain: +1 to RR, -1 to ATK. \"Kill it while it's still cute.\"",
-            "img": null
+            "desc": "Imps passively gain: +1 to RR, -1 to ATK. \"Kill it while it's still cute.\""
         },
         "35": {
             "name": "Ambrosia Lake",
-            "desc": "No players or enemies can be killed this round.",
-            "img": null
+            "desc": "No players or enemies can be killed this round."
         },
         "36": {
             "name": "Maze of Bank Statements",
-            "desc": "No players or enemies may initiate combat. Gain +5\u03b2 at the start of your turn. \"It's time you took your mind off fighting and worry about your bookkeeping\"",
-            "img": null
+            "desc": "No players or enemies may initiate combat. Gain +5\u03b2 at the start of your turn. \"It's time you took your mind off fighting and worry about your bookkeeping\""
         },
         "37": {
             "name": "The First Moon",
-            "desc": "All players recieve a Lunar Relic. \"Bad moon rising.\"",
-            "img": null
+            "desc": "All players recieve a Lunar Relic. \"Bad moon rising.\""
         },
         "38": {
             "name": "The Second Moon",
-            "desc": "Lunar Relics may be used without charge. \"Lunar charged.\"",
-            "img": null
+            "desc": "Lunar Relics may be used without charge. \"Lunar charged.\""
         },
         "39": {
             "name": "The Third Moon",
-            "desc": "If an enemy is to be drawn, draw them from the Lunar deck. \"shooting stars, make a wish!\"",
-            "img": null
+            "desc": "If an enemy is to be drawn, draw them from the Lunar deck. \"shooting stars, make a wish!\""
         },
         "40": {
             "name": "The Fourth Moon",
-            "desc": "Restock and reshuffle all bonus soul slots. \"Spirits dancing in the moonlight.\"",
-            "img": null
+            "desc": "Restock and reshuffle all bonus soul slots. \"Spirits dancing in the moonlight.\""
         },
         "41": {
             "name": "The Fifth Moon",
-            "desc": "You may only fight Lunar enemies this round. \"Friday night fight night.\"",
-            "img": null
+            "desc": "You may only fight Lunar enemies this round. \"Friday night fight night.\""
         },
         "42": {
             "name": "The Sixth Moon",
-            "desc": "Lunar enemies HP and ATK are doubled, RR is 6. \"Horrible things lurk in the moonlight.\"",
-            "img": null
+            "desc": "Lunar enemies HP and ATK are doubled, RR is 6. \"Horrible things lurk in the moonlight.\""
         },
         "43": {
             "name": "Bible Camp",
-            "desc": "Angelic Relics can be used without charge.",
-            "img": null
+            "desc": "Angelic Relics can be used without charge."
         },
         "44": {
             "name": "Church Among Nothingness",
-            "desc": "Angelic enemies have +1 RR. Demonic enemy draws are replaced with normal enemies.",
-            "img": null
+            "desc": "Angelic enemies have +1 RR. Demonic enemy draws are replaced with normal enemies."
         },
         "45": {
             "name": "Lust Ring",
-            "desc": "Demonic enemies can't be fought.",
-            "img": null
+            "desc": "Demonic enemies can't be fought."
         },
         "46": {
             "name": "Devil's Maw",
-            "desc": "Discard all Angelic enemies. Angelic relics may not be used.",
-            "img": null
+            "desc": "Replace all Angelic enemies with Demonic enemies. Angelic relics may not be used."
         },
         "_size": 46
     },
     "Souls": {
         "1": {
             "name": "Champion's Soul",
-            "desc": "Kill 3 enemies on your turn.",
-            "img": null
+            "desc": "Kill 3 enemies on your turn."
         },
         "2": {
             "name": "Collector's Soul",
-            "desc": "Be the first to collect 5 Relics.",
-            "img": null
+            "desc": "Be the first to collect 5 Relics."
         },
         "3": {
             "name": "Tycoon's Soul",
-            "desc": "Be the first to have more than 100\u03b2.",
-            "img": null
+            "desc": "Be the first to have more than 100\u03b2."
         },
         "4": {
             "name": "Devestator's Soul",
-            "desc": "Deal more than 4 damage in one move.",
-            "img": null
+            "desc": "Deal more than 4 damage in one move."
         },
         "5": {
             "name": "Survivor's Soul",
-            "desc": "Don't die for 4 stages consecutively.",
-            "img": null
+            "desc": "Don't die for 4 stages consecutively."
         },
         "6": {
             "name": "Traitor's Soul",
-            "desc": "Be the first to kill another player.",
-            "img": null
+            "desc": "Be the first to kill another player."
         },
         "7": {
             "name": "Freebie Soul",
-            "desc": "All players gain 1 soul this game, don't waste it.",
-            "img": null
+            "desc": "All players gain 1 soul this game, don't waste it."
         },
         "8": {
             "name": "Devil's Soul",
-            "desc": "Roll 3 natural 6's in a row.",
-            "img": null
+            "desc": "Roll 3 natural 6's in a row."
         },
         "9": {
             "name": "Carrion's Soul",
-            "desc": "Be the first to die 3 times.",
-            "img": null
+            "desc": "Be the first to die 3 times."
         },
         "10": {
             "name": "Beggar's Soul",
-            "desc": "End your turn with no wares, \u03b2, or Relics.",
-            "img": null
+            "desc": "End your turn with no wares, \u03b2, or Relics."
         },
         "11": {
             "name": "0x00000000 EXCEPTION_ACCESS_VIOLATION",
-            "desc": "Be the first to gain a Glitched card.",
-            "img": null
+            "desc": "Be the first to gain a Glitched card."
         },
         "12": {
             "name": "BFFs Soul",
-            "desc": "Save someone's life 5 times. ",
-            "img": null
+            "desc": "Save someone's life 5 times. "
         },
         "13": {
             "name": "Gunslinger's Soul",
-            "desc": "Eliminate a boss on your first attack.",
-            "img": null
+            "desc": "Eliminate a boss on your first attack."
         },
         "14": {
             "name": "Regicide Soul",
-            "desc": "Eliminate two Imp gaurds and the Queen.",
-            "img": null
+            "desc": "Eliminate two Imp gaurds and the Queen."
         },
         "15": {
             "name": "Fool's Soul",
-            "desc": "Eliminate the Moon Jester with the \"Foul Trick\".",
-            "img": null
+            "desc": "Eliminate the Moon Jester with the \"Foul Trick\"."
         },
         "16": {
             "name": "Sharpshooter's Soul",
-            "desc": "Miss 6 times in a row on your turn. \"And then I missed.\"",
-            "img": null
+            "desc": "Miss 6 times in a row on your turn. \"And then I missed.\""
         },
         "17": {
             "name": "Hex Soul",
-            "desc": "Kill an enemy with 6 HP, or an enemy with the \"hexed\" prefix.",
-            "img": null
+            "desc": "Kill an enemy with 6 HP, or an enemy with the \"hexed\" prefix."
         },
         "18": {
             "name": "Soulless Soul",
-            "desc": "Destroy a soul owned by another player.",
-            "img": null
+            "desc": "Destroy a soul owned by another player."
         },
         "19": {
             "name": "Forgiver's Soul",
-            "desc": "Discard a boss before another player is about to eliminate it.",
-            "img": null
+            "desc": "Discard a boss before another player is about to eliminate it."
         },
         "20": {
             "name": "Vestigial Soul",
-            "desc": "Survive two attacks that would have killed you on the same turn.",
-            "img": null
+            "desc": "Survive two attacks that would have killed you on the same turn."
         },
         "21": {
             "name": "Soul of Remorse",
-            "desc": "Buy a Relic from the shop and lose it in the same turn.",
-            "img": null
+            "desc": "Buy a Relic from the shop and lose it in the same turn."
         },
         "22": {
             "name": "Investor's Soul",
-            "desc": "Spend 30 or more \u03b2 on your turn.",
-            "img": null
+            "desc": "Spend 30 or more \u03b2 on your turn."
         },
         "23": {
             "name": "Heartwarmer's Soul",
-            "desc": "Replenish 5 hp of another player.",
-            "img": null
+            "desc": "Replenish 5 hp of another player."
         },
         "24": {
             "name": "Pirate's Soul",
-            "desc": "Eliminate 2 Treasure Imps",
-            "img": null
+            "desc": "Eliminate 2 Treasure Imps"
         },
         "25": {
             "name": "Cancer Patient's Soul",
-            "desc": "Have an HP of 8 or more.",
-            "img": null
+            "desc": "Have an HP of 8 or more."
         },
         "26": {
             "name": "Tank's Soul",
-            "desc": "Take 10 or more damage on your turn without dying.",
-            "img": null
+            "desc": "Take 10 or more damage on your turn without dying."
         },
         "27": {
             "name": "Board Game Blowout",
-            "desc": "Roll 3 natural 1's on your turn.",
-            "img": null
+            "desc": "Roll 3 natural 1's on your turn."
         },
         "28": {
             "name": "Graverobber's Soul",
-            "desc": "Get 2 Souls on your turn.",
-            "img": null
+            "desc": "Get 2 Souls on your turn."
         },
         "29": {
             "name": "Cow Soul",
-            "desc": "Flee from combat three times.",
-            "img": null
+            "desc": "Flee from combat three times."
         },
         "30": {
             "name": "Sloth's Soul",
-            "desc": "Do absolutely nothing for 3 turns consecutively. Dying resets this. \"Imma Luigi! Number One!\"",
-            "img": null
+            "desc": "Do absolutely nothing for 3 turns consecutively. Dying resets this. \"Imma Luigi! Number One!\""
         },
         "31": {
             "name": "Tactician's Soul",
-            "desc": "Kill an enemy before entering combat and kill another enemy after entering combat on the same turn.",
-            "img": null
+            "desc": "Kill an enemy before entering combat and kill another enemy after entering combat on the same turn."
         },
         "32": {
             "name": "Broken Soul",
-            "desc": "You lost all the souls you had in one turn, what a bummer.",
-            "img": null
+            "desc": "You lost all the souls you had in one turn, what a bummer."
         },
         "_size": 32
     },
@@ -1626,15 +1416,13 @@
         "1": {
             "name": "Mirror",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Roll: 1-3: Nothing, Roll 4-6: reflect a relic/Ware played against you to attacker."
                 },
                 "2": {
-                    "name": "Inverted",
-                    "desc": " Roll: 1-3: reflect a relic/Ware played against you to attacker. Roll 4-6: Nothing."
+                    "desc": " Roll: 1-3: reflect a relic/Ware played against you to attacker. Roll 4-6: Nothing.",
+                    "name": "Inverted"
                 },
                 "_size": 2
             }
@@ -1642,10 +1430,8 @@
         "2": {
             "name": "Chemistry Set",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Roll: 1 +1 Hp, 2 +1 Atk, 3 Nothing, 4 +1 Roll (next roll), 5 -1 Roll (next roll), 6 -1 Hp "
                 },
                 "_size": 1
@@ -1654,59 +1440,55 @@
         "3": {
             "name": "Bombs?",
             "type": "$",
-            "img": "Tristan3d/Bombs",
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " Pay 3\u03b2 to attack 1 to an active enemy. \"You want it? It's yours my friend.\""
                 },
                 "_size": 1
-            }
+            },
+            "img": "Tristan3d/Bombs"
         },
         "4": {
             "name": "Shovel",
             "type": "@",
-            "img": "Tristan3d/Shovel",
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 1\u03b2, 3-4: nothing, 5: +1 Ware, 6: Gain a relic and discard"
                 },
                 "2": {
-                    "name": "Golden",
-                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 3\u03b2, 3-4: Nothing, 5: +1 Ware, 6: Gain a relic and discard"
+                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 3\u03b2, 3-4: Nothing, 5: +1 Ware, 6: Gain a relic and discard",
+                    "name": "Golden"
                 },
                 "3": {
-                    "name": "Cursed",
-                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 2\u03b2, 3-4: Fight off top monster deck and discard, 5: +1 Ware, 6: Gain a relic and discard"
+                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 2\u03b2, 3-4: Fight off top monster deck and discard, 5: +1 Ware, 6: Gain a relic and discard",
+                    "name": "Cursed"
                 },
                 "_size": 3
-            }
+            },
+            "img": "Tristan3d/Shovel"
         },
         "5": {
             "name": "Nanomachines",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "You gain +1 HP & ATK for the next 3 turns. Discard this on the 4th."
                 },
                 "2": {
-                    "name": "Military",
-                    "desc": "You gain +1 HP & +2 ATK for the next 3 turns. Discard this on the 4th."
+                    "desc": "You gain +1 HP & +2 ATK for the next 3 turns. Discard this on the 4th.",
+                    "name": "Military"
                 },
                 "3": {
-                    "name": "Medical",
-                    "desc": "You gain +2 HP for the next 3 turns. Discard this on the 4th."
+                    "desc": "You gain +2 HP for the next 3 turns. Discard this on the 4th.",
+                    "name": "Medical"
                 },
                 "4": {
-                    "name": "Experimental",
-                    "desc": "You gain +2 HP & ATK for the next 2 turns. Discard this on the 3rd."
+                    "desc": "You gain +2 HP & ATK for the next 2 turns. Discard this on the 3rd.",
+                    "name": "Experimental"
                 },
                 "5": {
-                    "name": "Hyper",
-                    "desc": "You gain +1 HP, ATK, and dice rolls for the next 5 turns. Discard this on the 6th."
+                    "desc": "You gain +1 HP, ATK, and dice rolls for the next 5 turns. Discard this on the 6th.",
+                    "name": "Hyper"
                 },
                 "_size": 5
             }
@@ -1714,27 +1496,26 @@
         "6": {
             "name": "Medal",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Bronze",
-                    "desc": "If you die on a dice roll of 1, you may negate death and end your turn."
+                    "desc": "If you die on a dice roll of 1, you may negate death and end your turn.",
+                    "name": "Bronze"
                 },
                 "2": {
-                    "name": "Shiny",
-                    "desc": "If you die on a dice roll of 1-2, you may negate death and end your turn."
+                    "desc": "If you die on a dice roll of 1-2, you may negate death and end your turn.",
+                    "name": "Shiny"
                 },
                 "3": {
-                    "name": "Polished",
-                    "desc": "If you die on a dice roll of 1-3, you may negate death and end your turn."
+                    "desc": "If you die on a dice roll of 1-3, you may negate death and end your turn.",
+                    "name": "Polished"
                 },
                 "4": {
-                    "name": "Gold",
-                    "desc": "You take no damage on an attack roll of 1."
+                    "desc": "You take no damage on an attack roll of 1.",
+                    "name": "Gold"
                 },
                 "5": {
-                    "name": "Platinum",
-                    "desc": "You take no damage on attack rolls 1-2."
+                    "desc": "You take no damage on attack rolls 1-2.",
+                    "name": "Platinum"
                 },
                 "_size": 5
             }
@@ -1742,27 +1523,25 @@
         "7": {
             "name": "Urmgurn's Little Book of Treehopper Nymphs",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "During a turn, if there is a dice roll of 3, you may force the next roll to be a 3."
                 },
                 "2": {
-                    "name": "Pristine",
-                    "desc": "During a turn, if there is a dice roll of 4, you may force the next roll to be a 4."
+                    "desc": "During a turn, if there is a dice roll of 4, you may force the next roll to be a 4.",
+                    "name": "Pristine"
                 },
                 "3": {
-                    "name": "Sealed",
-                    "desc": "During a turn, if there is a dice roll of 5, you may force the next roll to be a 5."
+                    "desc": "During a turn, if there is a dice roll of 5, you may force the next roll to be a 5.",
+                    "name": "Sealed"
                 },
                 "4": {
-                    "name": "Signed",
-                    "desc": "During a turn, if there is a dice roll of 6, you may force the next roll to be a 6."
+                    "desc": "During a turn, if there is a dice roll of 6, you may force the next roll to be a 6.",
+                    "name": "Signed"
                 },
                 "5": {
-                    "name": "Torn",
-                    "desc": "During a turn, if there is a dice roll of 1, you may force the next roll to be a 1."
+                    "desc": "During a turn, if there is a dice roll of 1, you may force the next roll to be a 1.",
+                    "name": "Torn"
                 },
                 "_size": 5
             }
@@ -1770,10 +1549,8 @@
         "8": {
             "name": "Miniature Dyson Sphere",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Put a counter on this. At 3 counters, recharge all other Relics and you may play an additional Ware."
                 },
                 "_size": 1
@@ -1782,27 +1559,25 @@
         "9": {
             "name": "Handcannon",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Attack rolls hit all active enemies, provided it meets their RR. "
                 },
                 "2": {
-                    "name": "Auto",
-                    "desc": "Odd numbered attack rolls hit all active enemies."
+                    "desc": "Odd numbered attack rolls hit all active enemies.",
+                    "name": "Auto"
                 },
                 "3": {
-                    "name": "Sawed-Off",
-                    "desc": "Even numbered attack roll hit all active enemies."
+                    "desc": "Even numbered attack roll hit all active enemies.",
+                    "name": "Sawed-Off"
                 },
                 "4": {
-                    "name": "Super",
-                    "desc": "Attack rolls of 6 have +1 DMG and hit all active enemies."
+                    "desc": "Attack rolls of 6 have +1 DMG and hit all active enemies.",
+                    "name": "Super"
                 },
                 "5": {
-                    "name": "Overclocked",
-                    "desc": "Attack rolls of 6 have +1 DMG and hit all active enemies, but deal 1 DMG to yourself."
+                    "desc": "Attack rolls of 6 have +1 DMG and hit all active enemies, but deal 1 DMG to yourself.",
+                    "name": "Overclocked"
                 },
                 "_size": 5
             }
@@ -1810,23 +1585,21 @@
         "10": {
             "name": "Get Well Soon Card",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When you die, discard this and receive another Relic."
                 },
                 "2": {
-                    "name": "Sparkly",
-                    "desc": "When you die, discard this and receive two Relics."
+                    "desc": "When you die, discard this and receive two Relics.",
+                    "name": "Sparkly"
                 },
                 "3": {
-                    "name": "Pop-up",
-                    "desc": "When you die, discard this and receive another Relic and +2 Wares."
+                    "desc": "When you die, discard this and receive another Relic and +2 Wares.",
+                    "name": "Pop-up"
                 },
                 "4": {
-                    "name": "Holographic",
-                    "desc": "When you die, discard this and receive two Relics and +2 Wares."
+                    "desc": "When you die, discard this and receive two Relics and +2 Wares.",
+                    "name": "Holographic"
                 },
                 "_size": 4
             }
@@ -1834,19 +1607,17 @@
         "11": {
             "name": "Kapala",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When you kill an enemy, put a counter on this. At 3 counters, remove them all and permanently gain 1 HP."
                 },
                 "2": {
-                    "name": "Crimson",
-                    "desc": "When you kill an enemy, put a counter on this. At 3 counters, remove them all and permanently gain 1 ATK."
+                    "desc": "When you kill an enemy, put a counter on this. At 3 counters, remove them all and permanently gain 1 ATK.",
+                    "name": "Crimson"
                 },
                 "3": {
-                    "name": "Kali's Favorite",
-                    "desc": "When you kill an enemy, put a counter on this. At 4 counters, remove them all and permanently gain 1 HP & ATK."
+                    "desc": "When you kill an enemy, put a counter on this. At 4 counters, remove them all and permanently gain 1 HP & ATK.",
+                    "name": "Kali's Favorite"
                 },
                 "_size": 3
             }
@@ -1854,23 +1625,21 @@
         "12": {
             "name": "Djinni's Kiss",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Gain +1 HP and ATK when any Jinx is on the board."
                 },
                 "2": {
-                    "name": "Sloppy",
-                    "desc": "Gain +2 HP when any Jinx is on the board,"
+                    "desc": "Gain +2 HP when any Jinx is on the board,",
+                    "name": "Sloppy"
                 },
                 "3": {
-                    "name": "French",
-                    "desc": "Gain +2 ATK when any Jinx is on the board."
+                    "desc": "Gain +2 ATK when any Jinx is on the board.",
+                    "name": "French"
                 },
                 "4": {
-                    "name": "5-Minute",
-                    "desc": "Gain +2 HP and ATK when any jinx is on the board."
+                    "desc": "Gain +2 HP and ATK when any jinx is on the board.",
+                    "name": "5-Minute"
                 },
                 "_size": 4
             }
@@ -1878,10 +1647,8 @@
         "13": {
             "name": "Syntax Error",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Roll: 1-2: Gain 1 Ware, 3: Lose 2\u03b2, 4: Gain +1HP for turn, 5: Lose 1 Ware, 6: End turn "
                 },
                 "_size": 1
@@ -1890,10 +1657,8 @@
         "14": {
             "name": "D.D.o.S.",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Spend 2 Counters to remove a Non-Boss type Enemy from the board"
                 },
                 "_size": 1
@@ -1902,15 +1667,13 @@
         "15": {
             "name": "Dr. Tibertius' Thermal Toothpaste",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Prevent 1 damage or +1 to next Roll"
                 },
                 "2": {
-                    "name": "Minty Fresh",
-                    "desc": "Prevent 2 damage or +1 ATK"
+                    "desc": "Prevent 2 damage or +1 ATK",
+                    "name": "Minty Fresh"
                 },
                 "_size": 2
             }
@@ -1918,10 +1681,8 @@
         "16": {
             "name": "Ophiocordyceps Spores",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Force an enemy to lose its active effects, but gain +1 ATK."
                 },
                 "_size": 1
@@ -1930,10 +1691,8 @@
         "17": {
             "name": "GigaBites",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +1 Hp, Enemies you kill drop +1\u03b2 \"Full of sugar and silicon!\""
                 },
                 "_size": 1
@@ -1942,10 +1701,8 @@
         "18": {
             "name": "The Bibble",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Choose one: Remove a Jinx OR Cancel your attack on an enemy. \"You question the words of the mighty JIMMY?!\""
                 },
                 "_size": 1
@@ -1954,19 +1711,17 @@
         "19": {
             "name": "Courage Reactor",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Recharge another Relic."
                 },
                 "2": {
-                    "name": "Charged",
-                    "desc": "Recharge two other Relics."
+                    "desc": "Recharge two other Relics.",
+                    "name": "Charged"
                 },
                 "3": {
-                    "name": "Nuclear",
-                    "desc": "Recharge another Relic. You may also play another Ware."
+                    "desc": "Recharge another Relic. You may also play another Ware.",
+                    "name": "Nuclear"
                 },
                 "_size": 3
             }
@@ -1974,15 +1729,13 @@
         "20": {
             "name": "DINNER",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +1 HP."
                 },
                 "2": {
-                    "name": "I wonder what's for",
-                    "desc": " +2 HP."
+                    "desc": " +2 HP.",
+                    "name": "I wonder what's for"
                 },
                 "_size": 2
             }
@@ -1990,10 +1743,8 @@
         "21": {
             "name": "Rotten Eggs",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +1 ATK."
                 },
                 "_size": 1
@@ -2002,10 +1753,8 @@
         "22": {
             "name": "Sandglobe",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "All damage done to you is reduced to 1."
                 },
                 "_size": 1
@@ -2014,10 +1763,8 @@
         "23": {
             "name": "Eye of Ra",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Turn an Attack Roll to a 6. If this roll was a 1, deal double damage."
                 },
                 "_size": 1
@@ -2026,10 +1773,8 @@
         "24": {
             "name": "Cockfighting License",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When someone enters combat, guess who will win. If you are correct: gain 5\u03b2."
                 },
                 "_size": 1
@@ -2038,10 +1783,8 @@
         "25": {
             "name": "Sharing Wares is Caring",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "The next Ware that is played effects all players."
                 },
                 "_size": 1
@@ -2050,19 +1793,17 @@
         "26": {
             "name": "Fishing Rod",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Steal a random Ware from another player."
                 },
                 "2": {
-                    "name": "Steel",
-                    "desc": "Steal 2 random Wares from another player."
+                    "desc": "Steal 2 random Wares from another player.",
+                    "name": "Steel"
                 },
                 "3": {
-                    "name": "Carbon",
-                    "desc": "Steal a random Ware from every player."
+                    "desc": "Steal a random Ware from every player.",
+                    "name": "Carbon"
                 },
                 "_size": 3
             }
@@ -2070,10 +1811,8 @@
         "27": {
             "name": "Entropy Chip",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Destroy this: Remove any enemy, Relic, or Soul card."
                 },
                 "_size": 1
@@ -2082,10 +1821,8 @@
         "28": {
             "name": "Bag of Bones",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Gain 1\u03b2. When any player rolls a 1, recharge this."
                 },
                 "_size": 1
@@ -2094,15 +1831,13 @@
         "29": {
             "name": "Cane",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +1 to all of your attack rolls."
                 },
                 "2": {
-                    "name": "Bull Penis",
-                    "desc": " +1 ATK. +1 to all of your attack rolls. \"You flip the fuck out over the fact that this is apparently a BULL PENIS CANE.\""
+                    "desc": " +1 ATK. +1 to all of your attack rolls. \"You flip the fuck out over the fact that this is apparently a BULL PENIS CANE.\"",
+                    "name": "Bull Penis"
                 },
                 "_size": 2
             }
@@ -2110,19 +1845,17 @@
         "30": {
             "name": "Aegis",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Other players can't activate Relics during your turn."
                 },
                 "2": {
-                    "name": "Treacle",
-                    "desc": "Other players can't activate relics or play Wares during your turn."
+                    "desc": "Other players can't activate relics or play Wares during your turn.",
+                    "name": "Treacle"
                 },
                 "3": {
-                    "name": "Frijole",
-                    "desc": " +1 HP. Other players can't activate Relics or play Wares during your turn. \"Yeah, you're practically indestructable now.\""
+                    "desc": " +1 HP. Other players can't activate Relics or play Wares during your turn. \"Yeah, you're practically indestructable now.\"",
+                    "name": "Frijole"
                 },
                 "_size": 3
             }
@@ -2130,10 +1863,8 @@
         "31": {
             "name": "Hairpin",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "After an attack roll of 6, roll again. If you land another 6, deal an additional 3 damage. \"Armed with the MACHINE GUN, you are an unstoppable murdering machine.\""
                 },
                 "_size": 1
@@ -2142,10 +1873,8 @@
         "32": {
             "name": "Rigged Slot Machine",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "You may buy shop Relics for 5\u03b2."
                 },
                 "_size": 1
@@ -2154,10 +1883,8 @@
         "33": {
             "name": "Fibrodysplasia",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Gain 2\u03b2 whenever you activate a Relic."
                 },
                 "_size": 1
@@ -2166,19 +1893,17 @@
         "34": {
             "name": "Hand of Yama",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Whenever another player dies, you choose which Relic they discard."
                 },
                 "2": {
-                    "name": "Left",
-                    "desc": "Whenever another player dies, you gain any Wares or \u03b2 they lose."
+                    "desc": "Whenever another player dies, you gain any Wares or \u03b2 they lose.",
+                    "name": "Left"
                 },
                 "3": {
-                    "name": "Eggplanted",
-                    "desc": "Whenever another player dies, you choose which Relic they discard. You also gain any Wares or \u03b2 they lose."
+                    "desc": "Whenever another player dies, you choose which Relic they discard. You also gain any Wares or \u03b2 they lose.",
+                    "name": "Eggplanted"
                 },
                 "_size": 3
             }
@@ -2186,10 +1911,8 @@
         "35": {
             "name": "Burrow Blast",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Add a counter to this. $ Remove 3 counters from this: kill a player or monster. $ Remove 6 counters from this, kill a boss. \"Oooh right, my BURROW BLAST!\""
                 },
                 "_size": 1
@@ -2198,10 +1921,8 @@
         "36": {
             "name": "Who has two thumbs and loves Hex Souls?",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Add up to 2 to any dice roll. \"This guy!\""
                 },
                 "_size": 1
@@ -2210,10 +1931,8 @@
         "37": {
             "name": "Flailing Chimpanzee Arm",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Force a player to play a Ware. This counts as one of their plays for the turn."
                 },
                 "_size": 1
@@ -2222,10 +1941,8 @@
         "38": {
             "name": "Trick Dagger",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Activate your on-damage Relics without taking damage."
                 },
                 "_size": 1
@@ -2234,15 +1951,13 @@
         "39": {
             "name": "Pentagon",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When any player rolls a 5, gain +1 Ware."
                 },
                 "2": {
-                    "name": "Deca",
-                    "desc": "When any player rolls a 5, gain +2 Wares."
+                    "desc": "When any player rolls a 5, gain +2 Wares.",
+                    "name": "Deca"
                 },
                 "_size": 2
             }
@@ -2250,10 +1965,8 @@
         "40": {
             "name": "Inspiration",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Choose an active enemy. You gain +1 of its highest stat."
                 },
                 "_size": 1
@@ -2262,23 +1975,21 @@
         "41": {
             "name": "Haniwa Statue",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Gain +1 Ware whenever an enemy is killed."
                 },
                 "2": {
-                    "name": "Mini",
-                    "desc": "Gain 3\u03b2 whenever an enemy is killed."
+                    "desc": "Gain 3\u03b2 whenever an enemy is killed.",
+                    "name": "Mini"
                 },
                 "3": {
-                    "name": "Tall",
-                    "desc": "Gain +2 Wares whenever a boss is killed."
+                    "desc": "Gain +2 Wares whenever a boss is killed.",
+                    "name": "Tall"
                 },
                 "4": {
-                    "name": "Mega",
-                    "desc": "Gain 3\u03b2 whenever an enemy is killed. Gain +2 Wares whenever a boss is killed."
+                    "desc": "Gain 3\u03b2 whenever an enemy is killed. Gain +2 Wares whenever a boss is killed.",
+                    "name": "Mega"
                 },
                 "_size": 4
             }
@@ -2286,10 +1997,8 @@
         "42": {
             "name": "This for That and Those for These",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Whenever a player rolls a 2, steal a Relic from them and give them one of your Relics."
                 },
                 "_size": 1
@@ -2298,10 +2007,8 @@
         "43": {
             "name": "TV Remote",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Discard all active enemies. Afterwards, you must fight an active enemy."
                 },
                 "_size": 1
@@ -2310,10 +2017,8 @@
         "44": {
             "name": "Cursed Blario Party Cartridge",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "This starts with 3 counters. $: Remove 1 counter, gain a Relic, but you are forced to fight this turn. If you die, discard the Relic you gained. This can only be done once per turn. At 0 counters, discard this."
                 },
                 "_size": 1
@@ -2322,10 +2027,8 @@
         "45": {
             "name": "Fire Extinguisher",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "If a Relic or Ware card you played has resulted against your favor, cancel it. \"Fetch me a fire extinguisher. A good one, with the foam.\""
                 },
                 "_size": 1
@@ -2334,10 +2037,8 @@
         "46": {
             "name": "Property Tax",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "On your turn, gain 5\u03b2 if a boss is on the board."
                 },
                 "_size": 1
@@ -2346,23 +2047,21 @@
         "47": {
             "name": "Degree in Field Biology",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Gain +1 HP upon entering combat with an enemy with 4 HP or more."
                 },
                 "2": {
-                    "name": "Bachelor's",
-                    "desc": "Gain +2 HP upon entering combat with an enemy with 4 HP or more."
+                    "desc": "Gain +2 HP upon entering combat with an enemy with 4 HP or more.",
+                    "name": "Bachelor's"
                 },
                 "3": {
-                    "name": "Master's",
-                    "desc": "Gain +3 HP upon entering combat with an enemy with 4 HP or more."
+                    "desc": "Gain +3 HP upon entering combat with an enemy with 4 HP or more.",
+                    "name": "Master's"
                 },
                 "4": {
-                    "name": "Forged",
-                    "desc": "Gain +1 HP upon entering combat with an enemy with 3 HP or more."
+                    "desc": "Gain +1 HP upon entering combat with an enemy with 3 HP or more.",
+                    "name": "Forged"
                 },
                 "_size": 4
             }
@@ -2370,10 +2069,8 @@
         "48": {
             "name": "Billfold",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Gain another Ware at the start of your turn."
                 },
                 "_size": 1
@@ -2382,10 +2079,8 @@
         "49": {
             "name": "Sisyphus' Pet Rock",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "After a successful attack roll, gain +1 to your next attack roll."
                 },
                 "_size": 1
@@ -2394,10 +2089,8 @@
         "50": {
             "name": "Talisman of the Jiangshi",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Upon killing an enemy, gain full HP. You may fight again during your turn."
                 },
                 "_size": 1
@@ -2406,10 +2099,8 @@
         "51": {
             "name": "Vial of Komodo Saliva",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "All enemies have -1 RR for one attack roll. If this roll is successful, the change is permanent."
                 },
                 "_size": 1
@@ -2418,10 +2109,8 @@
         "52": {
             "name": "Reactive Armor",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "The first time you take damage this turn, deal two damage to all active enemies."
                 },
                 "_size": 1
@@ -2430,19 +2119,18 @@
         "53": {
             "name": "idermy Table",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Tax-",
-                    "desc": "After killing an enemy and gaining the rewards, roll. 1-3: Gain double the rewards. 4-6: Gain nothing."
+                    "desc": "After killing an enemy and gaining the rewards, roll. 1-3: Gain double the rewards. 4-6: Gain nothing.",
+                    "name": "Tax-"
                 },
                 "2": {
-                    "name": "Hex-",
-                    "desc": "After killing an enemy and gaining the rewards, roll. 1-4: Gain double the rewards. 5-6: Gain nothing."
+                    "desc": "After killing an enemy and gaining the rewards, roll. 1-4: Gain double the rewards. 5-6: Gain nothing.",
+                    "name": "Hex-"
                 },
                 "3": {
-                    "name": "Tex-",
-                    "desc": "After killing an enemy and gaining the rewards, roll. 1-5: Gain double the rewards. 6: Gain nothing. \"YEEEEHAAWWWW!\""
+                    "desc": "After killing an enemy and gaining the rewards, roll. 1-5: Gain double the rewards. 6: Gain nothing. \"YEEEEHAAWWWW!\"",
+                    "name": "Tex-"
                 },
                 "_size": 3
             }
@@ -2450,27 +2138,26 @@
         "54": {
             "name": "Plumbers Cap",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Red",
-                    "desc": "If an enemy has killed another player, you may now kill the enemy in 3 successful attack rolls, when its your turn."
+                    "desc": "If an enemy has killed another player, you may now kill the enemy in 3 successful attack rolls, when its your turn.",
+                    "name": "Red"
                 },
                 "2": {
-                    "name": "Green",
-                    "desc": "Kill any non-boss enemy and gain half its rewards rounded down."
+                    "desc": "Kill any non-boss enemy and gain half its rewards rounded down.",
+                    "name": "Green"
                 },
                 "3": {
-                    "name": "Yellow",
-                    "desc": "Steal 3\u03b2 from another player. \"Reeks of Garlic\""
+                    "desc": "Steal 3\u03b2 from another player. \"Reeks of Garlic\"",
+                    "name": "Yellow"
                 },
                 "4": {
-                    "name": "Purple",
-                    "desc": "Force a player to fight an enemy of your choosing."
+                    "desc": "Force a player to fight an enemy of your choosing.",
+                    "name": "Purple"
                 },
                 "5": {
-                    "name": "Subservient",
-                    "desc": "When entering combat, control another enemy for one attack roll. Gain the victims ATK. If the attack roll misses, the enemy takes damage instead of you."
+                    "desc": "When entering combat, control another enemy for one attack roll. Gain the victims ATK. If the attack roll misses, the enemy takes damage instead of you.",
+                    "name": "Subservient"
                 },
                 "_size": 5
             }
@@ -2478,19 +2165,17 @@
         "55": {
             "name": "Tub of Molasses",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +2 HP, but -1 to all attack rolls."
                 },
                 "2": {
-                    "name": "Pure",
-                    "desc": " +2 HP"
+                    "desc": " +2 HP",
+                    "name": "Pure"
                 },
                 "3": {
-                    "name": "Caustic",
-                    "desc": " +1 HP & ATK, but -1 to all attack rolls."
+                    "desc": " +1 HP & ATK, but -1 to all attack rolls.",
+                    "name": "Caustic"
                 },
                 "_size": 3
             }
@@ -2498,10 +2183,8 @@
         "56": {
             "name": "Mommy's Credit Card",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Whenever another player gains a Relic, put a counter on this. $: Remove 3 counters, gain a Relic."
                 },
                 "_size": 1
@@ -2510,10 +2193,8 @@
         "57": {
             "name": "Jarred Karate",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Choose a player or active enemy. They take double damage for the first three attack rolls this turn. \"Is this...? Mon DIEU!\""
                 },
                 "_size": 1
@@ -2522,15 +2203,14 @@
         "58": {
             "name": "Alien Friend",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Tiny",
-                    "desc": "This becomes a copy of any non-Affinity Relic in play until the end of the turn."
+                    "desc": "This becomes a copy of any non-Affinity Relic in play until the end of the turn.",
+                    "name": "Tiny"
                 },
                 "2": {
-                    "name": "Big",
-                    "desc": "This becomes a permanent copy of any non-Affinity Relic in play."
+                    "desc": "This becomes a permanent copy of any non-Affinity Relic in play.",
+                    "name": "Big"
                 },
                 "_size": 2
             }
@@ -2538,10 +2218,8 @@
         "59": {
             "name": "Ctrl + C",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Double the effect of the next Ware that is played."
                 },
                 "_size": 1
@@ -2550,10 +2228,8 @@
         "60": {
             "name": "Potato Battery",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When any player rolls a 3, recharge a Relic."
                 },
                 "_size": 1
@@ -2562,47 +2238,46 @@
         "61": {
             "name": "Die",
             "type": "*",
-            "img": "Tristan3d/Die",
             "prefixes": {
                 "1": {
-                    "name": "Disfigured",
-                    "desc": "Whenever you roll a 4, you may turn it into a 5."
+                    "desc": "Whenever you roll a 4, you may turn it into a 5.",
+                    "name": "Disfigured"
                 },
                 "2": {
-                    "name": "Defaced",
-                    "desc": "Whenever you roll a 2, you may turn it into a 3."
+                    "desc": "Whenever you roll a 2, you may turn it into a 3.",
+                    "name": "Defaced"
                 },
                 "3": {
-                    "name": "Deformed",
-                    "desc": "Whenever you roll a 3, you may turn it into a 4."
+                    "desc": "Whenever you roll a 3, you may turn it into a 4.",
+                    "name": "Deformed"
                 },
                 "4": {
-                    "name": "Developed",
-                    "desc": "Whenever you roll a 5, you may turn it into a 6."
+                    "desc": "Whenever you roll a 5, you may turn it into a 6.",
+                    "name": "Developed"
                 },
                 "_size": 4
-            }
+            },
+            "img": "Tristan3d/Die"
         },
         "62": {
             "name": "Socks",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Ankle",
-                    "desc": "When any player rolls a 1, gain +1 Ware."
+                    "desc": "When any player rolls a 1, gain +1 Ware.",
+                    "name": "Ankle"
                 },
                 "2": {
-                    "name": "Tube",
-                    "desc": "When any player rolls a 1, deal 1 damage to an active enemy."
+                    "desc": "When any player rolls a 1, deal 1 damage to an active enemy.",
+                    "name": "Tube"
                 },
                 "3": {
-                    "name": "Knee-high",
-                    "desc": "When any player rolls a 1, gain 3\u03b2."
+                    "desc": "When any player rolls a 1, gain 3\u03b2.",
+                    "name": "Knee-high"
                 },
                 "4": {
-                    "name": "Thigh-high",
-                    "desc": "When any player rolls a 1, you may reroll a Relic."
+                    "desc": "When any player rolls a 1, you may reroll a Relic.",
+                    "name": "Thigh-high"
                 },
                 "_size": 4
             }
@@ -2610,19 +2285,17 @@
         "63": {
             "name": "Rawket Lawnchair",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Deal 2 damage to an active enemy, but take 1 damage."
                 },
                 "2": {
-                    "name": "Hyper",
-                    "desc": "Deal 3 damage to an active enemy, but take 1 damage."
+                    "desc": "Deal 3 damage to an active enemy, but take 1 damage.",
+                    "name": "Hyper"
                 },
                 "3": {
-                    "name": "Ultra",
-                    "desc": "Deal 4 damage to an active enemy, but take 2 damage."
+                    "desc": "Deal 4 damage to an active enemy, but take 2 damage.",
+                    "name": "Ultra"
                 },
                 "_size": 3
             }
@@ -2630,19 +2303,17 @@
         "64": {
             "name": "Crysknife",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +1 ATK. On a roll of 6, deal 1 damage to another active enemy."
                 },
                 "2": {
-                    "name": "Sharpened",
-                    "desc": " +1 ATK. On a roll of 6, deal 2 damage to another enemy."
+                    "desc": " +1 ATK. On a roll of 6, deal 2 damage to another enemy.",
+                    "name": "Sharpened"
                 },
                 "3": {
-                    "name": "Double-edged",
-                    "desc": " +1 ATK. On a roll of 6, deal 1 damage to all other active enemies."
+                    "desc": " +1 ATK. On a roll of 6, deal 1 damage to all other active enemies.",
+                    "name": "Double-edged"
                 },
                 "_size": 3
             }
@@ -2650,10 +2321,8 @@
         "65": {
             "name": "Toaster Fork",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Recharge a Relic at the end of your turn."
                 },
                 "_size": 1
@@ -2662,10 +2331,8 @@
         "66": {
             "name": "Random Access Mammaries",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +1 HP. Other players can't directly damage you."
                 },
                 "_size": 1
@@ -2674,10 +2341,8 @@
         "67": {
             "name": "Ancient Technique",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": " +5 ATK until the end of your turn. When you take damage, die. \"Stop on your right foot, DON'T FORGET IT!\""
                 },
                 "_size": 1
@@ -2686,19 +2351,17 @@
         "68": {
             "name": "Slingshot",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "At the start of your turn, deal 1 damage to any player or active enemy."
                 },
                 "2": {
-                    "name": "Silver",
-                    "desc": "At the start of your turn, deal 1 damage to any two active enemies or players."
+                    "desc": "At the start of your turn, deal 1 damage to any two active enemies or players.",
+                    "name": "Silver"
                 },
                 "3": {
-                    "name": "Golden",
-                    "desc": "At the start of your turn, deal 1 damage to any three active enemies or players. "
+                    "desc": "At the start of your turn, deal 1 damage to any three active enemies or players. ",
+                    "name": "Golden"
                 },
                 "_size": 3
             }
@@ -2706,10 +2369,8 @@
         "69": {
             "name": "Fistful of Snaps",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When you die, deal 2 damage to the attacking enemy or player."
                 },
                 "_size": 1
@@ -2718,34 +2379,32 @@
         "70": {
             "name": "Pickaxe",
             "type": "@",
-            "img": "Tristan3d/Pickaxe",
             "prefixes": {
                 "1": {
-                    "name": "Rusty",
-                    "desc": "End your turn. Ignores external card rules."
+                    "desc": "End your turn. Ignores external card rules.",
+                    "name": "Rusty"
                 },
                 "2": {
-                    "name": "Crusty",
-                    "desc": "Gain 2\u03b2. You may end your turn, ending ignores external card rules."
+                    "desc": "Gain 2\u03b2. You may end your turn, ending ignores external card rules.",
+                    "name": "Crusty"
                 },
                 "3": {
-                    "name": "Trusty",
-                    "desc": "You gain 1 Relic and end your turn. You may only play this at the start of your turn. if you \"Must\" fight on your turn, you can not play this."
+                    "desc": "You gain 1 Relic and end your turn. You may only play this at the start of your turn. if you \"Must\" fight on your turn, you can not play this.",
+                    "name": "Trusty"
                 },
                 "4": {
-                    "name": "Busty",
-                    "desc": "Gain +1 Ware. You may end your turn. if you \"Must\" fight on your turn, you can not play this. \"Firmly grasp it\""
+                    "desc": "Gain +1 Ware. You may end your turn. if you \"Must\" fight on your turn, you can not play this. \"Firmly grasp it\"",
+                    "name": "Busty"
                 },
                 "_size": 4
-            }
+            },
+            "img": "Tristan3d/Pickaxe"
         },
         "71": {
             "name": "Spreadsheet",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When drawing from any deck you may pull 3 and choose one of those 3, discarding the rest. \"It contains the known universe\""
                 },
                 "_size": 1
@@ -2754,10 +2413,8 @@
         "72": {
             "name": "Paradigm Shift",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "At the start of your turn, put a counter on this. Spend 4 Counters: You may force any player to destroy their affinity and replace it with a new one, then discard this."
                 },
                 "_size": 1
@@ -2766,19 +2423,18 @@
         "73": {
             "name": "Crystal",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Piezoelectric",
-                    "desc": "When you take damage: you may recharge an item."
+                    "desc": "When you take damage: you may recharge an item.",
+                    "name": "Piezoelectric"
                 },
                 "2": {
-                    "name": "Endothermic",
-                    "desc": "When you take damage: the attacker gets -1 RR till the end of the turn."
+                    "desc": "When you take damage: the attacker gets -1 RR till the end of the turn.",
+                    "name": "Endothermic"
                 },
                 "3": {
-                    "name": "Exothermic",
-                    "desc": "When you take damage: deal 1 non-fatal damage to your attacker."
+                    "desc": "When you take damage: deal 1 non-fatal damage to your attacker.",
+                    "name": "Exothermic"
                 },
                 "_size": 3
             }
@@ -2786,10 +2442,8 @@
         "74": {
             "name": "Repel Gel",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "You can't take damage for 2 attack rolls."
                 },
                 "_size": 1
@@ -2798,39 +2452,36 @@
         "75": {
             "name": "Prismatic Dice",
             "type": "@",
-            "img": "Tristan3d/PrismaticDie",
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "If you were to roll, you may roll 4 die instead and pick one of the results as your own."
                 },
                 "2": {
-                    "name": "Diamond",
-                    "desc": "When rolling for multiple reward giving cards, you may roll again for a second reward from that card. The same reward can not be gained twice."
+                    "desc": "When rolling for multiple reward giving cards, you may roll again for a second reward from that card. The same reward can not be gained twice.",
+                    "name": "Diamond"
                 },
                 "3": {
-                    "name": "Cloudy",
-                    "desc": "When another player rolls for an effect, you may force them to reroll it."
+                    "desc": "When another player rolls for an effect, you may force them to reroll it.",
+                    "name": "Cloudy"
                 },
                 "_size": 3
-            }
+            },
+            "img": "Tristan3d/PrismaticDie"
         },
         "76": {
             "name": "Noise Canceling Earplugs",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "During combat, ignore the effects of all enemies for the first 2 attack rolls."
                 },
                 "2": {
-                    "name": "Padded",
-                    "desc": "During combat, ignore the effects of all enemies for the first 3 attack rolls."
+                    "desc": "During combat, ignore the effects of all enemies for the first 3 attack rolls.",
+                    "name": "Padded"
                 },
                 "3": {
-                    "name": "Deafening",
-                    "desc": "During combat, ignore the effects of all enemies for the first 4 attack rolls."
+                    "desc": "During combat, ignore the effects of all enemies for the first 4 attack rolls.",
+                    "name": "Deafening"
                 },
                 "_size": 3
             }
@@ -2838,10 +2489,8 @@
         "77": {
             "name": "Pan-Dora's Lunch Box",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Discard this on use. Roll: 1: Take 2 damage, 2: Reroll an item you own, 3: gain 5\u03b2, 4: Nothing, 5: Gain +1 Ware, 6: Gain a Soul."
                 },
                 "_size": 1
@@ -2850,19 +2499,18 @@
         "78": {
             "name": "dactyl",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Poly-",
-                    "desc": " +1 to Dice Rolls"
+                    "desc": " +1 to Dice Rolls",
+                    "name": "Poly-"
                 },
                 "2": {
-                    "name": "Oligo-",
-                    "desc": "Subtract 1 to any Dice Roll"
+                    "desc": "Subtract 1 to any Dice Roll",
+                    "name": "Oligo-"
                 },
                 "3": {
-                    "name": "Ptero-",
-                    "desc": "Subtract 2 to any Dice Roll."
+                    "desc": "Subtract 2 to any Dice Roll.",
+                    "name": "Ptero-"
                 },
                 "_size": 3
             }
@@ -2870,23 +2518,22 @@
         "79": {
             "name": "Two-piece",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Black Lace",
-                    "desc": "All enemies have -1 RR. \"Must it be so revealing?\""
+                    "desc": "All enemies have -1 RR. \"Must it be so revealing?\"",
+                    "name": "Black Lace"
                 },
                 "2": {
-                    "name": "Swim suit",
-                    "desc": "You gain +1 to your non-combat rolls. \"Doesn't leave much to the imagination.\""
+                    "desc": "You gain +1 to your non-combat rolls. \"Doesn't leave much to the imagination.\"",
+                    "name": "Swim suit"
                 },
                 "3": {
-                    "name": "Red Velvet",
-                    "desc": "Gain +1\u03b2 when defeating a normal enemy and +5\u03b2 when defeating a boss type. \"Does this make me look fat?\""
+                    "desc": "Gain +1\u03b2 when defeating a normal enemy and +5\u03b2 when defeating a boss type. \"Does this make me look fat?\"",
+                    "name": "Red Velvet"
                 },
                 "4": {
-                    "name": "String",
-                    "desc": "Gain +4\u03b2 for every active enemy on the board when you don't fight on your turn, at the max of 12\u03b2 per turn. \"This is just too much, or too little to be more accurate.\""
+                    "desc": "Gain +4\u03b2 for every active enemy on the board when you don't fight on your turn, at the max of 12\u03b2 per turn. \"This is just too much, or too little to be more accurate.\"",
+                    "name": "String"
                 },
                 "_size": 4
             }
@@ -2894,10 +2541,8 @@
         "80": {
             "name": "Battering Ram",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "You may force a stage change."
                 },
                 "_size": 1
@@ -2906,15 +2551,14 @@
         "81": {
             "name": "Roulette",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Weighted",
-                    "desc": "When gained put 3 counters on this. You may decide the result of any dice roll. Once out of counters discard this."
+                    "desc": "When gained put 3 counters on this. You may decide the result of any dice roll. Once out of counters discard this.",
+                    "name": "Weighted"
                 },
                 "2": {
-                    "name": "Russian",
-                    "desc": "Put a counter on this at the start of your turn at the max of 3. On use spends all counters: Pick a player to roll X times (X being counters spent). If they roll a 1 they die and you gain their penalties."
+                    "desc": "Put a counter on this at the start of your turn at the max of 3. On use spends all counters: Pick a player to roll X times (X being counters spent). If they roll a 1 they die and you gain their penalties.",
+                    "name": "Russian"
                 },
                 "_size": 2
             }
@@ -2922,10 +2566,8 @@
         "82": {
             "name": "Gerrymander",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "You may initiate a vote to break a single rule for one turn. Souls may not be gained this way. Discarded when used."
                 },
                 "_size": 1
@@ -2934,15 +2576,13 @@
         "83": {
             "name": "Arachnid Suit",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Throw an 8-sided die for your attack rolls. \"How do I shot web?\""
                 },
                 "2": {
-                    "name": "Dark",
-                    "desc": "Throw an 8-sided die for your attack rolls. Rolls 7-8 deal +1 damage. \"How do I shot web?\""
+                    "desc": "Throw an 8-sided die for your attack rolls. Rolls 7-8 deal +1 damage. \"How do I shot web?\"",
+                    "name": "Dark"
                 },
                 "_size": 2
             }
@@ -2950,15 +2590,13 @@
         "84": {
             "name": "Hollow's Feast",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Discard one soul from every player including yourself. Discard this."
                 },
                 "2": {
-                    "name": "Gluttonous",
-                    "desc": "Discard two souls from every player including yourself. Discard this."
+                    "desc": "Discard two souls from every player including yourself. Discard this.",
+                    "name": "Gluttonous"
                 },
                 "_size": 2
             }
@@ -2966,10 +2604,8 @@
         "85": {
             "name": "Misinput",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Gain a glitch card and give it to any player of your choosing."
                 },
                 "_size": 1
@@ -2978,19 +2614,17 @@
         "86": {
             "name": "Memory Card",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "First use saves and pauses a Ware effect. Using this again allows you to resolve it at your discretion."
                 },
                 "2": {
-                    "name": "Pristine",
-                    "desc": "First use saves the most recent \"action\" and pauses it. Using this again allows it to resolve at your discretion."
+                    "desc": "First use saves the most recent \"action\" and pauses it. Using this again allows it to resolve at your discretion.",
+                    "name": "Pristine"
                 },
                 "3": {
-                    "name": "Faulty",
-                    "desc": "Change the target of any item to another player at random."
+                    "desc": "Change the target of any item to another player at random.",
+                    "name": "Faulty"
                 },
                 "_size": 3
             }
@@ -2998,10 +2632,8 @@
         "87": {
             "name": "DMCA",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "If another player owns a Relic of the same type (as in regardless of prefix) as you, you may take it from them (Reforge Rules still apply!)."
                 },
                 "_size": 1
@@ -3010,10 +2642,8 @@
         "88": {
             "name": "Two-Sided Fat Albert Printout",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Choose a player, roll to effect both of you: 1-3: gain 10\u03b2, 4-6: discard this."
                 },
                 "_size": 1
@@ -3022,19 +2652,17 @@
         "89": {
             "name": "Forge",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Discard a ware and add a counter to this. Remove 4 counters to gain a Relic."
                 },
                 "2": {
-                    "name": "Expert's",
-                    "desc": "Discard a ware and add a counter to this. Remove 3 counters to gain a Relic."
+                    "desc": "Discard a ware and add a counter to this. Remove 3 counters to gain a Relic.",
+                    "name": "Expert's"
                 },
                 "3": {
-                    "name": "Magic",
-                    "desc": "Discard a ware and add a counter to this. Remove 4 counters to change your Affinity."
+                    "desc": "Discard a ware and add a counter to this. Remove 4 counters to change your Affinity.",
+                    "name": "Magic"
                 },
                 "_size": 3
             }
@@ -3045,10 +2673,8 @@
         "1": {
             "name": "Die Bag",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "You may re-roll any dice roll."
                 },
                 "_size": 1
@@ -3057,27 +2683,25 @@
         "2": {
             "name": "Lobster Claw",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Increase HP or ATK by +1 for this turn."
                 },
                 "2": {
-                    "name": "Boiled",
-                    "desc": "Increase ATK or dice rolls by +1 for this turn.  \"Delicious!\""
+                    "desc": "Increase ATK or dice rolls by +1 for this turn.  \"Delicious!\"",
+                    "name": "Boiled"
                 },
                 "3": {
-                    "name": "Grilled",
-                    "desc": "Increase HP or ATK by +2  for this turn. \"Savory!\""
+                    "desc": "Increase HP or ATK by +2  for this turn. \"Savory!\"",
+                    "name": "Grilled"
                 },
                 "4": {
-                    "name": "Smoked",
-                    "desc": "Increase HP or dice rolls by +1 for this turn. \"Smokey!\""
+                    "desc": "Increase HP or dice rolls by +1 for this turn. \"Smokey!\"",
+                    "name": "Smoked"
                 },
                 "5": {
-                    "name": "Sharp",
-                    "desc": "Increase ATK by +2 but decrease HP by -1 for this turn. \"Unappetizing!\""
+                    "desc": "Increase ATK by +2 but decrease HP by -1 for this turn. \"Unappetizing!\"",
+                    "name": "Sharp"
                 },
                 "_size": 5
             }
@@ -3085,10 +2709,8 @@
         "3": {
             "name": "Dracula's Regimen",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "After a successful attack on an enemy, heal or gain 1 HP. \"SCRAPE and LICK!\""
                 },
                 "_size": 1
@@ -3097,10 +2719,8 @@
         "4": {
             "name": "Fight or Flight Instinct",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When a boss is on the board, roll at the beginning of your turn. 1-3: +1 ATK, 4-6: +1 to all dice rolls."
                 },
                 "_size": 1
@@ -3109,19 +2729,17 @@
         "5": {
             "name": "HexEdit",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Discard any single active enemy, shop item, or jinx."
                 },
                 "2": {
-                    "name": "Dubious",
-                    "desc": "Discard all active enemies, shop items, or jinxes."
+                    "desc": "Discard all active enemies, shop items, or jinxes.",
+                    "name": "Dubious"
                 },
                 "3": {
-                    "name": "Specialized",
-                    "desc": "You may morph any one of your relics or jinx into a new one."
+                    "desc": "You may morph any one of your relics or jinx into a new one.",
+                    "name": "Specialized"
                 },
                 "_size": 3
             }
@@ -3129,19 +2747,17 @@
         "6": {
             "name": "Clairvoyance",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When pulling from the top from any deck, you may pull an additional card from that deck. Choose one of the two and discard the other."
                 },
                 "2": {
-                    "name": "Superior",
-                    "desc": "When pulling from the top of any deck, you may pull two additional cards from that deck. Choose one of them and discard the rest."
+                    "desc": "When pulling from the top of any deck, you may pull two additional cards from that deck. Choose one of them and discard the rest.",
+                    "name": "Superior"
                 },
                 "3": {
-                    "name": "Voodoo",
-                    "desc": "When another player gains a relic, you may start a vote to discard and replace it."
+                    "desc": "When another player gains a relic, you may start a vote to discard and replace it.",
+                    "name": "Voodoo"
                 },
                 "_size": 3
             }
@@ -3149,19 +2765,17 @@
         "7": {
             "name": "Bone Charm",
             "type": "$",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Cost: 3\u03b2 With an unmodified roll: 1-2: Gain 2\u03b2. 3-6: Gain 6\u03b2."
                 },
                 "2": {
-                    "name": "Gilded",
-                    "desc": "Cost: 5\u03b2. With an unmodified roll: 1-4: Nothing. 5-6: Gain a Relic."
+                    "desc": "Cost: 5\u03b2. With an unmodified roll: 1-4: Nothing. 5-6: Gain a Relic.",
+                    "name": "Gilded"
                 },
                 "3": {
-                    "name": "Bastardized",
-                    "desc": "Cost: 2\u03b2. With an unmodified roll: 1-3: Lose half your \u03b2. 4-6: Double your \u03b2."
+                    "desc": "Cost: 2\u03b2. With an unmodified roll: 1-3: Lose half your \u03b2. 4-6: Double your \u03b2.",
+                    "name": "Bastardized"
                 },
                 "_size": 3
             }
@@ -3169,10 +2783,8 @@
         "8": {
             "name": "Patience",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Passively: You have -1 HP. You may play this in reaction to a death and prevent it, ends the active players turn."
                 },
                 "_size": 1
@@ -3181,15 +2793,13 @@
         "9": {
             "name": "Transfusion",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "You may be requested/may request to give/take HP to another player, if both parties agree."
                 },
                 "2": {
-                    "name": "Field",
-                    "desc": "At the initiation of any fight, you may take 1 HP from any enemy on the board and give it to another."
+                    "desc": "At the initiation of any fight, you may take 1 HP from any enemy on the board and give it to another.",
+                    "name": "Field"
                 },
                 "_size": 2
             }
@@ -3197,10 +2807,8 @@
         "10": {
             "name": "Soul Bound Artifact",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Draw 3 Relics from the Relic deck (without duplicates) and pick one. The Relic you choose will become your Affinity."
                 },
                 "_size": 1
@@ -3209,19 +2817,17 @@
         "11": {
             "name": "Hyena Skull",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "When any player rolls a 2, gain 3\u03b2. Each time another player dies, gain a Ware."
                 },
                 "2": {
-                    "name": "Bloodied",
-                    "desc": "When any player rolls a 2, gain 2\u03b2. Each time another player dies, deal 1 damage to an active enemy."
+                    "desc": "When any player rolls a 2, gain 2\u03b2. Each time another player dies, deal 1 damage to an active enemy.",
+                    "name": "Bloodied"
                 },
                 "3": {
-                    "name": "Golden",
-                    "desc": "When any player rolls a 2, gain 3\u03b2. Each time another player dies, gain 3\u03b2."
+                    "desc": "When any player rolls a 2, gain 3\u03b2. Each time another player dies, gain 3\u03b2.",
+                    "name": "Golden"
                 },
                 "_size": 3
             }
@@ -3229,10 +2835,8 @@
         "12": {
             "name": "Piggy Fries",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Heal 1 HP on any player or enemy."
                 },
                 "_size": 1
@@ -3241,23 +2845,21 @@
         "13": {
             "name": "Weighted Die",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Add or subtract 1 to any dice roll."
                 },
                 "2": {
-                    "name": "Malevolent",
-                    "desc": "Add 1, or subtract 2 to any dice roll."
+                    "desc": "Add 1, or subtract 2 to any dice roll.",
+                    "name": "Malevolent"
                 },
                 "3": {
-                    "name": "Benevolent",
-                    "desc": "Add 2, or subtract 1 to any dice roll."
+                    "desc": "Add 2, or subtract 1 to any dice roll.",
+                    "name": "Benevolent"
                 },
                 "4": {
-                    "name": "Balanced",
-                    "desc": "Add or subtract 2 to any dice roll."
+                    "desc": "Add or subtract 2 to any dice roll.",
+                    "name": "Balanced"
                 },
                 "_size": 4
             }
@@ -3265,10 +2867,8 @@
         "14": {
             "name": "Buffer Overflow",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Upon death: after paying penalties, gain +1 Relic."
                 },
                 "_size": 1
@@ -3277,35 +2877,32 @@
         "15": {
             "name": "Trick Die",
             "type": "@",
-            "img": "Tristan3d/TrickDie",
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "In response to a roll, you may force a player to roll again for a higher number, lower numbers must be rerolled again."
                 },
                 "2": {
-                    "name": "Cursed",
-                    "desc": "In response to a roll, you may force a player to roll again for a lower number, higher numbers must be rerolled again."
+                    "desc": "In response to a roll, you may force a player to roll again for a lower number, higher numbers must be rerolled again.",
+                    "name": "Cursed"
                 },
                 "3": {
-                    "name": "Spare",
-                    "desc": "In response to a roll, you may roll again and add the result rounded down to your current roll."
+                    "desc": "In response to a roll, you may roll again and add the result rounded down to your current roll.",
+                    "name": "Spare"
                 },
                 "_size": 3
-            }
+            },
+            "img": "Tristan3d/TrickDie"
         },
         "16": {
             "name": "Breach Charge",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Force a stage change. Stage effects are twice as effective for you, where applicable."
                 },
                 "2": {
-                    "name": "Shaped",
-                    "desc": "You may force up to two stage changes. Stage effects are twice as effective for you, where applicable."
+                    "desc": "You may force up to two stage changes. Stage effects are twice as effective for you, where applicable.",
+                    "name": "Shaped"
                 },
                 "_size": 2
             }
@@ -3313,27 +2910,26 @@
         "17": {
             "name": "Shell",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Turtle",
-                    "desc": "For the next 3 attack rolls, you are immune to damage, but have -1 to dice rolls. \"Slow and steady wins the race.\""
+                    "desc": "For the next 3 attack rolls, you are immune to damage, but have -1 to dice rolls. \"Slow and steady wins the race.\"",
+                    "name": "Turtle"
                 },
                 "2": {
-                    "name": "Gastropod",
-                    "desc": " +1 ATK and -1 to dice rolls for 3 attack rolls. \"Slow, but armed with deadly venom.\""
+                    "desc": " +1 ATK and -1 to dice rolls for 3 attack rolls. \"Slow, but armed with deadly venom.\"",
+                    "name": "Gastropod"
                 },
                 "3": {
-                    "name": "Scallop",
-                    "desc": "For the next 3 attack rolls, you are immune to damage. After that, take double damage until the end of your turn \"Why must I be so delicious?!\""
+                    "desc": "For the next 3 attack rolls, you are immune to damage. After that, take double damage until the end of your turn \"Why must I be so delicious?!\"",
+                    "name": "Scallop"
                 },
                 "4": {
-                    "name": "Nautilus",
-                    "desc": "You are immune to damage and have +1 for your next attack roll. \"Defensive and fast, but not much else.\""
+                    "desc": "You are immune to damage and have +1 for your next attack roll. \"Defensive and fast, but not much else.\"",
+                    "name": "Nautilus"
                 },
                 "5": {
-                    "name": "Chocolate",
-                    "desc": "For the next 3 attack rolls, gain +2 HP for every damage you take. Lose your extra health at the end of your turn. \"Yeah, I eat whatever falls off me. So what?\""
+                    "desc": "For the next 3 attack rolls, gain +2 HP for every damage you take. Lose your extra health at the end of your turn. \"Yeah, I eat whatever falls off me. So what?\"",
+                    "name": "Chocolate"
                 },
                 "_size": 5
             }
@@ -3341,27 +2937,25 @@
         "18": {
             "name": "Business Suit",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Spend 8\u03b2 to gain +1 HP or ATK until the end of your turn."
                 },
                 "2": {
-                    "name": "Snazzy",
-                    "desc": "Spend 7\u03b2 to gain +1 HP or ATK until the end of your turn."
+                    "desc": "Spend 7\u03b2 to gain +1 HP or ATK until the end of your turn.",
+                    "name": "Snazzy"
                 },
                 "3": {
-                    "name": "Ripped",
-                    "desc": "Spend 9\u03b2 to gain +1 HP or ATK until the end of your turn."
+                    "desc": "Spend 9\u03b2 to gain +1 HP or ATK until the end of your turn.",
+                    "name": "Ripped"
                 },
                 "4": {
-                    "name": "Battle",
-                    "desc": "Spend 10\u03b2 to gain +2 HP or ATK until the end of your turn."
+                    "desc": "Spend 10\u03b2 to gain +2 HP or ATK until the end of your turn.",
+                    "name": "Battle"
                 },
                 "5": {
-                    "name": "Casual",
-                    "desc": "Spend 8\u03b2 to gain +1 HP or +1 to dice rolls until the end of your turn."
+                    "desc": "Spend 8\u03b2 to gain +1 HP or +1 to dice rolls until the end of your turn.",
+                    "name": "Casual"
                 },
                 "_size": 5
             }
@@ -3369,10 +2963,8 @@
         "19": {
             "name": "Kleptomania",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Steal 1\u03b2 from another player. If they don't notice, you may steal another 2\u03b2 from them. If they notice, return their \u03b2."
                 },
                 "_size": 1
@@ -3381,10 +2973,8 @@
         "20": {
             "name": "The Mason Jar",
             "type": "@",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "",
                     "desc": "Pick an active enemy. They are placed into your hand and you may fight them on your turn whenever you want. Using the jar on another enemy will replace your held one and discard them. If you die to your held enemy, discard them."
                 },
                 "_size": 1
@@ -3393,15 +2983,14 @@
         "21": {
             "name": "Sided Hexagon",
             "type": "*",
-            "img": null,
             "prefixes": {
                 "1": {
-                    "name": "Five",
-                    "desc": "Draw a Glitch card, this is now your passive Affinity."
+                    "desc": "Draw a Glitch card, this is now your passive Affinity.",
+                    "name": "Five"
                 },
                 "2": {
-                    "name": "Seven",
-                    "desc": "Draw 3 Glitch cards and pick from one of them to be your passive Affinity."
+                    "desc": "Draw 3 Glitch cards and pick from one of them to be your passive Affinity.",
+                    "name": "Seven"
                 },
                 "_size": 2
             }
@@ -3412,48 +3001,39 @@
         "HpWares": {
             "1": {
                 "name": "Ointment",
-                "desc": " +1HP for this turn.",
-                "img": null
+                "desc": " +1HP for this turn."
             },
             "2": {
                 "name": "Charge Pack",
-                "desc": "Charge any item.",
-                "img": null
+                "desc": "Charge any item."
             },
             "3": {
                 "name": "Charge Pack",
-                "desc": "Charge any item.",
-                "img": null
+                "desc": "Charge any item."
             },
             "4": {
                 "name": "Petrifying Spray",
-                "desc": "Missed attack rolls don't hurt you for 2 rolls.",
-                "img": null
+                "desc": "Missed attack rolls don't hurt you for 2 rolls."
             },
             "5": {
                 "name": "Emergency Medical Kit",
-                "desc": "Heal to full health.",
-                "img": null
+                "desc": "Heal to full health."
             },
             "6": {
                 "name": "Rations",
-                "desc": "During battle heal 1 for 2 rolls.",
-                "img": null
+                "desc": "During battle heal 1 for 2 rolls."
             },
             "7": {
                 "name": "Debugger",
-                "desc": "Remove a jinx from the board.",
-                "img": null
+                "desc": "Remove a jinx from the board."
             },
             "8": {
                 "name": "Glitch!",
-                "desc": "Adds a Jinx to the board. You must play this when obtained.",
-                "img": null
+                "desc": "Adds a Jinx to the board. You must play this when obtained."
             },
             "9": {
                 "name": "Firewall!",
-                "desc": "End your turn.",
-                "img": null
+                "desc": "End your turn."
             },
             "10": {
                 "name": "Pacemaker",
@@ -3472,38 +3052,31 @@
             },
             "13": {
                 "name": "Bandage",
-                "desc": "Heal 1 HP.",
-                "img": null
+                "desc": "Heal 1 HP."
             },
             "14": {
                 "name": "Warm Soda",
-                "desc": "Heal 1 HP.",
-                "img": null
+                "desc": "Heal 1 HP."
             },
             "15": {
                 "name": "Cold Soda",
-                "desc": "Heal 2 HP.",
-                "img": null
+                "desc": "Heal 2 HP."
             },
             "16": {
                 "name": "Double Shot Espresso ",
-                "desc": "Take another turn after your turn. (Cannot stack)",
-                "img": null
+                "desc": "Take another turn after your turn. (Cannot stack)"
             },
             "17": {
                 "name": "Big Mug Of Coffee",
-                "desc": " +1HP +1 Roll for this turn.",
-                "img": null
+                "desc": " +1HP +1 Roll for this turn."
             },
             "18": {
                 "name": "You'll Feel A Pinch",
-                "desc": "Steal 1 HP from the current Enemy being fought and heal 1 HP.",
-                "img": null
+                "desc": "Steal 1 HP from the current Enemy being fought and heal 1 HP."
             },
             "19": {
                 "name": "Emergency Blood Bag",
-                "desc": "If you were to die, prevent it and end turn with 1 HP.",
-                "img": null
+                "desc": "If you were to die, prevent it and end turn with 1 HP."
             },
             "20": {
                 "name": "Doctor's Note",
@@ -3517,33 +3090,27 @@
             },
             "22": {
                 "name": "How 'bout No?",
-                "desc": "Cancel the effect of a relic.",
-                "img": null
+                "desc": "Cancel the effect of a relic."
             },
             "23": {
                 "name": "Stop!",
-                "desc": "Cancel the effect of a ware.",
-                "img": null
+                "desc": "Cancel the effect of a ware."
             },
             "24": {
                 "name": "Giant Mush",
-                "desc": "Roll: 1-2: Take 1 damage. 3-4: +1 HP until the end of your turn. 5-6: +2 HP until the end of your turn.",
-                "img": null
+                "desc": "Roll: 1-2: Take 1 damage. 3-4: +1 HP until the end of your turn. 5-6: +2 HP until the end of your turn."
             },
             "25": {
                 "name": "Mystical Mush",
-                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics.",
-                "img": null
+                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
             },
             "26": {
                 "name": "Transmute",
-                "desc": "Gain +1 HP until the end of your turn, and gain another Ware.",
-                "img": null
+                "desc": "Gain +1 HP until the end of your turn, and gain another Ware."
             },
             "27": {
                 "name": "Transmute",
-                "desc": "Gain +1 HP until the end of your turn, and gain another Ware.",
-                "img": null
+                "desc": "Gain +1 HP until the end of your turn, and gain another Ware."
             },
             "28": {
                 "name": "Idol of Protection",
@@ -3552,8 +3119,7 @@
             },
             "29": {
                 "name": "Wait, What?",
-                "desc": "For items that you 'choose' the effect of, you may force them to choose something else.",
-                "img": null
+                "desc": "For items that you 'choose' the effect of, you may force them to choose something else."
             },
             "30": {
                 "name": "Adrenaline Shot!",
@@ -3562,111 +3128,90 @@
             },
             "31": {
                 "name": "Neurogenesis",
-                "desc": "You may reroll any one of your items, or reroll your Affinity.",
-                "img": null
+                "desc": "You may reroll any one of your items, or reroll your Affinity."
             },
             "32": {
                 "name": "Doorknob",
-                "desc": "Force a stage change. 'Did you check if it was unlocked?'",
-                "img": null
+                "desc": "Force a stage change. 'Did you check if it was unlocked?'"
             },
             "33": {
                 "name": "Expired Library Card",
-                "desc": "Force a stage change. 'An old tried and true trick.'",
-                "img": null
+                "desc": "Force a stage change. 'An old tried and true trick.'"
             },
             "34": {
                 "name": "Pet Door",
-                "desc": "Force a stage change. 'How'd you fit through there?'",
-                "img": null
+                "desc": "Force a stage change. 'How'd you fit through there?'"
             },
             "35": {
                 "name": "Shed-Skin",
-                "desc": "Discard an active jinx.",
-                "img": null
+                "desc": "Discard an active jinx."
             },
             "36": {
                 "name": "User Backup",
-                "desc": "Remove all of a players Glitch cards.",
-                "img": null
+                "desc": "Remove all of a players Glitch cards."
             },
             "37": {
                 "name": "System Restore",
-                "desc": "Remove all Glitch cards in play",
-                "img": null
+                "desc": "Remove all Glitch cards in play"
             },
             "_size": 37
         },
         "AtkWares": {
             "1": {
                 "name": "Spike the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "2": {
                 "name": "Glog the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "3": {
                 "name": "Geez the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "4": {
                 "name": "Saurn the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "5": {
                 "name": "Kipper the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "6": {
                 "name": "Fluther the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "7": {
                 "name": "Sark the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "8": {
                 "name": "Rodney the Finger Monster",
-                "desc": "Deal 3 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 3 DMG to any player or monster."
             },
             "9": {
                 "name": "Mooj the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "10": {
                 "name": "Quaz the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster.",
-                "img": null
+                "desc": "Deal 1 DMG to any player or monster."
             },
             "11": {
                 "name": "Gingerbread Man's Blessing",
-                "desc": " +1 to ATK and Dice rolls for this turn. 'Hokay!'",
-                "img": null
+                "desc": " +1 to ATK and Dice rolls for this turn. 'Hokay!'"
             },
             "12": {
                 "name": "Charge Pack",
-                "desc": "Charge any item.",
-                "img": null
+                "desc": "Charge any item."
             },
             "13": {
                 "name": "Charge Pack",
-                "desc": "Charge any item.",
-                "img": null
+                "desc": "Charge any item."
             },
             "14": {
                 "name": "Run As Administrator",
-                "desc": " +1 to ATK, Dice Rolls, and HP.",
-                "img": null
+                "desc": " +1 to ATK, Dice Rolls, and HP."
             },
             "15": {
                 "name": "Plastic Building Brick",
@@ -3680,28 +3225,23 @@
             },
             "17": {
                 "name": "Bomb!",
-                "desc": "Deal 1 DMG to any Enemy",
-                "img": null
+                "desc": "Deal 1 DMG to any Enemy"
             },
             "18": {
                 "name": "Sloppy Seconds",
-                "desc": "Deal 1 damage to any enemy, reward goes to you regardless of whos turn it is.",
-                "img": null
+                "desc": "Deal 1 damage to any enemy, reward goes to you regardless of whos turn it is."
             },
             "19": {
                 "name": "Carpet Bomber",
-                "desc": "Deal 1 DMG to all current Enemies",
-                "img": null
+                "desc": "Deal 1 DMG to all current Enemies"
             },
             "20": {
                 "name": "Octogon",
-                "desc": "Cancel the effect of a relic.",
-                "img": null
+                "desc": "Cancel the effect of a relic."
             },
             "21": {
                 "name": "Cease and Desist",
-                "desc": "Cancel the effect of a ware.",
-                "img": null
+                "desc": "Cancel the effect of a ware."
             },
             "22": {
                 "name": "Ghillie Suit",
@@ -3710,33 +3250,27 @@
             },
             "23": {
                 "name": "Black Mush",
-                "desc": "Roll: 1-2: -1 to dice rolls until the end of your turn. 3-4: +1 ATK until the end of your turn. 5-6: +1 to dice rolls until the end of your turn. ",
-                "img": null
+                "desc": "Roll: 1-2: -1 to dice rolls until the end of your turn. 3-4: +1 ATK until the end of your turn. 5-6: +1 to dice rolls until the end of your turn. "
             },
             "24": {
                 "name": "Mystical Mush",
-                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics.",
-                "img": null
+                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
             },
             "25": {
                 "name": "Transmogrify",
-                "desc": "Gain +1 ATK until the end of your turn, and gain another Ware.",
-                "img": null
+                "desc": "Gain +1 ATK until the end of your turn, and gain another Ware."
             },
             "26": {
                 "name": "Transmogrify",
-                "desc": "Gain +1 ATK until the end of your turn, and gain another Ware.",
-                "img": null
+                "desc": "Gain +1 ATK until the end of your turn, and gain another Ware."
             },
             "27": {
                 "name": "Butterfly Knife",
-                "desc": "Kill a player. 'I'll see you in hell... you handsome rogue!'",
-                "img": null
+                "desc": "Kill a player. 'I'll see you in hell... you handsome rogue!'"
             },
             "28": {
                 "name": "Buttery Knife",
-                "desc": "Deal 1 damage to a player",
-                "img": null
+                "desc": "Deal 1 damage to a player"
             },
             "29": {
                 "name": "The Book of All Things Sharp",
@@ -3745,18 +3279,15 @@
             },
             "30": {
                 "name": "Sudoku Book",
-                "desc": "Deal 1 damage to yourself and an enemy",
-                "img": null
+                "desc": "Deal 1 damage to yourself and an enemy"
             },
             "31": {
                 "name": "Ram Manipulator",
-                "desc": "Force any player to gain a Glitch card.",
-                "img": null
+                "desc": "Force any player to gain a Glitch card."
             },
             "32": {
                 "name": "Identity Fraud",
-                "desc": "Become the recipient of any played Ware card.",
-                "img": null
+                "desc": "Become the recipient of any played Ware card."
             },
             "33": {
                 "name": "Bloodied Battery",
@@ -3768,148 +3299,119 @@
         "BoneWares": {
             "1": {
                 "name": "A Femur!",
-                "desc": "Gain 1\u03b2.",
-                "img": null
+                "desc": "Gain 1\u03b2."
             },
             "2": {
                 "name": "A Humerus!",
-                "desc": "Gain 1\u03b2.",
-                "img": null
+                "desc": "Gain 1\u03b2."
             },
             "3": {
                 "name": "Tibia and Fibula!",
-                "desc": "Gain 2\u03b2.",
-                "img": null
+                "desc": "Gain 2\u03b2."
             },
             "4": {
                 "name": "Radius and Ulna!",
-                "desc": "Gain 2\u03b2.",
-                "img": null
+                "desc": "Gain 2\u03b2."
             },
             "5": {
                 "name": "Carpals!",
-                "desc": "Gain 5\u03b2.",
-                "img": null
+                "desc": "Gain 5\u03b2."
             },
             "6": {
                 "name": "Metacarpals!",
-                "desc": "Gain 5\u03b2.",
-                "img": null
+                "desc": "Gain 5\u03b2."
             },
             "7": {
                 "name": "Phalanges!",
-                "desc": "Gain 5\u03b2.",
-                "img": null
+                "desc": "Gain 5\u03b2."
             },
             "8": {
                 "name": "A Hyoid!",
-                "desc": "Gain 1\u03b2.",
-                "img": null
+                "desc": "Gain 1\u03b2."
             },
             "9": {
                 "name": "A Rib Cage!",
-                "desc": "Gain 10\u03b2.",
-                "img": null
+                "desc": "Gain 10\u03b2."
             },
             "10": {
                 "name": "Cervical Spine!",
-                "desc": "Gain 7\u03b2.",
-                "img": null
+                "desc": "Gain 7\u03b2."
             },
             "11": {
                 "name": "A Skull!",
-                "desc": "Gain 9\u03b2.",
-                "img": null
+                "desc": "Gain 9\u03b2."
             },
             "12": {
                 "name": "Clavicles!",
-                "desc": "Gain 2\u03b2.",
-                "img": null
+                "desc": "Gain 2\u03b2."
             },
             "13": {
                 "name": "Scapulas!",
-                "desc": "Gain 2\u03b2.",
-                "img": null
+                "desc": "Gain 2\u03b2."
             },
             "14": {
                 "name": "Thoracic Spine!",
-                "desc": "Gain 12\u03b2.",
-                "img": null
+                "desc": "Gain 12\u03b2."
             },
             "15": {
                 "name": "Lumbar Spine!",
-                "desc": "Gain 5\u03b2.",
-                "img": null
+                "desc": "Gain 5\u03b2."
             },
             "16": {
                 "name": "A Sacrum!",
-                "desc": "Gain 5\u03b2.",
-                "img": null
+                "desc": "Gain 5\u03b2."
             },
             "17": {
                 "name": "A Coccyx!",
-                "desc": "Gain 4\u03b2.",
-                "img": null
+                "desc": "Gain 4\u03b2."
             },
             "18": {
                 "name": "A Pelvis!",
-                "desc": "Gain 3\u03b2.",
-                "img": null
+                "desc": "Gain 3\u03b2."
             },
             "19": {
                 "name": "A Patella!",
-                "desc": "Gain 2\u03b2.",
-                "img": null
+                "desc": "Gain 2\u03b2."
             },
             "20": {
                 "name": "Tarsals!",
-                "desc": "Gain 5\u03b2.",
-                "img": null
+                "desc": "Gain 5\u03b2."
             },
             "21": {
                 "name": "Metatarsals!",
-                "desc": "Gain 5\u03b2.",
-                "img": null
+                "desc": "Gain 5\u03b2."
             },
             "22": {
                 "name": "Bone Marrow!",
-                "desc": "Double your \u03b2.",
-                "img": null
+                "desc": "Double your \u03b2."
             },
             "23": {
                 "name": "Charge Pack",
-                "desc": "Charge any item.",
-                "img": null
+                "desc": "Charge any item."
             },
             "24": {
                 "name": "Charge Pack",
-                "desc": "Charge any item.",
-                "img": null
+                "desc": "Charge any item."
             },
             "25": {
                 "name": "Sticky Gloves",
-                "desc": "Steal 5\u03b2 from a player.",
-                "img": null
+                "desc": "Steal 5\u03b2 from a player."
             },
             "26": {
                 "name": "Lockpick",
-                "desc": "Steal an item from any player.",
-                "img": null
+                "desc": "Steal an item from any player."
             },
             "27": {
                 "name": "Skeleton Key",
-                "desc": "Get an item from the shop for free.",
-                "img": null
+                "desc": "Get an item from the shop for free."
             },
             "28": {
                 "name": "Roll: 1-2: Gain 2\u03b2 3-4: Gain 1 Ware 5-6: Gain 2 Wares.",
-                "desc": "Roll: 1-2: Gain 2\u03b2 3-4: Gain 1 Ware. 5-6: Gain 2 Wares.",
-                "img": null
+                "desc": "Roll: 1-2: Gain 2\u03b2 3-4: Gain 1 Ware. 5-6: Gain 2 Wares."
             },
             "29": {
                 "name": "Metal Detector",
-                "desc": "Gain a Relic.",
-                "img": null
+                "desc": "Gain a Relic."
             },
             "30": {
                 "name": "Rusty Gear",
@@ -3933,48 +3435,39 @@
             },
             "34": {
                 "name": "Get Boned",
-                "desc": "Cancel the effect of an item.",
-                "img": null
+                "desc": "Cancel the effect of an item."
             },
             "35": {
                 "name": "Ctrl + Z",
-                "desc": "Cancel the effect of an item.",
-                "img": null
+                "desc": "Cancel the effect of an item."
             },
             "36": {
                 "name": "Spotted Mush",
-                "desc": "Roll: 1: Lose all your \u03b2. 2-5: Gain 10\u03b2. 6: Double your \u03b2.",
-                "img": null
+                "desc": "Roll: 1: Lose all your \u03b2. 2-5: Gain 10\u03b2. 6: Double your \u03b2."
             },
             "37": {
                 "name": "Mystical Mush",
-                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics.",
-                "img": null
+                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
             },
             "38": {
                 "name": "Transhift",
-                "desc": "Gain 5\u03b2 and another Ware.",
-                "img": null
+                "desc": "Gain 5\u03b2 and another Ware."
             },
             "39": {
                 "name": "Transhift",
-                "desc": "Gain 5\u03b2 and another Ware.",
-                "img": null
+                "desc": "Gain 5\u03b2 and another Ware."
             },
             "40": {
                 "name": "Scalpers Kit",
-                "desc": "Multiply your wares by how many wares you own.",
-                "img": null
+                "desc": "Multiply your wares by how many wares you own."
             },
             "41": {
                 "name": "Communism",
-                "desc": "Collect \u03b2 from all players and share them evenly across all players. 'Loose' change goes to who played this.",
-                "img": null
+                "desc": "Collect \u03b2 from all players and share them evenly across all players. 'Loose' change goes to who played this."
             },
             "42": {
                 "name": "A Soul!",
-                "desc": "Gain a Soul! (Counts as a Ware play)",
-                "img": null
+                "desc": "Gain a Soul! (Counts as a Ware play)"
             },
             "43": {
                 "name": "Food Stamp",
@@ -4050,119 +3543,119 @@
             "Demon": {
                 "1": {
                     "name": "Common Imp",
-                    "desc": "If this damages a player, draw a Ware and use it on the attacking player.",
                     "reward": "+1 Ware",
                     "hp": 2,
                     "rr": 2,
                     "atk": 1,
-                    "img": "CommonImp"
+                    "img": "CommonImp",
+                    "desc": "If this damages a player, draw a Ware and use it on the attacking player."
                 },
                 "2": {
                     "name": "Uncommon Imp",
-                    "desc": "If this damages a player, draw a Relic and use it on the attacking player.",
                     "reward": "+1 Ware",
                     "hp": 2,
                     "rr": 4,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "If this damages a player, draw a Relic and use it on the attacking player."
                 },
                 "3": {
                     "name": "Treasure Imp",
-                    "desc": "This will leave after five attack rolls.",
                     "reward": "+3 Relics",
                     "hp": 6,
-                    "rr": 4
+                    "rr": 4,
+                    "desc": "This will leave after five attack rolls."
                 },
                 "4": {
                     "name": "Imp's Stash",
-                    "desc": "If no Imps are in play, claim 3 Wares of your choosing. Otherwise, any Imp in play will have an additional 3 Wares of the same type added to their reward.",
-                    "img": "Chest"
+                    "img": "Chest",
+                    "desc": "If no Imps are in play, claim 3 Wares of your choosing. Otherwise, any Imp in play will have an additional 3 Wares of the same type added to their reward."
                 },
                 "5": {
                     "name": "Imp Thief",
-                    "desc": "If this defeats a player, you must discard an additional Ware card.",
                     "reward": "+2 Wares",
                     "hp": 2,
                     "rr": 3,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "If this defeats a player, you must discard an additional Ware card."
                 },
                 "6": {
                     "name": "Imp Queen",
-                    "desc": "If any Imps are in play, they gain +1 to RR and +1 to ATK",
                     "reward": "+Imp Queen's Crown",
                     "hp": 5,
                     "rr": 3,
                     "atk": 1,
-                    "souls": 1
+                    "souls": 1,
+                    "desc": "If any Imps are in play, they gain +1 to RR and +1 to ATK"
                 },
                 "7": {
                     "name": "Imp Guard",
-                    "desc": "If the \"Imp Queen\" is in play you must attack this card first.",
                     "reward": "+2 Wares",
                     "hp": 3,
                     "rr": 3,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "If the \"Imp Queen\" is in play you must attack this card first."
                 },
                 "8": {
                     "name": "Imp Swarm",
-                    "desc": "If this is defeated in less than 3 moves, double the reward.",
                     "reward": "+3 Wares",
                     "hp": 4,
                     "rr": 2,
-                    "atk": 2
+                    "atk": 2,
+                    "desc": "If this is defeated in less than 3 moves, double the reward."
                 },
                 "9": {
                     "name": "Imp Egg",
-                    "desc": "When revealed, decide: Spare and keep this enemy in your relics for a passive +2 HP; Kill this enemy for a permanent +1 ATK. \"Fate in the palm of your hand.\"",
-                    "hp": 1
+                    "hp": 1,
+                    "desc": "When revealed, decide: Spare and keep this enemy in your relics for a passive +2 HP; Kill this enemy for a permanent +1 ATK. \"Fate in the palm of your hand.\""
                 },
                 "10": {
                     "name": "Devilchild",
-                    "desc": "If the attacking player dies, any discarded relic is added to this enemy's reward pool. \"Damned kids.\"",
                     "reward": "+1\u03b2",
                     "hp": 2,
                     "rr": 2,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "If the attacking player dies, any discarded relic is added to this enemy's reward pool. \"Damned kids.\""
                 },
                 "11": {
                     "name": "Devil",
-                    "desc": "If a \"Devilchild\" is killed with this in play, add +1 ATK permanently.",
                     "reward": "+1 Demonic Relic",
                     "hp": 3,
                     "rr": 4,
                     "atk": 1,
-                    "souls": 1
+                    "souls": 1,
+                    "desc": "If a \"Devilchild\" is killed with this in play, add +1 ATK permanently."
                 },
                 "12": {
                     "name": "Overseer",
-                    "desc": "Gains +1 RR for each \"Demonic\" type enemy active. \"It wont stop staring at me.\"",
                     "reward": "+2 Wares",
                     "hp": 4,
                     "rr": 1,
-                    "atk": 2
+                    "atk": 2,
+                    "desc": "Gains +1 RR for each \"Demonic\" type enemy active. \"It wont stop staring at me.\""
                 },
                 "13": {
                     "name": "Overseer II",
-                    "desc": "Gains +1 ATK for each soul the players have collected. \"It wont stop biting me.\"",
                     "reward": "+1 Relic",
                     "hp": 5,
                     "rr": 3,
                     "atk": 1,
-                    "souls": 1
+                    "souls": 1,
+                    "desc": "Gains +1 ATK for each soul the players have collected. \"It wont stop biting me.\""
                 },
                 "14": {
                     "name": "Reaper",
-                    "desc": "When this is defeated, steal all souls from a player of your choosing.",
                     "reward": "+1 Demonic Relic",
                     "hp": 6,
                     "rr": 3,
-                    "atk": 10
+                    "atk": 10,
+                    "desc": "When this is defeated, steal all souls from a player of your choosing."
                 },
                 "15": {
                     "name": "Soul Gambler",
-                    "desc": "If your roll misses, roll 2 dice: Snake eyes: Discard all your souls and this enemy, 3-6: take 1 damage, 7-11: Nothing, Boxcars: gain 2 souls, discard this enemy. \"50/50 odds against.\"",
                     "hp": 3,
                     "rr": 4,
-                    "souls": 1
+                    "souls": 1,
+                    "desc": "If your roll misses, roll 2 dice: Snake eyes: Discard all your souls and this enemy, 3-6: take 1 damage, 7-11: Nothing, Boxcars: gain 2 souls, discard this enemy. \"50/50 odds against.\""
                 },
                 "16": {
                     "name": "Con Man",
@@ -4173,20 +3666,20 @@
             "Lunar": {
                 "1": {
                     "name": "Moon Jester",
-                    "desc": "No Wares may be played during this fight.",
                     "reward": "+1 Lunar Relic",
                     "hp": 6,
                     "rr": 3,
                     "atk": 2,
-                    "souls": 2
+                    "souls": 2,
+                    "desc": "No Wares may be played during this fight."
                 },
                 "2": {
                     "name": "Cookie Cutter",
-                    "desc": "On a roll of 1, the attacking player loses -1 HP permanently (minimum 1).",
                     "reward": "+1 Relic",
                     "hp": 1,
                     "rr": 4,
-                    "atk": 2
+                    "atk": 2,
+                    "desc": "On a roll of 1, the attacking player loses -1 HP permanently (minimum 1)."
                 },
                 "3": {
                     "name": "Moon Cheese",
@@ -4197,54 +3690,54 @@
             "Angelic": {
                 "1": {
                     "name": "Glowing... Thing",
-                    "desc": "\"It's bright, it's ugly, it's... something.\"",
                     "reward": "+3\u03b2",
                     "hp": 1,
                     "rr": 2,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "\"It's bright, it's ugly, it's... something.\""
                 },
                 "2": {
                     "name": "Statue of a Man",
-                    "desc": "When defeated, draw a \"Devil\" to put here. Fight it. \"Prove your strength.\"",
                     "reward": "+10\u03b2",
-                    "hp": 1
+                    "hp": 1,
+                    "desc": "When defeated, draw a \"Devil\" to put here. Fight it. \"Prove your strength.\""
                 },
                 "3": {
                     "name": "Statue of a Lady",
-                    "desc": "When defeated, draw an \"Angel\" to put here. Fight it. \"Prove your spirit.\"",
                     "reward": "+10\u03b2",
-                    "hp": 1
+                    "hp": 1,
+                    "desc": "When defeated, draw an \"Angel\" to put here. Fight it. \"Prove your spirit.\""
                 },
                 "4": {
                     "name": "Angel",
-                    "desc": "If a non-Demonic enemy is killed with this in play, add +1 ATK permanently. \"Not the guardian type.\"",
                     "reward": "+1 Angelic Relic",
                     "hp": 3,
                     "rr": 4,
                     "atk": 1,
-                    "souls": 1
+                    "souls": 1,
+                    "desc": "If a non-Demonic enemy is killed with this in play, add +1 ATK permanently. \"Not the guardian type.\""
                 },
                 "5": {
                     "name": "White Rabbit",
-                    "desc": "When this dies, replace this with an \"Angel\". It gains +2 ATK and starts combat with the next player to deal damage.",
                     "reward": "+5\u03b2",
                     "hp": 1,
-                    "rr": 3
+                    "rr": 3,
+                    "desc": "When this dies, replace this with an \"Angel\". It gains +2 ATK and starts combat with the next player to deal damage."
                 },
                 "6": {
                     "name": "Halo",
-                    "desc": "If you miss a roll, end your turn. \"I'm blind!\"",
                     "reward": "+5\u03b2",
                     "hp": 2,
-                    "rr": 4
+                    "rr": 4,
+                    "desc": "If you miss a roll, end your turn. \"I'm blind!\""
                 },
                 "7": {
                     "name": "Holy Imp",
-                    "desc": "This counts as both an Imp and Angelic enemy. \"Not quite sure where to put this one.\"",
                     "reward": "+1 Angelic Relic",
                     "hp": 2,
                     "rr": 3,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "This counts as both an Imp and Angelic enemy. \"Not quite sure where to put this one.\""
                 },
                 "8": {
                     "name": "Weeping Child",
@@ -4252,26 +3745,26 @@
                 },
                 "9": {
                     "name": "Blessed Rock",
-                    "desc": "\"Can we just skip this?\"",
                     "reward": "+5\u03b2",
                     "hp": 20,
-                    "rr": 2
+                    "rr": 2,
+                    "desc": "\"Can we just skip this?\""
                 },
                 "10": {
                     "name": "Floating Book",
-                    "desc": "\"Read! Read Sinner!\"",
                     "reward": "+1 Ware",
                     "hp": 3,
                     "rr": 3,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "\"Read! Read Sinner!\""
                 },
                 "11": {
                     "name": "Purifying Hand",
-                    "desc": "If this hurts a player, Exchange a non-Angelic Relic for an Angelic Relic.",
                     "reward": "+1 Angelic Relic",
                     "hp": 4,
                     "rr": 4,
-                    "atk": 1
+                    "atk": 1,
+                    "desc": "If this hurts a player, Exchange a non-Angelic Relic for an Angelic Relic."
                 },
                 "_size": 11
             }
@@ -4281,23 +3774,21 @@
                 "1": {
                     "name": "Imp Kid",
                     "type": "*",
-                    "img": null,
                     "prefixes": {
                         "1": {
-                            "name": "",
                             "desc": " +1 to attack rolls and HP. \"Don't give it a name!\""
                         },
                         "2": {
-                            "name": "Moody",
-                            "desc": " +2 to attack rolls. \"Let ME show you how to do it.\""
+                            "desc": " +2 to attack rolls. \"Let ME show you how to do it.\"",
+                            "name": "Moody"
                         },
                         "3": {
-                            "name": "Cute",
-                            "desc": " +2 to HP. \"Stop starin' at me with that big ol' eye.\""
+                            "desc": " +2 to HP. \"Stop starin' at me with that big ol' eye.\"",
+                            "name": "Cute"
                         },
                         "4": {
-                            "name": "Gifted",
-                            "desc": " +2 to attack rolls and HP. \"You're alright, kid.\""
+                            "desc": " +2 to attack rolls and HP. \"You're alright, kid.\"",
+                            "name": "Gifted"
                         },
                         "_size": 4
                     }
@@ -4305,15 +3796,13 @@
                 "2": {
                     "name": "Screeching Cell Phone",
                     "type": "@",
-                    "img": null,
                     "prefixes": {
                         "1": {
-                            "name": "",
                             "desc": "Replace any active enemy with a Demonic enemy. \"Verizon is not associated with any demonic presence.\""
                         },
                         "2": {
-                            "name": "Ear-Piercing",
-                            "desc": "Replace all active enemies with Demonic enemies. \"AAAAAAAAAAAAAAGH!\""
+                            "desc": "Replace all active enemies with Demonic enemies. \"AAAAAAAAAAAAAAGH!\"",
+                            "name": "Ear-Piercing"
                         },
                         "_size": 2
                     }
@@ -4321,15 +3810,13 @@
                 "3": {
                     "name": "Pentagram Party Invite",
                     "type": "@",
-                    "img": null,
                     "prefixes": {
                         "1": {
-                            "name": "",
                             "desc": "Open all enemy slots, fill each with a Demonic enemy."
                         },
                         "2": {
-                            "name": "Uninteresting",
-                            "desc": "Open one enemy slot, draw a Demonic enemy for it."
+                            "desc": "Open one enemy slot, draw a Demonic enemy for it. \"Hey, Greg.\"",
+                            "name": "Uninteresting"
                         },
                         "_size": 2
                     }
@@ -4337,19 +3824,17 @@
                 "4": {
                     "name": "Death Whistle",
                     "type": "@",
-                    "img": null,
                     "prefixes": {
                         "1": {
-                            "name": "",
                             "desc": "Kill any non-Demonic, non-boss enemy. Replace it with a Demonic enemy. Discard This. \"Scared myself half to death.\""
                         },
                         "2": {
-                            "name": "Comically Large",
-                            "desc": "Kill any non-Demonic enemy below 2 souls and replace it with a Demonic enemy. Discard this. \"I'm on the neighborhood watchlist now.\""
+                            "desc": "Kill any non-Demonic enemy below 2 souls and replace it with a Demonic enemy. Discard this. \"I'm on the neighborhood watchlist now.\"",
+                            "name": "Comically Large"
                         },
                         "3": {
-                            "name": "Tiny",
-                            "desc": "Replace any non-Demonic, non-boss enemy with a Demonic enemy. Discard this. \"Gave that mouse a heart attack.\""
+                            "desc": "Replace any non-Demonic, non-boss enemy with a Demonic enemy. Discard this. \"Gave that mouse a heart attack.\"",
+                            "name": "Tiny"
                         },
                         "_size": 3
                     }
@@ -4357,10 +3842,8 @@
                 "5": {
                     "name": "Imp Queen's Crown",
                     "type": "*",
-                    "img": null,
                     "prefixes": {
                         "1": {
-                            "name": "",
                             "desc": "Demonic enemies lose -1 RR when you start combat. \"Bow down.\""
                         },
                         "_size": 1
@@ -4369,31 +3852,30 @@
                 "6": {
                     "name": "Devil Dagger",
                     "type": "$",
-                    "img": null,
                     "prefixes": {
                         "1": {
-                            "name": "Burnt",
-                            "desc": "Add a counter, use 1 to deal 1 damage to any non-boss enemy. \"0.\""
+                            "desc": "Add a counter, use 1 to deal 1 damage to any non-boss enemy. \"0.\"",
+                            "name": "Burnt"
                         },
                         "2": {
-                            "name": "Bronze",
-                            "desc": "Add a counter, use 2 to deal 1 damage to any enemy. \"60.\""
+                            "desc": "Add a counter, use 2 to deal 1 damage to any enemy. \"60.\"",
+                            "name": "Bronze"
                         },
                         "3": {
-                            "name": "Silver",
-                            "desc": "Add a counter, use 2 to deal 2 damage to any non-boss enemy. \"120.\""
+                            "desc": "Add a counter, use 2 to deal 2 damage to any non-boss enemy. \"120.\"",
+                            "name": "Silver"
                         },
                         "4": {
-                            "name": "Gold",
-                            "desc": "Add a counter, use 3 to deal 2 damage to any enemy. \"250.\""
+                            "desc": "Add a counter, use 3 to deal 2 damage to any enemy. \"250.\"",
+                            "name": "Gold"
                         },
                         "5": {
-                            "name": "Devil's",
-                            "desc": "Add a counter, use 4 to deal 3 damage to any enemy. \"500.\""
+                            "desc": "Add a counter, use 4 to deal 3 damage to any enemy. \"500.\"",
+                            "name": "Devil's"
                         },
                         "6": {
-                            "name": "Tormented",
-                            "desc": "Add a counter, use 5 to kill any enemy. \"1000.\""
+                            "desc": "Add a counter, use 5 to kill any enemy. \"1000.\"",
+                            "name": "Tormented"
                         },
                         "_size": 6
                     }

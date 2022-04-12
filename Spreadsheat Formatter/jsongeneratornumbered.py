@@ -37,10 +37,10 @@ def processEnemies(sheet, data, type, columnstart):
         enemyName = sheet[chr(columnstart) + str(row)].value
         if enemyName is not None:
             Enemies[row-1] = {
-                "name": enemyName,
-                "desc": sheet[chr(columnstart+4) + str(row)].value
+                "name": enemyName
             }
             hp = sheet[chr(columnstart+1) + str(row)].value
+            desc = sheet[chr(columnstart+4) + str(row)].value
             rr = sheet[chr(columnstart+2) + str(row)].value
             atk = sheet[chr(columnstart+3) + str(row)].value
             souls = sheet[chr(columnstart+6) + str(row)].value
@@ -58,6 +58,8 @@ def processEnemies(sheet, data, type, columnstart):
                 Enemies[row-1]["souls"] = int(souls)
             if img is not None:
                 Enemies[row-1]["img"] = img
+            if desc is not None:
+                Enemies[row-1]["desc"] = desc
         else:
             break
         row += 1
@@ -74,9 +76,11 @@ def processPrefixes(sheet, data):
         if prefixName is not None:
             values = processMultiValue(sheet["K" + str(row)].value)
             Prefixes[row-1] = {
-                "name": prefixName,
-                "mod": testMod(sheet["J" + str(row)].value)
+                "name": prefixName
             }
+            mod = testMod(sheet["J" + str(row)].value)
+            if mod is not None:
+                Prefixes[row-1]["mod"] = mod
             if values is not None:
                 if values["hp"] != 0:
                     Prefixes[row-1]["hp"] = values["hp"]
@@ -102,9 +106,11 @@ def processSuffixes(sheet, data):
         if suffixName is not None:
             values = processMultiValue(sheet["N" + str(row)].value)
             Suffixes[row-1] = {
-                "name": suffixName,
-                "mod": testMod(sheet["M" + str(row)].value)
+                "name": suffixName
             }
+            mod = testMod(sheet["M" + str(row)].value)
+            if mod is not None:
+                Suffixes[row-1]["mod"] = mod
             if values is not None:
                 if values["hp"] != 0:
                     Suffixes[row-1]["hp"] = values["hp"]
@@ -130,9 +136,11 @@ def processJinxes(sheet, data):
         if jinxName is not None:
             Jinxes[row-1] = {
                 "name": jinxName,
-                "desc": sheet["P" + str(row)].value,
-                "img": testImg(sheet["Q" + str(row)].value)
+                "desc": sheet["P" + str(row)].value
             }
+            img = testImg(sheet["Q" + str(row)].value)
+            if img is not None:
+                Jinxes[row-1]["img"] = img
         else:
             break
         row += 1
@@ -149,9 +157,11 @@ def processStages(sheet, data):
         if stageName is not None:
             Stages[row-1] = {
                 "name": stageName,
-                "desc": sheet["S" + str(row)].value,
-                "img": testImg(sheet["T" + str(row)].value)
+                "desc": sheet["S" + str(row)].value
             }
+            img = testImg(sheet["T" + str(row)].value)
+            if img is not None:
+                Stages[row-1]["img"] = img
         else:
             break
         row += 1
@@ -168,9 +178,11 @@ def processSouls(sheet, data):
         if soulName is not None:
             Souls[row-1] = {
                 "name": soulName,
-                "desc": sheet["V" + str(row)].value,
-                "img": testImg(sheet["W" + str(row)].value)
+                "desc": sheet["V" + str(row)].value
             }
+            img = testImg(sheet["W" + str(row)].value)
+            if img is not None:
+                Souls[row-1]["img"] = img
         else:
             break
         row += 1
@@ -193,12 +205,11 @@ def processItems(sheet, data, type):
             while True:
                 prefixName = sheet[chr(columnStep) + str(row)].value
                 if prefixName is not None or columnStep == 68:
-                    if prefixName is None:
-                        prefixName = ""
                     prefixes[trueCount] = {
-                        "name": prefixName,
                         "desc": sheet[chr(columnStep+1) + str(row)].value
                         }
+                    if prefixName is not None:
+                        prefixes[trueCount]["name"] = prefixName
                 else:
                     break
                 columnStep += 2
@@ -208,9 +219,11 @@ def processItems(sheet, data, type):
             Items[row-1] = {
                 "name": itemName,
                 "type": sheet["B" + str(row)].value,
-                "img": testImg(sheet["C" + str(row)].value),
                 "prefixes": prefixes
             }
+            img = testImg(sheet["C" + str(row)].value)
+            if img is not None:
+                Items[row-1]["img"] = img
         else:
             break
         row += 1
@@ -231,9 +244,11 @@ def processWares(sheet, data):
         if wareName is not None:
             HPWare[str(row-1)] = {
                 "name": wareName,
-                "desc": sheet["B" + str(row)].value,
-                "img": testImg(sheet["C" + str(row)].value)
+                "desc": sheet["B" + str(row)].value
             }
+            img = testImg(sheet["C" + str(row)].value)
+            if img is not None:
+                HPWare[str(row-1)]["img"] = img
         else:
             break
         row += 1
@@ -243,9 +258,11 @@ def processWares(sheet, data):
         if wareName is not None:
             ATKWare[str(row-1)] = {
                 "name": wareName,
-                "desc": sheet["E" + str(row)].value,
-                "img": testImg(sheet["F" + str(row)].value)
+                "desc": sheet["E" + str(row)].value
             }
+            img = testImg(sheet["F" + str(row)].value)
+            if img is not None:
+                ATKWare[str(row-1)]["img"] = img
         else:
             break
         row += 1
@@ -255,9 +272,11 @@ def processWares(sheet, data):
         if wareName is not None:
             BoneWare[str(row-1)] = {
                 "name": wareName,
-                "desc": sheet["H" + str(row)].value,
-                "img": testImg(sheet["I" + str(row)].value)
+                "desc": sheet["H" + str(row)].value
             }
+            img = testImg(sheet["I" + str(row)].value)
+            if img is not None:
+                BoneWare[str(row-1)]["img"] = img
         else:
             break
         row += 1
