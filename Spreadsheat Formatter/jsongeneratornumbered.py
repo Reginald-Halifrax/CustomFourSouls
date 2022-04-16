@@ -294,26 +294,50 @@ def processWares(sheet, data):
 
 # Store 4 tables in one dictionary called Trigger, PlayerMutator, EnemyMutator, and Effector.
 def processGlitched(sheet, data):
-    Trigger = []
-    PlayerMutator = []
-    EnemyMutator = []
-    Effector = []
+    Trigger = {}
+    TCount = 0
+    PlayerMutator = {}
+    PMCount = 0
+    EnemyMutator = {}
+    EMCount = 0
+    Effector = {}
+    ECount = 0
     row = 2
     while True:
         triggerValue = sheet["A" + str(row)].value
         if triggerValue is not None:
-            Trigger.append(triggerValue)
-        PlayerMutatorValue = sheet["B" + str(row)].value
+            Trigger[str(row-1)] = {
+                "desc": triggerValue,
+                "weight": sheet["B" + str(row)].value
+            }
+            TCount += 1
+        PlayerMutatorValue = sheet["C" + str(row)].value
         if PlayerMutatorValue is not None:
-            PlayerMutator.append(PlayerMutatorValue)
-        EnemyMutatorValue = sheet["C" + str(row)].value
+            PlayerMutator[str(row-1)] = {
+                "desc": PlayerMutatorValue,
+                "weight": sheet["D" + str(row)].value
+            }
+            PMCount += 1
+        EnemyMutatorValue = sheet["E" + str(row)].value
         if EnemyMutatorValue is not None:
-            EnemyMutator.append(EnemyMutatorValue)
-        EffectorValue = sheet["D" + str(row)].value
+            EnemyMutator[str(row-1)] = {
+                "desc": EnemyMutatorValue,
+                "weight": sheet["F" + str(row)].value
+            }
+            EMCount += 1
+        EffectorValue = sheet["G" + str(row)].value
         if EffectorValue is not None:
-            Effector.append(EffectorValue)
+            Effector[str(row-1)] = {
+                "desc": EffectorValue,
+                "weight": sheet["H" + str(row)].value
+            }
+            ECount += 1
         
         if triggerValue is None and PlayerMutatorValue is None and EnemyMutatorValue is None and EffectorValue is None:
+            Trigger["_size"] = TCount
+            PlayerMutator["_size"] = PMCount
+            EnemyMutator["_size"] = EMCount
+            Effector["_size"] = ECount
             break
         row += 1
     Glitched = {

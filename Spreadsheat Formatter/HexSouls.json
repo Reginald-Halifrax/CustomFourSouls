@@ -1551,7 +1551,7 @@
             "type": "$",
             "prefixes": {
                 "1": {
-                    "desc": "Put a counter on this. At 3 counters, recharge all other Relics and you may play an additional Ware."
+                    "desc": "Put a counter on this. Spend 3 counters to recharge all other Relics and you may play an additional Ware."
                 },
                 "_size": 1
             }
@@ -3483,60 +3483,206 @@
         }
     },
     "Glitched": {
-        "Trigger": [
-            "When you <PM>: <E>.",
-            "When another player <PM>: <E>.",
-            "When an enemy <EM>: <E>.",
-            "When a jinx enters play: <E>.",
-            "When you kill an enemy: <E>.",
-            "When another player kills an enemy: <E>.",
-            "when the stage changes: <E>.",
-            "When a boss enters play: <E>.",
-            "When a boss gets <EM>: <E>.",
-            "When a player gains a soul: <E>."
-        ],
-        "PlayerMutator": [
-            "get(s) hurt",
-            "heal(s)",
-            "gain(s) a Ware",
-            "get a \u03b2",
-            "get a Relic",
-            "self-imposedly takes damage",
-            "get(s) hurt by an item",
-            "hit(s) 0 health",
-            "activate(s) a relic",
-            "take more than <X3> damage",
-            "roll(s) an <X6>",
-            "roll(s) more than <X6>",
-            "roll(s) less than <X6>"
-        ],
-        "EnemyMutator": [
-            "gets hurt",
-            "gets healed",
-            "hurt by an item",
-            "dies",
-            "gets discarded",
-            "kills a player",
-            "is revealed",
-            "takes more than <X3> damage on the same attack roll"
-        ],
-        "Effector": [
-            "heal <X2>",
-            "take <X2> damage",
-            "the currently attacked enemy (where applicable) gets healed <X2>",
-            "a random player takes <X2> damage",
-            "the player to your <DIR> takes <X> damage",
-            "All players take <X2> damage",
-            "roll a die, if the value is <X6>: Gain <X2> Relic(s). Only applicable once per stage",
-            "roll a die, if the value is <X6>: Gain <X2> Ware(s). Only applicable once per stage",
-            "put a jinx on the board",
-            "the active players discard a relic",
-            "the player to your <DIR> takes <X3> of your wares at random",
-            "the player to your <DIR> may take one of your Relics. Only applicable once per stage",
-            "you may take a Relic from a random player. Only applicable once per stage",
-            "gain a Glitch card",
-            "A random player gains a Glitch card"
-        ]
+        "Trigger": {
+            "1": {
+                "desc": "When you <PM>: <E>.",
+                "weight": 0.7
+            },
+            "2": {
+                "desc": "When another player <PM>: <E>.",
+                "weight": 0.4
+            },
+            "3": {
+                "desc": "When an enemy <EM>: <E>.",
+                "weight": 0.45
+            },
+            "4": {
+                "desc": "When a jinx enters play: <E>.",
+                "weight": 0.1
+            },
+            "5": {
+                "desc": "When you kill an enemy: <E>.",
+                "weight": 0.6
+            },
+            "6": {
+                "desc": "When another player kills an enemy: <E>.",
+                "weight": 0.3
+            },
+            "7": {
+                "desc": "when the stage changes: <E>.",
+                "weight": 0.3
+            },
+            "8": {
+                "desc": "When a boss enters play: <E>.",
+                "weight": 0.2
+            },
+            "9": {
+                "desc": "When a boss gets <EM>: <E>.",
+                "weight": 0.1
+            },
+            "10": {
+                "desc": "When a player gains a soul: <E>.",
+                "weight": 0.2
+            },
+            "11": {
+                "desc": "Do as I say where possible, charge is reduced to 1. Do this:",
+                "weight": 0.3
+            },
+            "_size": 11
+        },
+        "PlayerMutator": {
+            "1": {
+                "desc": "get(s) hurt",
+                "weight": 0.2
+            },
+            "2": {
+                "desc": "heal(s)",
+                "weight": 0.3
+            },
+            "3": {
+                "desc": "gain(s) a Ware",
+                "weight": 0.1
+            },
+            "4": {
+                "desc": "gets a \u03b2",
+                "weight": 0.5
+            },
+            "5": {
+                "desc": "get a Relic",
+                "weight": 0.4
+            },
+            "6": {
+                "desc": "self-imposedly takes damage",
+                "weight": 0.45
+            },
+            "7": {
+                "desc": "get(s) hurt by an item",
+                "weight": 0.45
+            },
+            "8": {
+                "desc": "hit(s) 0 health",
+                "weight": 0.7
+            },
+            "9": {
+                "desc": "activate(s) a relic",
+                "weight": 0.3
+            },
+            "10": {
+                "desc": "take more than <X3> damage",
+                "weight": 0.7
+            },
+            "11": {
+                "desc": "roll(s) an <X6>",
+                "weight": 0.8
+            },
+            "12": {
+                "desc": "roll(s) more than <X5>",
+                "weight": 0.15
+            },
+            "13": {
+                "desc": "roll(s) less than <X6>",
+                "weight": 0.15
+            },
+            "_size": 13
+        },
+        "EnemyMutator": {
+            "1": {
+                "desc": "gets hurt",
+                "weight": 0.2
+            },
+            "2": {
+                "desc": "gets healed",
+                "weight": 0.2
+            },
+            "3": {
+                "desc": "hurt by an item",
+                "weight": 0.1
+            },
+            "4": {
+                "desc": "dies",
+                "weight": 0.7
+            },
+            "5": {
+                "desc": "gets discarded",
+                "weight": 0.2
+            },
+            "6": {
+                "desc": "kills a player",
+                "weight": 0.6
+            },
+            "7": {
+                "desc": "is revealed",
+                "weight": 0.4
+            },
+            "8": {
+                "desc": "takes more than <X3> damage on the same attack roll",
+                "weight": 0.7
+            },
+            "_size": 8
+        },
+        "Effector": {
+            "1": {
+                "desc": "heal <X2>",
+                "weight": 0.2
+            },
+            "2": {
+                "desc": "take <X2> damage",
+                "weight": 0.2
+            },
+            "3": {
+                "desc": "the currently attacked enemy (where applicable) gets healed <X2>",
+                "weight": 0.4
+            },
+            "4": {
+                "desc": "a random player takes <X2> damage",
+                "weight": 0.6
+            },
+            "5": {
+                "desc": "the player to your <DIR> takes <X> damage",
+                "weight": 0.15
+            },
+            "6": {
+                "desc": "All players take <X2> damage",
+                "weight": 0.1
+            },
+            "7": {
+                "desc": "roll a die, if the value is <X6>: Gain <X2> Relic(s). Reduces Glitch charge to 1",
+                "weight": 0.2
+            },
+            "8": {
+                "desc": "roll a die, if the value is <X6>: Gain <X2> Ware(s). Reduces Glitch charge to 1",
+                "weight": 0.3
+            },
+            "9": {
+                "desc": "put a jinx on the board",
+                "weight": 0.05
+            },
+            "10": {
+                "desc": "the active player discards a relic",
+                "weight": 0.3
+            },
+            "11": {
+                "desc": "the player to your <DIR> takes <X3> of your wares at random",
+                "weight": 0.5
+            },
+            "12": {
+                "desc": "the player to your <DIR> may take one of your Relics. Reduces Glitch charge to 1",
+                "weight": 0.5
+            },
+            "13": {
+                "desc": "you may take a Relic from a random player. Reduces Glitch charge to 1",
+                "weight": 0.2
+            },
+            "14": {
+                "desc": "gain a Glitch card. Reduces Glitch charge to 1",
+                "weight": 0.1
+            },
+            "15": {
+                "desc": "A random player gains a Glitch card. Reduces Glitch charge to 1",
+                "weight": 0.15
+            },
+            "_size": 15
+        }
     },
     "DLC": {
         "Enemies": {
@@ -3640,7 +3786,7 @@
                     "rr": 3,
                     "atk": 1,
                     "souls": 1,
-                    "desc": "Gains +1 ATK for each soul the players have collected. \"It wont stop biting me.\""
+                    "desc": "Gains +1 ATK for each soul all players have collected. \"It wont stop biting me.\""
                 },
                 "14": {
                     "name": "Reaper",
@@ -3655,13 +3801,37 @@
                     "hp": 3,
                     "rr": 4,
                     "souls": 1,
-                    "desc": "If your roll misses, roll 2 dice: Snake eyes: Discard all your souls and this enemy, 3-6: take 1 damage, 7-11: Nothing, Boxcars: gain 2 souls, discard this enemy. \"50/50 odds against.\""
+                    "desc": "If your roll misses, roll 2 dice: Snake eyes: Discard all your souls and this enemy, 3-6: take 1 damage, 7-11:  +1\u03b2, Boxcars: gain 2 souls, discard this enemy. \"50/50 odds against.\""
                 },
                 "16": {
                     "name": "Con Man",
                     "desc": "Decide: Discard a soul and roll: 1-4: Discard this enemy, 5: +2 Relics, 6: +2 Souls; Discard this enemy. \"We got the hottest deals from the hottest places in the Six Dimensions!\""
                 },
-                "_size": 16
+                "17": {
+                    "name": "Static Television",
+                    "hp": 3,
+                    "rr": 3,
+                    "atk": 1,
+                    "desc": "\"I used to be the scariest kid on the block.\""
+                },
+                "18": {
+                    "name": "Imp Mother",
+                    "reward": "+1 Demonic Relic",
+                    "hp": 2,
+                    "rr": 3,
+                    "atk": 1,
+                    "desc": "When this is defeated, cover all available enemy slots with demonic enemies. \"Hell hath no fury...\""
+                },
+                "19": {
+                    "name": "Cannibal",
+                    "reward": "+5\u03b2",
+                    "hp": 1,
+                    "rr": 1,
+                    "atk": 1,
+                    "souls": 1,
+                    "desc": "When revealed, all Demonic enemies are discarded. For each discarded enemy and soul they carry, this gains +1 to all stats."
+                },
+                "_size": 19
             },
             "Lunar": {
                 "1": {
@@ -3741,7 +3911,7 @@
                 },
                 "8": {
                     "name": "Weeping Child",
-                    "desc": "Every time an Angelic enemy is killed, add a counter. When this reaches 3, kill the player who added the final counter. This cannot be killed."
+                    "desc": "Every time an Angelic enemy is killed, add a counter. When this reaches 3, kill the player who added the final counter. This cannot be covered, only discarded by force."
                 },
                 "9": {
                     "name": "Blessed Rock",
@@ -3764,7 +3934,7 @@
                     "hp": 4,
                     "rr": 4,
                     "atk": 1,
-                    "desc": "If this hurts a player, Exchange a non-Angelic Relic for an Angelic Relic."
+                    "desc": "If this hurts a player, exchange a non-Angelic Relic for an Angelic Relic."
                 },
                 "_size": 11
             }
