@@ -37,29 +37,15 @@ def processEnemies(sheet, data, type, columnstart):
         enemyName = sheet[chr(columnstart) + str(row)].value
         if enemyName is not None:
             Enemies[row-1] = {
-                "name": enemyName
+                "name": enemyName,
+                "desc": sheet[chr(columnstart+4) + str(row)].value,
+                "reward": testReward(sheet[chr(columnstart+5) + str(row)].value),
+                "hp": int(sheet[chr(columnstart+1) + str(row)].value) or None,
+                "rr": int(sheet[chr(columnstart+2) + str(row)].value) or None,
+                "atk": int(sheet[chr(columnstart+3) + str(row)].value) or None,
+                "souls": int(sheet[chr(columnstart+6) + str(row)].value) or None,
+                "img": testImg(sheet[chr(columnstart+7) + str(row)].value)
             }
-            hp = sheet[chr(columnstart+1) + str(row)].value
-            desc = sheet[chr(columnstart+4) + str(row)].value
-            rr = sheet[chr(columnstart+2) + str(row)].value
-            atk = sheet[chr(columnstart+3) + str(row)].value
-            souls = sheet[chr(columnstart+6) + str(row)].value
-            reward = testReward(sheet[chr(columnstart+5) + str(row)].value)
-            img = testImg(sheet[chr(columnstart+7) + str(row)].value)
-            if reward is not None:
-                Enemies[row-1]["reward"] = reward
-            if hp is not None and hp != 0:
-                Enemies[row-1]["hp"] = int(hp)
-            if rr is not None and rr != 0:
-                Enemies[row-1]["rr"] = int(rr)
-            if atk is not None and atk != 0:
-                Enemies[row-1]["atk"] = int(atk)
-            if souls is not None and souls != 0:
-                Enemies[row-1]["souls"] = int(souls)
-            if img is not None:
-                Enemies[row-1]["img"] = img
-            if desc is not None:
-                Enemies[row-1]["desc"] = desc
         else:
             break
         row += 1
@@ -76,20 +62,13 @@ def processPrefixes(sheet, data):
         if prefixName is not None:
             values = processMultiValue(sheet["K" + str(row)].value)
             Prefixes[row-1] = {
-                "name": prefixName
+                "name": prefixName,
+                "mod": testMod(sheet["J" + str(row)].value),
+                "hp": values["hp"] or None,
+                "rr": values["rr"] or None,
+                "atk": values["atk"] or None,
+                "souls": values["souls"] or None,
             }
-            mod = testMod(sheet["J" + str(row)].value)
-            if mod is not None:
-                Prefixes[row-1]["mod"] = mod
-            if values is not None:
-                if values["hp"] != 0:
-                    Prefixes[row-1]["hp"] = values["hp"]
-                if values["rr"] != 0:
-                    Prefixes[row-1]["rr"] = values["rr"]
-                if values["atk"] != 0:
-                    Prefixes[row-1]["atk"] = values["atk"]
-                if values["souls"] != 0:
-                    Prefixes[row-1]["souls"] = values["souls"]
         else:
             break
         row += 1
@@ -106,20 +85,13 @@ def processSuffixes(sheet, data):
         if suffixName is not None:
             values = processMultiValue(sheet["N" + str(row)].value)
             Suffixes[row-1] = {
-                "name": suffixName
+                "name": suffixName,
+                "mod": testMod(sheet["M" + str(row)].value),
+                "hp": values["hp"] or None,
+                "rr": values["rr"] or None,
+                "atk": values["atk"] or None,
+                "souls": values["souls"] or None,
             }
-            mod = testMod(sheet["M" + str(row)].value)
-            if mod is not None:
-                Suffixes[row-1]["mod"] = mod
-            if values is not None:
-                if values["hp"] != 0:
-                    Suffixes[row-1]["hp"] = values["hp"]
-                if values["rr"] != 0:
-                    Suffixes[row-1]["rr"] = values["rr"]
-                if values["atk"] != 0:
-                    Suffixes[row-1]["atk"] = values["atk"]
-                if values["souls"] != 0:
-                    Suffixes[row-1]["souls"] = values["souls"]
         else:
             break
         row += 1
@@ -136,11 +108,9 @@ def processJinxes(sheet, data):
         if jinxName is not None:
             Jinxes[row-1] = {
                 "name": jinxName,
-                "desc": sheet["P" + str(row)].value
+                "desc": sheet["P" + str(row)].value,
+                "img": testImg(sheet["Q" + str(row)].value),
             }
-            img = testImg(sheet["Q" + str(row)].value)
-            if img is not None:
-                Jinxes[row-1]["img"] = img
         else:
             break
         row += 1
@@ -157,11 +127,9 @@ def processStages(sheet, data):
         if stageName is not None:
             Stages[row-1] = {
                 "name": stageName,
-                "desc": sheet["S" + str(row)].value
+                "desc": sheet["S" + str(row)].value,
+                "img": testImg(sheet["T" + str(row)].value),
             }
-            img = testImg(sheet["T" + str(row)].value)
-            if img is not None:
-                Stages[row-1]["img"] = img
         else:
             break
         row += 1
@@ -178,11 +146,9 @@ def processSouls(sheet, data):
         if soulName is not None:
             Souls[row-1] = {
                 "name": soulName,
-                "desc": sheet["V" + str(row)].value
+                "desc": sheet["V" + str(row)].value,
+                "img": testImg(sheet["W" + str(row)].value),
             }
-            img = testImg(sheet["W" + str(row)].value)
-            if img is not None:
-                Souls[row-1]["img"] = img
         else:
             break
         row += 1
@@ -206,10 +172,9 @@ def processItems(sheet, data, type):
                 prefixName = sheet[chr(columnStep) + str(row)].value
                 if prefixName is not None or columnStep == 68:
                     prefixes[trueCount] = {
+                        "name": prefixName,
                         "desc": sheet[chr(columnStep+1) + str(row)].value
                         }
-                    if prefixName is not None:
-                        prefixes[trueCount]["name"] = prefixName
                 else:
                     break
                 columnStep += 2
@@ -219,11 +184,9 @@ def processItems(sheet, data, type):
             Items[row-1] = {
                 "name": itemName,
                 "type": sheet["B" + str(row)].value,
-                "prefixes": prefixes
+                "prefixes": prefixes,
+                "img": testImg(sheet["C" + str(row)].value),
             }
-            img = testImg(sheet["C" + str(row)].value)
-            if img is not None:
-                Items[row-1]["img"] = img
         else:
             break
         row += 1
@@ -234,128 +197,77 @@ def processItems(sheet, data, type):
 
 # Wares are set up in three categories, HPWare, ATKWare, and BoneWare. They are to be stored in one large table called "Wares".
 def processWares(sheet, data):
-    Wares = {}
-    HPWare = {}
-    ATKWare = {}
-    BoneWare = {}
-    row = 2
-    while True:
-        wareName = sheet["A" + str(row)].value
-        if wareName is not None:
-            HPWare[str(row-1)] = {
-                "name": wareName,
-                "desc": sheet["B" + str(row)].value
-            }
-            img = testImg(sheet["C" + str(row)].value)
-            if img is not None:
-                HPWare[str(row-1)]["img"] = img
-        else:
-            break
-        row += 1
-    row = 2
-    while True:
-        wareName = sheet["D" + str(row)].value
-        if wareName is not None:
-            ATKWare[str(row-1)] = {
-                "name": wareName,
-                "desc": sheet["E" + str(row)].value
-            }
-            img = testImg(sheet["F" + str(row)].value)
-            if img is not None:
-                ATKWare[str(row-1)]["img"] = img
-        else:
-            break
-        row += 1
-    row = 2
-    while True:
-        wareName = sheet["G" + str(row)].value
-        if wareName is not None:
-            BoneWare[str(row-1)] = {
-                "name": wareName,
-                "desc": sheet["H" + str(row)].value
-            }
-            img = testImg(sheet["I" + str(row)].value)
-            if img is not None:
-                BoneWare[str(row-1)]["img"] = img
-        else:
-            break
-        row += 1
-    HPWare["_size"] = len(HPWare)
-    ATKWare["_size"] = len(ATKWare)
-    BoneWare["_size"] = len(BoneWare)
     Wares = {
-        "HpWares": HPWare,
-        "AtkWares": ATKWare,
-        "BoneWares": BoneWare
+        "HpWares": {},
+        "AtkWares": {},
+        "BoneWares": {},
     }
+
+    for k,v in {"HpWares": 65, "AtkWares": 68, "BoneWares": 71}.items():
+        row = 2
+        while True:
+            wareName = sheet[chr(v) + str(row)].value
+            if wareName is not None:
+                Wares[k][str(row-1)] = {
+                    "name": wareName,
+                    "desc": sheet[chr(v+1) + str(row)].value,
+                    "img": testImg(sheet[chr(v+2) + str(row)].value),
+                }
+            else:
+                break
+            row += 1
+        Wares[k]["_size"] = len(Wares[k])
+    
     data["Wares"] = Wares
     print("Successfully processed Wares")
     return data
 
-# Store 4 tables in one dictionary called Trigger, PlayerMutator, EnemyMutator, and Effector.
+# Stores 4 tables in Glitched dictionary called Trigger, PlayerMutator, EnemyMutator, and Effector.
 def processGlitched(sheet, data):
-    Trigger = {}
-    TCount = 0
-    PlayerMutator = {}
-    PMCount = 0
-    EnemyMutator = {}
-    EMCount = 0
-    Effector = {}
-    ECount = 0
-    row = 2
-    while True:
-        triggerValue = sheet["A" + str(row)].value
-        if triggerValue is not None:
-            Trigger[str(row-1)] = {
-                "desc": triggerValue,
-                "weight": sheet["B" + str(row)].value
-            }
-            TCount += 1
-        PlayerMutatorValue = sheet["C" + str(row)].value
-        if PlayerMutatorValue is not None:
-            PlayerMutator[str(row-1)] = {
-                "desc": PlayerMutatorValue,
-                "weight": sheet["D" + str(row)].value
-            }
-            PMCount += 1
-        EnemyMutatorValue = sheet["E" + str(row)].value
-        if EnemyMutatorValue is not None:
-            EnemyMutator[str(row-1)] = {
-                "desc": EnemyMutatorValue,
-                "weight": sheet["F" + str(row)].value
-            }
-            EMCount += 1
-        EffectorValue = sheet["G" + str(row)].value
-        if EffectorValue is not None:
-            Effector[str(row-1)] = {
-                "desc": EffectorValue,
-                "weight": sheet["H" + str(row)].value
-            }
-            ECount += 1
-        
-        if triggerValue is None and PlayerMutatorValue is None and EnemyMutatorValue is None and EffectorValue is None:
-            Trigger["_size"] = TCount
-            PlayerMutator["_size"] = PMCount
-            EnemyMutator["_size"] = EMCount
-            Effector["_size"] = ECount
-            break
-        row += 1
     Glitched = {
-        "Trigger": Trigger,
-        "PlayerMutator": PlayerMutator,
-        "EnemyMutator": EnemyMutator,
-        "Effector": Effector
+        "Trigger": {},
+        "PlayerMutator": {},
+        "EnemyMutator": {},
+        "Effector": {},
     }
+    for k,v in {"Trigger": 65, "PlayerMutator": 67, "EnemyMutator": 69, "Effector": 71}.items():
+        row = 2
+        while True:
+            curGlitchDesc = sheet[chr(v) + str(row)].value
+            if curGlitchDesc is not None:
+                Glitched[k][str(row-1)] = {
+                    "desc": curGlitchDesc,
+                    "weight": sheet[chr(v+1) + str(row)].value,
+                }
+            else:
+                break
+            row += 1
+    
+    for k in ["Trigger", "PlayerMutator", "EnemyMutator", "Effector"]:
+        Glitched[k]["_size"] = len(Glitched[k])
+
     data["Glitched"] = Glitched
+    print("Successfully processed Glitched cards")
     return data
+
+def clean_nones(value):
+    if isinstance(value, list):
+        return [clean_nones(x) for x in value if x is not None]
+    elif isinstance(value, dict):
+        return {
+            key: clean_nones(val)
+            for key, val in value.items()
+            if val is not None
+        }
+    else:
+        return value
 
 def main():
     data = {}
     Hexsouls = get("https://docs.google.com/spreadsheets/d/1FkBVhP4NlVBvbxMKVMCMk1cs39O_Y-z4KKQyoP6cwBQ/export?format=xlsx&id=1FkBVhP4NlVBvbxMKVMCMk1cs39O_Y-z4KKQyoP6cwBQ")
 
-    HexSheets = open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx", "wb")
-    HexSheets.write(Hexsouls.content)
-    HexSheets.close()
+    with open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx", "wb") as HexSheets:
+        HexSheets.write(Hexsouls.content)
 
     # load the workbook using the Hexsouls.content
     wb = load_workbook(filename="C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx", read_only=True)
@@ -387,16 +299,11 @@ def main():
     data["DLC"]["Relics"] = dlcRelics
     wb.close()
 
-    finalJson = json.dumps(data, indent=4)
+    data = clean_nones(data)
 
-    # print(finalJson)
-
-    with open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/HexSouls.json", "w") as outfile:
-        outfile.write(finalJson)
-        outfile.close()
+    with open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/HexSouls.json", "w", encoding="utf8") as outfile:
+        json.dump(data, outfile, indent=4)
 
     os.remove("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx")
 
 main()
-
-#print(chr(68))
