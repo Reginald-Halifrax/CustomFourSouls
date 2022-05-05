@@ -20,7 +20,7 @@
         "3": {
             "name": "Monkey",
             "desc": "This wily primate loves to trick unsuspecting explorers!",
-            "reward": "+4\u03b2",
+            "reward": "+4β",
             "hp": 1,
             "rr": 4,
             "atk": 1
@@ -28,7 +28,7 @@
         "4": {
             "name": "Hog",
             "desc": "Those cute, chubby jowls hide its razor sharp tusks.",
-            "reward": "+1 Ware & +3\u03b2",
+            "reward": "+1 Ware & +3β",
             "hp": 3,
             "rr": 3,
             "atk": 2
@@ -36,7 +36,7 @@
         "5": {
             "name": "Solar 'Naut",
             "desc": "An advanced cosmonaut who has harnessed the power of solar rays.",
-            "reward": "+5\u03b2",
+            "reward": "+5β",
             "hp": 2,
             "rr": 3,
             "atk": 2
@@ -81,7 +81,7 @@
         },
         "11": {
             "name": "Foul Trick",
-            "desc": "Roll a die: 1-2; +1\u03b2, 3-4; take 2 damage, 5-6; Gain 2 wares. (If the Moon Jester is in play, you may discard this and deal 2 damage to it. Note that this will start combat)."
+            "desc": "Roll a die: 1-2; +1β, 3-4; take 2 damage, 5-6; Gain 2 wares. (If the Moon Jester is in play, you may discard this and deal 2 damage to it. Note that this will start combat)."
         },
         "12": {
             "name": "Voodoo Dog",
@@ -102,7 +102,7 @@
         "14": {
             "name": "The Walls Move",
             "desc": "When this is defeated, add a monster slot.",
-            "reward": "+8\u03b2",
+            "reward": "+8β",
             "hp": 4,
             "rr": 3,
             "atk": 1,
@@ -125,26 +125,26 @@
         "17": {
             "name": "Bomb Bones",
             "desc": "When this is defeated, roll a die: 1-2; take 1 damage, 3-4; Inflict 1 damage on a player of your choosing, 5-6; Inflict 1 damage to an enemy of your choosing.",
-            "reward": "+4\u03b2",
+            "reward": "+4β",
             "hp": 1,
             "rr": 2,
             "atk": 1
         },
         "18": {
             "name": "George",
-            "desc": "When this is drawn, it will leave after all players have had a turn. 4\u03b2: +2 Wares, 10\u03b2: +2 Relics, 20\u03b2: +1 Soul."
+            "desc": "When this is drawn, it will leave after all players have had a turn. 4β: +2 Wares, 10β: +2 Relics, 20β: +1 Soul."
         },
         "19": {
             "name": "Spectre",
             "desc": "This can only be damaged by an odd number roll. Even numbers miss.",
-            "reward": "+3\u03b2",
+            "reward": "+3β",
             "hp": 1,
             "atk": 1
         },
         "20": {
             "name": "Ghoul",
             "desc": "This can only be damaged by an even number roll. Odd numbers miss.",
-            "reward": "+4\u03b2",
+            "reward": "+4β",
             "hp": 1,
             "atk": 1
         },
@@ -169,12 +169,12 @@
         },
         "24": {
             "name": "Hurtling bone",
-            "desc": "Roll a die: 1; OUCH, who threw that? (take 1 damage), 2-6; conveniently duck for the shiny object you found on the ground (+1\u03b2)"
+            "desc": "Roll a die: 1; OUCH, who threw that? (take 1 damage), 2-6; conveniently duck for the shiny object you found on the ground (+1β)"
         },
         "25": {
             "name": "Bone Golem",
             "desc": "A large construct made of bone. ",
-            "reward": "+10\u03b2",
+            "reward": "+10β",
             "hp": 7,
             "rr": 2,
             "atk": 2,
@@ -183,7 +183,7 @@
         "26": {
             "name": "Watchful",
             "desc": "No Wares may be played during this fight.",
-            "reward": "+5\u03b2",
+            "reward": "+5β",
             "hp": 3,
             "rr": 3,
             "atk": 1,
@@ -244,7 +244,7 @@
         "34": {
             "name": "Ogre",
             "desc": "\"You feel layers of fear set upon you.\"",
-            "reward": "+4 \u03b2",
+            "reward": "+4β",
             "hp": 3,
             "rr": 4,
             "atk": 1
@@ -252,7 +252,7 @@
         "35": {
             "name": "Mucus Monster",
             "desc": "Does not take damage on rolls of 3. \"A gelatinous monster made of snot.\"",
-            "reward": "+X \u03b2",
+            "reward": "+Xβ",
             "hp": 2,
             "rr": 3,
             "atk": 1
@@ -264,7 +264,7 @@
         "37": {
             "name": "Spider",
             "desc": "\"Don't let that spider bite ya, spider bite hurt.\"",
-            "reward": "+2 \u03b2",
+            "reward": "+2β",
             "hp": 1,
             "rr": 4,
             "atk": 1
@@ -295,7 +295,7 @@
         "41": {
             "name": "Thieving Robot",
             "desc": "If a player activated a relic while this is active they must discard a Ware.",
-            "reward": "+4 \u03b2",
+            "reward": "+4β",
             "hp": 5,
             "rr": 2,
             "atk": 1
@@ -347,7 +347,7 @@
         "48": {
             "name": "Buzzing Puppet",
             "desc": "\"The fear grows as the vibrations grow near.\"",
-            "reward": "+3 \u03b2",
+            "reward": "+3β",
             "hp": 3,
             "rr": 3,
             "atk": 1
@@ -362,14 +362,14 @@
         },
         "50": {
             "name": "Tub Bug",
-            "desc": "You may pet this and gain 1 \u03b2 once per turn",
+            "desc": "You may pet this and gain 1β once per turn",
             "reward": "+2 Wares",
             "hp": 1,
             "rr": 2
         },
         "51": {
             "name": "Gilded Tub Bug",
-            "desc": "You may pet this and gain 2 \u03b2 once per turn",
+            "desc": "You may pet this and gain 2β once per turn",
             "reward": "+1 Relic",
             "hp": 2,
             "rr": 2
@@ -393,7 +393,7 @@
         "54": {
             "name": "Eyes that Judge",
             "desc": "While active, you can not purchase any items from the shop.",
-            "reward": "+X \u03b2",
+            "reward": "+Xβ",
             "hp": 4,
             "rr": 4,
             "atk": 1
@@ -410,7 +410,7 @@
         "56": {
             "name": "Schlump",
             "desc": "If not in combat, once per turn you may roll: 1-5: Nothing. 6: Gain +1 Ware.",
-            "reward": "+10 \u03b2",
+            "reward": "+10β",
             "hp": 8,
             "rr": 4,
             "atk": 2,
@@ -419,14 +419,14 @@
         "57": {
             "name": "Offensive Origami",
             "desc": "\"Folded up slurs, hate speech, and propaganda.\"",
-            "reward": "+3 \u03b2",
+            "reward": "+3β",
             "hp": 2,
             "rr": 3,
             "atk": 1
         },
         "58": {
             "name": "Lawyer",
-            "desc": "Lose half your \u03b2 Rounded up."
+            "desc": "Lose half your β Rounded up."
         },
         "59": {
             "name": "Buff Shroom",
@@ -439,7 +439,7 @@
         "60": {
             "name": "Rock",
             "desc": "\"It's not just a boulder! its a Rock!\"",
-            "reward": "+7 \u03b2",
+            "reward": "+7β",
             "hp": 8,
             "rr": 2
         },
@@ -455,7 +455,7 @@
         "62": {
             "name": "Big Green Rat",
             "desc": "Gains +1 ATK at 1 HP.",
-            "reward": "+6 \u03b2",
+            "reward": "+6β",
             "hp": 4,
             "rr": 4,
             "atk": 1
@@ -471,7 +471,7 @@
         "64": {
             "name": "Melting Experiment",
             "desc": "On death, this deals 1 damage to all players and active enemies.",
-            "reward": "+7 \u03b2",
+            "reward": "+7β",
             "hp": 1,
             "rr": 5,
             "atk": 2
@@ -528,7 +528,7 @@
         "71": {
             "name": "Sentient Beartrap",
             "desc": "All players have -1 to attack rolls while this is active.",
-            "reward": "+8 \u03b2",
+            "reward": "+8β",
             "hp": 3,
             "rr": 2,
             "atk": 1
@@ -557,7 +557,7 @@
         "75": {
             "name": "Marble Goddess",
             "desc": "All jinxes are discarded in its presence.",
-            "reward": "+X \u03b2",
+            "reward": "+X β",
             "hp": 3,
             "rr": 3,
             "atk": 1
@@ -593,7 +593,7 @@
         },
         "81": {
             "name": "CONGA!",
-            "desc": "All players roll. The highest roll gains a relic. Lowest roll gains 3 wares. Intermediate rolls gain +5\u03b2.",
+            "desc": "All players roll. The highest roll gains a relic. Lowest roll gains 3 wares. Intermediate rolls gain +5β.",
             "img": "Democonga"
         },
         "_size": 81
@@ -821,7 +821,7 @@
         },
         "9": {
             "name": "Of Bone Development",
-            "mod": "Drops an extra 5\u03b2."
+            "mod": "Drops an extra 5β."
         },
         "10": {
             "name": "The Engorged",
@@ -912,7 +912,7 @@
         },
         "26": {
             "name": "The Handholder",
-            "mod": "This can only be targeted by the player with the least amount of \u03b2. Drops an extra 5\u03b2."
+            "mod": "This can only be targeted by the player with the least amount of β. Drops an extra 5β."
         },
         "27": {
             "name": "The Succubus",
@@ -930,7 +930,7 @@
         },
         "30": {
             "name": "The Glistening",
-            "mod": "Drops an extra 10\u03b2.",
+            "mod": "Drops an extra 10β.",
             "hp": 4,
             "rr": 1
         },
@@ -977,7 +977,7 @@
         },
         "2": {
             "name": "Boneitis",
-            "desc": "Lose 3\u03b2 if you roll a 6."
+            "desc": "Lose 3β if you roll a 6."
         },
         "3": {
             "name": "Butterfingers",
@@ -993,7 +993,7 @@
         },
         "6": {
             "name": "Communism",
-            "desc": "The player with the most \u03b2 must give half, rounded up, to the player with the least \u03b2."
+            "desc": "The player with the most β must give half, rounded up, to the player with the least β."
         },
         "7": {
             "name": "Dementia",
@@ -1005,7 +1005,7 @@
         },
         "9": {
             "name": "Midas' Crutch",
-            "desc": " All gained bones are halved, rounded down. Instances of gaining 1\u03b2 are forfeit. "
+            "desc": " All gained bones are halved, rounded down. Instances of gaining 1β are forfeit. "
         },
         "10": {
             "name": "Glass Bones and Paper Skin",
@@ -1121,7 +1121,7 @@
         },
         "7": {
             "name": "Arcade",
-            "desc": "Enemies drop an additional 2\u03b2 on their death."
+            "desc": "Enemies drop an additional 2β on their death."
         },
         "8": {
             "name": "Royal Tomb",
@@ -1133,7 +1133,7 @@
         },
         "10": {
             "name": "Casino",
-            "desc": "You may only purchase relics off the top of the relic deck, but for an additional 10\u03b2 you may purchase an additional relic."
+            "desc": "You may only purchase relics off the top of the relic deck, but for an additional 10β you may purchase an additional relic."
         },
         "11": {
             "name": "Davy Jones' Locker",
@@ -1193,7 +1193,7 @@
         },
         "25": {
             "name": "Brothel",
-            "desc": "During your turn, you may spend 10\u03b2 once to gain +1 HP permanently. \"You can bone if you got the Bones.\""
+            "desc": "During your turn, you may spend 10β once to gain +1 HP permanently. \"You can bone if you got the Bones.\""
         },
         "26": {
             "name": "Carousel of Aggress",
@@ -1205,7 +1205,7 @@
         },
         "28": {
             "name": "The Bank",
-            "desc": "You may insert any amount of \u03b2 into the bank for safe keeping. If the Stage changes to The Bank on a different turn, you may withdraw double the \u03b2 you deposited."
+            "desc": "You may insert any amount of β into the bank for safe keeping. If the Stage changes to The Bank on a different turn, you may withdraw double the β you deposited."
         },
         "29": {
             "name": "Kosmic Kitchen",
@@ -1237,7 +1237,7 @@
         },
         "36": {
             "name": "Maze of Bank Statements",
-            "desc": "No players or enemies may initiate combat. Gain +5\u03b2 at the start of your turn. \"It's time you took your mind off fighting and worry about your bookkeeping\""
+            "desc": "No players or enemies may initiate combat. Gain +5β at the start of your turn. \"It's time you took your mind off fighting and worry about your bookkeeping\""
         },
         "37": {
             "name": "The First Moon",
@@ -1292,7 +1292,7 @@
         },
         "3": {
             "name": "Tycoon's Soul",
-            "desc": "Be the first to have more than 100\u03b2."
+            "desc": "Be the first to have more than 100β."
         },
         "4": {
             "name": "Devestator's Soul",
@@ -1320,7 +1320,7 @@
         },
         "10": {
             "name": "Beggar's Soul",
-            "desc": "End your turn with no wares, \u03b2, or Relics."
+            "desc": "End your turn with no wares, β, or Relics."
         },
         "11": {
             "name": "0x00000000 EXCEPTION_ACCESS_VIOLATION",
@@ -1368,7 +1368,7 @@
         },
         "22": {
             "name": "Investor's Soul",
-            "desc": "Spend 30 or more \u03b2 on your turn."
+            "desc": "Spend 30 or more β on your turn."
         },
         "23": {
             "name": "Heartwarmer's Soul",
@@ -1442,7 +1442,7 @@
             "type": "$",
             "prefixes": {
                 "1": {
-                    "desc": " Pay 3\u03b2 to attack 1 to an active enemy. \"You want it? It's yours my friend.\""
+                    "desc": " Pay 3β to attack 1 to an active enemy. \"You want it? It's yours my friend.\""
                 },
                 "_size": 1
             },
@@ -1453,15 +1453,15 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 1\u03b2, 3-4: nothing, 5: +1 Ware, 6: Gain a relic and discard"
+                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 1β, 3-4: nothing, 5: +1 Ware, 6: Gain a relic and discard"
                 },
                 "2": {
                     "name": "Golden",
-                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 3\u03b2, 3-4: Nothing, 5: +1 Ware, 6: Gain a relic and discard"
+                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 3β, 3-4: Nothing, 5: +1 Ware, 6: Gain a relic and discard"
                 },
                 "3": {
                     "name": "Cursed",
-                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 2\u03b2, 3-4: Fight off top monster deck and discard, 5: +1 Ware, 6: Gain a relic and discard"
+                    "desc": "Unmodifiable Roll: 1: Break the shovel (discard), 2: gain 2β, 3-4: Fight off top monster deck and discard, 5: +1 Ware, 6: Gain a relic and discard"
                 },
                 "_size": 3
             },
@@ -1649,7 +1649,7 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Roll: 1-2: Gain 1 Ware, 3: Lose 2\u03b2, 4: Gain +1HP for turn, 5: Lose 1 Ware, 6: End turn "
+                    "desc": "Roll: 1-2: Gain 1 Ware, 3: Lose 2β, 4: Gain +1HP for turn, 5: Lose 1 Ware, 6: End turn "
                 },
                 "_size": 1
             }
@@ -1693,7 +1693,7 @@
             "type": "*",
             "prefixes": {
                 "1": {
-                    "desc": " +1 Hp, Enemies you kill drop +1\u03b2 \"Full of sugar and silicon!\""
+                    "desc": " +1 Hp, Enemies you kill drop +1β \"Full of sugar and silicon!\""
                 },
                 "_size": 1
             }
@@ -1775,7 +1775,7 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "When someone enters combat, guess who will win. If you are correct: gain 5\u03b2."
+                    "desc": "When someone enters combat, guess who will win. If you are correct: gain 5β."
                 },
                 "_size": 1
             }
@@ -1823,7 +1823,7 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Gain 1\u03b2. When any player rolls a 1, recharge this."
+                    "desc": "Gain 1β. When any player rolls a 1, recharge this."
                 },
                 "_size": 1
             }
@@ -1875,7 +1875,7 @@
             "type": "*",
             "prefixes": {
                 "1": {
-                    "desc": "You may buy shop Relics for 5\u03b2."
+                    "desc": "You may buy shop Relics for 5β."
                 },
                 "_size": 1
             }
@@ -1885,7 +1885,7 @@
             "type": "*",
             "prefixes": {
                 "1": {
-                    "desc": "Gain 2\u03b2 whenever you activate a Relic."
+                    "desc": "Gain 2β whenever you activate a Relic."
                 },
                 "_size": 1
             }
@@ -1899,11 +1899,11 @@
                 },
                 "2": {
                     "name": "Left",
-                    "desc": "Whenever another player dies, you gain any Wares or \u03b2 they lose."
+                    "desc": "Whenever another player dies, you gain any Wares or β they lose."
                 },
                 "3": {
                     "name": "Eggplanted",
-                    "desc": "Whenever another player dies, you choose which Relic they discard. You also gain any Wares or \u03b2 they lose."
+                    "desc": "Whenever another player dies, you choose which Relic they discard. You also gain any Wares or β they lose."
                 },
                 "_size": 3
             }
@@ -1981,7 +1981,7 @@
                 },
                 "2": {
                     "name": "Mini",
-                    "desc": "Gain 3\u03b2 whenever an enemy is killed."
+                    "desc": "Gain 3β whenever an enemy is killed."
                 },
                 "3": {
                     "name": "Tall",
@@ -1989,7 +1989,7 @@
                 },
                 "4": {
                     "name": "Mega",
-                    "desc": "Gain 3\u03b2 whenever an enemy is killed. Gain +2 Wares whenever a boss is killed."
+                    "desc": "Gain 3β whenever an enemy is killed. Gain +2 Wares whenever a boss is killed."
                 },
                 "_size": 4
             }
@@ -2039,7 +2039,7 @@
             "type": "*",
             "prefixes": {
                 "1": {
-                    "desc": "On your turn, gain 5\u03b2 if a boss is on the board."
+                    "desc": "On your turn, gain 5β if a boss is on the board."
                 },
                 "_size": 1
             }
@@ -2149,7 +2149,7 @@
                 },
                 "3": {
                     "name": "Yellow",
-                    "desc": "Steal 3\u03b2 from another player. \"Reeks of Garlic\""
+                    "desc": "Steal 3β from another player. \"Reeks of Garlic\""
                 },
                 "4": {
                     "name": "Purple",
@@ -2273,7 +2273,7 @@
                 },
                 "3": {
                     "name": "Knee-high",
-                    "desc": "When any player rolls a 1, gain 3\u03b2."
+                    "desc": "When any player rolls a 1, gain 3β."
                 },
                 "4": {
                     "name": "Thigh-high",
@@ -2386,7 +2386,7 @@
                 },
                 "2": {
                     "name": "Crusty",
-                    "desc": "Gain 2\u03b2. You may end your turn, ending ignores external card rules."
+                    "desc": "Gain 2β. You may end your turn, ending ignores external card rules."
                 },
                 "3": {
                     "name": "Trusty",
@@ -2491,7 +2491,7 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Discard this on use. Roll: 1: Take 2 damage, 2: Reroll an item you own, 3: gain 5\u03b2, 4: Nothing, 5: Gain +1 Ware, 6: Gain a Soul."
+                    "desc": "Discard this on use. Roll: 1: Take 2 damage, 2: Reroll an item you own, 3: gain 5β, 4: Nothing, 5: Gain +1 Ware, 6: Gain a Soul."
                 },
                 "_size": 1
             }
@@ -2529,11 +2529,11 @@
                 },
                 "3": {
                     "name": "Red Velvet",
-                    "desc": "Gain +1\u03b2 when defeating a normal enemy and +5\u03b2 when defeating a boss type. \"Does this make me look fat?\""
+                    "desc": "Gain +1β when defeating a normal enemy and +5β when defeating a boss type. \"Does this make me look fat?\""
                 },
                 "4": {
                     "name": "String",
-                    "desc": "Gain +4\u03b2 for every active enemy on the board when you don't fight on your turn, at the max of 12\u03b2 per turn. \"This is just too much, or too little to be more accurate.\""
+                    "desc": "Gain +4β for every active enemy on the board when you don't fight on your turn, at the max of 12β per turn. \"This is just too much, or too little to be more accurate.\""
                 },
                 "_size": 4
             }
@@ -2644,7 +2644,7 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Choose a player, roll to effect both of you: 1-3: gain 10\u03b2, 4-6: discard this."
+                    "desc": "Choose a player, roll to effect both of you: 1-3: gain 10β, 4-6: discard this."
                 },
                 "_size": 1
             }
@@ -2767,15 +2767,15 @@
             "type": "$",
             "prefixes": {
                 "1": {
-                    "desc": "Cost: 3\u03b2 With an unmodified roll: 1-2: Gain 2\u03b2. 3-6: Gain 6\u03b2."
+                    "desc": "Cost: 3β With an unmodified roll: 1-2: Gain 2β. 3-6: Gain 6β."
                 },
                 "2": {
                     "name": "Gilded",
-                    "desc": "Cost: 5\u03b2. With an unmodified roll: 1-4: Nothing. 5-6: Gain a Relic."
+                    "desc": "Cost: 5β. With an unmodified roll: 1-4: Nothing. 5-6: Gain a Relic."
                 },
                 "3": {
                     "name": "Bastardized",
-                    "desc": "Cost: 2\u03b2. With an unmodified roll: 1-3: Lose half your \u03b2. 4-6: Double your \u03b2."
+                    "desc": "Cost: 2β. With an unmodified roll: 1-3: Lose half your β. 4-6: Double your β."
                 },
                 "_size": 3
             }
@@ -2819,15 +2819,15 @@
             "type": "*",
             "prefixes": {
                 "1": {
-                    "desc": "When any player rolls a 2, gain 3\u03b2. Each time another player dies, gain a Ware."
+                    "desc": "When any player rolls a 2, gain 3β. Each time another player dies, gain a Ware."
                 },
                 "2": {
                     "name": "Bloodied",
-                    "desc": "When any player rolls a 2, gain 2\u03b2. Each time another player dies, deal 1 damage to an active enemy."
+                    "desc": "When any player rolls a 2, gain 2β. Each time another player dies, deal 1 damage to an active enemy."
                 },
                 "3": {
                     "name": "Golden",
-                    "desc": "When any player rolls a 2, gain 3\u03b2. Each time another player dies, gain 3\u03b2."
+                    "desc": "When any player rolls a 2, gain 3β. Each time another player dies, gain 3β."
                 },
                 "_size": 3
             }
@@ -2939,23 +2939,23 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Spend 8\u03b2 to gain +1 HP or ATK until the end of your turn."
+                    "desc": "Spend 8β to gain +1 HP or ATK until the end of your turn."
                 },
                 "2": {
                     "name": "Snazzy",
-                    "desc": "Spend 7\u03b2 to gain +1 HP or ATK until the end of your turn."
+                    "desc": "Spend 7β to gain +1 HP or ATK until the end of your turn."
                 },
                 "3": {
                     "name": "Ripped",
-                    "desc": "Spend 9\u03b2 to gain +1 HP or ATK until the end of your turn."
+                    "desc": "Spend 9β to gain +1 HP or ATK until the end of your turn."
                 },
                 "4": {
                     "name": "Battle",
-                    "desc": "Spend 10\u03b2 to gain +2 HP or ATK until the end of your turn."
+                    "desc": "Spend 10β to gain +2 HP or ATK until the end of your turn."
                 },
                 "5": {
                     "name": "Casual",
-                    "desc": "Spend 8\u03b2 to gain +1 HP or +1 to dice rolls until the end of your turn."
+                    "desc": "Spend 8β to gain +1 HP or +1 to dice rolls until the end of your turn."
                 },
                 "_size": 5
             }
@@ -2965,7 +2965,7 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Steal 1\u03b2 from another player. If they don't notice, you may steal another 2\u03b2 from them. If they notice, return their \u03b2."
+                    "desc": "Steal 1β from another player. If they don't notice, you may steal another 2β from them. If they notice, return their β."
                 },
                 "_size": 1
             }
@@ -3299,91 +3299,91 @@
         "BoneWares": {
             "1": {
                 "name": "A Femur!",
-                "desc": "Gain 1\u03b2."
+                "desc": "Gain 1β."
             },
             "2": {
                 "name": "A Humerus!",
-                "desc": "Gain 1\u03b2."
+                "desc": "Gain 1β."
             },
             "3": {
                 "name": "Tibia and Fibula!",
-                "desc": "Gain 2\u03b2."
+                "desc": "Gain 2β."
             },
             "4": {
                 "name": "Radius and Ulna!",
-                "desc": "Gain 2\u03b2."
+                "desc": "Gain 2β."
             },
             "5": {
                 "name": "Carpals!",
-                "desc": "Gain 5\u03b2."
+                "desc": "Gain 5β."
             },
             "6": {
                 "name": "Metacarpals!",
-                "desc": "Gain 5\u03b2."
+                "desc": "Gain 5β."
             },
             "7": {
                 "name": "Phalanges!",
-                "desc": "Gain 5\u03b2."
+                "desc": "Gain 5β."
             },
             "8": {
                 "name": "A Hyoid!",
-                "desc": "Gain 1\u03b2."
+                "desc": "Gain 1β."
             },
             "9": {
                 "name": "A Rib Cage!",
-                "desc": "Gain 10\u03b2."
+                "desc": "Gain 10β."
             },
             "10": {
                 "name": "Cervical Spine!",
-                "desc": "Gain 7\u03b2."
+                "desc": "Gain 7β."
             },
             "11": {
                 "name": "A Skull!",
-                "desc": "Gain 9\u03b2."
+                "desc": "Gain 9β."
             },
             "12": {
                 "name": "Clavicles!",
-                "desc": "Gain 2\u03b2."
+                "desc": "Gain 2β."
             },
             "13": {
                 "name": "Scapulas!",
-                "desc": "Gain 2\u03b2."
+                "desc": "Gain 2β."
             },
             "14": {
                 "name": "Thoracic Spine!",
-                "desc": "Gain 12\u03b2."
+                "desc": "Gain 12β."
             },
             "15": {
                 "name": "Lumbar Spine!",
-                "desc": "Gain 5\u03b2."
+                "desc": "Gain 5β."
             },
             "16": {
                 "name": "A Sacrum!",
-                "desc": "Gain 5\u03b2."
+                "desc": "Gain 5β."
             },
             "17": {
                 "name": "A Coccyx!",
-                "desc": "Gain 4\u03b2."
+                "desc": "Gain 4β."
             },
             "18": {
                 "name": "A Pelvis!",
-                "desc": "Gain 3\u03b2."
+                "desc": "Gain 3β."
             },
             "19": {
                 "name": "A Patella!",
-                "desc": "Gain 2\u03b2."
+                "desc": "Gain 2β."
             },
             "20": {
                 "name": "Tarsals!",
-                "desc": "Gain 5\u03b2."
+                "desc": "Gain 5β."
             },
             "21": {
                 "name": "Metatarsals!",
-                "desc": "Gain 5\u03b2."
+                "desc": "Gain 5β."
             },
             "22": {
                 "name": "Bone Marrow!",
-                "desc": "Double your \u03b2."
+                "desc": "Double your β."
             },
             "23": {
                 "name": "Charge Pack",
@@ -3395,7 +3395,7 @@
             },
             "25": {
                 "name": "Sticky Gloves",
-                "desc": "Steal 5\u03b2 from a player."
+                "desc": "Steal 5β from a player."
             },
             "26": {
                 "name": "Lockpick",
@@ -3406,8 +3406,8 @@
                 "desc": "Get an item from the shop for free."
             },
             "28": {
-                "name": "Roll: 1-2: Gain 2\u03b2 3-4: Gain 1 Ware 5-6: Gain 2 Wares.",
-                "desc": "Roll: 1-2: Gain 2\u03b2 3-4: Gain 1 Ware. 5-6: Gain 2 Wares."
+                "name": "Roll: 1-2: Gain 2β 3-4: Gain 1 Ware 5-6: Gain 2 Wares.",
+                "desc": "Roll: 1-2: Gain 2β 3-4: Gain 1 Ware. 5-6: Gain 2 Wares."
             },
             "29": {
                 "name": "Metal Detector",
@@ -3420,17 +3420,17 @@
             },
             "31": {
                 "name": "Old Pocket",
-                "desc": "When any player rolls a 1, gain 1\u03b2.",
+                "desc": "When any player rolls a 1, gain 1β.",
                 "img": "Bauble"
             },
             "32": {
                 "name": "Data Miner",
-                "desc": "On your turn you may steal 1\u03b2 from another player",
+                "desc": "On your turn you may steal 1β from another player",
                 "img": "Bauble"
             },
             "33": {
                 "name": "1+1=3",
-                "desc": "Gain +1\u03b2 when a Bone gaining card is played.",
+                "desc": "Gain +1β when a Bone gaining card is played.",
                 "img": "Bauble"
             },
             "34": {
@@ -3443,7 +3443,7 @@
             },
             "36": {
                 "name": "Spotted Mush",
-                "desc": "Roll: 1: Lose all your \u03b2. 2-5: Gain 10\u03b2. 6: Double your \u03b2."
+                "desc": "Roll: 1: Lose all your β. 2-5: Gain 10β. 6: Double your β."
             },
             "37": {
                 "name": "Mystical Mush",
@@ -3451,11 +3451,11 @@
             },
             "38": {
                 "name": "Transhift",
-                "desc": "Gain 5\u03b2 and another Ware."
+                "desc": "Gain 5β and another Ware."
             },
             "39": {
                 "name": "Transhift",
-                "desc": "Gain 5\u03b2 and another Ware."
+                "desc": "Gain 5β and another Ware."
             },
             "40": {
                 "name": "Scalpers Kit",
@@ -3463,7 +3463,7 @@
             },
             "41": {
                 "name": "Communism",
-                "desc": "Collect \u03b2 from all players and share them evenly across all players. 'Loose' change goes to who played this."
+                "desc": "Collect β from all players and share them evenly across all players. 'Loose' change goes to who played this."
             },
             "42": {
                 "name": "A Soul!",
@@ -3471,12 +3471,12 @@
             },
             "43": {
                 "name": "Food Stamp",
-                "desc": "If you have no \u03b2 at the end of your turn, gain 5\u03b2.",
+                "desc": "If you have no β at the end of your turn, gain 5β.",
                 "img": "Bauble"
             },
             "44": {
                 "name": "Senior Discount",
-                "desc": "Any action that costs more than 1\u03b2 now has -1\u03b2 to its price.",
+                "desc": "Any action that costs more than 1β now has -1β to its price.",
                 "img": "Bauble"
             },
             "_size": 44
@@ -3544,7 +3544,7 @@
                 "weight": 0.1
             },
             "4": {
-                "desc": "get(s) a \u03b2",
+                "desc": "get(s) a β",
                 "weight": 0.5
             },
             "5": {
@@ -3757,7 +3757,7 @@
                 "10": {
                     "name": "Devilchild",
                     "desc": "If the attacking player dies, any discarded relic is added to this enemy's reward pool. \"Damned kids.\"",
-                    "reward": "+1\u03b2",
+                    "reward": "+1β",
                     "hp": 2,
                     "rr": 2,
                     "atk": 1
@@ -3798,7 +3798,7 @@
                 },
                 "15": {
                     "name": "Soul Gambler",
-                    "desc": "If your roll misses, roll 2 dice: Snake eyes: Discard all your souls and this enemy, 3-6: take 1 damage, 7-11:  +1\u03b2, Boxcars: gain 2 souls, discard this enemy. \"50/50 odds against.\"",
+                    "desc": "If your roll misses, roll 2 dice: Snake eyes: Discard all your souls and this enemy, 3-6: take 1 damage, 7-11:  +1β, Boxcars: gain 2 souls, discard this enemy. \"50/50 odds against.\"",
                     "hp": 3,
                     "rr": 4,
                     "souls": 1
@@ -3825,7 +3825,7 @@
                 "19": {
                     "name": "Cannibal",
                     "desc": "When revealed, all Demonic enemies are discarded. For each discarded enemy and soul they carry, this gains +1 to all stats.",
-                    "reward": "+5\u03b2",
+                    "reward": "+5β",
                     "hp": 1,
                     "rr": 1,
                     "atk": 1,
@@ -3861,7 +3861,7 @@
                 "1": {
                     "name": "Glowing... Thing",
                     "desc": "\"It's bright, it's ugly, it's... something.\"",
-                    "reward": "+3\u03b2",
+                    "reward": "+3β",
                     "hp": 1,
                     "rr": 2,
                     "atk": 1
@@ -3869,13 +3869,13 @@
                 "2": {
                     "name": "Statue of a Man",
                     "desc": "When defeated, draw a \"Devil\" to put here. Fight it. \"Prove your strength.\"",
-                    "reward": "+10\u03b2",
+                    "reward": "+10β",
                     "hp": 1
                 },
                 "3": {
                     "name": "Statue of a Lady",
                     "desc": "When defeated, draw an \"Angel\" to put here. Fight it. \"Prove your spirit.\"",
-                    "reward": "+10\u03b2",
+                    "reward": "+10β",
                     "hp": 1
                 },
                 "4": {
@@ -3890,14 +3890,14 @@
                 "5": {
                     "name": "White Rabbit",
                     "desc": "When this dies, replace this with an \"Angel\". It gains +2 ATK and starts combat with the next player to deal damage.",
-                    "reward": "+5\u03b2",
+                    "reward": "+5β",
                     "hp": 1,
                     "rr": 3
                 },
                 "6": {
                     "name": "Halo",
                     "desc": "If you miss a roll, end your turn. \"I'm blind!\"",
-                    "reward": "+5\u03b2",
+                    "reward": "+5β",
                     "hp": 2,
                     "rr": 4
                 },
@@ -3916,7 +3916,7 @@
                 "9": {
                     "name": "Blessed Rock",
                     "desc": "\"Can we just skip this?\"",
-                    "reward": "+5\u03b2",
+                    "reward": "+5β",
                     "hp": 20,
                     "rr": 2
                 },

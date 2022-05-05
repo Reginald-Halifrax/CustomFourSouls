@@ -302,7 +302,7 @@ def main():
     data = clean_nones(data)
 
     with open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/HexSouls.json", "w", encoding="utf8") as outfile:
-        json.dump(data, outfile, indent=4)
+        json.dump(data, outfile, indent=4, ensure_ascii=False)
 
     os.remove("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx")
 
