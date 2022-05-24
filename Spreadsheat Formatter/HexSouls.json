@@ -580,7 +580,7 @@
         },
         "79": {
             "name": "Cow",
-            "desc": "Heals 2 health after every 2 turns. \"The Beggeter of Bovines\"",
+            "desc": "Heals 2 health after every 2 attack rolls. \"The Beggeter of Bovines\"",
             "reward": "+1 Relic",
             "hp": 10,
             "rr": 2,
@@ -596,7 +596,11 @@
             "desc": "All players roll. The highest roll gains a relic. Lowest roll gains 3 wares. Intermediate rolls gain +5β.",
             "img": "Democonga"
         },
-        "_size": 81
+        "82": {
+            "name": "Underwater Adventure",
+            "desc": "All players are reduced to 1 HP until the next stage change. All players gain a relic. \"Wooooow.\""
+        },
+        "_size": 82
     },
     "Prefixes": {
         "1": {
@@ -1193,11 +1197,11 @@
         },
         "25": {
             "name": "Brothel",
-            "desc": "During your turn, you may spend 10β once to gain +1 HP permanently. \"You can bone if you got the Bones.\""
+            "desc": "During your turn, you may spend 10β once to gain +1 HP permanently. \"We can bone if you got the Bones.\""
         },
         "26": {
             "name": "Carousel of Aggress",
-            "desc": "All active enemies are discarded and replaced at the end of each players\" turn."
+            "desc": "All active enemies are discarded and replaced at the end of each players' turn."
         },
         "27": {
             "name": "The Carnival",
@@ -1279,7 +1283,11 @@
             "name": "Devil's Maw",
             "desc": "Replace all Angelic enemies with Demonic enemies. Angelic relics may not be used."
         },
-        "_size": 46
+        "47": {
+            "name": "Blue Smog",
+            "desc": "Players may charge any single item of their choosing on their turn. \"Smell that? That's your motherboard taking its last breath.\""
+        },
+        "_size": 47
     },
     "Souls": {
         "1": {
@@ -1442,7 +1450,7 @@
             "type": "$",
             "prefixes": {
                 "1": {
-                    "desc": " Pay 3β to attack 1 to an active enemy. \"You want it? It's yours my friend.\""
+                    "desc": " Pay 3β to deal 1 damage to an active enemy. \"You want it? It's yours my friend.\""
                 },
                 "_size": 1
             },
@@ -1741,13 +1749,18 @@
             }
         },
         "21": {
-            "name": "Rotten Eggs",
+            "name": "Eggs",
             "type": "*",
             "prefixes": {
                 "1": {
+                    "name": "Rotten",
                     "desc": " +1 ATK."
                 },
-                "_size": 1
+                "2": {
+                    "name": "Green",
+                    "desc": "Gain +1 HP every time you make 2 successful attack rolls in a row for this turn."
+                },
+                "_size": 2
             }
         },
         "22": {
@@ -1771,13 +1784,18 @@
             }
         },
         "24": {
-            "name": "Cockfighting License",
+            "name": "License",
             "type": "@",
             "prefixes": {
                 "1": {
+                    "name": "Cockfighting",
                     "desc": "When someone enters combat, guess who will win. If you are correct: gain 5β."
                 },
-                "_size": 1
+                "2": {
+                    "name": "Drivers",
+                    "desc": "When a player has to roll for an activated effect: guess what they will roll unmodified. If correct: you may choose to cancel their effect. \"I will turn this car right around mister!\""
+                },
+                "_size": 2
             }
         },
         "25": {
@@ -1809,13 +1827,18 @@
             }
         },
         "27": {
-            "name": "Entropy Chip",
+            "name": "Chip",
             "type": "@",
             "prefixes": {
                 "1": {
+                    "name": "Entropy",
                     "desc": "Destroy this: Remove any enemy, Relic, or Soul card."
                 },
-                "_size": 1
+                "2": {
+                    "name": "Order",
+                    "desc": "This turns into a soul card on use."
+                },
+                "_size": 2
             }
         },
         "28": {
@@ -1913,7 +1936,7 @@
             "type": "$",
             "prefixes": {
                 "1": {
-                    "desc": "Add a counter to this. $ Remove 3 counters from this: kill a player or monster. $ Remove 6 counters from this, kill a boss. \"Oooh right, my BURROW BLAST!\""
+                    "desc": "Add a counter to this. $ Remove 3 counters from this: kill a player or monster. $ Remove 6 counters from this: kill a boss. \"Oooh right, my BURROW BLAST!\""
                 },
                 "_size": 1
             }
@@ -2005,13 +2028,18 @@
             }
         },
         "43": {
-            "name": "TV Remote",
+            "name": "Remote",
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "Discard all active enemies. Afterwards, you must fight an active enemy."
+                    "name": "TV",
+                    "desc": "Discard all active enemies. You must fight an active enemy."
                 },
-                "_size": 1
+                "2": {
+                    "name": "Garage",
+                    "desc": "You may block the access/functionality of any card for this turn. \"This isn't the right remote either.\""
+                },
+                "_size": 2
             }
         },
         "44": {
@@ -2101,7 +2129,7 @@
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "All enemies have -1 RR for one attack roll. If this roll is successful, the change is permanent."
+                    "desc": "All active enemies have -1 RR for one attack roll. If this roll is successful, the change is permanent."
                 },
                 "_size": 1
             }
@@ -2240,20 +2268,20 @@
             "type": "*",
             "prefixes": {
                 "1": {
-                    "name": "Disfigured",
-                    "desc": "Whenever you roll a 4, you may turn it into a 5."
-                },
-                "2": {
                     "name": "Defaced",
                     "desc": "Whenever you roll a 2, you may turn it into a 3."
                 },
-                "3": {
+                "2": {
                     "name": "Deformed",
                     "desc": "Whenever you roll a 3, you may turn it into a 4."
                 },
-                "4": {
+                "3": {
                     "name": "Developed",
-                    "desc": "Whenever you roll a 5, you may turn it into a 6."
+                    "desc": "Whenever you roll a 4, you may turn it into a 5."
+                },
+                "4": {
+                    "name": "Whenever you roll a 5, you may turn it into a 6.",
+                    "desc": "Disfigured"
                 },
                 "_size": 4
             },
@@ -2440,13 +2468,18 @@
             }
         },
         "74": {
-            "name": "Repel Gel",
+            "name": "Gel",
             "type": "@",
             "prefixes": {
                 "1": {
-                    "desc": "You can't take damage for 2 attack rolls."
+                    "name": "Repel",
+                    "desc": "Prevent all damage for the next 2 attack rolls."
                 },
-                "_size": 1
+                "2": {
+                    "name": "Mysterious Pink",
+                    "desc": "Heal to your max health. \"It says cherry flavor, but it just tastes like chalk.\""
+                },
+                "_size": 2
             }
         },
         "75": {
@@ -2662,7 +2695,7 @@
                 },
                 "3": {
                     "name": "Magic",
-                    "desc": "Discard a ware and add a counter to this. Remove 4 counters to change your Affinity."
+                    "desc": "Discard a ware and add a counter to this. Remove 4 counters to reroll your Affinity."
                 },
                 "_size": 3
             }
@@ -2739,7 +2772,7 @@
                 },
                 "3": {
                     "name": "Specialized",
-                    "desc": "You may morph any one of your relics or jinx into a new one."
+                    "desc": "You may morph any one of your relics or a jinx into a new one."
                 },
                 "_size": 3
             }
@@ -2787,7 +2820,11 @@
                 "1": {
                     "desc": "Passively: You have -1 HP. You may play this in reaction to a death and prevent it, ends the active players turn."
                 },
-                "_size": 1
+                "2": {
+                    "name": "Saints",
+                    "desc": "You may skip your turn (forfeighting any items) and gain a relic on your next turn. You can not charge this on the turn you gain the relic in, but it can be charged by other items."
+                },
+                "_size": 2
             }
         },
         "9": {
@@ -2981,506 +3018,537 @@
             }
         },
         "21": {
-            "name": "Sided Hexagon",
+            "name": "Hexagon",
             "type": "*",
             "prefixes": {
                 "1": {
-                    "name": "Five",
-                    "desc": "Draw a Glitch card, this is now your passive Affinity."
+                    "desc": "You have +2 HP permanently. \"Hexagons are the bestagons.\""
                 },
                 "2": {
-                    "name": "Seven",
+                    "name": "Five-Sided",
+                    "desc": "Draw a Glitch card, this is now your passive Affinity."
+                },
+                "3": {
+                    "name": "Seven-Sided",
                     "desc": "Draw 3 Glitch cards and pick from one of them to be your passive Affinity."
+                },
+                "_size": 3
+            }
+        },
+        "22": {
+            "name": "Integer",
+            "type": "*",
+            "prefixes": {
+                "1": {
+                    "name": "Buffer Overflowed",
+                    "desc": "Wares dropped by enemies are converted to relics. Activated items (including reaction ware) are all discharged at the start of your turn."
+                },
+                "2": {
+                    "name": "Buffer Underflowed",
+                    "desc": "When another player dies you gain what they lost. Any Relic gained outside of the shop and from this card are converted to wares. "
                 },
                 "_size": 2
             }
         },
-        "_size": 21
+        "23": {
+            "name": "Chronos' Severed Wrist",
+            "type": "*",
+            "prefixes": {
+                "1": {
+                    "desc": "When the game begins, start a stopwatch. At 5 minutes, gain 10β. At 10 minutes, gain 3 wares. At 15 minutes, gain +1 ATK. At 25 minutes, gain +1 HP. Gain a Relic for every 5 minutes past 25."
+                },
+                "_size": 1
+            }
+        },
+        "_size": 23
     },
     "Wares": {
-        "HpWares": {
-            "1": {
-                "name": "Ointment",
-                "desc": " +1HP for this turn."
-            },
-            "2": {
-                "name": "Charge Pack",
-                "desc": "Charge any item."
-            },
-            "3": {
-                "name": "Charge Pack",
-                "desc": "Charge any item."
-            },
-            "4": {
-                "name": "Petrifying Spray",
-                "desc": "Missed attack rolls don't hurt you for 2 rolls."
-            },
-            "5": {
-                "name": "Emergency Medical Kit",
-                "desc": "Heal to full health."
-            },
-            "6": {
-                "name": "Rations",
-                "desc": "During battle heal 1 for 2 rolls."
-            },
-            "7": {
-                "name": "Debugger",
-                "desc": "Remove a jinx from the board."
-            },
-            "8": {
-                "name": "Glitch!",
-                "desc": "Adds a Jinx to the board. You must play this when obtained."
-            },
-            "9": {
-                "name": "Firewall!",
-                "desc": "End your turn."
-            },
-            "10": {
-                "name": "Pacemaker",
-                "desc": "If you were to die, roll: 1-5 Nothing. 6: Prevent death and end your turn.",
-                "img": "Bauble"
-            },
-            "11": {
-                "name": "Rock Bottom",
-                "desc": "Take no damage on missed attack rolls of 1. 'Nice ass'",
-                "img": "Bauble"
-            },
-            "12": {
-                "name": "Underware",
-                "desc": "Negate the first instance of damage on your turn.",
-                "img": "Bauble"
-            },
-            "13": {
-                "name": "Bandage",
-                "desc": "Heal 1 HP."
-            },
-            "14": {
-                "name": "Warm Soda",
-                "desc": "Heal 1 HP."
-            },
-            "15": {
-                "name": "Cold Soda",
-                "desc": "Heal 2 HP."
-            },
-            "16": {
-                "name": "Double Shot Espresso ",
-                "desc": "Take another turn after your turn. (Cannot stack)"
-            },
-            "17": {
-                "name": "Big Mug Of Coffee",
-                "desc": " +1HP +1 Roll for this turn."
-            },
-            "18": {
-                "name": "You'll Feel A Pinch",
-                "desc": "Steal 1 HP from the current Enemy being fought and heal 1 HP."
-            },
-            "19": {
-                "name": "Emergency Blood Bag",
-                "desc": "If you were to die, prevent it and end turn with 1 HP."
-            },
-            "20": {
-                "name": "Doctor's Note",
-                "desc": "If forced into a fight +1 HP for turn.",
-                "img": "Bauble"
-            },
-            "21": {
-                "name": "Casted",
-                "desc": "-1 Roll +1 HP.",
-                "img": "Bauble"
-            },
-            "22": {
-                "name": "How 'bout No?",
-                "desc": "Cancel the effect of a relic."
-            },
-            "23": {
-                "name": "Stop!",
-                "desc": "Cancel the effect of a ware."
-            },
-            "24": {
-                "name": "Giant Mush",
-                "desc": "Roll: 1-2: Take 1 damage. 3-4: +1 HP until the end of your turn. 5-6: +2 HP until the end of your turn."
-            },
-            "25": {
-                "name": "Mystical Mush",
-                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
-            },
-            "26": {
-                "name": "Transmute",
-                "desc": "Gain +1 HP until the end of your turn, and gain another Ware."
-            },
-            "27": {
-                "name": "Transmute",
-                "desc": "Gain +1 HP until the end of your turn, and gain another Ware."
-            },
-            "28": {
-                "name": "Idol of Protection",
-                "desc": "Jinxes will not affect you.",
-                "img": "Bauble"
-            },
-            "29": {
-                "name": "Wait, What?",
-                "desc": "For items that you 'choose' the effect of, you may force them to choose something else."
-            },
-            "30": {
-                "name": "Adrenaline Shot!",
-                "desc": " +1 to Dice Roll 'Hrbrbrbrb!'",
-                "img": "Bauble"
-            },
-            "31": {
-                "name": "Neurogenesis",
-                "desc": "You may reroll any one of your items, or reroll your Affinity."
-            },
-            "32": {
-                "name": "Doorknob",
-                "desc": "Force a stage change. 'Did you check if it was unlocked?'"
-            },
-            "33": {
-                "name": "Expired Library Card",
-                "desc": "Force a stage change. 'An old tried and true trick.'"
-            },
-            "34": {
-                "name": "Pet Door",
-                "desc": "Force a stage change. 'How'd you fit through there?'"
-            },
-            "35": {
-                "name": "Shed-Skin",
-                "desc": "Discard an active jinx."
-            },
-            "36": {
-                "name": "User Backup",
-                "desc": "Remove all of a players Glitch cards."
-            },
-            "37": {
-                "name": "System Restore",
-                "desc": "Remove all Glitch cards in play"
-            },
-            "_size": 37
+        "1": {
+            "name": "Ointment",
+            "desc": " +1HP for this turn."
         },
-        "AtkWares": {
-            "1": {
-                "name": "Spike the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "2": {
-                "name": "Glog the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "3": {
-                "name": "Geez the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "4": {
-                "name": "Saurn the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "5": {
-                "name": "Kipper the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "6": {
-                "name": "Fluther the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "7": {
-                "name": "Sark the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "8": {
-                "name": "Rodney the Finger Monster",
-                "desc": "Deal 3 DMG to any player or monster."
-            },
-            "9": {
-                "name": "Mooj the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "10": {
-                "name": "Quaz the Finger Monster",
-                "desc": "Deal 1 DMG to any player or monster."
-            },
-            "11": {
-                "name": "Gingerbread Man's Blessing",
-                "desc": " +1 to ATK and Dice rolls for this turn. 'Hokay!'"
-            },
-            "12": {
-                "name": "Charge Pack",
-                "desc": "Charge any item."
-            },
-            "13": {
-                "name": "Charge Pack",
-                "desc": "Charge any item."
-            },
-            "14": {
-                "name": "Run As Administrator",
-                "desc": " +1 to ATK, Dice Rolls, and HP."
-            },
-            "15": {
-                "name": "Plastic Building Brick",
-                "desc": "If another player rolls a 1: you may deal 1 damage to them.",
-                "img": "Bauble"
-            },
-            "16": {
-                "name": "Fragmented Sword",
-                "desc": "Attack rolls less than 4 have +1 ATK.",
-                "img": "Bauble"
-            },
-            "17": {
-                "name": "Bomb!",
-                "desc": "Deal 1 DMG to any Enemy"
-            },
-            "18": {
-                "name": "Sloppy Seconds",
-                "desc": "Deal 1 damage to any enemy, reward goes to you regardless of whos turn it is."
-            },
-            "19": {
-                "name": "Carpet Bomber",
-                "desc": "Deal 1 DMG to all current Enemies"
-            },
-            "20": {
-                "name": "Octogon",
-                "desc": "Cancel the effect of a relic."
-            },
-            "21": {
-                "name": "Cease and Desist",
-                "desc": "Cancel the effect of a ware."
-            },
-            "22": {
-                "name": "Ghillie Suit",
-                "desc": "If you miss your first attack roll during your turn, take no damage.",
-                "img": "Bauble"
-            },
-            "23": {
-                "name": "Black Mush",
-                "desc": "Roll: 1-2: -1 to dice rolls until the end of your turn. 3-4: +1 ATK until the end of your turn. 5-6: +1 to dice rolls until the end of your turn. "
-            },
-            "24": {
-                "name": "Mystical Mush",
-                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
-            },
-            "25": {
-                "name": "Transmogrify",
-                "desc": "Gain +1 ATK until the end of your turn, and gain another Ware."
-            },
-            "26": {
-                "name": "Transmogrify",
-                "desc": "Gain +1 ATK until the end of your turn, and gain another Ware."
-            },
-            "27": {
-                "name": "Butterfly Knife",
-                "desc": "Kill a player. 'I'll see you in hell... you handsome rogue!'"
-            },
-            "28": {
-                "name": "Buttery Knife",
-                "desc": "Deal 1 damage to a player"
-            },
-            "29": {
-                "name": "The Book of All Things Sharp",
-                "desc": "Roll: 1-3: deal 1 damage to any enemy. 4-6: deal 1 damage to yourself. 'Knives, blades, and all things pointy!'",
-                "img": "Bauble"
-            },
-            "30": {
-                "name": "Sudoku Book",
-                "desc": "Deal 1 damage to yourself and an enemy"
-            },
-            "31": {
-                "name": "Ram Manipulator",
-                "desc": "Force any player to gain a Glitch card."
-            },
-            "32": {
-                "name": "Identity Fraud",
-                "desc": "Become the recipient of any played Ware card."
-            },
-            "33": {
-                "name": "Bloodied Battery",
-                "desc": "You may recharge a Relic after killing an enemy.",
-                "img": "Bauble"
-            },
-            "_size": 33
+        "2": {
+            "name": "Charge Pack",
+            "desc": "Charge any item."
         },
-        "BoneWares": {
-            "1": {
-                "name": "A Femur!",
-                "desc": "Gain 1β."
-            },
-            "2": {
-                "name": "A Humerus!",
-                "desc": "Gain 1β."
-            },
-            "3": {
-                "name": "Tibia and Fibula!",
-                "desc": "Gain 2β."
-            },
-            "4": {
-                "name": "Radius and Ulna!",
-                "desc": "Gain 2β."
-            },
-            "5": {
-                "name": "Carpals!",
-                "desc": "Gain 5β."
-            },
-            "6": {
-                "name": "Metacarpals!",
-                "desc": "Gain 5β."
-            },
-            "7": {
-                "name": "Phalanges!",
-                "desc": "Gain 5β."
-            },
-            "8": {
-                "name": "A Hyoid!",
-                "desc": "Gain 1β."
-            },
-            "9": {
-                "name": "A Rib Cage!",
-                "desc": "Gain 10β."
-            },
-            "10": {
-                "name": "Cervical Spine!",
-                "desc": "Gain 7β."
-            },
-            "11": {
-                "name": "A Skull!",
-                "desc": "Gain 9β."
-            },
-            "12": {
-                "name": "Clavicles!",
-                "desc": "Gain 2β."
-            },
-            "13": {
-                "name": "Scapulas!",
-                "desc": "Gain 2β."
-            },
-            "14": {
-                "name": "Thoracic Spine!",
-                "desc": "Gain 12β."
-            },
-            "15": {
-                "name": "Lumbar Spine!",
-                "desc": "Gain 5β."
-            },
-            "16": {
-                "name": "A Sacrum!",
-                "desc": "Gain 5β."
-            },
-            "17": {
-                "name": "A Coccyx!",
-                "desc": "Gain 4β."
-            },
-            "18": {
-                "name": "A Pelvis!",
-                "desc": "Gain 3β."
-            },
-            "19": {
-                "name": "A Patella!",
-                "desc": "Gain 2β."
-            },
-            "20": {
-                "name": "Tarsals!",
-                "desc": "Gain 5β."
-            },
-            "21": {
-                "name": "Metatarsals!",
-                "desc": "Gain 5β."
-            },
-            "22": {
-                "name": "Bone Marrow!",
-                "desc": "Double your β."
-            },
-            "23": {
-                "name": "Charge Pack",
-                "desc": "Charge any item."
-            },
-            "24": {
-                "name": "Charge Pack",
-                "desc": "Charge any item."
-            },
-            "25": {
-                "name": "Sticky Gloves",
-                "desc": "Steal 5β from a player."
-            },
-            "26": {
-                "name": "Lockpick",
-                "desc": "Steal an item from any player."
-            },
-            "27": {
-                "name": "Skeleton Key",
-                "desc": "Get an item from the shop for free."
-            },
-            "28": {
-                "name": "Roll: 1-2: Gain 2β 3-4: Gain 1 Ware 5-6: Gain 2 Wares.",
-                "desc": "Roll: 1-2: Gain 2β 3-4: Gain 1 Ware. 5-6: Gain 2 Wares."
-            },
-            "29": {
-                "name": "Metal Detector",
-                "desc": "Gain a Relic."
-            },
-            "30": {
-                "name": "Rusty Gear",
-                "desc": "When another player rolls a 3 you may add or remove 1 to it. (not applicable to combat rolls)",
-                "img": "Bauble"
-            },
-            "31": {
-                "name": "Old Pocket",
-                "desc": "When any player rolls a 1, gain 1β.",
-                "img": "Bauble"
-            },
-            "32": {
-                "name": "Data Miner",
-                "desc": "On your turn you may steal 1β from another player",
-                "img": "Bauble"
-            },
-            "33": {
-                "name": "1+1=3",
-                "desc": "Gain +1β when a Bone gaining card is played.",
-                "img": "Bauble"
-            },
-            "34": {
-                "name": "Get Boned",
-                "desc": "Cancel the effect of an item."
-            },
-            "35": {
-                "name": "Ctrl + Z",
-                "desc": "Cancel the effect of an item."
-            },
-            "36": {
-                "name": "Spotted Mush",
-                "desc": "Roll: 1: Lose all your β. 2-5: Gain 10β. 6: Double your β."
-            },
-            "37": {
-                "name": "Mystical Mush",
-                "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
-            },
-            "38": {
-                "name": "Transhift",
-                "desc": "Gain 5β and another Ware."
-            },
-            "39": {
-                "name": "Transhift",
-                "desc": "Gain 5β and another Ware."
-            },
-            "40": {
-                "name": "Scalpers Kit",
-                "desc": "Multiply your wares by how many wares you own."
-            },
-            "41": {
-                "name": "Communism",
-                "desc": "Collect β from all players and share them evenly across all players. 'Loose' change goes to who played this."
-            },
-            "42": {
-                "name": "A Soul!",
-                "desc": "Gain a Soul! (Counts as a Ware play)"
-            },
-            "43": {
-                "name": "Food Stamp",
-                "desc": "If you have no β at the end of your turn, gain 5β.",
-                "img": "Bauble"
-            },
-            "44": {
-                "name": "Senior Discount",
-                "desc": "Any action that costs more than 1β now has -1β to its price.",
-                "img": "Bauble"
-            },
-            "_size": 44
-        }
+        "3": {
+            "name": "Charge Pack",
+            "desc": "Charge any item."
+        },
+        "4": {
+            "name": "Petrifying Spray",
+            "desc": "Missed attack rolls don't hurt you for 2 rolls."
+        },
+        "5": {
+            "name": "Emergency Medical Kit",
+            "desc": "Heal to full health."
+        },
+        "6": {
+            "name": "Rations",
+            "desc": "During battle heal 1 for 2 rolls."
+        },
+        "7": {
+            "name": "Debugger",
+            "desc": "Remove a jinx from the board."
+        },
+        "8": {
+            "name": "Glitch!",
+            "desc": "Adds a Jinx to the board. You must play this when obtained."
+        },
+        "9": {
+            "name": "Firewall!",
+            "desc": "End your turn."
+        },
+        "10": {
+            "name": "Pacemaker",
+            "desc": "If you were to die, roll: 1-5 Nothing. 6: Prevent death and end your turn.",
+            "img": "Bauble"
+        },
+        "11": {
+            "name": "Rock Bottom",
+            "desc": "Take no damage on missed attack rolls of 1. 'Nice ass'",
+            "img": "Bauble"
+        },
+        "12": {
+            "name": "Underware",
+            "desc": "Negate the first instance of damage on your turn.",
+            "img": "Bauble"
+        },
+        "13": {
+            "name": "Bandage",
+            "desc": "Heal 1 HP."
+        },
+        "14": {
+            "name": "Warm Soda",
+            "desc": "Heal 1 HP."
+        },
+        "15": {
+            "name": "Cold Soda",
+            "desc": "Heal 2 HP."
+        },
+        "16": {
+            "name": "Double Shot Espresso ",
+            "desc": "Take another turn after your turn. (Cannot stack)"
+        },
+        "17": {
+            "name": "Big Mug Of Coffee",
+            "desc": " +1 HP +1 Roll for this turn."
+        },
+        "18": {
+            "name": "You'll Feel A Pinch",
+            "desc": "Steal 1 HP from the current Enemy being fought and heal 1 HP."
+        },
+        "19": {
+            "name": "Emergency Blood Bag",
+            "desc": "If you were to die, prevent it and end turn with 1 HP."
+        },
+        "20": {
+            "name": "Doctor's Note",
+            "desc": "If forced into a fight +1 HP for turn.",
+            "img": "Bauble"
+        },
+        "21": {
+            "name": "Casted",
+            "desc": "-1 Roll +1 HP.",
+            "img": "Bauble"
+        },
+        "22": {
+            "name": "How 'bout No?",
+            "desc": "Cancel the effect of a relic."
+        },
+        "23": {
+            "name": "Stop!",
+            "desc": "Cancel the effect of a ware."
+        },
+        "24": {
+            "name": "Giant Mush",
+            "desc": "Roll: 1-2: Take 1 damage. 3-4: +1 HP until the end of your turn. 5-6: +2 HP until the end of your turn."
+        },
+        "25": {
+            "name": "Mystical Mush",
+            "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
+        },
+        "26": {
+            "name": "Transmute",
+            "desc": "Gain +1 HP until the end of your turn, and gain another Ware."
+        },
+        "27": {
+            "name": "Transmute",
+            "desc": "Gain +1 HP until the end of your turn, and gain another Ware."
+        },
+        "28": {
+            "name": "Idol of Protection",
+            "desc": "Jinxes will not affect you.",
+            "img": "Bauble"
+        },
+        "29": {
+            "name": "Wait, What?",
+            "desc": "For items that you 'choose' the effect of, you may force them to choose something else."
+        },
+        "30": {
+            "name": "Adrenaline Shot!",
+            "desc": " +1 to Dice Roll 'Hrbrbrbrb!'",
+            "img": "Bauble"
+        },
+        "31": {
+            "name": "Neurogenesis",
+            "desc": "You may reroll any one of your items, or reroll your Affinity."
+        },
+        "32": {
+            "name": "Doorknob",
+            "desc": "Force a stage change. 'Did you check if it was unlocked?'"
+        },
+        "33": {
+            "name": "Expired Library Card",
+            "desc": "Force a stage change. 'An old tried and true trick.'"
+        },
+        "34": {
+            "name": "Pet Door",
+            "desc": "Force a stage change. 'How'd you fit through there?'"
+        },
+        "35": {
+            "name": "Shed-Skin",
+            "desc": "Discard an active jinx."
+        },
+        "36": {
+            "name": "User Backup",
+            "desc": "Remove all of a players Glitch cards."
+        },
+        "37": {
+            "name": "System Restore",
+            "desc": "Remove all Glitch cards in play"
+        },
+        "38": {
+            "name": "Spike the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "39": {
+            "name": "Glog the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "40": {
+            "name": "Geez the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "41": {
+            "name": "Saurn the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "42": {
+            "name": "Kipper the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "43": {
+            "name": "Fluther the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "44": {
+            "name": "Sark the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "45": {
+            "name": "Rodney the Finger Monster",
+            "desc": "Deal 3 DMG to any player or monster."
+        },
+        "46": {
+            "name": "Mooj the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "47": {
+            "name": "Quaz the Finger Monster",
+            "desc": "Deal 1 DMG to any player or monster."
+        },
+        "48": {
+            "name": "Gingerbread Man's Blessing",
+            "desc": " +1 to ATK and Dice rolls for this turn. 'Hokay!'"
+        },
+        "49": {
+            "name": "Charge Pack",
+            "desc": "Charge any item."
+        },
+        "50": {
+            "name": "Charge Pack",
+            "desc": "Charge any item."
+        },
+        "51": {
+            "name": "Run As Administrator",
+            "desc": " +1 to ATK, Dice Rolls, and HP."
+        },
+        "52": {
+            "name": "Plastic Building Brick",
+            "desc": "If another player rolls a 1: you may deal 1 damage to them.",
+            "img": "Bauble"
+        },
+        "53": {
+            "name": "Fragmented Sword",
+            "desc": "Attack rolls less than 4 have +1 ATK.",
+            "img": "Bauble"
+        },
+        "54": {
+            "name": "Bomb!",
+            "desc": "Deal 1 DMG to any Enemy"
+        },
+        "55": {
+            "name": "Sloppy Seconds",
+            "desc": "Deal 1 damage to any enemy, reward goes to you regardless of whos turn it is."
+        },
+        "56": {
+            "name": "Carpet Bomber",
+            "desc": "Deal 1 DMG to all current Enemies"
+        },
+        "57": {
+            "name": "Octogon",
+            "desc": "Cancel the effect of a relic."
+        },
+        "58": {
+            "name": "Cease and Desist",
+            "desc": "Cancel the effect of a ware."
+        },
+        "59": {
+            "name": "Ghillie Suit",
+            "desc": "If you miss your first attack roll during your turn, take no damage.",
+            "img": "Bauble"
+        },
+        "60": {
+            "name": "Black Mush",
+            "desc": "Roll: 1-2: -1 to dice rolls until the end of your turn. 3-4: +1 ATK until the end of your turn. 5-6: +1 to dice rolls until the end of your turn. "
+        },
+        "61": {
+            "name": "Mystical Mush",
+            "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
+        },
+        "62": {
+            "name": "Transmogrify",
+            "desc": "Gain +1 ATK until the end of your turn, and gain another Ware."
+        },
+        "63": {
+            "name": "Transmogrify",
+            "desc": "Gain +1 ATK until the end of your turn, and gain another Ware."
+        },
+        "64": {
+            "name": "Butterfly Knife",
+            "desc": "Kill a player. 'I'll see you in hell... you handsome rogue!'"
+        },
+        "65": {
+            "name": "Buttery Knife",
+            "desc": "Deal 1 damage to a player"
+        },
+        "66": {
+            "name": "The Book of All Things Sharp",
+            "desc": "Roll: 1-3: deal 1 damage to any enemy. 4-6: deal 1 damage to yourself. 'Knives, blades, and all things pointy!'",
+            "img": "Bauble"
+        },
+        "67": {
+            "name": "Sudoku Book",
+            "desc": "Deal 1 damage to yourself and an enemy"
+        },
+        "68": {
+            "name": "Ram Manipulator",
+            "desc": "Force any player to gain a Glitch card."
+        },
+        "69": {
+            "name": "Identity Fraud",
+            "desc": "Become the recipient of any played Ware card."
+        },
+        "70": {
+            "name": "Bloodied Battery",
+            "desc": "You may recharge a Relic after killing an enemy.",
+            "img": "Bauble"
+        },
+        "71": {
+            "name": "A Femur!",
+            "desc": "Gain 1β."
+        },
+        "72": {
+            "name": "A Humerus!",
+            "desc": "Gain 1β."
+        },
+        "73": {
+            "name": "Tibia and Fibula!",
+            "desc": "Gain 2β."
+        },
+        "74": {
+            "name": "Radius and Ulna!",
+            "desc": "Gain 2β."
+        },
+        "75": {
+            "name": "Carpals!",
+            "desc": "Gain 5β."
+        },
+        "76": {
+            "name": "Metacarpals!",
+            "desc": "Gain 5β."
+        },
+        "77": {
+            "name": "Phalanges!",
+            "desc": "Gain 5β."
+        },
+        "78": {
+            "name": "A Hyoid!",
+            "desc": "Gain 1β."
+        },
+        "79": {
+            "name": "A Rib Cage!",
+            "desc": "Gain 10β."
+        },
+        "80": {
+            "name": "Cervical Spine!",
+            "desc": "Gain 7β."
+        },
+        "81": {
+            "name": "A Skull!",
+            "desc": "Gain 9β."
+        },
+        "82": {
+            "name": "Clavicles!",
+            "desc": "Gain 2β."
+        },
+        "83": {
+            "name": "Scapulas!",
+            "desc": "Gain 2β."
+        },
+        "84": {
+            "name": "Thoracic Spine!",
+            "desc": "Gain 12β."
+        },
+        "85": {
+            "name": "Lumbar Spine!",
+            "desc": "Gain 5β."
+        },
+        "86": {
+            "name": "A Sacrum!",
+            "desc": "Gain 5β."
+        },
+        "87": {
+            "name": "A Coccyx!",
+            "desc": "Gain 4β."
+        },
+        "88": {
+            "name": "A Pelvis!",
+            "desc": "Gain 3β."
+        },
+        "89": {
+            "name": "A Patella!",
+            "desc": "Gain 2β."
+        },
+        "90": {
+            "name": "Tarsals!",
+            "desc": "Gain 5β."
+        },
+        "91": {
+            "name": "Metatarsals!",
+            "desc": "Gain 5β."
+        },
+        "92": {
+            "name": "Bone Marrow!",
+            "desc": "Double your β."
+        },
+        "93": {
+            "name": "Charge Pack",
+            "desc": "Charge any item."
+        },
+        "94": {
+            "name": "Charge Pack",
+            "desc": "Charge any item."
+        },
+        "95": {
+            "name": "Sticky Gloves",
+            "desc": "Steal 5β from a player."
+        },
+        "96": {
+            "name": "Lockpick",
+            "desc": "Steal an item from any player."
+        },
+        "97": {
+            "name": "Skeleton Key",
+            "desc": "Get an item from the shop for free."
+        },
+        "98": {
+            "name": "Roll: 1-2: Gain 2β 3-4: Gain 1 Ware 5-6: Gain 2 Wares.",
+            "desc": "Roll: 1-2: Gain 2β 3-4: Gain 1 Ware. 5-6: Gain 2 Wares."
+        },
+        "99": {
+            "name": "Metal Detector",
+            "desc": "Gain a Relic."
+        },
+        "100": {
+            "name": "Rusty Gear",
+            "desc": "When another player rolls a 3 you may add or remove 1 to it. (not applicable to combat rolls)",
+            "img": "Bauble"
+        },
+        "101": {
+            "name": "Old Pocket",
+            "desc": "When any player rolls a 1, gain 1β.",
+            "img": "Bauble"
+        },
+        "102": {
+            "name": "Data Miner",
+            "desc": "On your turn you may steal 1β from another player",
+            "img": "Bauble"
+        },
+        "103": {
+            "name": "1+1=3",
+            "desc": "Gain +1β when a Bone gaining card is played.",
+            "img": "Bauble"
+        },
+        "104": {
+            "name": "Get Boned",
+            "desc": "Cancel the effect of an item."
+        },
+        "105": {
+            "name": "Ctrl + Z",
+            "desc": "Cancel the effect of an item."
+        },
+        "106": {
+            "name": "Spotted Mush",
+            "desc": "Roll: 1: Lose all your β. 2-5: Gain 10β. 6: Double your β."
+        },
+        "107": {
+            "name": "Mystical Mush",
+            "desc": "Roll: 1-2: Reroll a Relic. 3-4: Reroll any amount of your Relics. 5-6: Reroll all of your Relics."
+        },
+        "108": {
+            "name": "Transhift",
+            "desc": "Gain 5β and another Ware."
+        },
+        "109": {
+            "name": "Transhift",
+            "desc": "Gain 5β and another Ware."
+        },
+        "110": {
+            "name": "Scalpers Kit",
+            "desc": "Multiply your wares by how many wares you own."
+        },
+        "111": {
+            "name": "Communism",
+            "desc": "Collect β from all players and share them evenly across all players. 'Loose' change goes to who played this."
+        },
+        "112": {
+            "name": "A Soul!",
+            "desc": "Gain a Soul! (Counts as a Ware play)"
+        },
+        "113": {
+            "name": "Food Stamp",
+            "desc": "If you have no β at the end of your turn, gain 5β.",
+            "img": "Bauble"
+        },
+        "114": {
+            "name": "Senior Discount",
+            "desc": "Any action that costs more than 1β now has -1β to its price.",
+            "img": "Bauble"
+        },
+        "115": {
+            "name": "Can of Paint",
+            "desc": "Change the result of a dice roll to the number of your choosing."
+        },
+        "116": {
+            "name": "Can of Gold Paint",
+            "desc": "Double the β reward of an active enemy."
+        },
+        "_AtkWareStart": 37,
+        "_BoneWareStart": 70,
+        "_UniqueWareStart": 114,
+        "_size": 119
     },
     "Glitched": {
         "Trigger": {
@@ -3552,7 +3620,7 @@
                 "weight": 0.4
             },
             "6": {
-                "desc": "self-imposedly takes damage",
+                "desc": "self-imposedly take(s) damage",
                 "weight": 0.45
             },
             "7": {
@@ -3638,7 +3706,7 @@
                 "weight": 0.6
             },
             "5": {
-                "desc": "the player to your <DIR> takes <X> damage",
+                "desc": "the player to your <DIR> takes <X2> damage",
                 "weight": 0.15
             },
             "6": {
