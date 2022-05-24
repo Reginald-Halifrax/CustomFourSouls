@@ -217,11 +217,11 @@ def processWares(sheet, data):
             row += 1
             WareNum += 1
         if k == 65:
-            AtkWareStart = len(Wares)
+            AtkWareStart = len(Wares)+1
         elif k == 68:
-            BoneWareStart = len(Wares)
+            BoneWareStart = len(Wares)+1
         elif k == 71:
-            UniqueWareStart = len(Wares)
+            UniqueWareStart = len(Wares)+1
     
     Wares["_AtkWareStart"] = AtkWareStart
     Wares["_BoneWareStart"] = BoneWareStart

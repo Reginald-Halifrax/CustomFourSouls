@@ -3545,9 +3545,9 @@
             "name": "Can of Gold Paint",
             "desc": "Double the β reward of an active enemy."
         },
-        "_AtkWareStart": 37,
-        "_BoneWareStart": 70,
-        "_UniqueWareStart": 114,
+        "_AtkWareStart": 38,
+        "_BoneWareStart": 71,
+        "_UniqueWareStart": 115,
         "_size": 119
     },
     "Glitched": {
