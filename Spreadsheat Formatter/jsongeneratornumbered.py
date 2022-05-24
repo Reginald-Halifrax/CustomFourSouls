@@ -195,29 +195,38 @@ def processItems(sheet, data, type):
     print("Successfully processed "+type)
     return data
 
-# Wares are set up in three categories, HPWare, ATKWare, and BoneWare. They are to be stored in one large table called "Wares".
+# Wares are pulled from 4 sets of 3 column tables. These must be compiled all into one dictionary called "Wares" and then we must track the number of entries in each table.
 def processWares(sheet, data):
-    Wares = {
-        "HpWares": {},
-        "AtkWares": {},
-        "BoneWares": {},
-    }
-
-    for k,v in {"HpWares": 65, "AtkWares": 68, "BoneWares": 71}.items():
+    Wares = {}
+    AtkWareStart = 0
+    BoneWareStart = 0
+    UniqueWareStart = 0
+    WareNum = 1
+    for k in [65, 68, 71, 74]:
         row = 2
         while True:
-            wareName = sheet[chr(v) + str(row)].value
+            wareName = sheet[chr(k) + str(row)].value
             if wareName is not None:
-                Wares[k][str(row-1)] = {
+                Wares[WareNum] = {
                     "name": wareName,
-                    "desc": sheet[chr(v+1) + str(row)].value,
-                    "img": testImg(sheet[chr(v+2) + str(row)].value),
+                    "desc": sheet[chr(k+1) + str(row)].value,
+                    "img": testImg(sheet[chr(k+2) + str(row)].value),
                 }
             else:
                 break
             row += 1
-        Wares[k]["_size"] = len(Wares[k])
+            WareNum += 1
+        if k == 65:
+            AtkWareStart = len(Wares)
+        elif k == 68:
+            BoneWareStart = len(Wares)
+        elif k == 71:
+            UniqueWareStart = len(Wares)
     
+    Wares["_AtkWareStart"] = AtkWareStart
+    Wares["_BoneWareStart"] = BoneWareStart
+    Wares["_UniqueWareStart"] = UniqueWareStart
+    Wares["_size"] = len(Wares)
     data["Wares"] = Wares
     print("Successfully processed Wares")
     return data
