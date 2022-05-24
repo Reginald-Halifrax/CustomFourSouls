@@ -1244,50 +1244,10 @@
             "desc": "No players or enemies may initiate combat. Gain +5β at the start of your turn. \"It's time you took your mind off fighting and worry about your bookkeeping\""
         },
         "37": {
-            "name": "The First Moon",
-            "desc": "All players recieve a Lunar Relic. \"Bad moon rising.\""
-        },
-        "38": {
-            "name": "The Second Moon",
-            "desc": "Lunar Relics may be used without charge. \"Lunar charged.\""
-        },
-        "39": {
-            "name": "The Third Moon",
-            "desc": "If an enemy is to be drawn, draw them from the Lunar deck. \"shooting stars, make a wish!\""
-        },
-        "40": {
-            "name": "The Fourth Moon",
-            "desc": "Restock and reshuffle all bonus soul slots. \"Spirits dancing in the moonlight.\""
-        },
-        "41": {
-            "name": "The Fifth Moon",
-            "desc": "You may only fight Lunar enemies this round. \"Friday night fight night.\""
-        },
-        "42": {
-            "name": "The Sixth Moon",
-            "desc": "Lunar enemies HP and ATK are doubled, RR is 6. \"Horrible things lurk in the moonlight.\""
-        },
-        "43": {
-            "name": "Bible Camp",
-            "desc": "Angelic Relics can be used without charge."
-        },
-        "44": {
-            "name": "Church Among Nothingness",
-            "desc": "Angelic enemies have +1 RR. Demonic enemy draws are replaced with normal enemies."
-        },
-        "45": {
-            "name": "Lust Ring",
-            "desc": "Demonic enemies can't be fought."
-        },
-        "46": {
-            "name": "Devil's Maw",
-            "desc": "Replace all Angelic enemies with Demonic enemies. Angelic relics may not be used."
-        },
-        "47": {
             "name": "Blue Smog",
             "desc": "Players may charge any single item of their choosing on their turn. \"Smell that? That's your motherboard taking its last breath.\""
         },
-        "_size": 47
+        "_size": 37
     },
     "Souls": {
         "1": {
@@ -3548,7 +3508,7 @@
         "_AtkWareStart": 38,
         "_BoneWareStart": 71,
         "_UniqueWareStart": 115,
-        "_size": 119
+        "_size": 116
     },
     "Glitched": {
         "Trigger": {

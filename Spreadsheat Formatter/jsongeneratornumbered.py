@@ -201,12 +201,13 @@ def processWares(sheet, data):
     AtkWareStart = 0
     BoneWareStart = 0
     UniqueWareStart = 0
-    WareNum = 1
+    WareNum = 0
     for k in [65, 68, 71, 74]:
         row = 2
         while True:
             wareName = sheet[chr(k) + str(row)].value
             if wareName is not None:
+                WareNum += 1
                 Wares[WareNum] = {
                     "name": wareName,
                     "desc": sheet[chr(k+1) + str(row)].value,
@@ -215,7 +216,6 @@ def processWares(sheet, data):
             else:
                 break
             row += 1
-            WareNum += 1
         if k == 65:
             AtkWareStart = len(Wares)+1
         elif k == 68:
@@ -226,7 +226,7 @@ def processWares(sheet, data):
     Wares["_AtkWareStart"] = AtkWareStart
     Wares["_BoneWareStart"] = BoneWareStart
     Wares["_UniqueWareStart"] = UniqueWareStart
-    Wares["_size"] = len(Wares)
+    Wares["_size"] = WareNum
     data["Wares"] = Wares
     print("Successfully processed Wares")
     return data
