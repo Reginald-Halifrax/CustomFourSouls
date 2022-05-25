@@ -1,7 +1,7 @@
 import os
 import json
 from requests import get
-from openpyxl import load_workbook
+from openpyxl import load_workbook, utils as oputils
 
 def testImg(string):
     if string == "":
@@ -34,17 +34,17 @@ def processEnemies(sheet, data, type, columnstart):
     row = 2
     Enemies = {}
     while True:
-        enemyName = sheet[chr(columnstart) + str(row)].value
+        enemyName = sheet[oputils.get_column_letter(columnstart) + str(row)].value
         if enemyName is not None:
             Enemies[row-1] = {
                 "name": enemyName,
-                "desc": sheet[chr(columnstart+4) + str(row)].value,
-                "reward": testReward(sheet[chr(columnstart+5) + str(row)].value),
-                "hp": int(sheet[chr(columnstart+1) + str(row)].value) or None,
-                "rr": int(sheet[chr(columnstart+2) + str(row)].value) or None,
-                "atk": int(sheet[chr(columnstart+3) + str(row)].value) or None,
-                "souls": int(sheet[chr(columnstart+6) + str(row)].value) or None,
-                "img": testImg(sheet[chr(columnstart+7) + str(row)].value)
+                "desc": sheet[oputils.get_column_letter(columnstart+4) + str(row)].value,
+                "reward": testReward(sheet[oputils.get_column_letter(columnstart+5) + str(row)].value),
+                "hp": int(sheet[oputils.get_column_letter(columnstart+1) + str(row)].value) or None,
+                "rr": int(sheet[oputils.get_column_letter(columnstart+2) + str(row)].value) or None,
+                "atk": int(sheet[oputils.get_column_letter(columnstart+3) + str(row)].value) or None,
+                "souls": int(sheet[oputils.get_column_letter(columnstart+6) + str(row)].value) or None,
+                "img": testImg(sheet[oputils.get_column_letter(columnstart+7) + str(row)].value)
             }
         else:
             break
@@ -166,21 +166,21 @@ def processItems(sheet, data, type):
         itemName = sheet["A" + str(row)].value
         if itemName is not None:
             prefixes = {}
-            columnStep = 68
             trueCount = 1
+            columnStep = 4
             while True:
-                prefixName = sheet[chr(columnStep) + str(row)].value
-                if prefixName is not None or columnStep == 68:
+                prefixName = sheet[oputils.get_column_letter(columnStep) + str(row)].value
+                if prefixName is not None or columnStep == 4:
                     prefixes[trueCount] = {
                         "name": prefixName,
-                        "desc": sheet[chr(columnStep+1) + str(row)].value
+                        "desc": sheet[oputils.get_column_letter(columnStep+1) + str(row)].value
                         }
                 else:
                     break
                 columnStep += 2
                 trueCount += 1
+            
             prefixes["_size"] = len(prefixes)
-
             Items[row-1] = {
                 "name": itemName,
                 "type": sheet["B" + str(row)].value,
@@ -202,25 +202,25 @@ def processWares(sheet, data):
     BoneWareStart = 0
     UniqueWareStart = 0
     WareNum = 0
-    for k in [65, 68, 71, 74]:
+    for k in [1, 4, 7, 10]:
         row = 2
         while True:
-            wareName = sheet[chr(k) + str(row)].value
+            wareName = sheet[oputils.get_column_letter(k) + str(row)].value
             if wareName is not None:
                 WareNum += 1
                 Wares[WareNum] = {
                     "name": wareName,
-                    "desc": sheet[chr(k+1) + str(row)].value,
-                    "img": testImg(sheet[chr(k+2) + str(row)].value),
+                    "desc": sheet[oputils.get_column_letter(k+1) + str(row)].value,
+                    "img": testImg(sheet[oputils.get_column_letter(k+2) + str(row)].value),
                 }
             else:
                 break
             row += 1
-        if k == 65:
+        if k == 1:
             AtkWareStart = len(Wares)+1
-        elif k == 68:
+        elif k == 4:
             BoneWareStart = len(Wares)+1
-        elif k == 71:
+        elif k == 7:
             UniqueWareStart = len(Wares)+1
     
     Wares["_AtkWareStart"] = AtkWareStart
@@ -239,14 +239,14 @@ def processGlitched(sheet, data):
         "EnemyMutator": {},
         "Effector": {},
     }
-    for k,v in {"Trigger": 65, "PlayerMutator": 67, "EnemyMutator": 69, "Effector": 71}.items():
+    for k,v in {"Trigger": 1, "PlayerMutator": 3, "EnemyMutator": 5, "Effector": 7}.items():
         row = 2
         while True:
-            curGlitchDesc = sheet[chr(v) + str(row)].value
+            curGlitchDesc = sheet[oputils.get_column_letter(v) + str(row)].value
             if curGlitchDesc is not None:
                 Glitched[k][str(row-1)] = {
                     "desc": curGlitchDesc,
-                    "weight": sheet[chr(v+1) + str(row)].value,
+                    "weight": sheet[oputils.get_column_letter(v+1) + str(row)].value,
                 }
             else:
                 break
@@ -281,7 +281,7 @@ def main():
     # load the workbook using the Hexsouls.content
     wb = load_workbook(filename="C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx", read_only=True)
 
-    data = processEnemies(wb["Enemies"], data, "Enemies", 65)
+    data = processEnemies(wb["Enemies"], data, "Enemies", 1)
     data = processPrefixes(wb["Enemies"], data)
     data = processSuffixes(wb["Enemies"], data)
     data = processJinxes(wb["Enemies"], data)
@@ -292,11 +292,12 @@ def main():
     data = processWares(wb["Wares"], data)
     data = processGlitched(wb["Glitched"], data)
 
+    """
     data["DLC"] = {}
     dlcEnem = {}
-    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Demon", 65)
-    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Lunar", 73)
-    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Angelic", 81)
+    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Demon", 1)
+    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Lunar", 9)
+    dlcEnem = processEnemies(wb["Enemies_DLC"], dlcEnem, "Angelic", 17)
 
     data["DLC"]["Enemies"] = dlcEnem
 
@@ -306,13 +307,14 @@ def main():
     dlcRelics = processItems(wb["Relics_DLC3"], dlcRelics, "Angelic")
 
     data["DLC"]["Relics"] = dlcRelics
+    """
     wb.close()
 
     data = clean_nones(data)
 
     with open("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/HexSouls.json", "w", encoding="utf8") as outfile:
         json.dump(data, outfile, indent=4, ensure_ascii=False)
-
+    
     os.remove("C:/Users/iamtr/Desktop/Git Content/Four Souls/CustomFourSouls/Spreadsheat Formatter/temp.xlsx")
 
 main()
