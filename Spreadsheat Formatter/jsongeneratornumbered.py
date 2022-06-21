@@ -15,8 +15,26 @@ def testReward(input):
 
 def testMod(input):
     if input is None:
-        return None
-    return input.strip()
+        return None, None
+    
+    if "/nr" in input:
+        values = input.split("/nr")
+        desc = values[0].strip()
+        reward = "CLEAR"
+    elif "/r" in input:
+        values = input.split("/r")
+        desc = values[0].strip()
+        reward = values[1].strip()
+    else:
+        desc = input.strip()
+        reward = None
+
+    if desc == "":
+        desc = None
+    if reward == "":
+        reward = None
+    
+    return desc, reward
 
 def processMultiValue(input):
     if input is None:
@@ -61,9 +79,11 @@ def processPrefixes(sheet, data):
         prefixName = sheet["I" + str(row)].value
         if prefixName is not None:
             values = processMultiValue(sheet["K" + str(row)].value)
+            mod, reward = testMod(sheet["J" + str(row)].value)
             Prefixes[row-1] = {
                 "name": prefixName,
-                "mod": testMod(sheet["J" + str(row)].value),
+                "mod": mod,
+                "reward": reward,
                 "hp": values["hp"] or None,
                 "rr": values["rr"] or None,
                 "atk": values["atk"] or None,
@@ -84,9 +104,11 @@ def processSuffixes(sheet, data):
         suffixName = sheet["L" + str(row)].value
         if suffixName is not None:
             values = processMultiValue(sheet["N" + str(row)].value)
+            mod, reward = testMod(sheet["M" + str(row)].value)
             Suffixes[row-1] = {
                 "name": suffixName,
-                "mod": testMod(sheet["M" + str(row)].value),
+                "mod": mod,
+                "reward": reward,
                 "hp": values["hp"] or None,
                 "rr": values["rr"] or None,
                 "atk": values["atk"] or None,
