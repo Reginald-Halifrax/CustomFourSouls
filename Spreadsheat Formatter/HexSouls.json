@@ -3569,7 +3569,7 @@
                 "weight": 0.2
             },
             "11": {
-                "desc": "Do as I say where possible, charge is reduced to 1. Do this:",
+                "desc": "Do as I say where possible. Do this:/c",
                 "weight": 0.3
             },
             "_size": 11
@@ -3690,11 +3690,11 @@
                 "weight": 0.1
             },
             "7": {
-                "desc": "roll a die, if the value is <X6>: Gain <X2> Relic(s). Reduces Glitch charge to 1",
+                "desc": "roll a die, if the value is <X6>: Gain <X2> Relic(s)./c",
                 "weight": 0.2
             },
             "8": {
-                "desc": "roll a die, if the value is <X6>: Gain <X2> Ware(s). Reduces Glitch charge to 1",
+                "desc": "roll a die, if the value is <X6>: Gain <X2> Ware(s)./c",
                 "weight": 0.3
             },
             "9": {
@@ -3710,19 +3710,19 @@
                 "weight": 0.5
             },
             "12": {
-                "desc": "the player to your <DIR> may take one of your Relics. Reduces Glitch charge to 1",
+                "desc": "the player to your <DIR> may take one of your Relics./c",
                 "weight": 0.5
             },
             "13": {
-                "desc": "you may take a Relic from a random player. Reduces Glitch charge to 1",
+                "desc": "you may take a Relic from a random player./c",
                 "weight": 0.2
             },
             "14": {
-                "desc": "gain a Glitch card. Reduces Glitch charge to 1",
+                "desc": "gain a Glitch card./c",
                 "weight": 0.1
             },
             "15": {
-                "desc": "A random player gains a Glitch card. Reduces Glitch charge to 1",
+                "desc": "A random player gains a Glitch card./c",
                 "weight": 0.15
             },
             "_size": 15
