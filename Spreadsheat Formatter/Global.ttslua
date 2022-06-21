@@ -1,0 +1,818 @@
+function onLoad()
+    WebRequest.get("https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Spreadsheat%20Formatter/HexSouls.json", function (request)
+        --print(request.text)
+        local text = request.text
+
+        --replace all instances of "\u03b2" with "β"
+        text = text:gsub("\\u03b2", "β")
+        
+        local json = JSON.decode(text)
+        
+        Global.SetTable("data", json)
+    end)
+end
+
+function getRepository()
+    return "https://raw.githubusercontent.com/Reginald-Halifrax/CustomFourSouls/master/Hexsouls/"
+end
+
+function getWrapper()
+    return [[function wrap(str, limit)
+        limit = limit or 72
+        local here = 1
+        local lineCount = 0
+    
+        -- the "".. is there because :gsub returns multiple values
+        return ""..str:gsub("(%s+)()(%S+)()",
+        function(sp, st, word, fi)
+            if fi-here > limit then
+                lineCount = math.floor(#str/limit)
+                here = st
+                return "\n"..word
+            end
+        end), lineCount
+    end]]
+end
+
+function getSeed(string)
+    local seed = 0
+    for i = 1, string:len() do
+        seed = seed + string:byte(i)
+    end
+    seed = seed + #string
+    seed = seed + os.clock()*10000
+    return seed
+end
+
+function giveGlitchScript(object, params)
+    object.script_code = ""..getWrapper()..'\n'..[[
+    function onLoad()
+        Ref = {
+            click_function = "nul_func",
+            function_owner = self,
+            label          = "",
+            position       = {0, 0, 0},
+            rotation       = {0, 0, 0},
+            width          = 0,
+            height         = 0,
+            font_size      = 100,
+            color          = {0, 0, 0},
+            font_color     = {1, 1, 1}
+        }
+        --Create Title
+        self.createButton(Ref)
+        --Create Description
+        self.createButton(Ref)
+        --Create Charge
+        self.createButton(Ref)]].."\n"..
+        "GCharge = "..params.GCharge..
+        "\n"..[[
+    
+        local vDesc, vCount = wrap(self.getDescription(),25)
+    
+        --Set Title
+        self.editButton({index = 0,
+            label = self.getName(),
+            font_size = 180,
+            font_color = {1,1,0},
+            position = {0,0.1,-1.425}
+        })
+        --Set Description
+        self.editButton({index = 1,
+            label = vDesc,
+            position = {0,0.1,2+(0.2*vCount)},
+            font_color = {0.9,0.9,0.825},
+            font_size = 180
+        })
+        --Set Glitch Charge
+        self.editButton({index = 2,
+            label = "Glitch Charge:\n"..GCharge,
+            position = {-2.5,0.1,0},
+            font_size = 150,
+            font_color = {0.8,0,0.8}
+        })
+    end
+    
+    function nul_func(obj, color, alt_click)
+    end
+    ]]
+end
+
+function processWeighted(list)
+    local work = true
+    while (work) do
+        for i = 1, list._size do
+            local item = list[""..i]
+            if (math.random(1,100)/100 <= item.weight) then
+                work = false
+                return item.desc
+            end
+        end
+    end
+end
+
+function GlitchTextInput(data, target)
+    local names = {"Relics", "Affinities", "Enemies", "Wares"}
+    local setname = names[math.random(1,#names)]
+    local set = data[setname]
+    --if setname == "Wares" then
+    --    local waretypes = {"HpWares", "AtkWares", "BoneWares"}
+    --    local waretype = waretypes[math.random(1,3)]
+    --    set = set[waretype]
+    --end
+    local item = set[""..math.random(1,set._size)]
+    if target == "Name" then
+        local name = item.name or ""
+        if item.prefixes ~= nil then
+            name = (item.prefixes[""..math.random(1,item.prefixes._size)].name or "").." "..name
+        end
+        return name
+    elseif target == "Desc" then
+        local desc = item.desc or ""
+        if item.prefixes ~= nil then
+            desc = (item.prefixes[""..math.random(1,item.prefixes._size)].desc)
+        end
+        return desc
+    end
+end
+
+function createGlitch(params)
+    local object = params.object
+    local data = Global.GetTable("data")
+    local Glitches = data["Glitched"]
+    local Trigger = Glitches.Trigger
+    local PlayerMutator = Glitches.PlayerMutator
+    local EnemyMutator = Glitches.EnemyMutator
+    local Effector = Glitches.Effector
+    math.randomseed(getSeed(object.guid))
+
+    local Img = getRepository().."CardTextures/Relics/RelicGlitched.png"
+    local ObjP = {
+        mesh = getRepository().."Models/Hexagon.obj",
+        diffuse = Img,
+        specular_intensity = 0,
+        normal = ""
+    }
+
+    object.setCustomObject(ObjP)
+
+    TrigChoice = processWeighted(Trigger)
+    P_M_Choice = processWeighted(PlayerMutator)
+    E_M_Choice = processWeighted(EnemyMutator)
+    Ef_Choice = processWeighted(Effector)
+
+    TrueDesc = string.gsub(TrigChoice, "<PM>", P_M_Choice)
+    TrueDesc = string.gsub(TrueDesc, "<EM>", E_M_Choice)
+    TrueDesc = string.gsub(TrueDesc, "<E>", Ef_Choice)
+
+    for i = 1,6 do
+        TrueDesc = string.gsub(TrueDesc, "<X"..i..">", math.random(1,i))
+    end
+
+    local directions = {"left", "right"}
+    local dir = directions[math.random(1,#directions)]
+    TrueDesc = string.gsub(TrueDesc, "<DIR>", dir)
+
+    GlitchName = ""
+
+    for i = 1, math.random(12) do
+        local itemName = GlitchTextInput(data, "Name")
+        local startnum = math.random(1,#itemName)
+        local endnum = math.random(startnum,#itemName)
+
+        if endnum - startnum > 5 then
+            endnum = startnum + 5
+        end
+
+        GlitchName = GlitchName..string.sub(itemName, startnum, endnum)
+    end
+
+    object.setName(GlitchName)
+
+    GlitchDesc = ""
+    for i = 1, math.random(12) do
+        local itemDesc = GlitchTextInput(data, "Desc")
+        local startnum = math.random(1,#itemDesc)
+        local endnum = math.random(startnum,#itemDesc)
+
+        if endnum - startnum > 7 then
+            endnum = startnum + 7
+        end
+
+        GlitchDesc = GlitchDesc..string.sub(itemDesc, startnum, endnum)
+    end
+
+    TrueDesc = TrueDesc.."\n\n"..GlitchDesc
+
+    object.setName(GlitchName)
+    object.setDescription(TrueDesc)
+    giveGlitchScript(object, {GCharge = math.random(1,3)})
+    object.reload()
+end
+
+function glitchInterrupt(upper)
+    if math.random(1,upper or 10000) <= 100 then
+        return true
+    end
+    return false
+end
+
+function giveEnemyScript(object, params)
+    object.script_code = ""..getWrapper().."\n"..[[
+    function onLoad()
+
+        self.addTag("Enemy")
+        Ref = {
+            click_function = "nul_func",
+            function_owner = self,
+            label          = "",
+            position       = {0, 0, 0},
+            rotation       = {0, 0, 0},
+            width          = 0,
+            height         = 0,
+            font_size      = 100,
+            color          = {0, 0, 0},
+            font_color     = {1, 1, 1}
+        }
+        --Create Title
+        self.createButton(Ref)
+        --Create Description
+        self.createButton(Ref)
+        --Create Rewards
+        self.createButton(Ref)
+        --Create Souls
+        self.createButton(Ref)
+        ]].."HP = "..params.HP.."\n"..
+        "RR = "..params.RR.."\n"..
+        "ATK = "..params.ATK.."\n"..
+        "Soul = "..params.soul.."\n".."Reward = "..'[['..
+        params.reward..']]\n'..[[
+        if Soul == 1 then SoulNt = Soul.." Soul."
+        elseif Soul > 1 then SoulNt = Soul.." Souls."
+        else SoulNt = "" end
+
+        local vDesc,vCount = wrap(self.getDescription(),25)
+
+        if Reward ~= "" then Reward = "Rewards:\n"..Reward end
+
+        --Set Title
+        self.editButton({index = 0,
+            label = self.getName(),
+            font_size = 180,
+            position = {0,0.1,-2},
+            font_color = {0.6,0,0.5}
+        })
+        --Set Description
+        self.editButton({index = 1,
+            label = vDesc,
+            position = {0,0.1,2+(0.22*vCount)},
+            font_color = {0.9,0.9,0.825},
+            font_size = 180
+        })
+        --Set Rewards
+        self.editButton({index = 2,
+            label = wrap(Reward,20),
+            position = {2.5,0.1,0},
+            font_size = 150,
+            font_color = {1,1,0}
+        })
+        --Set Soul Reward
+        self.editButton({index = 3,
+            label = SoulNt,
+            position = {-2.5,0.1,0},
+            font_size = 150,
+            font_color = {0,1,0.9}
+        })
+
+        Wait.time(function() checkFlipped() end, 1, -1)
+    end
+    
+    function textRevealer(Hide)
+        self.editButton({index = 0,
+            font_size = 180*Hide
+        })
+        --Set Description
+        self.editButton({index = 1,
+            font_size = 180*Hide
+        })
+        --Set Rewards
+        self.editButton({index = 2,
+            font_size = 150*Hide
+        })
+        --Set Soul Reward
+        self.editButton({index = 3,
+            font_size = 150*Hide
+        })
+    end
+    
+    function nul_func(obj, color, alt_click)
+    end
+    
+    function checkFlipped()
+        flipped = 1
+        if self.getRotation().z > 170 then
+            flipped = 0
+        end
+        textRevealer(flipped)
+    end
+
+    function onObjectSpawn(object)
+        if object == self then onLoad() end
+    end
+    ]]
+end
+
+function createEnemy(params)
+    local object = params.object
+    math.randomseed(getSeed(object.guid))
+    if glitchInterrupt() then
+        createGlitch({object = object})
+        return
+    end
+    local Enemies = Global.GetTable("data")["Enemies"]
+    local ECount = Enemies._size
+    local Enemy = Enemies[""..math.random(1,ECount)]
+    local relicRepository = getRepository().."CardTextures/Enemies/"
+    local Img = relicRepository..(Enemy.img or "Generic_Enemy")..".png"
+
+    local ObjP = {
+        mesh = getRepository().."Models/Hexagon.obj",
+        diffuse = Img,
+        specular_intensity = 0,
+        normal = ""
+    }
+
+    object.setCustomObject(ObjP)
+    Name = Enemy.name
+    Desc = Enemy.desc or ""
+    Reward = Enemy.reward or ""
+
+    local HP = Enemy.hp or 0
+    local ATK = Enemy.atk or 0
+    local RR = Enemy.rr or 0
+    local Soul = Enemy.souls or 0
+
+    if HP ~= 0 then
+        local isPF = false
+        local isSF = false
+
+        local Prefixes = Global.GetTable("data")["Prefixes"]
+        local Suffixes = Global.GetTable("data")["Suffixes"]
+        local PCount = Prefixes._size
+        local SCount = Suffixes._size
+        local Prefix = Prefixes[""..math.random(1,PCount)]
+        local PrefixReward = Prefix.reward or ""
+        local Suffix = Suffixes[""..math.random(1,SCount)]
+        local SuffixReward = Suffix.reward or ""
+        
+        if PrefixReward ~= "" then
+            PrefixReward = "\n-----\n"..PrefixReward
+        end
+        if SuffixReward ~= "" then
+            SuffixReward = "\n-----\n"..SuffixReward
+        end
+
+        local prefixChance = 25
+        local suffixChance = 25
+        if math.random(0,1) == 0 then
+            if math.random(1,100) < prefixChance then
+                Name = Prefix.name.."\n"..Name
+                if PrefixReward ~= "" then
+                    Reward = Reward..PrefixReward
+                end
+                suffixChance = 40
+                isPF = true
+                if (math.random(1,100) < suffixChance) then
+                    Name = Name.."\n"..Suffix.name
+                    if SuffixReward ~= "" then
+                        Reward = Reward..SuffixReward
+                    end
+                    isSF = true
+                end
+            end
+        else
+            if math.random(1,100) < suffixChance then
+                Name = Name.."\n"..Suffix.name
+                if SuffixReward ~= "" then
+                    Reward = Reward..SuffixReward
+                end
+                prefixChance = 40
+                isSF = true
+                if math.random(1,100) < prefixChance then
+                    Name = Prefix.name.."\n"..Name
+                    if PrefixReward ~= "" then
+                        Reward = Reward..PrefixReward
+                    end
+                    isPF = true
+                end
+            end
+        end
+
+        if (string.find(Reward, "CLEAR") or 0) > 0 then
+            Reward = ""
+        end
+
+        if isPF then
+            PDesc = Prefix.mod or ""
+            if PDesc ~= "" then
+                Desc = Desc.."\n----\n"..PDesc
+            end
+            HP = HP+(Prefix.hp or 0)
+            ATK = ATK+(Prefix.atk or 0)
+            RR = RR+(Prefix.rr or 0)
+            Soul = Soul+(Prefix.souls or 0)
+        end
+        if isSF then
+            SDesc = Suffix.mod or ""
+            if SDesc ~= "" then
+                Desc = Desc.."\n----\n"..SDesc
+            end
+            HP = HP+(Suffix.hp or 0)
+            ATK = ATK+(Suffix.atk or 0)
+            RR = RR+(Suffix.rr or 0)
+            Soul = Soul+(Suffix.souls or 0)
+        end
+
+        HP = math.max(HP,1)
+        RR = math.max(math.min(RR,6),1)
+        ATK = math.max(ATK,0)
+        Soul = math.max(Soul,0)
+    end
+
+    object.setName(Name)
+    object.setDescription(Desc)
+
+    giveEnemyScript(object, {
+        reward = Reward,
+        soul = Soul,
+        HP = HP,
+        ATK = ATK,
+        RR = RR,
+        Img = Img
+    })
+
+    object.reload()
+end
+
+function giveItemScript(object)
+    object.script_code = ""..getWrapper()..'\n'..[[
+    function onLoad()
+
+        Ref = {
+            click_function = "nul_func",
+            function_owner = self,
+            label          = "",
+            position       = {0, 0, 0},
+            rotation       = {0, 0, 0},
+            width          = 0,
+            height         = 0,
+            font_size      = 100,
+            color          = {0, 0, 0},
+            font_color     = {1, 1, 1}
+        }
+        --Create Title
+        self.createButton(Ref)
+        --Create Description
+        self.createButton(Ref)
+        local vDesc, vCount = wrap(self.getDescription(),25)
+
+        --Set Title
+        self.editButton({index = 0,
+            label = self.getName(),
+            font_size = 180,
+            font_color = {1,1,0},
+            position = {0,0.1,-1.425}
+        })
+        --Set Description
+        self.editButton({index = 1,
+            label = vDesc,
+            position = {0,0.1,2+(0.2*vCount)},
+            font_color = {0.9,0.9,0.825},
+            font_size = 180
+        })
+    
+    end
+    
+    function nul_func(obj, color, alt_click)
+    end
+
+    function onObjectSpawn(object)
+        if object == self then onLoad() end
+    end
+    ]]
+end
+
+function createItem(params)
+    local object = params.object
+    math.randomseed(getSeed(object.guid))
+    if glitchInterrupt() and params.type ~= "Affinity" then
+        createGlitch({object = object})
+        return
+    end
+    local ItemType = params.type
+    local Query = ""
+    if (params.type == "Relic") then
+        Query = "Relics"
+    elseif params.type == "Affinity" then
+        Query = "Affinities"
+    end
+    local Items = Global.GetTable("data")[Query]
+    local ICount = Items._size
+    local Item = Items[""..math.random(1,ICount)]
+    local Repository = getRepository().."CardTextures/"
+    Repository = Repository..Query
+    Repository = Repository.."/"
+    local Img = Item.img or Item.type
+
+    if (Img == "@") then
+        Img = ItemType.."ActiveGeneric"
+    elseif (Img == "*") then
+        Img = ItemType.."PassiveGeneric"
+    elseif Img == "$" then
+        Img = ItemType.."CounterGeneric"
+    end
+
+    Img = Repository..Img..".png"
+
+    local ObjP = {
+        mesh = getRepository().."Models/Hexagon.obj",
+        diffuse = Img,
+        specular_intensity = 0,
+        normal = ""
+    }
+
+    object.setCustomObject(ObjP)
+    Name = Item.name
+    local Prefix = Item.prefixes[""..math.random(1,Item.prefixes._size)]
+    local PrefixName = Prefix.name or ""
+    Name = PrefixName..' '..Name
+    local Desc = Prefix.desc
+
+    object.setName(Name)
+    object.setDescription(Desc)
+    giveItemScript(object)
+    object.reload()
+end
+
+function giveWareScript(object)
+    object.script_code = ""..getWrapper()..'\n'..[[
+    function onLoad()
+        self.addTag("Ware")
+        Ref = {
+            click_function = "nul_func",
+            function_owner = self,
+            label          = "",
+            position       = {0, 0, 0},
+            rotation       = {0, 0, 0},
+            width          = 0,
+            height         = 0,
+            font_size      = 100,
+            color          = {0, 0, 0},
+            font_color     = {1, 1, 1}
+        }
+        --Create Title
+        self.createButton(Ref)
+        --Create Description
+        self.createButton(Ref)
+
+        local vDesc, vCount = wrap(self.getDescription(),25)
+
+        --Set Title
+        self.editButton({index = 0,
+            label = self.getName(),
+            font_size = 180,
+            font_color = {0.7,0.5,0},
+            position = {0,0.1,-1.425}
+        })
+        --Set Description
+        self.editButton({index = 1,
+            label = vDesc,
+            position = {0,0.1,2+(0.2*vCount)},
+            font_color = {0.9,0.9,0.825},
+            font_size = 180
+        })
+    end
+
+    function nul_func(obj, color, alt_click)
+    end
+    ]]
+end
+
+function createWare(params)
+    local object = params.object
+    math.randomseed(getSeed(object.guid))
+    if glitchInterrupt() then
+        createGlitch({object = object})
+        return
+    end
+    local Wares = Global.GetTable("data")["Wares"]
+    local WCount = Wares._size
+    local WChoice = math.random(1,WCount)
+    local Ware = Wares[""..WChoice]
+    local Repository = getRepository().."CardTextures/"
+    Repository = Repository.."Wares/"
+    local Img = Ware.img or nil
+    if Img == nil then
+        if WChoice >= Wares._UniqueWareStart then
+            Img = "UniqueWareGeneric"
+        elseif WChoice >= Wares._BoneWareStart then
+            Img = "BoneWareGeneric"
+        elseif WChoice >= Wares._AtkWareStart then
+            Img = "AtkWareGeneric"
+        else
+            Img = "HpWareGeneric"
+        end
+    end
+    Img = Repository..Img..".png"
+
+    local ObjP = {
+        mesh = getRepository().."Models/Hexagon.obj",
+        diffuse = Img,
+        specular_intensity = 0,
+        normal = ""
+    }
+
+    object.setCustomObject(ObjP)
+    local Name = Ware.name
+    local desc = Ware.desc
+    object.setName(Name)
+    object.setDescription(desc)
+    giveWareScript(object)
+    object.reload()
+end
+
+function generateStage(params)
+    local object = params.object
+    math.randomseed(getSeed(object.guid))
+    local Stages = Global.GetTable("data")["Stages"]
+    local SCount = Stages._size
+    local StageChoice = "1"
+    if (math.random(1,100) > 30) then
+        StageChoice = ""..math.random(1,SCount)
+    end
+
+    local Stage = Stages[StageChoice]
+    local Repository = getRepository().."CardTextures/"
+    Repository = Repository.."Stages/"
+    local Img = Stage.img or "StageGeneric"
+    Img = Repository..Img..".png"
+
+    local ObjP = {
+        mesh = getRepository().."Models/Hexagon.obj",
+        diffuse = Img,
+        specular_intensity = 0,
+        normal = ""
+    }
+
+    object.setCustomObject(ObjP)
+    local Name = Stage.name
+    local desc = Stage.desc
+    object.setName(Name)
+    object.setDescription(desc)
+    broadcastToAll("The stage has been changed to "..Name..".", {0,1,0})
+    object.reload()
+end
+
+function giveJinxScript(object)
+    object.script_code = ""..getWrapper()..'\n'..[[
+    function onLoad()
+        Ref = {
+            click_function = "nul_func",
+            function_owner = self,
+            label          = "",
+            position       = {0, 0, 0},
+            rotation       = {0, 0, 0},
+            width          = 0,
+            height         = 0,
+            font_size      = 100,
+            color          = {0, 0, 0},
+            font_color     = {1, 1, 1}
+        }
+        --Create Title
+        self.createButton(Ref)
+        --Create Description
+        self.createButton(Ref)
+        
+        local vDesc, vCount = wrap(self.getDescription(),25)
+
+    --Set Title
+    self.editButton({index = 0,
+        label = self.getName(),
+        font_size = 180,
+        font_color = {1,0,1},
+        position = {0,0.1,-1.425}
+    })
+    --Set Description
+    self.editButton({index = 1,
+        label = vDesc,
+        position = {0,0.1,2+(0.2*vCount)},
+        font_color = {0.9,0.9,0.825},
+        font_size = 180
+    })
+    end
+
+    function nul_func(obj, color, alt_click)
+    end
+    ]]
+end
+
+function createJinx(params)
+    local object = params.object
+    math.randomseed(getSeed(object.guid))
+    if glitchInterrupt(5000) then
+        createGlitch({object = object})
+        return
+    end
+    local Jinxes = Global.GetTable("data")["Jinxes"]
+    local JCount = Jinxes._size
+    local Jinx = Jinxes[""..math.random(1,JCount)]
+    local Repository = getRepository().."CardTextures/"
+    Repository = Repository.."Jinxes/"
+    local Img = Jinx.img or "JinxGeneric"
+    Img = Repository..Img..".png"
+
+    local ObjP = {
+        mesh = getRepository().."Models/Hexagon.obj",
+        diffuse = Img,
+        specular_intensity = 0,
+        normal = ""
+    }
+
+    object.setCustomObject(ObjP)
+    local Name = Jinx.name
+    local desc = Jinx.desc
+    object.setName(Name)
+    object.setDescription(desc)
+    giveJinxScript(object)
+    object.reload()
+end
+
+function giveSoulScript(object)
+    object.script_code = ""..getWrapper()..'\n'..[[
+    function onLoad()
+        Ref = {
+            click_function = "nul_func",
+            function_owner = self,
+            label          = "",
+            position       = {0, 0, 0},
+            rotation       = {0, 0, 0},
+            width          = 0,
+            height         = 0,
+            font_size      = 100,
+            color          = {0, 0, 0},
+            font_color     = {1, 1, 1}
+        }
+        --Create Title
+        self.createButton(Ref)
+        --Create Description
+        self.createButton(Ref)
+
+        local vDesc, vCount = wrap(self.getDescription(),25)
+
+        --Set Title
+        self.editButton({index = 0,
+            label = self.getName(),
+            font_size = 180,
+            font_color = {0,1,0.9},
+            position = {0,0.1,-1.425}
+        })
+        --Set Description
+        self.editButton({index = 1,
+            label = vDesc,
+            position = {0,0.1,2+(0.2*vCount)},
+            font_color = {0.9,0.9,0.825},
+            font_size = 180
+        })
+    end
+
+    function nul_func(obj, color, alt_click)
+    end
+    ]]
+end
+
+function createSoul(params)
+    local object = params.object
+    math.randomseed(getSeed(object.guid))
+    local Souls = Global.GetTable("data")["Souls"]
+    local SCount = Souls._size
+    local Soul = Souls[""..math.random(1,SCount)]
+    local Repository = getRepository().."CardTextures/"
+    Repository = Repository.."Souls/"
+    local Img = Soul.img or "SoulGeneric"
+    Img = Repository..Img..".png"
+
+    local ObjP = {
+        mesh = getRepository().."Models/Hexagon.obj",
+        diffuse = Img,
+        specular_intensity = 0,
+        normal = ""
+    }
+
+    object.setCustomObject(ObjP)
+    local Name = Soul.name
+    local desc = Soul.desc
+    object.setName(Name)
+    object.setDescription(desc)
+    giveSoulScript(object)
+    object.reload()
+end
